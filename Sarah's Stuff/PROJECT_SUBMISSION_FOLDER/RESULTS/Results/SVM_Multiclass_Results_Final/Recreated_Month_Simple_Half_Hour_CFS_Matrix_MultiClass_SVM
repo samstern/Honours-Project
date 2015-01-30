@@ -1,0 +1,18 @@
+Recreated_Month_Simple_Half_Hour_CFS_Matrix_MultiClass_SVM 
+Precision Macro: 0.809524 
+Precision micro: 0.503984 
+Recall Macro: 0.346939 
+Recall micro: 0.503984 
+F1Score Macro: 0.485714 
+F1Score micro: 0.503984 
+Accuracy: 0.503984 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+97,46,2,11,0,1
+13,82,6,16,1,1
+6,32,18,20,6,1
+2,17,7,28,1,0
+2,11,7,7,11,1
+2,20,0,10,0,17
+0,0,0,0,0,0

@@ -1,0 +1,12 @@
+APD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.767956 
+Precision micro: 0.742134 
+Recall Macro: 0.665072 
+Recall micro: 0.742134 
+F1Score Macro: 0.712821 
+F1Score micro: 0.742134 
+Accuracy: 0.742134 
+
+Confusion Matrix 
+550,126
+210,417

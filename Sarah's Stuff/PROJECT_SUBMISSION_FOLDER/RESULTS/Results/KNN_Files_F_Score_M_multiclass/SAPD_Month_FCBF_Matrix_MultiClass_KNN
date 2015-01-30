@@ -1,0 +1,17 @@
+SAPD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.352941 
+Precision micro: 0.498047 
+Recall Macro: 0.260870 
+Recall micro: 0.498047 
+F1Score Macro: 0.300000 
+F1Score micro: 0.498047 
+Accuracy: 0.517578 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+70,47,1,5,1,0
+26,155,3,20,4,3
+5,22,0,10,1,2
+9,56,5,19,4,2
+1,8,0,1,5,4
+0,9,1,4,3,6

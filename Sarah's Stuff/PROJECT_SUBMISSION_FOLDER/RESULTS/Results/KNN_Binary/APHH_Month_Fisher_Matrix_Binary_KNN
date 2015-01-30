@@ -1,0 +1,13 @@
+APHH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.676471 
+Precision micro: 0.743405 
+Recall Macro: 0.688623 
+Recall micro: 0.743405 
+F1Score Macro: 0.682493 
+F1Score micro: 0.743405 
+Accuracy: 0.762590 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+195,55
+52,115

@@ -1,0 +1,14 @@
+SAPD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.728814 
+Precision micro: 0.744344 
+Recall Macro: 0.664948 
+Recall micro: 0.744344 
+F1Score Macro: 0.695418 
+F1Score micro: 0.744344 
+Accuracy: 0.744344 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+200,48
+65,129
+0,0

@@ -1,0 +1,12 @@
+Recreated_Week_Simple_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.780969 
+Precision micro: 0.769654 
+Recall Macro: 0.717822 
+Recall micro: 0.769654 
+F1Score Macro: 0.748065 
+F1Score micro: 0.769654 
+Accuracy: 0.769654 
+
+Confusion Matrix 
+544,122
+171,435

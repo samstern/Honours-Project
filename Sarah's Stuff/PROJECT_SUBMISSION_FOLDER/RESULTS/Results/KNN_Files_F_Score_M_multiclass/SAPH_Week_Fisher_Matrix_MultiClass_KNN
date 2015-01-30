@@ -1,0 +1,17 @@
+SAPH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.587629 
+Precision micro: 0.591060 
+Recall Macro: 0.695122 
+Recall micro: 0.591060 
+F1Score Macro: 0.636872 
+F1Score micro: 0.591060 
+Accuracy: 0.564570 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+255,53,3,13,1,0
+50,198,8,43,9,13
+24,33,22,41,9,3
+29,58,19,148,9,19
+6,10,2,9,34,5
+2,11,0,11,1,57

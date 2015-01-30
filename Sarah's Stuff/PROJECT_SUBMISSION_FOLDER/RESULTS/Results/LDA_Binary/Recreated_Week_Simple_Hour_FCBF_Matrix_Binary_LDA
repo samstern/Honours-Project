@@ -1,0 +1,12 @@
+Recreated_Week_Simple_Hour_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.775717 
+Precision micro: 0.780660 
+Recall Macro: 0.759076 
+Recall micro: 0.780660 
+F1Score Macro: 0.767306 
+F1Score micro: 0.780660 
+Accuracy: 0.780660 
+
+Confusion Matrix 
+533,133
+146,460

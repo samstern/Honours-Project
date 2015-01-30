@@ -1,0 +1,16 @@
+MS_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.300000 
+Precision micro: 0.508604 
+Recall Macro: 0.260870 
+Recall micro: 0.508604 
+F1Score Macro: 0.279070 
+F1Score micro: 0.508604 
+Accuracy: 0.508604 
+
+Confusion Matrix 
+73,48,0,3,0,1
+20,175,0,14,0,4
+3,35,0,2,0,0
+6,79,0,12,0,6
+1,6,0,9,0,3
+0,16,0,1,0,6

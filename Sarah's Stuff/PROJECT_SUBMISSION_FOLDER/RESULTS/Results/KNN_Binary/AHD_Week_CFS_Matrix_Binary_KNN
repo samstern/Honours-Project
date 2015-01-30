@@ -1,0 +1,13 @@
+AHD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.779923 
+Precision micro: 0.765714 
+Recall Macro: 0.577143 
+Recall micro: 0.765714 
+F1Score Macro: 0.663383 
+F1Score micro: 0.765714 
+Accuracy: 0.769143 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+468,57
+148,202

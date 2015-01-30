@@ -1,0 +1,18 @@
+Recreated_Month_Simple_Hour_Original_Matrix_MultiClass_SVM 
+Precision Macro: 0.523810 
+Precision micro: 0.535857 
+Recall Macro: 0.647059 
+Recall micro: 0.535857 
+F1Score Macro: 0.578947 
+F1Score micro: 0.535857 
+Accuracy: 0.535857 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+94,49,2,11,2,0
+18,103,10,26,2,4
+6,19,22,16,4,1
+0,24,3,31,3,3
+4,10,3,5,8,2
+1,3,0,2,0,11
+0,0,0,0,0,0

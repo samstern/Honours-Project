@@ -1,0 +1,12 @@
+AHD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.640394 
+Precision micro: 0.665143 
+Recall Macro: 0.371429 
+Recall micro: 0.665143 
+F1Score Macro: 0.470163 
+F1Score micro: 0.665143 
+Accuracy: 0.665143 
+
+Confusion Matrix 
+452,73
+220,130

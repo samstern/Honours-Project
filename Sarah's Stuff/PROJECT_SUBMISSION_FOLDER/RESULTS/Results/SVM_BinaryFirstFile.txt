@@ -1,0 +1,1428 @@
+AD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.664865 
+Precision micro: 0.727273 
+Recall Macro: 0.657754 
+Recall micro: 0.727273 
+F1Score Macro: 0.661290 
+F1Score micro: 0.727273 
+Accuracy: 0.727273 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+213,62
+64,123
+0,0
+AD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.664865 
+Precision micro: 0.727273 
+Recall Macro: 0.657754 
+Recall micro: 0.727273 
+F1Score Macro: 0.661290 
+F1Score micro: 0.727273 
+Accuracy: 0.727273 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+213,62
+64,123
+0,0
+AD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.664865 
+Precision micro: 0.727273 
+Recall Macro: 0.657754 
+Recall micro: 0.727273 
+F1Score Macro: 0.661290 
+F1Score micro: 0.727273 
+Accuracy: 0.727273 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+213,62
+64,123
+0,0
+AD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.670270 
+Precision micro: 0.731602 
+Recall Macro: 0.663102 
+Recall micro: 0.731602 
+F1Score Macro: 0.666667 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+214,61
+63,124
+0,0
+AHD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.696296 
+Precision micro: 0.729970 
+Recall Macro: 0.652778 
+Recall micro: 0.729970 
+F1Score Macro: 0.673835 
+F1Score micro: 0.729970 
+Accuracy: 0.729970 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+152,41
+50,94
+0,0
+AHD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.607407 
+Precision micro: 0.676558 
+Recall Macro: 0.594203 
+Recall micro: 0.676558 
+F1Score Macro: 0.600733 
+F1Score micro: 0.676558 
+Accuracy: 0.676558 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+146,53
+56,82
+0,0
+AHD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.711111 
+Precision micro: 0.750742 
+Recall Macro: 0.680851 
+Recall micro: 0.750742 
+F1Score Macro: 0.695652 
+F1Score micro: 0.750742 
+Accuracy: 0.750742 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+157,39
+45,96
+0,0
+AHD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.696296 
+Precision micro: 0.721068 
+Recall Macro: 0.639456 
+Recall micro: 0.721068 
+F1Score Macro: 0.666667 
+F1Score micro: 0.721068 
+Accuracy: 0.721068 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+149,41
+53,94
+0,0
+AHHD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.719626 
+Precision micro: 0.779026 
+Recall Macro: 0.726415 
+Recall micro: 0.779026 
+F1Score Macro: 0.723005 
+F1Score micro: 0.779026 
+Accuracy: 0.779026 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+131,30
+29,77
+0,0
+AHHD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.682243 
+Precision micro: 0.749064 
+Recall Macro: 0.688679 
+Recall micro: 0.749064 
+F1Score Macro: 0.685446 
+F1Score micro: 0.749064 
+Accuracy: 0.749064 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+127,34
+33,73
+0,0
+AHHD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.710280 
+Precision micro: 0.730337 
+Recall Macro: 0.649573 
+Recall micro: 0.730337 
+F1Score Macro: 0.678571 
+F1Score micro: 0.730337 
+Accuracy: 0.730337 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+119,31
+41,76
+0,0
+AHHD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.607477 
+Precision micro: 0.719101 
+Recall Macro: 0.663265 
+Recall micro: 0.719101 
+F1Score Macro: 0.634146 
+F1Score micro: 0.719101 
+Accuracy: 0.719101 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+127,42
+33,65
+0,0
+AHH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.681081 
+Precision micro: 0.735931 
+Recall Macro: 0.666667 
+Recall micro: 0.735931 
+F1Score Macro: 0.673797 
+F1Score micro: 0.735931 
+Accuracy: 0.735931 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+214,59
+63,126
+0,0
+AHH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.670270 
+Precision micro: 0.731602 
+Recall Macro: 0.663102 
+Recall micro: 0.731602 
+F1Score Macro: 0.666667 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+214,61
+63,124
+0,0
+AHH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.670270 
+Precision micro: 0.731602 
+Recall Macro: 0.663102 
+Recall micro: 0.731602 
+F1Score Macro: 0.666667 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+214,61
+63,124
+0,0
+AHH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.670270 
+Precision micro: 0.731602 
+Recall Macro: 0.663102 
+Recall micro: 0.731602 
+F1Score Macro: 0.666667 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+214,61
+63,124
+0,0
+AHH_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.699690 
+Precision micro: 0.754532 
+Recall Macro: 0.775300 
+Recall micro: 0.754532 
+F1Score Macro: 0.735557 
+F1Score micro: 0.754532 
+Accuracy: 0.754532 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,194
+131,452
+0,0
+AHH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.702786 
+Precision micro: 0.755287 
+Recall Macro: 0.774744 
+Recall micro: 0.755287 
+F1Score Macro: 0.737013 
+F1Score micro: 0.755287 
+Accuracy: 0.755287 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+546,192
+132,454
+0,0
+AHH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.702786 
+Precision micro: 0.756042 
+Recall Macro: 0.776068 
+Recall micro: 0.756042 
+F1Score Macro: 0.737612 
+F1Score micro: 0.756042 
+Accuracy: 0.756042 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,192
+131,454
+0,0
+AHH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.701238 
+Precision micro: 0.755287 
+Recall Macro: 0.775685 
+Recall micro: 0.755287 
+F1Score Macro: 0.736585 
+F1Score micro: 0.755287 
+Accuracy: 0.755287 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,193
+131,453
+0,0
+AH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.670270 
+Precision micro: 0.738095 
+Recall Macro: 0.673913 
+Recall micro: 0.738095 
+F1Score Macro: 0.672087 
+F1Score micro: 0.738095 
+Accuracy: 0.738095 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+217,61
+60,124
+0,0
+AH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.675676 
+Precision micro: 0.735931 
+Recall Macro: 0.668449 
+Recall micro: 0.735931 
+F1Score Macro: 0.672043 
+F1Score micro: 0.735931 
+Accuracy: 0.735931 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+215,60
+62,125
+0,0
+AH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.681081 
+Precision micro: 0.740260 
+Recall Macro: 0.673797 
+Recall micro: 0.740260 
+F1Score Macro: 0.677419 
+F1Score micro: 0.740260 
+Accuracy: 0.740260 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+216,59
+61,126
+0,0
+AH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.681081 
+Precision micro: 0.740260 
+Recall Macro: 0.673797 
+Recall micro: 0.740260 
+F1Score Macro: 0.677419 
+F1Score micro: 0.740260 
+Accuracy: 0.740260 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+216,59
+61,126
+0,0
+AH_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.699690 
+Precision micro: 0.754532 
+Recall Macro: 0.775300 
+Recall micro: 0.754532 
+F1Score Macro: 0.735557 
+F1Score micro: 0.754532 
+Accuracy: 0.754532 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,194
+131,452
+0,0
+AH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.702786 
+Precision micro: 0.755287 
+Recall Macro: 0.774744 
+Recall micro: 0.755287 
+F1Score Macro: 0.737013 
+F1Score micro: 0.755287 
+Accuracy: 0.755287 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+546,192
+132,454
+0,0
+AH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.702786 
+Precision micro: 0.756042 
+Recall Macro: 0.776068 
+Recall micro: 0.756042 
+F1Score Macro: 0.737612 
+F1Score micro: 0.756042 
+Accuracy: 0.756042 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,192
+131,454
+0,0
+AH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.701238 
+Precision micro: 0.755287 
+Recall Macro: 0.775685 
+Recall micro: 0.755287 
+F1Score Macro: 0.736585 
+F1Score micro: 0.755287 
+Accuracy: 0.755287 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+547,193
+131,453
+0,0
+APD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.685393 
+Precision micro: 0.743820 
+Recall Macro: 0.677778 
+Recall micro: 0.743820 
+F1Score Macro: 0.681564 
+F1Score micro: 0.743820 
+Accuracy: 0.743820 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+209,56
+58,122
+0,0
+APD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.662921 
+Precision micro: 0.739326 
+Recall Macro: 0.678161 
+Recall micro: 0.739326 
+F1Score Macro: 0.670455 
+F1Score micro: 0.739326 
+Accuracy: 0.739326 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+211,60
+56,118
+0,0
+APD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.629213 
+Precision micro: 0.732584 
+Recall Macro: 0.678788 
+Recall micro: 0.732584 
+F1Score Macro: 0.653061 
+F1Score micro: 0.732584 
+Accuracy: 0.732584 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+214,66
+53,112
+0,0
+APD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.662921 
+Precision micro: 0.734831 
+Recall Macro: 0.670455 
+Recall micro: 0.734831 
+F1Score Macro: 0.666667 
+F1Score micro: 0.734831 
+Accuracy: 0.734831 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+209,60
+58,118
+0,0
+APD_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.692185 
+Precision micro: 0.752111 
+Recall Macro: 0.769504 
+Recall micro: 0.752111 
+F1Score Macro: 0.728799 
+F1Score micro: 0.752111 
+Accuracy: 0.752111 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+546,193
+130,434
+0,0
+APD_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.669856 
+Precision micro: 0.735226 
+Recall Macro: 0.752688 
+Recall micro: 0.735226 
+F1Score Macro: 0.708861 
+F1Score micro: 0.735226 
+Accuracy: 0.735226 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+538,207
+138,420
+0,0
+APD_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.647528 
+Precision micro: 0.719110 
+Recall Macro: 0.736842 
+Recall micro: 0.719110 
+F1Score Macro: 0.689304 
+F1Score micro: 0.719110 
+Accuracy: 0.719110 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+531,221
+145,406
+0,0
+APD_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.688995 
+Precision micro: 0.749808 
+Recall Macro: 0.767318 
+Recall micro: 0.749808 
+F1Score Macro: 0.726050 
+F1Score micro: 0.749808 
+Accuracy: 0.749808 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+545,195
+131,432
+0,0
+APHH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.712575 
+Precision micro: 0.750600 
+Recall Macro: 0.680000 
+Recall micro: 0.750600 
+F1Score Macro: 0.695906 
+F1Score micro: 0.750600 
+Accuracy: 0.750600 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+194,48
+56,119
+0,0
+APHH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.724551 
+Precision micro: 0.741007 
+Recall Macro: 0.661202 
+Recall micro: 0.741007 
+F1Score Macro: 0.691429 
+F1Score micro: 0.741007 
+Accuracy: 0.741007 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+188,46
+62,121
+0,0
+APHH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.700599 
+Precision micro: 0.750600 
+Recall Macro: 0.684211 
+Recall micro: 0.750600 
+F1Score Macro: 0.692308 
+F1Score micro: 0.750600 
+Accuracy: 0.750600 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+196,50
+54,117
+0,0
+APHH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.676647 
+Precision micro: 0.724221 
+Recall Macro: 0.649425 
+Recall micro: 0.724221 
+F1Score Macro: 0.662757 
+F1Score micro: 0.724221 
+Accuracy: 0.724221 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+189,54
+61,113
+0,0
+APHH_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.718213 
+Precision micro: 0.753492 
+Recall Macro: 0.754513 
+Recall micro: 0.753492 
+F1Score Macro: 0.735915 
+F1Score micro: 0.753492 
+Accuracy: 0.753492 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+499,164
+136,418
+0,0
+APHH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.644330 
+Precision micro: 0.709942 
+Recall Macro: 0.719770 
+Recall micro: 0.709942 
+F1Score Macro: 0.679964 
+F1Score micro: 0.709942 
+Accuracy: 0.709942 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+489,207
+146,375
+0,0
+APHH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.711340 
+Precision micro: 0.747740 
+Recall Macro: 0.748644 
+Recall micro: 0.747740 
+F1Score Macro: 0.729515 
+F1Score micro: 0.747740 
+Accuracy: 0.747740 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+496,168
+139,414
+0,0
+APHH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.709622 
+Precision micro: 0.755957 
+Recall Macro: 0.763401 
+Recall micro: 0.755957 
+F1Score Macro: 0.735530 
+F1Score micro: 0.755957 
+Accuracy: 0.755957 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+507,169
+128,413
+0,0
+APH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.710227 
+Precision micro: 0.752273 
+Recall Macro: 0.683060 
+Recall micro: 0.752273 
+F1Score Macro: 0.696379 
+F1Score micro: 0.752273 
+Accuracy: 0.752273 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+206,51
+58,125
+0,0
+APH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.715909 
+Precision micro: 0.750000 
+Recall Macro: 0.677419 
+Recall micro: 0.750000 
+F1Score Macro: 0.696133 
+F1Score micro: 0.750000 
+Accuracy: 0.750000 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+204,50
+60,126
+0,0
+APH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.721591 
+Precision micro: 0.768182 
+Recall Macro: 0.705556 
+Recall micro: 0.768182 
+F1Score Macro: 0.713483 
+F1Score micro: 0.768182 
+Accuracy: 0.768182 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+211,49
+53,127
+0,0
+APH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.698864 
+Precision micro: 0.731818 
+Recall Macro: 0.654255 
+Recall micro: 0.731818 
+F1Score Macro: 0.675824 
+F1Score micro: 0.731818 
+Accuracy: 0.731818 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+199,53
+65,123
+0,0
+APH_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.720131 
+Precision micro: 0.765306 
+Recall Macro: 0.774648 
+Recall micro: 0.765306 
+F1Score Macro: 0.746395 
+F1Score micro: 0.765306 
+Accuracy: 0.765306 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+535,171
+128,440
+0,0
+APH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.635025 
+Precision micro: 0.711931 
+Recall Macro: 0.729323 
+Recall micro: 0.711931 
+F1Score Macro: 0.678915 
+F1Score micro: 0.711931 
+Accuracy: 0.711931 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+519,223
+144,388
+0,0
+APH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.716858 
+Precision micro: 0.757457 
+Recall Macro: 0.763066 
+Recall micro: 0.757457 
+F1Score Macro: 0.739241 
+F1Score micro: 0.757457 
+Accuracy: 0.757457 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+527,173
+136,438
+0,0
+APH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.725041 
+Precision micro: 0.763736 
+Recall Macro: 0.769097 
+Recall micro: 0.763736 
+F1Score Macro: 0.746420 
+F1Score micro: 0.763736 
+Accuracy: 0.763736 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+530,168
+133,443
+0,0
+ASD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.679775 
+Precision micro: 0.725843 
+Recall Macro: 0.650538 
+Recall micro: 0.725843 
+F1Score Macro: 0.664835 
+F1Score micro: 0.725843 
+Accuracy: 0.725843 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+202,57
+65,121
+0,0
+ASD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.657303 
+Precision micro: 0.732584 
+Recall Macro: 0.668571 
+Recall micro: 0.732584 
+F1Score Macro: 0.662890 
+F1Score micro: 0.732584 
+Accuracy: 0.732584 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+209,61
+58,117
+0,0
+ASD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.679775 
+Precision micro: 0.721348 
+Recall Macro: 0.643617 
+Recall micro: 0.721348 
+F1Score Macro: 0.661202 
+F1Score micro: 0.721348 
+Accuracy: 0.721348 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+200,57
+67,121
+0,0
+ASD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.679775 
+Precision micro: 0.719101 
+Recall Macro: 0.640212 
+Recall micro: 0.719101 
+F1Score Macro: 0.659401 
+F1Score micro: 0.719101 
+Accuracy: 0.719101 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+199,57
+68,121
+0,0
+ASD_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.699213 
+Precision micro: 0.747144 
+Recall Macro: 0.758974 
+Recall micro: 0.747144 
+F1Score Macro: 0.727869 
+F1Score micro: 0.747144 
+Accuracy: 0.747144 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+537,191
+141,444
+0,0
+ASD_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.699213 
+Precision micro: 0.752475 
+Recall Macro: 0.768166 
+Recall micro: 0.752475 
+F1Score Macro: 0.732069 
+F1Score micro: 0.752475 
+Accuracy: 0.752475 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+544,191
+134,444
+0,0
+ASD_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.694488 
+Precision micro: 0.744097 
+Recall Macro: 0.756432 
+Recall micro: 0.744097 
+F1Score Macro: 0.724138 
+F1Score micro: 0.744097 
+Accuracy: 0.744097 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+536,194
+142,441
+0,0
+ASD_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.691339 
+Precision micro: 0.741813 
+Recall Macro: 0.754296 
+Recall micro: 0.741813 
+F1Score Macro: 0.721446 
+F1Score micro: 0.741813 
+Accuracy: 0.741813 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+535,196
+143,439
+0,0
+MS_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.648649 
+Precision micro: 0.731602 
+Recall Macro: 0.670391 
+Recall micro: 0.731602 
+F1Score Macro: 0.659341 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+218,65
+59,120
+0,0
+MS_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.654054 
+Precision micro: 0.733766 
+Recall Macro: 0.672222 
+Recall micro: 0.733766 
+F1Score Macro: 0.663014 
+F1Score micro: 0.733766 
+Accuracy: 0.733766 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+218,64
+59,121
+0,0
+MS_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.664865 
+Precision micro: 0.740260 
+Recall Macro: 0.679558 
+Recall micro: 0.740260 
+F1Score Macro: 0.672131 
+F1Score micro: 0.740260 
+Accuracy: 0.740260 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+219,62
+58,123
+0,0
+MS_Original_Matrix_Binary_SVM 
+Precision Macro: 0.654054 
+Precision micro: 0.731602 
+Recall Macro: 0.668508 
+Recall micro: 0.731602 
+F1Score Macro: 0.661202 
+F1Score micro: 0.731602 
+Accuracy: 0.731602 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+217,64
+60,121
+0,0
+Recreated_Month_Simple_Half_Hour_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.767442 
+Precision micro: 0.748837 
+Recall Macro: 0.660000 
+Recall micro: 0.748837 
+F1Score Macro: 0.709677 
+F1Score micro: 0.748837 
+Accuracy: 0.748837 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+190,40
+68,132
+0,0
+Recreated_Month_Simple_Half_Hour_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.686047 
+Precision micro: 0.713953 
+Recall Macro: 0.631016 
+Recall micro: 0.713953 
+F1Score Macro: 0.657382 
+F1Score micro: 0.713953 
+Accuracy: 0.713953 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+189,54
+69,118
+0,0
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.761628 
+Precision micro: 0.765116 
+Recall Macro: 0.685864 
+Recall micro: 0.765116 
+F1Score Macro: 0.721763 
+F1Score micro: 0.765116 
+Accuracy: 0.765116 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+198,41
+60,131
+0,0
+Recreated_Month_Simple_Half_Hour_Original_Matrix_Binary_SVM 
+Precision Macro: 0.755814 
+Precision micro: 0.739535 
+Recall Macro: 0.650000 
+Recall micro: 0.739535 
+F1Score Macro: 0.698925 
+F1Score micro: 0.739535 
+Accuracy: 0.739535 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+188,42
+70,130
+0,0
+Recreated_Month_Simple_Hour_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.754386 
+Precision micro: 0.749415 
+Recall Macro: 0.664948 
+Recall micro: 0.749415 
+F1Score Macro: 0.706849 
+F1Score micro: 0.749415 
+Accuracy: 0.749415 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+191,42
+65,129
+0,0
+Recreated_Month_Simple_Hour_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.777778 
+Precision micro: 0.756440 
+Recall Macro: 0.668342 
+Recall micro: 0.756440 
+F1Score Macro: 0.718919 
+F1Score micro: 0.756440 
+Accuracy: 0.756440 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+190,38
+66,133
+0,0
+Recreated_Month_Simple_Hour_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.771930 
+Precision micro: 0.789227 
+Recall Macro: 0.721311 
+Recall micro: 0.789227 
+F1Score Macro: 0.745763 
+F1Score micro: 0.789227 
+Accuracy: 0.789227 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+205,39
+51,132
+0,0
+Recreated_Month_Simple_Hour_Original_Matrix_Binary_SVM 
+Precision Macro: 0.777778 
+Precision micro: 0.761124 
+Recall Macro: 0.675127 
+Recall micro: 0.761124 
+F1Score Macro: 0.722826 
+F1Score micro: 0.761124 
+Accuracy: 0.761124 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+192,38
+64,133
+0,0
+Recreated_Week_Simple_Half_Hour_Original_Matrix_Binary_SVM 
+Precision Macro: 0.793103 
+Precision micro: 0.783529 
+Recall Macro: 0.763033 
+Recall micro: 0.783529 
+F1Score Macro: 0.777778 
+F1Score micro: 0.783529 
+Accuracy: 0.783529 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+516,126
+150,483
+0,0
+Recreated_Week_Simple__Original_Matrix_Binary_SVM 
+Precision Macro: 0.788779 
+Precision micro: 0.781447 
+Recall Macro: 0.761146 
+Recall micro: 0.781447 
+F1Score Macro: 0.774716 
+F1Score micro: 0.781447 
+Accuracy: 0.781447 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+516,128
+150,478
+0,0
+SAHD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.795455 
+Precision micro: 0.790909 
+Recall Macro: 0.714286 
+Recall micro: 0.790909 
+F1Score Macro: 0.752688 
+F1Score micro: 0.790909 
+Accuracy: 0.790909 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+104,18
+28,70
+0,0
+SAHD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.818182 
+Precision micro: 0.840909 
+Recall Macro: 0.791209 
+Recall micro: 0.840909 
+F1Score Macro: 0.804469 
+F1Score micro: 0.840909 
+Accuracy: 0.840909 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+113,16
+19,72
+0,0
+SAHD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.727273 
+Precision micro: 0.777273 
+Recall Macro: 0.719101 
+Recall micro: 0.777273 
+F1Score Macro: 0.723164 
+F1Score micro: 0.777273 
+Accuracy: 0.777273 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+107,24
+25,64
+0,0
+SAHD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.727273 
+Precision micro: 0.759091 
+Recall Macro: 0.688172 
+Recall micro: 0.759091 
+F1Score Macro: 0.707182 
+F1Score micro: 0.759091 
+Accuracy: 0.759091 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+103,24
+29,64
+0,0
+SAHHD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.774194 
+Precision micro: 0.780645 
+Recall Macro: 0.705882 
+Recall micro: 0.780645 
+F1Score Macro: 0.738462 
+F1Score micro: 0.780645 
+Accuracy: 0.780645 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+73,14
+20,48
+0,0
+SAHHD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.806452 
+Precision micro: 0.787097 
+Recall Macro: 0.704225 
+Recall micro: 0.787097 
+F1Score Macro: 0.751880 
+F1Score micro: 0.787097 
+Accuracy: 0.787097 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+72,12
+21,50
+0,0
+SAHHD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.677419 
+Precision micro: 0.748387 
+Recall Macro: 0.688525 
+Recall micro: 0.748387 
+F1Score Macro: 0.682927 
+F1Score micro: 0.748387 
+Accuracy: 0.748387 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+74,20
+19,42
+0,0
+SAHHD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.725806 
+Precision micro: 0.800000 
+Recall Macro: 0.762712 
+Recall micro: 0.800000 
+F1Score Macro: 0.743802 
+F1Score micro: 0.800000 
+Accuracy: 0.800000 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+79,17
+14,45
+0,0
+SAPD_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.728814 
+Precision micro: 0.744344 
+Recall Macro: 0.664948 
+Recall micro: 0.744344 
+F1Score Macro: 0.695418 
+F1Score micro: 0.744344 
+Accuracy: 0.744344 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+200,48
+65,129
+0,0
+SAPD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.728814 
+Precision micro: 0.739819 
+Recall Macro: 0.658163 
+Recall micro: 0.739819 
+F1Score Macro: 0.691689 
+F1Score micro: 0.739819 
+Accuracy: 0.739819 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+198,48
+67,129
+0,0
+SAPD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.745763 
+Precision micro: 0.751131 
+Recall Macro: 0.670051 
+Recall micro: 0.751131 
+F1Score Macro: 0.705882 
+F1Score micro: 0.751131 
+Accuracy: 0.751131 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+200,45
+65,132
+0,0
+SAPD_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.734463 
+Precision micro: 0.748869 
+Recall Macro: 0.670103 
+Recall micro: 0.748869 
+F1Score Macro: 0.700809 
+F1Score micro: 0.748869 
+Accuracy: 0.748869 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+201,47
+64,130
+0,0
+SAPD_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.730586 
+Precision micro: 0.760953 
+Recall Macro: 0.765781 
+Recall micro: 0.760953 
+F1Score Macro: 0.747770 
+F1Score micro: 0.760953 
+Accuracy: 0.760953 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+529,170
+141,461
+0,0
+SAPD_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.673534 
+Precision micro: 0.737125 
+Recall Macro: 0.757576 
+Recall micro: 0.737125 
+F1Score Macro: 0.713087 
+F1Score micro: 0.737125 
+Accuracy: 0.737125 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+534,206
+136,425
+0,0
+SAPD_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.690967 
+Precision micro: 0.747886 
+Recall Macro: 0.766257 
+Recall micro: 0.747886 
+F1Score Macro: 0.726667 
+F1Score micro: 0.747886 
+Accuracy: 0.747886 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+537,195
+133,436
+0,0
+SAPD_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.716323 
+Precision micro: 0.750961 
+Recall Macro: 0.757119 
+Recall micro: 0.750961 
+F1Score Macro: 0.736156 
+F1Score micro: 0.750961 
+Accuracy: 0.750961 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+525,179
+145,452
+0,0
+SAPHH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.774834 
+Precision micro: 0.779841 
+Recall Macro: 0.704819 
+Recall micro: 0.779841 
+F1Score Macro: 0.738170 
+F1Score micro: 0.779841 
+Accuracy: 0.779841 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+177,34
+49,117
+0,0
+SAPHH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.774834 
+Precision micro: 0.790451 
+Recall Macro: 0.722222 
+Recall micro: 0.790451 
+F1Score Macro: 0.747604 
+F1Score micro: 0.790451 
+Accuracy: 0.790451 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+181,34
+45,117
+0,0
+SAPHH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.721854 
+Precision micro: 0.745358 
+Recall Macro: 0.668712 
+Recall micro: 0.745358 
+F1Score Macro: 0.694268 
+F1Score micro: 0.745358 
+Accuracy: 0.745358 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+172,42
+54,109
+0,0
+SAPHH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.741722 
+Precision micro: 0.750663 
+Recall Macro: 0.670659 
+Recall micro: 0.750663 
+F1Score Macro: 0.704403 
+F1Score micro: 0.750663 
+Accuracy: 0.750663 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+171,39
+55,112
+0,0
+SAPH_Month_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.746914 
+Precision micro: 0.767901 
+Recall Macro: 0.695402 
+Recall micro: 0.767901 
+F1Score Macro: 0.720238 
+F1Score micro: 0.767901 
+Accuracy: 0.767901 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+190,41
+53,121
+0,0
+SAPH_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.746914 
+Precision micro: 0.743210 
+Recall Macro: 0.657609 
+Recall micro: 0.743210 
+F1Score Macro: 0.699422 
+F1Score micro: 0.743210 
+Accuracy: 0.743210 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+180,41
+63,121
+0,0
+SAPH_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.716049 
+Precision micro: 0.743210 
+Recall Macro: 0.666667 
+Recall micro: 0.743210 
+F1Score Macro: 0.690476 
+F1Score micro: 0.743210 
+Accuracy: 0.743210 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+185,46
+58,116
+0,0
+SAPH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.740741 
+Precision micro: 0.745679 
+Recall Macro: 0.662983 
+Recall micro: 0.745679 
+F1Score Macro: 0.699708 
+F1Score micro: 0.745679 
+Accuracy: 0.745679 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+182,42
+61,120
+0,0
+SAPH_Week_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.777580 
+Precision micro: 0.788079 
+Recall Macro: 0.769366 
+Recall micro: 0.788079 
+F1Score Macro: 0.773451 
+F1Score micro: 0.788079 
+Accuracy: 0.788079 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+515,125
+131,437
+0,0
+SAPH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.677936 
+Precision micro: 0.725166 
+Recall Macro: 0.716165 
+Recall micro: 0.725166 
+F1Score Macro: 0.696527 
+F1Score micro: 0.725166 
+Accuracy: 0.725166 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+495,181
+151,381
+0,0
+SAPH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.720641 
+Precision micro: 0.754139 
+Recall Macro: 0.743119 
+Recall micro: 0.754139 
+F1Score Macro: 0.731707 
+F1Score micro: 0.754139 
+Accuracy: 0.754139 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+506,157
+140,405
+0,0
+SAPH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.736655 
+Precision micro: 0.778146 
+Recall Macro: 0.775281 
+Recall micro: 0.778146 
+F1Score Macro: 0.755474 
+F1Score micro: 0.778146 
+Accuracy: 0.778146 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+526,148
+120,414
+0,0

@@ -1,0 +1,14 @@
+ASD_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.691339 
+Precision micro: 0.741813 
+Recall Macro: 0.754296 
+Recall micro: 0.741813 
+F1Score Macro: 0.721446 
+F1Score micro: 0.741813 
+Accuracy: 0.741813 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+535,196
+143,439
+0,0

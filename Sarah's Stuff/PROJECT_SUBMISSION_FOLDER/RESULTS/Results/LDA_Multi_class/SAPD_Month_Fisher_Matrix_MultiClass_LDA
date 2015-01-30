@@ -1,0 +1,16 @@
+SAPD_Month_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.363636 
+Precision micro: 0.511719 
+Recall Macro: 0.521739 
+Recall micro: 0.511719 
+F1Score Macro: 0.428571 
+F1Score micro: 0.511719 
+Accuracy: 0.511719 
+
+Confusion Matrix 
+70,51,0,0,1,2
+23,174,0,3,6,5
+3,32,0,1,2,2
+9,74,0,0,5,7
+1,4,0,3,6,5
+0,10,0,0,1,12

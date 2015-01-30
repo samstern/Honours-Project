@@ -1,0 +1,13 @@
+APD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.709524 
+Precision micro: 0.721412 
+Recall Macro: 0.712919 
+Recall micro: 0.721412 
+F1Score Macro: 0.711217 
+F1Score micro: 0.721412 
+Accuracy: 0.709133 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+493,183
+180,447

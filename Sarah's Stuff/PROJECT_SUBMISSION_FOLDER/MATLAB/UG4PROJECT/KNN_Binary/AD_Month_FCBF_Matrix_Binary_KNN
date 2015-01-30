@@ -1,0 +1,13 @@
+AD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.615789 
+Precision micro: 0.694805 
+Recall Macro: 0.632432 
+Recall micro: 0.694805 
+F1Score Macro: 0.624000 
+F1Score micro: 0.694805 
+Accuracy: 0.690476 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+204,73
+68,117

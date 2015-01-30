@@ -1,0 +1,161 @@
+\documentclass[]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cite}
+\usepackage{bibentry}
+\usepackage{cite}
+\begin{document}
+
+\title{Features}
+\author{Sarah McGillion}
+\maketitle
+
+\section{Features}
+
+The focus of this project is to research what features are best for finding the socio economic information on a household specifically household occupancy details . As such simple industry standard models are used, K-nn, SVM, and LDA, and more focus is put onto the features used in the prediction.
+
+\subsection{The Features}
+Consumption figures such as the average energy use over particular periods of time, the maximum reading in the day, the range of readings through certain periods of the day, statistical properties such as the standard deviation, the absolute difference between successive readings and the cross-correlation of subsequent days are used and their worthyness in predicting residency numbers is assessed.\newline
+
+This project aims to find the best features for the prediction of occupancy numbers and does this by first finding the best base of features to work with and expand upon. These base features are consumption figures based on different time intervals and measurement collection intervals. Through experimentation with different varieties of these base consumption features there have been over thirty types of base features tested from using the monthly sum of energy use in households to the  mean and standard deviation of each half hour of each day of the week. Using days, weeks, months, hours and half hours the features as described in    SECTION ABOUT OWN FEATURES have been developed using python and MySQl and modeled and experimented with using K-NN and SVM in MATLAB.
+
+\subsection{Time Periods}
+
+\subsubsection{Measurement period}
+How long the measurement period for data is the first choice for the project, of the 250 households that have taken part in HES 224 of them were measured for a period of a month. The remaining 26 were measured fir up to a full year, as such we can split these up into single monthly readings to acquire more data points.
+
+Previous work in this area has used week long periods of data measurement as the setting to take the data from [CITATION NEEDED].
+For a comparison of the results achieved in previous research this project will too use week long measurement periods. By separating the HES readings into week long readings 1990 instances were acquired, this resulted in unbalanced classes. [ NEED TO CUT THE UNEVEN CLASSES]  [ SOME FORM OF RANDOMLY CUTTING THE NUMBER OF HOUSEHOLDS WITH 2 PEOPLE MEASURED]
+
+\subsubsection{The Intervals}
+Smart meters will have the capabilities of taking readings and sending them across a HOUSE NETWORK, as well as send the information to energy providers and third parties every 30 minutes [CITATION NEEDED]. The devices will be capable of holding [HOW MUCH INFORMATION][CITATION NEEDED].\newline \newline
+{\bf Half Hours}\newline
+It has been said by others that 30 minute time interval readings are APPROPRIATE for occupancy detection learning tasks[CITATION NEEDED]. To provide further comparison between this work and that of previous research this project will too use half hour readings in the making of features for the models.\newline \newline
+{\bf Hours}\newline
+WHY USE HOURS \newline \newline
+{\bf Smaller Time Intervals} \newline
+The HES measured energy readings in intervals of two or ten minutes, this could allow experimentation with smaller time intervals and the impact of smaller readings on the accuracy of predictions using features with these time intervals. Due to time constraints this project concentrated on hourly and half hourly readings but acknowledges the potential for using small features [BY USING THE BEST FEATURES IN EXPERIMENTATION AND USING 2 MINUTE INTERVALS] and leads the way towards further research.
+
+\subsection{Features used to build input vectors}
+
+As an attempt to further the knowledge about which features are best to use for prediction of household occupancy the methods of{ \it Beckel et al} has been recreated so as to compare the methods of previous work to that of potential other input features.
+
+\subsubsection{Recreated Features}
+The features as used in {\it Beckel et al} are able to be separated into four groups: Consumption figures; Ratios; Temporal Properties; Statistical Properties.
+\={P} denotes the 30 minute mean power samples provided by the data
+
+\begin{table}[H]
+\begin{tabular} [H] { l  l || l l}
+\hline
+Statistical properties & & Temporal Properties &  \\
+\hline
+Variance & s variance & First time \={P} > 1kW & t above 1kw   \\
+Sigma(|\={Pt} - \={P{t-1}|) & s diff & First time \={P} > 2kW & t above 2kw\\
+Cross-correlation of subsequent days & s{\_}x-corr & First time \={P} reaches maximum & t{\_}daily{\_}max \\
+ # \={P} with (\={P} t - \={P} {t+-1} >  0.2kW) & s num peaks  & Period for which \={P} > mean & t above mean \\
+\hline
+ Consumption figures & &Ratios \\
+\hline
+\={P}(daily) & c{\_}day & Mean \={P} over maximum \={P} & r{\_}mean/max \\
+\={P}(daily, weekdays only) & c{\_}weekday& Minimum \={P} over mean \={P} & r{\_}min/mean \\
+\={P}(daily, weekend only) & c{\_}weekend  & c{\_}night/c{\_}day & r{\_}night/day \\
+\={P} for (6 p.m. - 10 p.m.)& c{\_}evening  & c{\_}morning/c{\_}noon & r{\_}morning/noon \\
+\={P} for (6 a.m. - 10 a.m.) & c{\_}morning & c{\_}evening / c{\_}noon & r{\_}evening/noon \\
+\={P} for (1 a.m. - 5 a.m.) & c{\_}night \\
+\={P} for {10 a.m. - 2 p.m.} & c{\_}noon \\
+Maximum of \={P} & c{\_}max\\
+Minimum of \={P} & c{\_}min \\
+\hline
+\end{tabular}
+\caption{Recreated Features}
+\end{table}
+
+\subsubsection{Own Features}
+The following features are created using week long and month long time measurement intervals. Where relevant they are created using half hourly readings or one hour readings.
+
+\begin{table}[H]
+\begin{tabular} [H] {|l |l  l |}
+\hline
+Acronym & Name & Description\\
+\hline
+MS & MonthlySum & The total amount of energy used in a month per household  \\
+WS & WeeklySum & The total amount of energy used in a week per household  \\
+AD &Average Day & The average energy use of a day \\
+ASD & AvgStdDay & The average and standard deviation of energy use  in a day \\
+
+APD & AvgPerDay & The average energy reading per day of the week \\
+SAPD & StdAvgPerDay & The average and std energy reading per day of the week \\
+AH & AvgHour & The average energy use in an hour  \\
+ASH & AvgStdHour & The average and standard deviation of energy use in an hour\\
+AHH & AvgHalfHour & The average energy use in a half hour\\
+ASHH & AvgStdHalfHour & The average and standard deviation of energy use in a half hour\\
+\hline
+\\
+\hline
+AHD & AvgHourDay & Average reading per hour per day of the week \\
+SAHD & StdAvgHourDay & Average and std reading per hour per day of the week (monthly readings only) \\ 
+AHHD & AvgHalfHourDay & Average reading per hour per day of the week \\
+SAHHD & StdAvgHalfHourDay & Average and std reading per hour per day of the week (monthly readings only) \\
+APH & Average Per Hour\\
+SAPH & Std Avg Per Hour\\
+APHH & Average Per Half Hour\\
+SAPHH& Std Avg Per Half Hour\\ 
+\hline
+
+\end{tabular}
+\caption{Own Features}
+\end{table}
+
+\subsubsection{Progressed Features}
+Then further there will be progressed features of the recreated features inline with own features created in this project. Rather than a single reading  for \={P} there will be a vector \={D} with the average per hour/ half hour in the situations outline in table 1. For example when working in half hour readings \={D} will have 48 values, the average for each half hour of a 24 hour period. The vector corresponding to these progressed features will also contain all values from table one.
+
+
+
+ \subsection{Feature Selection}
+Due to the large amount of features computed some of the vectors will be of high dimension. High dimensional feature data can lead to inaccurate models [WHATS WRONG WITH HIGH-DIM FEATURES] [CITATION NEEDED].
+
+The first step in reducing the dimensionality is to use feature selection methods. \newline
+
+Feature selection aims to reduce dimensionality by removing irrelevant and unneeded data and increasing the learning accuracy of models.
+
+Particularly we will focus on:\newline
+
+Fast Correlation Based Filter (FCBF) [CITATION NEEDED] this works by using normalised mutual information to select the best features. [PROS VS CONS]\newline It has been shown to be affective in removing both irrelevant and redundant features [CITATION NEEDED].
+
+
+
+
+Correlation-based Feature Selection (CFS) [CITATION NEEDED] this uses correlation based methods and best first search [CITATION NEEDED]\newline
+
+
+Correlation-based feature selection uses the wrapper method to come up with a better heuristic for finding the best feature subset.
+
+Evaluates the worth of a subset of attributes by considering the individual predictive ability of each feature along with the degree of redundancy between them.
+
+Subsets of features that are highly correlated with the class while having low inter correlation are preferred.
+
+
+Fisher [CITATION NEEDED] [HOW FISHER WORKS]\newline
+ The fisher score is a method for determining the most relevant features for  classification. It uses discriminative methods, and generative statistical models to accomplish this. 
+I use the fisher score to decide the top 30 percent of features in the data and use these features in the modelling
+        
+
+These three  feature selection methods are used to reduce the number of features in the input vectors. In using different methods it can be assessed what features often reoccur as useful for classification purposes for occupancy.\newline
+
+These feature selection methods are available from WHERE THE FEATURE SELECTION METHODS COME FROM .Where a MATLAB toolbox has been made and is available for free under Gnu Public Licence.
+
+\subsection{Class Cardinality (?Is cardinality the right word?)}
+The occupancy problem can be modeled in different ways depending on how to split the classes. To prove comparable results this has been modelled as a two class problem, few people in the home ( $<= 3$) or many ($>$ 3). All of the features above will be used in binary classification.
+
+The interest of this project was to discover the import features required for occupancy number detection and as such the importance of modeling this as a multi-class classification problem is apparent.
+The above features will be used in multi class classification with classes 1,2,3,4,5,6+ representing houses with one,two and so on occupants.
+
+\subsection{Balancing Classes}
+Due to the method of expanding the data instances, through expanding yearly readings into months and weeks, the imbalance of classes became extreme to a point where a models accuracy could be high by estimating the input to be of one particular class (particularly a problem when the classes are binarized). \newline
+
+In line with current census data [CITATION] that states 30 percent of households in the UK have 1 occupant, a further 34 percent are occupied by only 2 occupants the data was allowed to be overloaded when there was binary classification in the ration 3:2 in favour of few houses.The limit of 60 percent was chosen as obviously this rate of one and two occupied households is for the UK as a whole and the dispertion of these numbers will vary throughout the country.
+
+\end{document}

@@ -1,0 +1,14 @@
+AHD_Month_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.607407 
+Precision micro: 0.676558 
+Recall Macro: 0.594203 
+Recall micro: 0.676558 
+F1Score Macro: 0.600733 
+F1Score micro: 0.676558 
+Accuracy: 0.676558 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+146,53
+56,82
+0,0

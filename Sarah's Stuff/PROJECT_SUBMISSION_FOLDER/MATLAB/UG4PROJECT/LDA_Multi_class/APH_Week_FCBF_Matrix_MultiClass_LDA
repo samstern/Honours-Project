@@ -1,0 +1,16 @@
+APH_Week_FCBF_Matrix_MultiClass_LDA 
+Precision Macro: NaN 
+Precision micro: 0.412088 
+Recall Macro: 0.000000 
+Recall micro: 0.412088 
+F1Score Macro: NaN 
+F1Score micro: 0.412088 
+Accuracy: 0.412088 
+
+Confusion Matrix 
+281,36,0,14,0,0
+158,72,0,85,17,0
+28,45,0,64,4,0
+60,92,0,141,20,0
+6,5,0,30,31,0
+5,7,0,53,20,0

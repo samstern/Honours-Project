@@ -1,0 +1,16 @@
+SAPD_Month_CFS_Matrix_MultiClass_LDA 
+Precision Macro: 0.652174 
+Precision micro: 0.537109 
+Recall Macro: 0.652174 
+Recall micro: 0.537109 
+F1Score Macro: 0.652174 
+F1Score micro: 0.537109 
+Accuracy: 0.537109 
+
+Confusion Matrix 
+80,40,1,2,1,0
+27,149,3,22,7,3
+3,24,3,8,2,0
+7,58,2,23,2,3
+0,10,0,2,5,2
+0,6,0,0,2,15

@@ -1,0 +1,17 @@
+SAPH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.739583 
+Precision micro: 0.652318 
+Recall Macro: 0.865854 
+Recall micro: 0.652318 
+F1Score Macro: 0.797753 
+F1Score micro: 0.652318 
+Accuracy: 0.629967 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+273,34,2,11,3,2
+48,214,19,30,6,4
+16,25,41,38,8,4
+40,42,31,144,10,15
+4,9,2,6,45,0
+1,5,0,5,0,71

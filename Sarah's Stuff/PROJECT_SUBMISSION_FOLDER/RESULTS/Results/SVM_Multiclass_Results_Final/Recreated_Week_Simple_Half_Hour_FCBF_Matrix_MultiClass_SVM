@@ -1,0 +1,18 @@
+Recreated_Week_Simple_Half_Hour_FCBF_Matrix_MultiClass_SVM 
+Precision Macro: 0.546512 
+Precision micro: 0.406275 
+Recall Macro: 0.262570 
+Recall micro: 0.406275 
+F1Score Macro: 0.354717 
+F1Score micro: 0.406275 
+Accuracy: 0.406275 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+278,116,22,37,4,3
+32,74,24,54,3,5
+17,78,37,70,8,4
+1,15,32,58,5,6
+5,29,5,29,24,21
+1,20,22,60,29,47
+0,0,0,0,0,0

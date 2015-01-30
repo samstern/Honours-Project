@@ -1,0 +1,12 @@
+WS_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.776991 
+Precision micro: 0.748489 
+Recall Macro: 0.679567 
+Recall micro: 0.748489 
+F1Score Macro: 0.725021 
+F1Score micro: 0.748489 
+Accuracy: 0.748489 
+
+Confusion Matrix 
+552,126
+207,439

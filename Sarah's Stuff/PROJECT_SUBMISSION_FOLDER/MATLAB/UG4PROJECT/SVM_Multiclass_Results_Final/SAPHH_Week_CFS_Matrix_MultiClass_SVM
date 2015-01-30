@@ -1,0 +1,18 @@
+SAPHH_Week_CFS_Matrix_MultiClass_SVM 
+Precision Macro: 0.647059 
+Precision micro: 0.541014 
+Recall Macro: 0.647059 
+Recall micro: 0.541014 
+F1Score Macro: 0.647059 
+F1Score micro: 0.541014 
+Accuracy: 0.541014 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+254,81,12,41,2,1
+35,113,19,41,7,8
+7,30,60,48,14,2
+6,30,11,101,7,11
+5,19,13,22,15,2
+3,10,1,9,1,44
+0,0,0,0,0,0

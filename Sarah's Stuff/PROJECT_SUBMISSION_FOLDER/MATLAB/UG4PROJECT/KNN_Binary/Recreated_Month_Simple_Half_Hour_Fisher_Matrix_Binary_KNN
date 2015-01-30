@@ -1,0 +1,13 @@
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.715909 
+Precision micro: 0.776744 
+Recall Macro: 0.732558 
+Recall micro: 0.776744 
+F1Score Macro: 0.724138 
+F1Score micro: 0.776744 
+Accuracy: 0.760465 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+208,50
+46,126

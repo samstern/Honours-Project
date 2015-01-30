@@ -1,0 +1,16 @@
+SAPHH_Month_FCBF_Matrix_MultiClass_LDA 
+Precision Macro: 0.538462 
+Precision micro: 0.521348 
+Recall Macro: 0.411765 
+Recall micro: 0.521348 
+F1Score Macro: 0.466667 
+F1Score micro: 0.521348 
+Accuracy: 0.521348 
+
+Confusion Matrix 
+81,32,0,1,0,0
+38,111,0,25,6,0
+3,18,0,12,0,2
+5,44,3,26,2,4
+0,5,0,3,7,0
+0,6,0,3,1,7

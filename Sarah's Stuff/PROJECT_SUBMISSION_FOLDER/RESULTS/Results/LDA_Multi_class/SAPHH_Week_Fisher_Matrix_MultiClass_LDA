@@ -1,0 +1,16 @@
+SAPHH_Week_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.431818 
+Precision micro: 0.472811 
+Recall Macro: 0.558824 
+Recall micro: 0.472811 
+F1Score Macro: 0.487179 
+F1Score micro: 0.472811 
+Accuracy: 0.472811 
+
+Confusion Matrix 
+267,25,2,15,0,1
+109,92,10,38,14,20
+24,40,14,30,6,2
+57,64,11,94,12,24
+6,7,6,16,8,3
+3,14,0,13,0,38

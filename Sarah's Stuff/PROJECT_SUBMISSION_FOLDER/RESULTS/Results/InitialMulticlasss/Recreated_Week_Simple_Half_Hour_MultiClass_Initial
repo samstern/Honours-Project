@@ -1,0 +1,8 @@
+Original Number of features: 26 
+Number of outliers removed: 76 
+10 Features Chosen by CFS: 
+ 1  2  4  5  9  13  16  17  18  26 
+2 Features Chosen by FCBF: 
+ 3  13 
+5 Features Chosen by Fisher: 
+ 2  3  4  1  8 

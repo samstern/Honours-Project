@@ -1,0 +1,378 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   1.1111e+04
+
+{Operation terminated by user during compdir (line 24)
+
+
+In qpsub (line 684)
+            [SD, dirType] = compdir(Z,H,gf,numberOfVariables,f);
+
+In quadprog (line 452)
+   [X,lambdaqp,exitflag,output,~,~,msg]= ...
+
+In svmtrain (line 528)
+        [alpha, ~, exitflag, output] = quadprog(H,-ones(nPoints,1),[],[],...
+
+In LINEAR_1v1SVM (line 60)
+            svmModel{k} = svmtrain(X(idx,:), Y(idx), ...
+
+In RunMySVM (line 30)
+    LINEAR_1v1SVM
+
+In SVM_Multi (line 37)
+[Orig_SVM_Precision_Macro,...
+
+In M_APHH (line 2)
+SVM_Multi('APHH_Month.mat','Months')
+In run (line 63)
+evalin('caller', [script ';']);
+} 
+
+>> quit
+[?1l>[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   1.1111e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   1.1111e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   1.1111e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   1.1111e+04
+
+Cost
+   2.2222e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Cost
+   1.1111e+04
+
+Multi-Class
+Cost
+   1.0000e-05
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Cost
+   1.1111e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   3.3333e+04
+
+Multi-Class
+Cost
+   1.0000e-05
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Cost
+   1.1111e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Multi-Class
+Cost
+   1.0000e-05
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+Multi-Class
+Cost
+   1.0000e-05
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+{Error: File:
+/afs/inf.ed.ac.uk/user/s09/s0955035/Desktop/UG4PROJECT/SingleRunScripts/M_SAPH.m
+Line: 2 Column: 36
+This statement is incomplete.
+
+Error in run (line 63)
+evalin('caller', [script ';']);
+} 
+>> Cost
+   1.1111e+04
+
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Cost
+   1.1111e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   4.4444e+04
+
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   3.3333e+04
+
+Cost
+   1.1111e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   5.5556e+04
+
+Cost
+   4.4444e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   6.6667e+04
+
+Cost
+   5.5556e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   6.6667e+04
+
+Cost
+   7.7778e+04
+
+Cost
+   2.2222e+04
+
+Cost
+   7.7778e+04
+
+Cost
+   3.3333e+04
+
+Cost
+   8.8889e+04
+
+Cost
+   8.8889e+04
+
+Cost
+      100000
+
+Cost
+      100000
+
+Cost
+   2.2222e+04
+
+Cost
+   3.3333e+04
+
+Best_F1_mu
+    0.3840
+
+   1.0000e-05
+
+#############################
+Best_F1_M
+    0.2362
+
+      100000
+
+#############################
+Best_FPR_mu
+    0.2429
+
+   1.0000e-05
+
+#############################
+Best_FPR_M
+    0.4077
+
+      100000
+
+#############################
+Best_Accuracy
+    0.3840
+
+   1.0000e-05
+
+#############################
+Cost
+   3.3333e+04
+
+Cost
+   4.4444e+04
+
+Best_F1_mu
+    0.3939
+
+   1.0000e-05
+
+#############################
+Best_F1_M
+    0.1026
+
+   1.0000e-05
+
+#############################
+Best_FPR_mu
+    0.2353
+
+   1.0000e-05
+
+#############################
+Best_FPR_M
+    0.5158
+
+   1.0000e-05
+
+#############################
+Best_Accuracy
+    0.3939
+
+      100000
+
+#############################
+Multi-Class
+Cost
+   1.0000e-05
+
+Cost
+   2.2222e+04
+

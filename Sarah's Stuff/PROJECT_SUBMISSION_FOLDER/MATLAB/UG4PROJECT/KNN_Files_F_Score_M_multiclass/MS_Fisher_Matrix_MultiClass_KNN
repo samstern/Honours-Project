@@ -1,0 +1,17 @@
+MS_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.545455 
+Precision micro: 0.531549 
+Recall Macro: 0.260870 
+Recall micro: 0.531549 
+F1Score Macro: 0.352941 
+F1Score micro: 0.531549 
+Accuracy: 0.510516 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+76,45,0,4,0,0
+23,150,3,31,3,3
+3,25,1,11,0,0
+7,55,1,37,2,1
+1,5,0,4,8,1
+0,12,0,5,0,6

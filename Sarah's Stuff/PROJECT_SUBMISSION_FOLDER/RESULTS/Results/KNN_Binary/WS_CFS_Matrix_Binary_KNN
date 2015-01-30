@@ -1,0 +1,13 @@
+WS_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.746106 
+Precision micro: 0.750755 
+Recall Macro: 0.741486 
+Recall micro: 0.750755 
+F1Score Macro: 0.743789 
+F1Score micro: 0.750755 
+Accuracy: 0.765106 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+515,163
+167,479

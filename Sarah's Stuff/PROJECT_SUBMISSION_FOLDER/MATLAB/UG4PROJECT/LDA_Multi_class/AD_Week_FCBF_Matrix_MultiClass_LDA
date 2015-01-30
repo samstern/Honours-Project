@@ -1,0 +1,16 @@
+AD_Week_FCBF_Matrix_MultiClass_LDA 
+Precision Macro: 0.351064 
+Precision micro: 0.439577 
+Recall Macro: 0.340206 
+Recall micro: 0.439577 
+F1Score Macro: 0.345550 
+F1Score micro: 0.439577 
+Accuracy: 0.439577 
+
+Confusion Matrix 
+286,32,0,17,0,5
+157,88,0,86,0,7
+28,43,0,70,0,2
+64,64,0,175,0,30
+9,4,0,43,0,17
+7,4,0,53,0,33

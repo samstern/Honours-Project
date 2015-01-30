@@ -1,0 +1,16 @@
+Recreated_Week_Simple_Half_Hour_FCBF_Matrix_MultiClass_LDA 
+Precision Macro: 0.158537 
+Precision micro: 0.443137 
+Recall Macro: 0.151163 
+Recall micro: 0.443137 
+F1Score Macro: 0.154762 
+F1Score micro: 0.443137 
+Accuracy: 0.443137 
+
+Confusion Matrix 
+260,61,0,9,0,4
+99,131,0,90,1,11
+18,45,0,77,0,2
+27,95,0,161,2,23
+4,9,0,31,0,29
+3,8,0,53,9,13

@@ -1,0 +1,14 @@
+SAPHH_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.719512 
+Precision micro: 0.757604 
+Recall Macro: 0.739040 
+Recall micro: 0.757604 
+F1Score Macro: 0.729145 
+F1Score micro: 0.757604 
+Accuracy: 0.757604 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+468,138
+125,354
+0,0

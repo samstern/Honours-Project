@@ -1,0 +1,12 @@
+ASD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.769091 
+Precision micro: 0.741813 
+Recall Macro: 0.666142 
+Recall micro: 0.741813 
+F1Score Macro: 0.713924 
+F1Score micro: 0.741813 
+Accuracy: 0.741813 
+
+Confusion Matrix 
+551,127
+212,423

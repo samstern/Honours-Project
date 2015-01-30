@@ -1,0 +1,16 @@
+Recreated_Week_Simple_Hour_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.481132 
+Precision micro: 0.463050 
+Recall Macro: 0.593023 
+Recall micro: 0.463050 
+F1Score Macro: 0.531250 
+F1Score micro: 0.463050 
+Accuracy: 0.463050 
+
+Confusion Matrix 
+280,39,0,11,0,4
+140,94,0,75,13,10
+26,46,0,59,5,6
+38,86,0,142,17,22
+4,10,0,24,22,13
+6,14,0,15,0,51

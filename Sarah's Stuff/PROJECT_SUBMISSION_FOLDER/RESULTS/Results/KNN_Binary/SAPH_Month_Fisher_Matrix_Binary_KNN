@@ -1,0 +1,13 @@
+SAPH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.703488 
+Precision micro: 0.772840 
+Recall Macro: 0.746914 
+Recall micro: 0.772840 
+F1Score Macro: 0.724551 
+F1Score micro: 0.772840 
+Accuracy: 0.760494 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+192,51
+41,121

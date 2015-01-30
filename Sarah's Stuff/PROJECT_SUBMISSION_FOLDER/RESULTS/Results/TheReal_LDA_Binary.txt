@@ -1,0 +1,1536 @@
+AD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.654930 
+Precision micro: 0.694805 
+Recall Macro: 0.502703 
+Recall micro: 0.694805 
+F1Score Macro: 0.568807 
+F1Score micro: 0.694805 
+Accuracy: 0.694805 
+
+Confusion Matrix 
+228,49
+92,93
+AD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.655172 
+Precision micro: 0.696970 
+Recall Macro: 0.513514 
+Recall micro: 0.696970 
+F1Score Macro: 0.575758 
+F1Score micro: 0.696970 
+Accuracy: 0.696970 
+
+Confusion Matrix 
+227,50
+90,95
+AD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.659574 
+Precision micro: 0.696970 
+Recall Macro: 0.502703 
+Recall micro: 0.696970 
+F1Score Macro: 0.570552 
+F1Score micro: 0.696970 
+Accuracy: 0.696970 
+
+Confusion Matrix 
+229,48
+92,93
+AD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.647887 
+Precision micro: 0.690476 
+Recall Macro: 0.497297 
+Recall micro: 0.690476 
+F1Score Macro: 0.562691 
+F1Score micro: 0.690476 
+Accuracy: 0.690476 
+
+Confusion Matrix 
+227,50
+93,92
+AD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.777580 
+Precision micro: 0.747734 
+Recall Macro: 0.676471 
+Recall micro: 0.747734 
+F1Score Macro: 0.723510 
+F1Score micro: 0.747734 
+Accuracy: 0.747734 
+
+Confusion Matrix 
+553,125
+209,437
+AD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435
+AD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.775801 
+Precision micro: 0.746224 
+Recall Macro: 0.674923 
+Recall micro: 0.746224 
+F1Score Macro: 0.721854 
+F1Score micro: 0.746224 
+Accuracy: 0.746224 
+
+Confusion Matrix 
+552,126
+210,436
+AD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.773619 
+Precision micro: 0.743958 
+Recall Macro: 0.671827 
+Recall micro: 0.743958 
+F1Score Macro: 0.719138 
+F1Score micro: 0.743958 
+Accuracy: 0.743958 
+
+Confusion Matrix 
+551,127
+212,434
+AHD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.666667 
+Precision micro: 0.721068 
+Recall Macro: 0.607407 
+Recall micro: 0.721068 
+F1Score Macro: 0.635659 
+F1Score micro: 0.721068 
+Accuracy: 0.721068 
+
+Confusion Matrix 
+161,41
+53,82
+AHD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.678899 
+Precision micro: 0.715134 
+Recall Macro: 0.548148 
+Recall micro: 0.715134 
+F1Score Macro: 0.606557 
+F1Score micro: 0.715134 
+Accuracy: 0.715134 
+
+Confusion Matrix 
+167,35
+61,74
+AHD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.603448 
+Precision micro: 0.670623 
+Recall Macro: 0.518519 
+Recall micro: 0.670623 
+F1Score Macro: 0.557769 
+F1Score micro: 0.670623 
+Accuracy: 0.670623 
+
+Confusion Matrix 
+156,46
+65,70
+AHD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.648649 
+Precision micro: 0.697329 
+Recall Macro: 0.533333 
+Recall micro: 0.697329 
+F1Score Macro: 0.585366 
+F1Score micro: 0.697329 
+Accuracy: 0.697329 
+
+Confusion Matrix 
+163,39
+63,72
+AHD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.702797 
+Precision micro: 0.732571 
+Recall Macro: 0.574286 
+Recall micro: 0.732571 
+F1Score Macro: 0.632075 
+F1Score micro: 0.732571 
+Accuracy: 0.732571 
+
+Confusion Matrix 
+440,85
+149,201
+AHD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.640394 
+Precision micro: 0.665143 
+Recall Macro: 0.371429 
+Recall micro: 0.665143 
+F1Score Macro: 0.470163 
+F1Score micro: 0.665143 
+Accuracy: 0.665143 
+
+Confusion Matrix 
+452,73
+220,130
+AHD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.693727 
+Precision micro: 0.720000 
+Recall Macro: 0.537143 
+Recall micro: 0.720000 
+F1Score Macro: 0.605475 
+F1Score micro: 0.720000 
+Accuracy: 0.720000 
+
+Confusion Matrix 
+442,83
+162,188
+AHD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.726962 
+Precision micro: 0.752000 
+Recall Macro: 0.608571 
+Recall micro: 0.752000 
+F1Score Macro: 0.662519 
+F1Score micro: 0.752000 
+Accuracy: 0.752000 
+
+Confusion Matrix 
+445,80
+137,213
+AHHD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.764706 
+Precision micro: 0.767790 
+Recall Macro: 0.607477 
+Recall micro: 0.767790 
+F1Score Macro: 0.677083 
+F1Score micro: 0.767790 
+Accuracy: 0.767790 
+
+Confusion Matrix 
+140,20
+42,65
+AHHD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.825000 
+Precision micro: 0.794007 
+Recall Macro: 0.616822 
+Recall micro: 0.794007 
+F1Score Macro: 0.705882 
+F1Score micro: 0.794007 
+Accuracy: 0.794007 
+
+Confusion Matrix 
+146,14
+41,66
+AHHD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.522222 
+Precision micro: 0.614232 
+Recall Macro: 0.439252 
+Recall micro: 0.614232 
+F1Score Macro: 0.477157 
+F1Score micro: 0.614232 
+Accuracy: 0.614232 
+
+Confusion Matrix 
+117,43
+60,47
+AHHD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.508772 
+Precision micro: 0.606742 
+Recall Macro: 0.542056 
+Recall micro: 0.606742 
+F1Score Macro: 0.524887 
+F1Score micro: 0.606742 
+Accuracy: 0.606742 
+
+Confusion Matrix 
+104,56
+49,58
+AHHD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.727778 
+Precision micro: 0.732577 
+Recall Macro: 0.530364 
+Recall micro: 0.732577 
+F1Score Macro: 0.613583 
+F1Score micro: 0.732577 
+Accuracy: 0.732577 
+
+Confusion Matrix 
+321,49
+116,131
+AHHD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.651899 
+Precision micro: 0.677472 
+Recall Macro: 0.417004 
+Recall micro: 0.677472 
+F1Score Macro: 0.508642 
+F1Score micro: 0.677472 
+Accuracy: 0.677472 
+
+Confusion Matrix 
+315,55
+144,103
+AHHD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.657754 
+Precision micro: 0.695300 
+Recall Macro: 0.497976 
+Recall micro: 0.695300 
+F1Score Macro: 0.566820 
+F1Score micro: 0.695300 
+Accuracy: 0.695300 
+
+Confusion Matrix 
+306,64
+124,123
+AHHD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.555556 
+Precision micro: 0.645057 
+Recall Macro: 0.566802 
+Recall micro: 0.645057 
+F1Score Macro: 0.561122 
+F1Score micro: 0.645057 
+Accuracy: 0.645057 
+
+Confusion Matrix 
+258,112
+107,140
+AHH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.661972 
+Precision micro: 0.699134 
+Recall Macro: 0.508108 
+Recall micro: 0.699134 
+F1Score Macro: 0.574924 
+F1Score micro: 0.699134 
+Accuracy: 0.699134 
+
+Confusion Matrix 
+229,48
+91,94
+AHH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.650000 
+Precision micro: 0.690476 
+Recall Macro: 0.491892 
+Recall micro: 0.690476 
+F1Score Macro: 0.560000 
+F1Score micro: 0.690476 
+Accuracy: 0.690476 
+
+Confusion Matrix 
+228,49
+94,91
+AHH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.664286 
+Precision micro: 0.699134 
+Recall Macro: 0.502703 
+Recall micro: 0.699134 
+F1Score Macro: 0.572308 
+F1Score micro: 0.699134 
+Accuracy: 0.699134 
+
+Confusion Matrix 
+230,47
+92,93
+AHH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.659574 
+Precision micro: 0.696970 
+Recall Macro: 0.502703 
+Recall micro: 0.696970 
+F1Score Macro: 0.570552 
+F1Score micro: 0.696970 
+Accuracy: 0.696970 
+
+Confusion Matrix 
+229,48
+92,93
+AHH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.776199 
+Precision micro: 0.746979 
+Recall Macro: 0.676471 
+Recall micro: 0.746979 
+F1Score Macro: 0.722911 
+F1Score micro: 0.746979 
+Accuracy: 0.746979 
+
+Confusion Matrix 
+552,126
+209,437
+AHH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.774423 
+Precision micro: 0.745468 
+Recall Macro: 0.674923 
+Recall micro: 0.745468 
+F1Score Macro: 0.721257 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+551,127
+210,436
+AHH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.776596 
+Precision micro: 0.747734 
+Recall Macro: 0.678019 
+Recall micro: 0.747734 
+F1Score Macro: 0.723967 
+F1Score micro: 0.747734 
+Accuracy: 0.747734 
+
+Confusion Matrix 
+552,126
+208,438
+AHH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.775000 
+Precision micro: 0.744713 
+Recall Macro: 0.671827 
+Recall micro: 0.744713 
+F1Score Macro: 0.719735 
+F1Score micro: 0.744713 
+Accuracy: 0.744713 
+
+Confusion Matrix 
+552,126
+212,434
+AH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.690647 
+Precision micro: 0.714286 
+Recall Macro: 0.518919 
+Recall micro: 0.714286 
+F1Score Macro: 0.592593 
+F1Score micro: 0.714286 
+Accuracy: 0.714286 
+
+Confusion Matrix 
+234,43
+89,96
+AH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.690647 
+Precision micro: 0.714286 
+Recall Macro: 0.518919 
+Recall micro: 0.714286 
+F1Score Macro: 0.592593 
+F1Score micro: 0.714286 
+Accuracy: 0.714286 
+
+Confusion Matrix 
+234,43
+89,96
+AH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.692857 
+Precision micro: 0.716450 
+Recall Macro: 0.524324 
+Recall micro: 0.716450 
+F1Score Macro: 0.596923 
+F1Score micro: 0.716450 
+Accuracy: 0.716450 
+
+Confusion Matrix 
+234,43
+88,97
+AH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.690647 
+Precision micro: 0.714286 
+Recall Macro: 0.518919 
+Recall micro: 0.714286 
+F1Score Macro: 0.592593 
+F1Score micro: 0.714286 
+Accuracy: 0.714286 
+
+Confusion Matrix 
+234,43
+89,96
+AH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.776199 
+Precision micro: 0.746979 
+Recall Macro: 0.676471 
+Recall micro: 0.746979 
+F1Score Macro: 0.722911 
+F1Score micro: 0.746979 
+Accuracy: 0.746979 
+
+Confusion Matrix 
+552,126
+209,437
+AH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435
+AH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435
+AH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.777778 
+Precision micro: 0.746224 
+Recall Macro: 0.671827 
+Recall micro: 0.746224 
+F1Score Macro: 0.720930 
+F1Score micro: 0.746224 
+Accuracy: 0.746224 
+
+Confusion Matrix 
+554,124
+212,434
+APD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.619048 
+Precision micro: 0.667416 
+Recall Macro: 0.438202 
+Recall micro: 0.667416 
+F1Score Macro: 0.513158 
+F1Score micro: 0.667416 
+Accuracy: 0.667416 
+
+Confusion Matrix 
+219,48
+100,78
+APD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.646154 
+Precision micro: 0.685393 
+Recall Macro: 0.471910 
+Recall micro: 0.685393 
+F1Score Macro: 0.545455 
+F1Score micro: 0.685393 
+Accuracy: 0.685393 
+
+Confusion Matrix 
+221,46
+94,84
+APD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.630769 
+Precision micro: 0.676404 
+Recall Macro: 0.460674 
+Recall micro: 0.676404 
+F1Score Macro: 0.532468 
+F1Score micro: 0.676404 
+Accuracy: 0.676404 
+
+Confusion Matrix 
+219,48
+96,82
+APD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.621212 
+Precision micro: 0.671910 
+Recall Macro: 0.460674 
+Recall micro: 0.671910 
+F1Score Macro: 0.529032 
+F1Score micro: 0.671910 
+Accuracy: 0.671910 
+
+Confusion Matrix 
+217,50
+96,82
+APD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.768382 
+Precision micro: 0.742901 
+Recall Macro: 0.666667 
+Recall micro: 0.742901 
+F1Score Macro: 0.713920 
+F1Score micro: 0.742901 
+Accuracy: 0.742901 
+
+Confusion Matrix 
+550,126
+209,418
+APD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.762452 
+Precision micro: 0.729087 
+Recall Macro: 0.634769 
+Recall micro: 0.729087 
+F1Score Macro: 0.692776 
+F1Score micro: 0.729087 
+Accuracy: 0.729087 
+
+Confusion Matrix 
+552,124
+229,398
+APD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.749511 
+Precision micro: 0.714505 
+Recall Macro: 0.610845 
+Recall micro: 0.714505 
+F1Score Macro: 0.673111 
+F1Score micro: 0.714505 
+Accuracy: 0.714505 
+
+Confusion Matrix 
+548,128
+244,383
+APD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.767956 
+Precision micro: 0.742134 
+Recall Macro: 0.665072 
+Recall micro: 0.742134 
+F1Score Macro: 0.712821 
+F1Score micro: 0.742134 
+Accuracy: 0.742134 
+
+Confusion Matrix 
+550,126
+210,417
+APHH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.677632 
+Precision micro: 0.729017 
+Recall Macro: 0.616766 
+Recall micro: 0.729017 
+F1Score Macro: 0.645768 
+F1Score micro: 0.729017 
+Accuracy: 0.729017 
+
+Confusion Matrix 
+201,49
+64,103
+APHH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.694656 
+Precision micro: 0.721823 
+Recall Macro: 0.544910 
+Recall micro: 0.721823 
+F1Score Macro: 0.610738 
+F1Score micro: 0.721823 
+Accuracy: 0.721823 
+
+Confusion Matrix 
+210,40
+76,91
+APHH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.675862 
+Precision micro: 0.721823 
+Recall Macro: 0.586826 
+Recall micro: 0.721823 
+F1Score Macro: 0.628205 
+F1Score micro: 0.721823 
+Accuracy: 0.721823 
+
+Confusion Matrix 
+203,47
+69,98
+APHH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.720280 
+Precision micro: 0.750600 
+Recall Macro: 0.616766 
+Recall micro: 0.750600 
+F1Score Macro: 0.664516 
+F1Score micro: 0.750600 
+Accuracy: 0.750600 
+
+Confusion Matrix 
+210,40
+64,103
+APHH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.760456 
+Precision micro: 0.746919 
+Recall Macro: 0.687285 
+Recall micro: 0.746919 
+F1Score Macro: 0.722022 
+F1Score micro: 0.746919 
+Accuracy: 0.746919 
+
+Confusion Matrix 
+509,126
+182,400
+APHH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.723711 
+Precision micro: 0.700082 
+Recall Macro: 0.603093 
+Recall micro: 0.700082 
+F1Score Macro: 0.657919 
+F1Score micro: 0.700082 
+Accuracy: 0.700082 
+
+Confusion Matrix 
+501,134
+231,351
+APHH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.753398 
+Precision micro: 0.736237 
+Recall Macro: 0.666667 
+Recall micro: 0.736237 
+F1Score Macro: 0.707384 
+F1Score micro: 0.736237 
+Accuracy: 0.736237 
+
+Confusion Matrix 
+508,127
+194,388
+APHH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.786127 
+Precision micro: 0.765818 
+Recall Macro: 0.701031 
+Recall micro: 0.765818 
+F1Score Macro: 0.741144 
+F1Score micro: 0.765818 
+Accuracy: 0.765818 
+
+Confusion Matrix 
+524,111
+174,408
+APH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.684564 
+Precision micro: 0.725000 
+Recall Macro: 0.579545 
+Recall micro: 0.725000 
+F1Score Macro: 0.627692 
+F1Score micro: 0.725000 
+Accuracy: 0.725000 
+
+Confusion Matrix 
+217,47
+74,102
+APH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.671329 
+Precision micro: 0.711364 
+Recall Macro: 0.545455 
+Recall micro: 0.711364 
+F1Score Macro: 0.601881 
+F1Score micro: 0.711364 
+Accuracy: 0.711364 
+
+Confusion Matrix 
+217,47
+80,96
+APH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.685535 
+Precision micro: 0.734091 
+Recall Macro: 0.619318 
+Recall micro: 0.734091 
+F1Score Macro: 0.650746 
+F1Score micro: 0.734091 
+Accuracy: 0.734091 
+
+Confusion Matrix 
+214,50
+67,109
+APH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.679487 
+Precision micro: 0.727273 
+Recall Macro: 0.602273 
+Recall micro: 0.727273 
+F1Score Macro: 0.638554 
+F1Score micro: 0.727273 
+Accuracy: 0.727273 
+
+Confusion Matrix 
+214,50
+70,106
+APH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.771062 
+Precision micro: 0.752747 
+Recall Macro: 0.689034 
+Recall micro: 0.752747 
+F1Score Macro: 0.727744 
+F1Score micro: 0.752747 
+Accuracy: 0.752747 
+
+Confusion Matrix 
+538,125
+190,421
+APH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.735294 
+Precision micro: 0.708791 
+Recall Macro: 0.613748 
+Recall micro: 0.708791 
+F1Score Macro: 0.669045 
+F1Score micro: 0.708791 
+Accuracy: 0.708791 
+
+Confusion Matrix 
+528,135
+236,375
+APH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.766972 
+Precision micro: 0.748823 
+Recall Macro: 0.684124 
+Recall micro: 0.748823 
+F1Score Macro: 0.723183 
+F1Score micro: 0.748823 
+Accuracy: 0.748823 
+
+Confusion Matrix 
+536,127
+193,418
+APH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.764388 
+Precision micro: 0.751177 
+Recall Macro: 0.695581 
+Recall micro: 0.751177 
+F1Score Macro: 0.728363 
+F1Score micro: 0.751177 
+Accuracy: 0.751177 
+
+Confusion Matrix 
+532,131
+186,425
+ASD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.674074 
+Precision micro: 0.705618 
+Recall Macro: 0.511236 
+Recall micro: 0.705618 
+F1Score Macro: 0.581470 
+F1Score micro: 0.705618 
+Accuracy: 0.705618 
+
+Confusion Matrix 
+223,44
+87,91
+ASD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.671533 
+Precision micro: 0.705618 
+Recall Macro: 0.516854 
+Recall micro: 0.705618 
+F1Score Macro: 0.584127 
+F1Score micro: 0.705618 
+Accuracy: 0.705618 
+
+Confusion Matrix 
+222,45
+86,92
+ASD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.671642 
+Precision micro: 0.703371 
+Recall Macro: 0.505618 
+Recall micro: 0.703371 
+F1Score Macro: 0.576923 
+F1Score micro: 0.703371 
+Accuracy: 0.703371 
+
+Confusion Matrix 
+223,44
+88,90
+ASD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.664179 
+Precision micro: 0.698876 
+Recall Macro: 0.500000 
+Recall micro: 0.698876 
+F1Score Macro: 0.570513 
+F1Score micro: 0.698876 
+Accuracy: 0.698876 
+
+Confusion Matrix 
+222,45
+89,89
+ASD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.754919 
+Precision micro: 0.733435 
+Recall Macro: 0.664567 
+Recall micro: 0.733435 
+F1Score Macro: 0.706868 
+F1Score micro: 0.733435 
+Accuracy: 0.733435 
+
+Confusion Matrix 
+541,137
+213,422
+ASD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.769091 
+Precision micro: 0.741813 
+Recall Macro: 0.666142 
+Recall micro: 0.741813 
+F1Score Macro: 0.713924 
+F1Score micro: 0.741813 
+Accuracy: 0.741813 
+
+Confusion Matrix 
+551,127
+212,423
+ASD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.754955 
+Precision micro: 0.731912 
+Recall Macro: 0.659843 
+Recall micro: 0.731912 
+F1Score Macro: 0.704202 
+F1Score micro: 0.731912 
+Accuracy: 0.731912 
+
+Confusion Matrix 
+542,136
+216,419
+ASD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.757194 
+Precision micro: 0.734196 
+Recall Macro: 0.662992 
+Recall micro: 0.734196 
+F1Score Macro: 0.706969 
+F1Score micro: 0.734196 
+Accuracy: 0.734196 
+
+Confusion Matrix 
+543,135
+214,421
+MS_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.684211 
+Precision micro: 0.705628 
+Recall Macro: 0.491892 
+Recall micro: 0.705628 
+F1Score Macro: 0.572327 
+F1Score micro: 0.705628 
+Accuracy: 0.705628 
+
+Confusion Matrix 
+235,42
+94,91
+MS_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.691176 
+Precision micro: 0.712121 
+Recall Macro: 0.508108 
+Recall micro: 0.712121 
+F1Score Macro: 0.585670 
+F1Score micro: 0.712121 
+Accuracy: 0.712121 
+
+Confusion Matrix 
+235,42
+91,94
+MS_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.684211 
+Precision micro: 0.705628 
+Recall Macro: 0.491892 
+Recall micro: 0.705628 
+F1Score Macro: 0.572327 
+F1Score micro: 0.705628 
+Accuracy: 0.705628 
+
+Confusion Matrix 
+235,42
+94,91
+MS_Original_Matrix_Binary_LDA 
+Precision Macro: 0.688889 
+Precision micro: 0.709957 
+Recall Macro: 0.502703 
+Recall micro: 0.709957 
+F1Score Macro: 0.581250 
+F1Score micro: 0.709957 
+Accuracy: 0.709957 
+
+Confusion Matrix 
+235,42
+92,93
+Recreated_Month_Simple_Half_Hour_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.716129 
+Precision micro: 0.755814 
+Recall Macro: 0.645349 
+Recall micro: 0.755814 
+F1Score Macro: 0.678899 
+F1Score micro: 0.755814 
+Accuracy: 0.755814 
+
+Confusion Matrix 
+214,44
+61,111
+Recreated_Month_Simple_Half_Hour_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.635220 
+Precision micro: 0.700000 
+Recall Macro: 0.587209 
+Recall micro: 0.700000 
+F1Score Macro: 0.610272 
+F1Score micro: 0.700000 
+Accuracy: 0.700000 
+
+Confusion Matrix 
+200,58
+71,101
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.682540 
+Precision micro: 0.706977 
+Recall Macro: 0.500000 
+Recall micro: 0.706977 
+F1Score Macro: 0.577181 
+F1Score micro: 0.706977 
+Accuracy: 0.706977 
+
+Confusion Matrix 
+218,40
+86,86
+Recreated_Month_Simple_Half_Hour_Original_Matrix_Binary_LDA 
+Precision Macro: 0.727273 
+Precision micro: 0.762791 
+Recall Macro: 0.651163 
+Recall micro: 0.762791 
+F1Score Macro: 0.687117 
+F1Score micro: 0.762791 
+Accuracy: 0.762791 
+
+Confusion Matrix 
+216,42
+60,112
+Recreated_Month_Simple_Hour_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.730769 
+Precision micro: 0.768150 
+Recall Macro: 0.666667 
+Recall micro: 0.768150 
+F1Score Macro: 0.697248 
+F1Score micro: 0.768150 
+Accuracy: 0.768150 
+
+Confusion Matrix 
+214,42
+57,114
+Recreated_Month_Simple_Hour_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.739437 
+Precision micro: 0.758782 
+Recall Macro: 0.614035 
+Recall micro: 0.758782 
+F1Score Macro: 0.670927 
+F1Score micro: 0.758782 
+Accuracy: 0.758782 
+
+Confusion Matrix 
+219,37
+66,105
+Recreated_Month_Simple_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.709220 
+Precision micro: 0.737705 
+Recall Macro: 0.584795 
+Recall micro: 0.737705 
+F1Score Macro: 0.641026 
+F1Score micro: 0.737705 
+Accuracy: 0.737705 
+
+Confusion Matrix 
+215,41
+71,100
+Recreated_Month_Simple_Hour_Original_Matrix_Binary_LDA 
+Precision Macro: 0.737179 
+Precision micro: 0.772834 
+Recall Macro: 0.672515 
+Recall micro: 0.772834 
+F1Score Macro: 0.703364 
+F1Score micro: 0.772834 
+Accuracy: 0.772834 
+
+Confusion Matrix 
+215,41
+56,115
+Recreated_Week_Simple_Half_Hour_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.770598 
+Precision micro: 0.785098 
+Recall Macro: 0.783251 
+Recall micro: 0.785098 
+F1Score Macro: 0.776873 
+F1Score micro: 0.785098 
+Accuracy: 0.785098 
+
+Confusion Matrix 
+524,142
+132,477
+Recreated_Week_Simple_Half_Hour_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.769882 
+Precision micro: 0.772549 
+Recall Macro: 0.747126 
+Recall micro: 0.772549 
+F1Score Macro: 0.758333 
+F1Score micro: 0.772549 
+Accuracy: 0.772549 
+
+Confusion Matrix 
+530,136
+154,455
+Recreated_Week_Simple_Half_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.732852 
+Precision micro: 0.724706 
+Recall Macro: 0.666667 
+Recall micro: 0.724706 
+F1Score Macro: 0.698194 
+F1Score micro: 0.724706 
+Accuracy: 0.724706 
+
+Confusion Matrix 
+518,148
+203,406
+Recreated_Week_Simple_Half_Hour_Original_Matrix_Binary_LDA 
+Precision Macro: 0.772504 
+Precision micro: 0.783529 
+Recall Macro: 0.775041 
+Recall micro: 0.783529 
+F1Score Macro: 0.773770 
+F1Score micro: 0.783529 
+Accuracy: 0.783529 
+
+Confusion Matrix 
+527,139
+137,472
+Recreated_Week_Simple_Hour_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.754777 
+Precision micro: 0.775157 
+Recall Macro: 0.782178 
+Recall micro: 0.775157 
+F1Score Macro: 0.768233 
+F1Score micro: 0.775157 
+Accuracy: 0.775157 
+
+Confusion Matrix 
+512,154
+132,474
+Recreated_Week_Simple_Hour_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.775717 
+Precision micro: 0.780660 
+Recall Macro: 0.759076 
+Recall micro: 0.780660 
+F1Score Macro: 0.767306 
+F1Score micro: 0.780660 
+Accuracy: 0.780660 
+
+Confusion Matrix 
+533,133
+146,460
+Recreated_Week_Simple_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.780969 
+Precision micro: 0.769654 
+Recall Macro: 0.717822 
+Recall micro: 0.769654 
+F1Score Macro: 0.748065 
+F1Score micro: 0.769654 
+Accuracy: 0.769654 
+
+Confusion Matrix 
+544,122
+171,435
+Recreated_Week_Simple_Hour_Original_Matrix_Binary_LDA 
+Precision Macro: 0.775207 
+Precision micro: 0.785377 
+Recall Macro: 0.773927 
+Recall micro: 0.785377 
+F1Score Macro: 0.774566 
+F1Score micro: 0.785377 
+Accuracy: 0.785377 
+
+Confusion Matrix 
+530,136
+137,469
+SAHD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.670330 
+Precision micro: 0.740909 
+Recall Macro: 0.693182 
+Recall micro: 0.740909 
+F1Score Macro: 0.681564 
+F1Score micro: 0.740909 
+Accuracy: 0.740909 
+
+Confusion Matrix 
+102,30
+27,61
+SAHD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.759494 
+Precision micro: 0.786364 
+Recall Macro: 0.681818 
+Recall micro: 0.786364 
+F1Score Macro: 0.718563 
+F1Score micro: 0.786364 
+Accuracy: 0.786364 
+
+Confusion Matrix 
+113,19
+28,60
+SAHD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.671053 
+Precision micro: 0.718182 
+Recall Macro: 0.579545 
+Recall micro: 0.718182 
+F1Score Macro: 0.621951 
+F1Score micro: 0.718182 
+Accuracy: 0.718182 
+
+Confusion Matrix 
+107,25
+37,51
+SAHD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.522222 
+Precision micro: 0.618182 
+Recall Macro: 0.534091 
+Recall micro: 0.618182 
+F1Score Macro: 0.528090 
+F1Score micro: 0.618182 
+Accuracy: 0.618182 
+
+Confusion Matrix 
+89,43
+41,47
+SAHHD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.677419 
+Precision micro: 0.741935 
+Recall Macro: 0.677419 
+Recall micro: 0.741935 
+F1Score Macro: 0.677419 
+F1Score micro: 0.741935 
+Accuracy: 0.741935 
+
+Confusion Matrix 
+73,20
+20,42
+SAHHD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.781818 
+Precision micro: 0.800000 
+Recall Macro: 0.693548 
+Recall micro: 0.800000 
+F1Score Macro: 0.735043 
+F1Score micro: 0.800000 
+Accuracy: 0.800000 
+
+Confusion Matrix 
+81,12
+19,43
+SAHHD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.352113 
+Precision micro: 0.464516 
+Recall Macro: 0.403226 
+Recall micro: 0.464516 
+F1Score Macro: 0.375940 
+F1Score micro: 0.464516 
+Accuracy: 0.464516 
+
+Confusion Matrix 
+47,46
+37,25
+SAHHD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.683333 
+Precision micro: 0.741935 
+Recall Macro: 0.661290 
+Recall micro: 0.741935 
+F1Score Macro: 0.672131 
+F1Score micro: 0.741935 
+Accuracy: 0.741935 
+
+Confusion Matrix 
+74,19
+21,41
+SAPD_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.718954 
+Precision micro: 0.751131 
+Recall Macro: 0.621469 
+Recall micro: 0.751131 
+F1Score Macro: 0.666667 
+F1Score micro: 0.751131 
+Accuracy: 0.751131 
+
+Confusion Matrix 
+222,43
+67,110
+SAPD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.710145 
+Precision micro: 0.730769 
+Recall Macro: 0.553672 
+Recall micro: 0.730769 
+F1Score Macro: 0.622222 
+F1Score micro: 0.730769 
+Accuracy: 0.730769 
+
+Confusion Matrix 
+225,40
+79,98
+SAPD_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.710345 
+Precision micro: 0.737557 
+Recall Macro: 0.581921 
+Recall micro: 0.737557 
+F1Score Macro: 0.639752 
+F1Score micro: 0.737557 
+Accuracy: 0.737557 
+
+Confusion Matrix 
+223,42
+74,103
+SAPD_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.705882 
+Precision micro: 0.742081 
+Recall Macro: 0.610169 
+Recall micro: 0.742081 
+F1Score Macro: 0.654545 
+F1Score micro: 0.742081 
+Accuracy: 0.742081 
+
+Confusion Matrix 
+220,45
+69,108
+SAPD_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.764808 
+Precision micro: 0.748655 
+Recall Macro: 0.695721 
+Recall micro: 0.748655 
+F1Score Macro: 0.728631 
+F1Score micro: 0.748655 
+Accuracy: 0.748655 
+
+Confusion Matrix 
+535,135
+192,439
+SAPD_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.769084 
+Precision micro: 0.731745 
+Recall Macro: 0.638669 
+Recall micro: 0.731745 
+F1Score Macro: 0.697835 
+F1Score micro: 0.731745 
+Accuracy: 0.731745 
+
+Confusion Matrix 
+549,121
+228,403
+SAPD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.766423 
+Precision micro: 0.739431 
+Recall Macro: 0.665610 
+Recall micro: 0.739431 
+F1Score Macro: 0.712468 
+F1Score micro: 0.739431 
+Accuracy: 0.739431 
+
+Confusion Matrix 
+542,128
+211,420
+SAPD_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.770870 
+Precision micro: 0.749424 
+Recall Macro: 0.687797 
+Recall micro: 0.749424 
+F1Score Macro: 0.726968 
+F1Score micro: 0.749424 
+Accuracy: 0.749424 
+
+Confusion Matrix 
+541,129
+197,434
+SAPHH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.731707 
+Precision micro: 0.750663 
+Recall Macro: 0.596026 
+Recall micro: 0.750663 
+F1Score Macro: 0.656934 
+F1Score micro: 0.750663 
+Accuracy: 0.750663 
+
+Confusion Matrix 
+193,33
+61,90
+SAPHH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.726562 
+Precision micro: 0.753316 
+Recall Macro: 0.615894 
+Recall micro: 0.753316 
+F1Score Macro: 0.666667 
+F1Score micro: 0.753316 
+Accuracy: 0.753316 
+
+Confusion Matrix 
+191,35
+58,93
+SAPHH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.715385 
+Precision micro: 0.748011 
+Recall Macro: 0.615894 
+Recall micro: 0.748011 
+F1Score Macro: 0.661922 
+F1Score micro: 0.748011 
+Accuracy: 0.748011 
+
+Confusion Matrix 
+189,37
+58,93
+SAPHH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.705036 
+Precision micro: 0.750663 
+Recall Macro: 0.649007 
+Recall micro: 0.750663 
+F1Score Macro: 0.675862 
+F1Score micro: 0.750663 
+Accuracy: 0.750663 
+
+Confusion Matrix 
+185,41
+53,98
+SAPHH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.767699 
+Precision micro: 0.769585 
+Recall Macro: 0.705285 
+Recall micro: 0.769585 
+F1Score Macro: 0.735169 
+F1Score micro: 0.769585 
+Accuracy: 0.769585 
+
+Confusion Matrix 
+488,105
+145,347
+SAPHH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.691542 
+Precision micro: 0.688479 
+Recall Macro: 0.565041 
+Recall micro: 0.688479 
+F1Score Macro: 0.621924 
+F1Score micro: 0.688479 
+Accuracy: 0.688479 
+
+Confusion Matrix 
+469,124
+214,278
+SAPHH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.755656 
+Precision micro: 0.754839 
+Recall Macro: 0.678862 
+Recall micro: 0.754839 
+F1Score Macro: 0.715203 
+F1Score micro: 0.754839 
+Accuracy: 0.754839 
+
+Confusion Matrix 
+485,108
+158,334
+SAPHH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.773034 
+Precision micro: 0.770507 
+Recall Macro: 0.699187 
+Recall micro: 0.770507 
+F1Score Macro: 0.734258 
+F1Score micro: 0.770507 
+Accuracy: 0.770507 
+
+Confusion Matrix 
+492,101
+148,344
+SAPH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.734266 
+Precision micro: 0.765432 
+Recall Macro: 0.648148 
+Recall micro: 0.765432 
+F1Score Macro: 0.688525 
+F1Score micro: 0.765432 
+Accuracy: 0.765432 
+
+Confusion Matrix 
+205,38
+57,105
+SAPH_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.712329 
+Precision micro: 0.753086 
+Recall Macro: 0.641975 
+Recall micro: 0.753086 
+F1Score Macro: 0.675325 
+F1Score micro: 0.753086 
+Accuracy: 0.753086 
+
+Confusion Matrix 
+201,42
+58,104
+SAPH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.721088 
+Precision micro: 0.760494 
+Recall Macro: 0.654321 
+Recall micro: 0.760494 
+F1Score Macro: 0.686084 
+F1Score micro: 0.760494 
+Accuracy: 0.760494 
+
+Confusion Matrix 
+202,41
+56,106
+SAPH_Month_Original_Matrix_Binary_LDA 
+Precision Macro: 0.711268 
+Precision micro: 0.748148 
+Recall Macro: 0.623457 
+Recall micro: 0.748148 
+F1Score Macro: 0.664474 
+F1Score micro: 0.748148 
+Accuracy: 0.748148 
+
+Confusion Matrix 
+202,41
+61,101
+SAPH_Week_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.787524 
+Precision micro: 0.778974 
+Recall Macro: 0.718861 
+Recall micro: 0.778974 
+F1Score Macro: 0.751628 
+F1Score micro: 0.778974 
+Accuracy: 0.778974 
+
+Confusion Matrix 
+537,109
+158,404
+SAPH_Week_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.724280 
+Precision micro: 0.715232 
+Recall Macro: 0.626335 
+Recall micro: 0.715232 
+F1Score Macro: 0.671756 
+F1Score micro: 0.715232 
+Accuracy: 0.715232 
+
+Confusion Matrix 
+512,134
+210,352
+SAPH_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.756863 
+Precision micro: 0.751656 
+Recall Macro: 0.686833 
+Recall micro: 0.751656 
+F1Score Macro: 0.720149 
+F1Score micro: 0.751656 
+Accuracy: 0.751656 
+
+Confusion Matrix 
+522,124
+176,386
+SAPH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.799205 
+Precision micro: 0.783940 
+Recall Macro: 0.715302 
+Recall micro: 0.783940 
+F1Score Macro: 0.754930 
+F1Score micro: 0.783940 
+Accuracy: 0.783940 
+
+Confusion Matrix 
+545,101
+160,402
+WS_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435
+WS_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.776786 
+Precision micro: 0.746224 
+Recall Macro: 0.673375 
+Recall micro: 0.746224 
+F1Score Macro: 0.721393 
+F1Score micro: 0.746224 
+Accuracy: 0.746224 
+
+Confusion Matrix 
+553,125
+211,435
+WS_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.776991 
+Precision micro: 0.748489 
+Recall Macro: 0.679567 
+Recall micro: 0.748489 
+F1Score Macro: 0.725021 
+F1Score micro: 0.748489 
+Accuracy: 0.748489 
+
+Confusion Matrix 
+552,126
+207,439
+WS_Original_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435

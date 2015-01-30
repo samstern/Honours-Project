@@ -1,0 +1,14 @@
+Recreated_Week_Simple_Half_Hour_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.755337 
+Precision micro: 0.774118 
+Recall Macro: 0.767947 
+Recall micro: 0.774118 
+F1Score Macro: 0.761589 
+F1Score micro: 0.774118 
+Accuracy: 0.774118 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+527,149
+139,460
+0,0

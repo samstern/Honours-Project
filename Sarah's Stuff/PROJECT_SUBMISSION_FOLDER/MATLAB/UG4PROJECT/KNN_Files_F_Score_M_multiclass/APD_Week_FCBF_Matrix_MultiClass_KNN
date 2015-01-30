@@ -1,0 +1,17 @@
+APD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.388235 
+Precision micro: 0.387567 
+Recall Macro: 0.366667 
+Recall micro: 0.387567 
+F1Score Macro: 0.377143 
+F1Score micro: 0.387567 
+Accuracy: 0.445894 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+221,71,11,28,3,4
+110,113,22,67,12,14
+29,38,17,44,6,8
+47,90,29,111,22,23
+9,22,6,23,10,3
+9,19,7,20,2,33

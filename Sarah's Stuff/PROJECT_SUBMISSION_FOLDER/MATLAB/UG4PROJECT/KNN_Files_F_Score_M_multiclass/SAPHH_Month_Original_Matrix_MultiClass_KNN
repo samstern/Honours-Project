@@ -1,0 +1,17 @@
+SAPHH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.750000 
+Precision micro: 0.633708 
+Recall Macro: 0.705882 
+Recall micro: 0.633708 
+F1Score Macro: 0.727273 
+F1Score micro: 0.633708 
+Accuracy: 0.624719 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+80,28,2,4,0,0
+15,141,6,13,4,1
+4,14,8,8,1,0
+7,34,4,32,4,3
+1,4,1,0,9,0
+1,1,1,2,0,12

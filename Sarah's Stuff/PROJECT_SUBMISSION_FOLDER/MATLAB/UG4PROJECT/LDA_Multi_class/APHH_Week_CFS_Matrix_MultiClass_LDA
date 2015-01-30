@@ -1,0 +1,16 @@
+APHH_Week_CFS_Matrix_MultiClass_LDA 
+Precision Macro: 0.539326 
+Precision micro: 0.493016 
+Recall Macro: 0.631579 
+Recall micro: 0.493016 
+F1Score Macro: 0.581818 
+F1Score micro: 0.493016 
+Accuracy: 0.493016 
+
+Confusion Matrix 
+262,43,2,9,0,0
+105,125,7,59,18,5
+20,49,24,34,10,2
+47,71,26,109,16,28
+5,7,5,15,32,6
+1,9,0,17,1,48

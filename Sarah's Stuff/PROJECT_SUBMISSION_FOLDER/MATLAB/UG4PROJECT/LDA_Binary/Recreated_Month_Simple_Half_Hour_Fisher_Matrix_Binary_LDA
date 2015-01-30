@@ -1,0 +1,12 @@
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.682540 
+Precision micro: 0.706977 
+Recall Macro: 0.500000 
+Recall micro: 0.706977 
+F1Score Macro: 0.577181 
+F1Score micro: 0.706977 
+Accuracy: 0.706977 
+
+Confusion Matrix 
+218,40
+86,86

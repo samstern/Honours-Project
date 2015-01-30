@@ -1,0 +1,18 @@
+WS_Original_Matrix_MultiClass_SVM 
+Precision Macro: 0.340206 
+Precision micro: 0.382931 
+Recall Macro: 0.185393 
+Recall micro: 0.382931 
+F1Score Macro: 0.240000 
+F1Score micro: 0.382931 
+Accuracy: 0.382931 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+286,153,28,63,9,7
+28,79,36,46,4,4
+8,21,20,50,2,3
+6,30,30,82,6,24
+5,29,22,32,7,26
+7,26,7,60,45,33
+0,0,0,0,0,0

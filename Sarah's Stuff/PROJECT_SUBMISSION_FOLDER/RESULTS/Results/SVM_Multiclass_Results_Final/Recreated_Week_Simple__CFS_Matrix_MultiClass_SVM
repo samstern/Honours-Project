@@ -1,0 +1,18 @@
+Recreated_Week_Simple__CFS_Matrix_MultiClass_SVM 
+Precision Macro: 0.744186 
+Precision micro: 0.547956 
+Recall Macro: 0.561404 
+Recall micro: 0.547956 
+F1Score Macro: 0.640000 
+F1Score micro: 0.547956 
+Accuracy: 0.547956 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+266,88,16,33,1,4
+33,116,11,42,3,5
+23,39,89,64,15,6
+4,53,11,117,8,6
+3,24,11,21,45,1
+5,12,4,28,1,64
+0,0,0,0,0,0

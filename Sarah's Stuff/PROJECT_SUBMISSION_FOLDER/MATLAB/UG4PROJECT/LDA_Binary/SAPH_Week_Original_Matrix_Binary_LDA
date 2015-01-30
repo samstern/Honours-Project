@@ -1,0 +1,12 @@
+SAPH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.799205 
+Precision micro: 0.783940 
+Recall Macro: 0.715302 
+Recall micro: 0.783940 
+F1Score Macro: 0.754930 
+F1Score micro: 0.783940 
+Accuracy: 0.783940 
+
+Confusion Matrix 
+545,101
+160,402

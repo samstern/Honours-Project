@@ -1,0 +1,14 @@
+AHD_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.694286 
+Precision micro: 0.744000 
+Recall Macro: 0.675000 
+Recall micro: 0.744000 
+F1Score Macro: 0.684507 
+F1Score micro: 0.744000 
+Accuracy: 0.744000 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+408,107
+117,243
+0,0

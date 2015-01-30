@@ -1,0 +1,12 @@
+WS_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.775401 
+Precision micro: 0.745468 
+Recall Macro: 0.673375 
+Recall micro: 0.745468 
+F1Score Macro: 0.720795 
+F1Score micro: 0.745468 
+Accuracy: 0.745468 
+
+Confusion Matrix 
+552,126
+211,435

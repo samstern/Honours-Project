@@ -1,0 +1,16 @@
+ASD_Week_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.301887 
+Precision micro: 0.420411 
+Recall Macro: 0.333333 
+Recall micro: 0.420411 
+F1Score Macro: 0.316832 
+F1Score micro: 0.420411 
+Accuracy: 0.420411 
+
+Confusion Matrix 
+285,35,0,17,1,2
+144,100,0,77,1,16
+27,50,0,63,0,3
+57,103,0,135,3,25
+7,4,0,34,0,28
+7,8,0,49,0,32

@@ -1,0 +1,12 @@
+SAPD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.710145 
+Precision micro: 0.730769 
+Recall Macro: 0.553672 
+Recall micro: 0.730769 
+F1Score Macro: 0.622222 
+F1Score micro: 0.730769 
+Accuracy: 0.730769 
+
+Confusion Matrix 
+225,40
+79,98

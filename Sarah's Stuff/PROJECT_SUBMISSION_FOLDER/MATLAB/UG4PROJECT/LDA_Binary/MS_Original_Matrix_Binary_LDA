@@ -1,0 +1,12 @@
+MS_Original_Matrix_Binary_LDA 
+Precision Macro: 0.688889 
+Precision micro: 0.709957 
+Recall Macro: 0.502703 
+Recall micro: 0.709957 
+F1Score Macro: 0.581250 
+F1Score micro: 0.709957 
+Accuracy: 0.709957 
+
+Confusion Matrix 
+235,42
+92,93

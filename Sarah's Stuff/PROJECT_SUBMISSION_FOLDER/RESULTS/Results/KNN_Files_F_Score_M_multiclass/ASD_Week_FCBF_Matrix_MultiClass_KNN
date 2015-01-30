@@ -1,0 +1,17 @@
+ASD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.518519 
+Precision micro: 0.448591 
+Recall Macro: 0.437500 
+Recall micro: 0.448591 
+F1Score Macro: 0.474576 
+F1Score micro: 0.448591 
+Accuracy: 0.494288 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+215,88,6,25,3,3
+64,161,25,67,11,10
+21,44,16,52,2,8
+36,81,28,146,17,15
+7,24,1,29,9,3
+1,12,8,33,0,42

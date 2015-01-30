@@ -1,0 +1,18 @@
+AHHD_Week_Original_Matrix_MultiClass_SVM 
+Precision Macro: 0.777778 
+Precision micro: 0.483146 
+Recall Macro: 0.857143 
+Recall micro: 0.483146 
+F1Score Macro: 0.815534 
+F1Score micro: 0.483146 
+Accuracy: 0.483146 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+166,58,11,48,3,4
+44,83,15,37,3,6
+14,11,9,6,2,1
+58,29,8,42,1,1
+0,1,0,0,2,0
+1,0,4,2,0,42
+0,0,0,0,0,0

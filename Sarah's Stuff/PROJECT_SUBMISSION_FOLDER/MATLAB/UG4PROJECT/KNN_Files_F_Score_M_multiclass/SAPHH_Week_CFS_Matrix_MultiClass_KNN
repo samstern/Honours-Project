@@ -1,0 +1,17 @@
+SAPHH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.585859 
+Precision micro: 0.616590 
+Recall Macro: 0.852941 
+Recall micro: 0.616590 
+F1Score Macro: 0.694611 
+F1Score micro: 0.616590 
+Accuracy: 0.600000 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+263,37,2,8,0,0
+48,177,17,36,1,4
+16,22,38,34,2,4
+35,48,27,117,3,32
+4,10,2,13,16,1
+4,3,0,3,0,58

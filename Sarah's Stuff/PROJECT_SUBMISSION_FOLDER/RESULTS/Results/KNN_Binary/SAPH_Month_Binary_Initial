@@ -1,0 +1,9 @@
+Original Number of features: 48 
+Number of outliers removed: 48 
+
+12 Columns Chosen by CFS : 
+ 13  17  26  31  32  33  34  36  37  41  45  46 
+6 Columns Chosen by FCBF : 
+ 34  37  45  32  26  31 
+10 Columns Chosen by Fisher : 
+ 37  18  36  35  17  34  13  20  19  12 

@@ -1,0 +1,17 @@
+AD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.700000 
+Precision micro: 0.513410 
+Recall Macro: 0.304348 
+Recall micro: 0.513410 
+F1Score Macro: 0.424242 
+F1Score micro: 0.513410 
+Accuracy: 0.507663 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+74,46,0,5,0,0
+26,149,0,31,4,2
+2,28,0,8,2,0
+8,57,0,32,5,1
+2,4,0,7,6,0
+1,10,0,5,0,7

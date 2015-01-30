@@ -1,0 +1,13 @@
+SAPH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.715116 
+Precision micro: 0.782716 
+Recall Macro: 0.759259 
+Recall micro: 0.782716 
+F1Score Macro: 0.736527 
+F1Score micro: 0.782716 
+Accuracy: 0.750617 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+194,49
+39,123

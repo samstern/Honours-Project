@@ -1,0 +1,18 @@
+ASD_Week_Fisher_Matrix_MultiClass_SVM 
+Precision Macro: 0.333333 
+Precision micro: 0.380807 
+Recall Macro: 0.264463 
+Recall micro: 0.380807 
+F1Score Macro: 0.294931 
+F1Score micro: 0.380807 
+Accuracy: 0.380807 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+280,140,25,57,5,7
+40,81,42,69,3,4
+2,33,19,41,5,2
+5,38,28,66,8,17
+11,21,24,63,22,34
+2,25,5,27,30,32
+0,0,0,0,0,0

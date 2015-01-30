@@ -1,0 +1,12 @@
+SAPD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.766423 
+Precision micro: 0.739431 
+Recall Macro: 0.665610 
+Recall micro: 0.739431 
+F1Score Macro: 0.712468 
+F1Score micro: 0.739431 
+Accuracy: 0.739431 
+
+Confusion Matrix 
+542,128
+211,420

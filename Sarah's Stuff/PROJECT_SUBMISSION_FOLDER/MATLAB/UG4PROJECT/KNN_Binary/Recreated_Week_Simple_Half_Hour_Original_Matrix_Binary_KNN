@@ -1,0 +1,13 @@
+Recreated_Week_Simple_Half_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.834163 
+Precision micro: 0.838431 
+Recall Macro: 0.825944 
+Recall micro: 0.838431 
+F1Score Macro: 0.830033 
+F1Score micro: 0.838431 
+Accuracy: 0.814118 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+566,100
+106,503

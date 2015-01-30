@@ -1,0 +1,13 @@
+Recreated_Month_Simple_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.776316 
+Precision micro: 0.796253 
+Recall Macro: 0.690058 
+Recall micro: 0.796253 
+F1Score Macro: 0.730650 
+F1Score micro: 0.796253 
+Accuracy: 0.796253 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+222,34
+53,118

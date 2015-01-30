@@ -1,0 +1,13 @@
+ASD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.680723 
+Precision micro: 0.734831 
+Recall Macro: 0.634831 
+Recall micro: 0.734831 
+F1Score Macro: 0.656977 
+F1Score micro: 0.734831 
+Accuracy: 0.716854 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+214,53
+65,113

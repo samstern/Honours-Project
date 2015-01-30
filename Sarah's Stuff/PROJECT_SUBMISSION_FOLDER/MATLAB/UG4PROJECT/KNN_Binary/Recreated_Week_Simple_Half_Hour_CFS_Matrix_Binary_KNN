@@ -1,0 +1,13 @@
+Recreated_Week_Simple_Half_Hour_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.858995 
+Precision micro: 0.869804 
+Recall Macro: 0.870279 
+Recall micro: 0.869804 
+F1Score Macro: 0.864600 
+F1Score micro: 0.869804 
+Accuracy: 0.825098 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+579,87
+79,530

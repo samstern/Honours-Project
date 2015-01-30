@@ -1,0 +1,16 @@
+WS_Original_Matrix_MultiClass_LDA 
+Precision Macro: 0.354839 
+Precision micro: 0.441843 
+Recall Macro: 0.340206 
+Recall micro: 0.441843 
+F1Score Macro: 0.347368 
+F1Score micro: 0.441843 
+Accuracy: 0.441843 
+
+Confusion Matrix 
+287,31,0,17,0,5
+157,88,0,87,0,6
+28,44,0,68,0,3
+64,63,0,177,0,29
+9,4,0,43,0,17
+7,4,0,53,0,33

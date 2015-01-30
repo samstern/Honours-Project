@@ -1,0 +1,17 @@
+SAPD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.590909 
+Precision micro: 0.535156 
+Recall Macro: 0.565217 
+Recall micro: 0.535156 
+F1Score Macro: 0.577778 
+F1Score micro: 0.535156 
+Accuracy: 0.525391 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+70,47,1,4,1,1
+15,160,5,25,3,3
+2,25,2,10,0,1
+8,57,0,23,5,2
+1,10,0,0,6,2
+0,6,0,3,1,13

@@ -1,0 +1,8 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Introduction}{2}
+\contentsline {section}{\numberline {1.2}Smart Meters}{2}
+\contentsline {section}{\numberline {1.3}Related Work}{2}
+\contentsline {section}{\numberline {1.4}This Project}{2}
+\contentsline {chapter}{\numberline {2}Data}{3}
+\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{4}
+\contentsline {section}{\numberline {3.1}Building Features from Energy Readings}{4}

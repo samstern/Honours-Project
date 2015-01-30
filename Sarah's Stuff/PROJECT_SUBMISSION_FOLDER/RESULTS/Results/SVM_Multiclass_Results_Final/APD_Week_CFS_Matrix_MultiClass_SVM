@@ -1,0 +1,18 @@
+APD_Week_CFS_Matrix_MultiClass_SVM 
+Precision Macro: 0.611111 
+Precision micro: 0.428243 
+Recall Macro: 0.379310 
+Recall micro: 0.428243 
+F1Score Macro: 0.468085 
+F1Score micro: 0.428243 
+Accuracy: 0.428243 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+266,120,26,54,6,5
+39,73,23,45,5,5
+12,33,31,45,5,6
+13,55,34,107,8,3
+4,38,15,40,26,16
+4,19,13,31,23,55
+0,0,0,0,0,0

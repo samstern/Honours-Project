@@ -1,0 +1,13 @@
+SAHD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.817073 
+Precision micro: 0.836364 
+Recall Macro: 0.761364 
+Recall micro: 0.836364 
+F1Score Macro: 0.788235 
+F1Score micro: 0.836364 
+Accuracy: 0.781818 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+117,15
+21,67

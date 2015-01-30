@@ -1,0 +1,12 @@
+SAHHD_Month_FCBF_Matrix_Binary_LDA 
+Precision Macro: 0.781818 
+Precision micro: 0.800000 
+Recall Macro: 0.693548 
+Recall micro: 0.800000 
+F1Score Macro: 0.735043 
+F1Score micro: 0.800000 
+Accuracy: 0.800000 
+
+Confusion Matrix 
+81,12
+19,43

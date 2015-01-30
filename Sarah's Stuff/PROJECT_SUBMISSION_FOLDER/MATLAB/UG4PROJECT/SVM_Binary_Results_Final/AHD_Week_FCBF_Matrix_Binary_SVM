@@ -1,0 +1,14 @@
+AHD_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.568571 
+Precision micro: 0.684571 
+Recall Macro: 0.614198 
+Recall micro: 0.684571 
+F1Score Macro: 0.590504 
+F1Score micro: 0.684571 
+Accuracy: 0.684571 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+400,151
+125,199
+0,0

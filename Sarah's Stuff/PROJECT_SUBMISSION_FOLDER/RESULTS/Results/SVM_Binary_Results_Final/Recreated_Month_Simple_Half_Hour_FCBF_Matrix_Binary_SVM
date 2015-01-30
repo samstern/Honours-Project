@@ -1,0 +1,14 @@
+Recreated_Month_Simple_Half_Hour_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.686047 
+Precision micro: 0.713953 
+Recall Macro: 0.631016 
+Recall micro: 0.713953 
+F1Score Macro: 0.657382 
+F1Score micro: 0.713953 
+Accuracy: 0.713953 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+189,54
+69,118
+0,0

@@ -1,0 +1,14 @@
+AD_Month_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.664865 
+Precision micro: 0.727273 
+Recall Macro: 0.657754 
+Recall micro: 0.727273 
+F1Score Macro: 0.661290 
+F1Score micro: 0.727273 
+Accuracy: 0.727273 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+213,62
+64,123
+0,0

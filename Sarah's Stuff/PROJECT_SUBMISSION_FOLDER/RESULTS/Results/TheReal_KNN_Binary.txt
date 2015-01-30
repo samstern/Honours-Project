@@ -1,0 +1,1961 @@
+Original Number of features: 1 
+Number of outliers removed: 10 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.639344 
+Precision micro: 0.709957 
+Recall Macro: 0.632432 
+Recall micro: 0.709957 
+F1Score Macro: 0.635870 
+F1Score micro: 0.709957 
+Accuracy: 0.703463 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+211,66
+68,117
+AD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.615789 
+Precision micro: 0.694805 
+Recall Macro: 0.632432 
+Recall micro: 0.694805 
+F1Score Macro: 0.624000 
+F1Score micro: 0.694805 
+Accuracy: 0.690476 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+204,73
+68,117
+AD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.630769 
+Precision micro: 0.709957 
+Recall Macro: 0.664865 
+Recall micro: 0.709957 
+F1Score Macro: 0.647368 
+F1Score micro: 0.709957 
+Accuracy: 0.701299 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+205,72
+62,123
+AD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.633880 
+Precision micro: 0.705628 
+Recall Macro: 0.627027 
+Recall micro: 0.705628 
+F1Score Macro: 0.630435 
+F1Score micro: 0.705628 
+Accuracy: 0.699134 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+210,67
+69,116
+Original Number of features: 1 
+Number of outliers removed: 27 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.764241 
+Precision micro: 0.764350 
+Recall Macro: 0.747678 
+Recall micro: 0.764350 
+F1Score Macro: 0.755869 
+F1Score micro: 0.764350 
+Accuracy: 0.763595 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+529,149
+163,483
+AD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.762871 
+Precision micro: 0.766616 
+Recall Macro: 0.756966 
+Recall micro: 0.766616 
+F1Score Macro: 0.759907 
+F1Score micro: 0.766616 
+Accuracy: 0.762085 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+526,152
+157,489
+AD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.763323 
+Precision micro: 0.765861 
+Recall Macro: 0.753870 
+Recall micro: 0.765861 
+F1Score Macro: 0.758567 
+F1Score micro: 0.765861 
+Accuracy: 0.759819 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+527,151
+159,487
+AD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.753894 
+Precision micro: 0.758308 
+Recall Macro: 0.749226 
+Recall micro: 0.758308 
+F1Score Macro: 0.751553 
+F1Score micro: 0.758308 
+Accuracy: 0.753776 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+520,158
+162,484
+Original Number of features: 168 
+Number of outliers removed: 105 
+
+10 Columns Chosen by CFS : 
+ 8  18  20  32  65  71  89  108  130  131 
+2 Columns Chosen by FCBF : 
+ 8  18 
+34 Columns Chosen by Fisher : 
+ 18  66  65  90  114  17  133  42  92  89  20  164  45  115  130  41  67  46  70  68  108  93  138  113  116  19  131  167  165  71  166  69  117  43 
+AHD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.797980 
+Precision micro: 0.774481 
+Recall Macro: 0.585185 
+Recall micro: 0.774481 
+F1Score Macro: 0.675214 
+F1Score micro: 0.774481 
+Accuracy: 0.759644 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+182,20
+56,79
+AHD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.678261 
+Precision micro: 0.721068 
+Recall Macro: 0.577778 
+Recall micro: 0.721068 
+F1Score Macro: 0.624000 
+F1Score micro: 0.721068 
+Accuracy: 0.729970 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+165,37
+57,78
+AHD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.772152 
+Precision micro: 0.727003 
+Recall Macro: 0.451852 
+Recall micro: 0.727003 
+F1Score Macro: 0.570093 
+F1Score micro: 0.727003 
+Accuracy: 0.709199 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+184,18
+74,61
+AHD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.742574 
+Precision micro: 0.744807 
+Recall Macro: 0.555556 
+Recall micro: 0.744807 
+F1Score Macro: 0.635593 
+F1Score micro: 0.744807 
+Accuracy: 0.747774 
+Number of Neighbours: 2 
+
+Confusion Matrix 
+176,26
+60,75
+Original Number of features: 168 
+Number of outliers removed: 449 
+
+26 Columns Chosen by CFS : 
+ 18  19  20  25  28  32  42  45  66  67  70  71  77  80  90  92  93  94  95  104  111  114  130  164  165  167 
+1 Columns Chosen by FCBF : 
+ 94 
+34 Columns Chosen by Fisher : 
+ 92  18  93  70  45  42  66  20  114  95  71  19  113  90  165  17  94  142  167  65  46  118  164  69  41  96  32  67  44  117  89  115  43  166 
+AHD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.779923 
+Precision micro: 0.765714 
+Recall Macro: 0.577143 
+Recall micro: 0.765714 
+F1Score Macro: 0.663383 
+F1Score micro: 0.765714 
+Accuracy: 0.769143 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+468,57
+148,202
+AHD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.635593 
+Precision micro: 0.709714 
+Recall Macro: 0.642857 
+Recall micro: 0.709714 
+F1Score Macro: 0.639205 
+F1Score micro: 0.709714 
+Accuracy: 0.697143 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+396,129
+125,225
+AHD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.701961 
+Precision micro: 0.717714 
+Recall Macro: 0.511429 
+Recall micro: 0.717714 
+F1Score Macro: 0.591736 
+F1Score micro: 0.717714 
+Accuracy: 0.713143 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+449,76
+171,179
+AHD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.727642 
+Precision micro: 0.728000 
+Recall Macro: 0.511429 
+Recall micro: 0.728000 
+F1Score Macro: 0.600671 
+F1Score micro: 0.728000 
+Accuracy: 0.720000 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+458,67
+171,179
+Original Number of features: 336 
+Number of outliers removed: 164 
+
+21 Columns Chosen by CFS : 
+ 15  16  35  63  64  66  71  82  92  112  129  145  178  179  216  260  261  265  300  307  323 
+6 Columns Chosen by FCBF : 
+ 64  179  129  260  216  300 
+67 Columns Chosen by Fisher : 
+ 179  35  64  260  208  87  16  34  82  129  178  183  228  227  180  181  226  89  37  83  229  186  91  33  328  265  36  224  313  131  185  160  90  40  263  225  261  329  222  135  141  184  113  92  41  88  264  327  93  140  84  232  223  235  132  32  30  130  236  63  80  234  139  283  323  216  17 
+AHHD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.800000 
+Precision micro: 0.779026 
+Recall Macro: 0.598131 
+Recall micro: 0.779026 
+F1Score Macro: 0.684492 
+F1Score micro: 0.779026 
+Accuracy: 0.764045 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+144,16
+43,64
+AHHD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.796117 
+Precision micro: 0.827715 
+Recall Macro: 0.766355 
+Recall micro: 0.827715 
+F1Score Macro: 0.780952 
+F1Score micro: 0.827715 
+Accuracy: 0.827715 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+139,21
+25,82
+AHHD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.675676 
+Precision micro: 0.696629 
+Recall Macro: 0.467290 
+Recall micro: 0.696629 
+F1Score Macro: 0.552486 
+F1Score micro: 0.696629 
+Accuracy: 0.677903 
+Number of Neighbours: 2 
+
+Confusion Matrix 
+136,24
+57,50
+AHHD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.767123 
+Precision micro: 0.745318 
+Recall Macro: 0.523364 
+Recall micro: 0.745318 
+F1Score Macro: 0.622222 
+F1Score micro: 0.745318 
+Accuracy: 0.734082 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+143,17
+51,56
+Original Number of features: 336 
+Number of outliers removed: 639 
+
+21 Columns Chosen by CFS : 
+ 15  16  33  35  40  72  80  82  89  113  159  160  183  184  188  189  190  225  231  234  333 
+1 Columns Chosen by FCBF : 
+ 188 
+67 Columns Chosen by Fisher : 
+ 183  16  64  190  334  225  82  90  191  184  234  226  188  35  333  332  330  160  187  236  185  15  329  89  283  141  229  220  40  328  208  137  224  189  33  140  235  335  83  41  138  222  91  135  193  63  237  69  88  80  227  65  71  139  180  84  93  87  143  331  39  186  161  92  286  85  17 
+AHHD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.725581 
+Precision micro: 0.756888 
+Recall Macro: 0.631579 
+Recall micro: 0.756888 
+F1Score Macro: 0.675325 
+F1Score micro: 0.756888 
+Accuracy: 0.752026 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+311,59
+91,156
+AHHD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.698347 
+Precision micro: 0.755267 
+Recall Macro: 0.684211 
+Recall micro: 0.755267 
+F1Score Macro: 0.691207 
+F1Score micro: 0.755267 
+Accuracy: 0.727715 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+297,73
+78,169
+AHHD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.730539 
+Precision micro: 0.724473 
+Recall Macro: 0.493927 
+Recall micro: 0.724473 
+F1Score Macro: 0.589372 
+F1Score micro: 0.724473 
+Accuracy: 0.685575 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+325,45
+125,122
+AHHD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.666667 
+Precision micro: 0.706645 
+Recall Macro: 0.534413 
+Recall micro: 0.706645 
+F1Score Macro: 0.593258 
+F1Score micro: 0.706645 
+Accuracy: 0.717990 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+304,66
+115,132
+Original Number of features: 1 
+Number of outliers removed: 10 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AHH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.635417 
+Precision micro: 0.712121 
+Recall Macro: 0.659459 
+Recall micro: 0.712121 
+F1Score Macro: 0.647215 
+F1Score micro: 0.712121 
+Accuracy: 0.720779 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+207,70
+63,122
+AHH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.643243 
+Precision micro: 0.714286 
+Recall Macro: 0.643243 
+Recall micro: 0.714286 
+F1Score Macro: 0.643243 
+F1Score micro: 0.714286 
+Accuracy: 0.712121 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+211,66
+66,119
+AHH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.630435 
+Precision micro: 0.703463 
+Recall Macro: 0.627027 
+Recall micro: 0.703463 
+F1Score Macro: 0.628726 
+F1Score micro: 0.703463 
+Accuracy: 0.705628 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+209,68
+69,116
+AHH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.638298 
+Precision micro: 0.712121 
+Recall Macro: 0.648649 
+Recall micro: 0.712121 
+F1Score Macro: 0.643432 
+F1Score micro: 0.712121 
+Accuracy: 0.712121 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+209,68
+65,120
+Original Number of features: 1 
+Number of outliers removed: 27 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AHH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.763955 
+Precision micro: 0.762085 
+Recall Macro: 0.741486 
+Recall micro: 0.762085 
+F1Score Macro: 0.752553 
+F1Score micro: 0.762085 
+Accuracy: 0.759063 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+530,148
+167,479
+AHH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.755486 
+Precision micro: 0.758308 
+Recall Macro: 0.746130 
+Recall micro: 0.758308 
+F1Score Macro: 0.750779 
+F1Score micro: 0.758308 
+Accuracy: 0.759819 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+522,156
+164,482
+AHH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.763975 
+Precision micro: 0.768882 
+Recall Macro: 0.761610 
+Recall micro: 0.768882 
+F1Score Macro: 0.762791 
+F1Score micro: 0.768882 
+Accuracy: 0.762840 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+526,152
+154,492
+AHH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.762500 
+Precision micro: 0.765861 
+Recall Macro: 0.755418 
+Recall micro: 0.765861 
+F1Score Macro: 0.758942 
+F1Score micro: 0.765861 
+Accuracy: 0.757553 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+526,152
+158,488
+Original Number of features: 1 
+Number of outliers removed: 10 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.659459 
+Precision micro: 0.727273 
+Recall Macro: 0.659459 
+Recall micro: 0.727273 
+F1Score Macro: 0.659459 
+F1Score micro: 0.727273 
+Accuracy: 0.722944 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+214,63
+63,122
+AH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.663043 
+Precision micro: 0.729437 
+Recall Macro: 0.659459 
+Recall micro: 0.729437 
+F1Score Macro: 0.661247 
+F1Score micro: 0.729437 
+Accuracy: 0.731602 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+215,62
+63,122
+AH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.663158 
+Precision micro: 0.733766 
+Recall Macro: 0.681081 
+Recall micro: 0.733766 
+F1Score Macro: 0.672000 
+F1Score micro: 0.733766 
+Accuracy: 0.733766 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+213,64
+59,126
+AH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.661376 
+Precision micro: 0.731602 
+Recall Macro: 0.675676 
+Recall micro: 0.731602 
+F1Score Macro: 0.668449 
+F1Score micro: 0.731602 
+Accuracy: 0.733766 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+213,64
+60,125
+Original Number of features: 1 
+Number of outliers removed: 27 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+AH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.761830 
+Precision micro: 0.762840 
+Recall Macro: 0.747678 
+Recall micro: 0.762840 
+F1Score Macro: 0.754688 
+F1Score micro: 0.762840 
+Accuracy: 0.758308 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+527,151
+163,483
+AH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.760563 
+Precision micro: 0.763595 
+Recall Macro: 0.752322 
+Recall micro: 0.763595 
+F1Score Macro: 0.756420 
+F1Score micro: 0.763595 
+Accuracy: 0.762840 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+525,153
+160,486
+AH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.757576 
+Precision micro: 0.756042 
+Recall Macro: 0.735294 
+Recall micro: 0.756042 
+F1Score Macro: 0.746269 
+F1Score micro: 0.756042 
+Accuracy: 0.756042 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+526,152
+171,475
+AH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.763867 
+Precision micro: 0.763595 
+Recall Macro: 0.746130 
+Recall micro: 0.763595 
+F1Score Macro: 0.754894 
+F1Score micro: 0.763595 
+Accuracy: 0.762840 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+529,149
+164,482
+Original Number of features: 7 
+Number of outliers removed: 18 
+
+4 Columns Chosen by CFS : 
+ 1  3  4  6 
+1 Columns Chosen by FCBF : 
+ 6 
+1 Columns Chosen by Fisher : 
+ 7 
+APD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.687898 
+Precision micro: 0.732584 
+Recall Macro: 0.606742 
+Recall micro: 0.732584 
+F1Score Macro: 0.644776 
+F1Score micro: 0.732584 
+Accuracy: 0.719101 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+218,49
+70,108
+APD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.620690 
+Precision micro: 0.694382 
+Recall Macro: 0.606742 
+Recall micro: 0.694382 
+F1Score Macro: 0.613636 
+F1Score micro: 0.694382 
+Accuracy: 0.680899 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+201,66
+70,108
+APD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.624242 
+Precision micro: 0.692135 
+Recall Macro: 0.578652 
+Recall micro: 0.692135 
+F1Score Macro: 0.600583 
+F1Score micro: 0.692135 
+Accuracy: 0.694382 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+205,62
+75,103
+APD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.733333 
+Precision micro: 0.757303 
+Recall Macro: 0.617978 
+Recall micro: 0.757303 
+F1Score Macro: 0.670732 
+F1Score micro: 0.757303 
+Accuracy: 0.714607 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+227,40
+68,110
+Original Number of features: 7 
+Number of outliers removed: 48 
+
+7 Columns Chosen by CFS : 
+ 1  2  3  4  5  6  7 
+1 Columns Chosen by FCBF : 
+ 3 
+1 Columns Chosen by Fisher : 
+ 5 
+APD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.780576 
+Precision micro: 0.758250 
+Recall Macro: 0.692185 
+Recall micro: 0.758250 
+F1Score Macro: 0.733728 
+F1Score micro: 0.758250 
+Accuracy: 0.754413 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+554,122
+193,434
+APD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.722561 
+Precision micro: 0.742901 
+Recall Macro: 0.755981 
+Recall micro: 0.742901 
+F1Score Macro: 0.738893 
+F1Score micro: 0.742901 
+Accuracy: 0.742134 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+494,182
+153,474
+APD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.709524 
+Precision micro: 0.721412 
+Recall Macro: 0.712919 
+Recall micro: 0.721412 
+F1Score Macro: 0.711217 
+F1Score micro: 0.721412 
+Accuracy: 0.709133 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+493,183
+180,447
+APD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.768271 
+Precision micro: 0.749808 
+Recall Macro: 0.687400 
+Recall micro: 0.749808 
+F1Score Macro: 0.725589 
+F1Score micro: 0.749808 
+Accuracy: 0.753645 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+546,130
+196,431
+Original Number of features: 48 
+Number of outliers removed: 51 
+
+11 Columns Chosen by CFS : 
+ 14  16  17  19  34  35  36  39  40  44  47 
+1 Columns Chosen by FCBF : 
+ 34 
+10 Columns Chosen by Fisher : 
+ 35  34  25  36  33  39  37  40  41  38 
+APHH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.668571 
+Precision micro: 0.741007 
+Recall Macro: 0.700599 
+Recall micro: 0.741007 
+F1Score Macro: 0.684211 
+F1Score micro: 0.741007 
+Accuracy: 0.714628 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+192,58
+50,117
+APHH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.640449 
+Precision micro: 0.719424 
+Recall Macro: 0.682635 
+Recall micro: 0.719424 
+F1Score Macro: 0.660870 
+F1Score micro: 0.719424 
+Accuracy: 0.719424 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+186,64
+53,114
+APHH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.676471 
+Precision micro: 0.743405 
+Recall Macro: 0.688623 
+Recall micro: 0.743405 
+F1Score Macro: 0.682493 
+F1Score micro: 0.743405 
+Accuracy: 0.762590 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+195,55
+52,115
+APHH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.666667 
+Precision micro: 0.733813 
+Recall Macro: 0.670659 
+Recall micro: 0.733813 
+F1Score Macro: 0.668657 
+F1Score micro: 0.733813 
+Accuracy: 0.757794 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+194,56
+55,112
+Original Number of features: 48 
+Number of outliers removed: 134 
+
+14 Columns Chosen by CFS : 
+ 15  16  18  26  34  35  36  39  40  42  44  45  46  47 
+1 Columns Chosen by FCBF : 
+ 45 
+10 Columns Chosen by Fisher : 
+ 35  36  34  33  37  39  41  40  25  32 
+APHH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.788104 
+Precision micro: 0.776500 
+Recall Macro: 0.728522 
+Recall micro: 0.776500 
+F1Score Macro: 0.757143 
+F1Score micro: 0.776500 
+Accuracy: 0.771569 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+521,114
+158,424
+APHH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.688088 
+Precision micro: 0.718981 
+Recall Macro: 0.754296 
+Recall micro: 0.718981 
+F1Score Macro: 0.719672 
+F1Score micro: 0.718981 
+Accuracy: 0.719803 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+436,199
+143,439
+APHH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.766667 
+Precision micro: 0.771569 
+Recall Macro: 0.750859 
+Recall micro: 0.771569 
+F1Score Macro: 0.758681 
+F1Score micro: 0.771569 
+Accuracy: 0.769926 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+502,133
+145,437
+APHH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.858351 
+Precision micro: 0.800329 
+Recall Macro: 0.697595 
+Recall micro: 0.800329 
+F1Score Macro: 0.769668 
+F1Score micro: 0.800329 
+Accuracy: 0.783895 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+568,67
+176,406
+Original Number of features: 24 
+Number of outliers removed: 27 
+
+6 Columns Chosen by CFS : 
+ 8  12  17  18  20  23 
+1 Columns Chosen by FCBF : 
+ 17 
+5 Columns Chosen by Fisher : 
+ 18  17  19  13  20 
+APH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.681081 
+Precision micro: 0.752273 
+Recall Macro: 0.715909 
+Recall micro: 0.752273 
+F1Score Macro: 0.698061 
+F1Score micro: 0.752273 
+Accuracy: 0.765909 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+205,59
+50,126
+APH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.688525 
+Precision micro: 0.756818 
+Recall Macro: 0.715909 
+Recall micro: 0.756818 
+F1Score Macro: 0.701950 
+F1Score micro: 0.756818 
+Accuracy: 0.759091 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+207,57
+50,126
+APH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.681564 
+Precision micro: 0.747727 
+Recall Macro: 0.693182 
+Recall micro: 0.747727 
+F1Score Macro: 0.687324 
+F1Score micro: 0.747727 
+Accuracy: 0.756818 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+207,57
+54,122
+APH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.730994 
+Precision micro: 0.779545 
+Recall Macro: 0.710227 
+Recall micro: 0.779545 
+F1Score Macro: 0.720461 
+F1Score micro: 0.779545 
+Accuracy: 0.763636 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+218,46
+51,125
+Original Number of features: 24 
+Number of outliers removed: 77 
+
+11 Columns Chosen by CFS : 
+ 1  8  10  13  17  18  19  20  21  22  23 
+1 Columns Chosen by FCBF : 
+ 22 
+5 Columns Chosen by Fisher : 
+ 18  17  20  19  21 
+APH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.793043 
+Precision micro: 0.784929 
+Recall Macro: 0.746318 
+Recall micro: 0.784929 
+F1Score Macro: 0.768971 
+F1Score micro: 0.784929 
+Accuracy: 0.775510 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+544,119
+155,456
+APH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.705882 
+Precision micro: 0.740188 
+Recall Macro: 0.785597 
+Recall micro: 0.740188 
+F1Score Macro: 0.743610 
+F1Score micro: 0.740188 
+Accuracy: 0.741758 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+463,200
+131,480
+APH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.756933 
+Precision micro: 0.767661 
+Recall Macro: 0.759411 
+Recall micro: 0.767661 
+F1Score Macro: 0.758170 
+F1Score micro: 0.767661 
+Accuracy: 0.765306 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+514,149
+147,464
+APH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.823630 
+Precision micro: 0.817111 
+Recall Macro: 0.787234 
+Recall micro: 0.817111 
+F1Score Macro: 0.805021 
+F1Score micro: 0.817111 
+Accuracy: 0.792779 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+560,103
+130,481
+APH_Week_Original_Matrix_MultiClass_SVM 
+Precision Macro: 0.623529 
+Precision micro: 0.490581 
+Recall Macro: 0.460870 
+Recall micro: 0.490581 
+F1Score Macro: 0.530000 
+F1Score micro: 0.490581 
+Accuracy: 0.490581 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+269,95,15,47,2,1
+43,119,29,55,9,10
+12,42,56,52,9,6
+4,49,26,88,9,10
+2,16,10,29,40,5
+1,11,5,42,3,53
+0,0,0,0,0,0
+Original Number of features: 2 
+Number of outliers removed: 19 
+
+2 Columns Chosen by CFS : 
+ 1  2 
+1 Columns Chosen by FCBF : 
+ 1 
+2 Columns Chosen by Fisher : 
+ 1  2 
+ASD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.715232 
+Precision micro: 0.746067 
+Recall Macro: 0.606742 
+Recall micro: 0.746067 
+F1Score Macro: 0.656535 
+F1Score micro: 0.746067 
+Accuracy: 0.725843 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+224,43
+70,108
+ASD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.656977 
+Precision micro: 0.721348 
+Recall Macro: 0.634831 
+Recall micro: 0.721348 
+F1Score Macro: 0.645714 
+F1Score micro: 0.721348 
+Accuracy: 0.719101 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+208,59
+65,113
+ASD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.680723 
+Precision micro: 0.734831 
+Recall Macro: 0.634831 
+Recall micro: 0.734831 
+F1Score Macro: 0.656977 
+F1Score micro: 0.734831 
+Accuracy: 0.716854 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+214,53
+65,113
+ASD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.696203 
+Precision micro: 0.739326 
+Recall Macro: 0.617978 
+Recall micro: 0.739326 
+F1Score Macro: 0.654762 
+F1Score micro: 0.739326 
+Accuracy: 0.725843 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+219,48
+68,110
+Original Number of features: 2 
+Number of outliers removed: 38 
+
+2 Columns Chosen by CFS : 
+ 1  2 
+1 Columns Chosen by FCBF : 
+ 1 
+2 Columns Chosen by Fisher : 
+ 1  2 
+ASD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.752672 
+Precision micro: 0.768469 
+Recall Macro: 0.776378 
+Recall micro: 0.768469 
+F1Score Macro: 0.764341 
+F1Score micro: 0.768469 
+Accuracy: 0.773800 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+516,162
+142,493
+ASD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.763371 
+Precision micro: 0.763899 
+Recall Macro: 0.741732 
+Recall micro: 0.763899 
+F1Score Macro: 0.752396 
+F1Score micro: 0.763899 
+Accuracy: 0.757807 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+532,146
+164,471
+ASD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.756173 
+Precision micro: 0.769231 
+Recall Macro: 0.771654 
+Recall micro: 0.769231 
+F1Score Macro: 0.763835 
+F1Score micro: 0.769231 
+Accuracy: 0.770754 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+520,158
+145,490
+ASD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.762195 
+Precision micro: 0.778370 
+Recall Macro: 0.787402 
+Recall micro: 0.778370 
+F1Score Macro: 0.774593 
+F1Score micro: 0.778370 
+Accuracy: 0.766184 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+522,156
+135,500
+Original Number of features: 1 
+Number of outliers removed: 9 
+
+1 Columns Chosen by CFS : 
+ 1 
+1 Columns Chosen by FCBF : 
+ 1 
+1 Columns Chosen by Fisher : 
+ 1 
+MS_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.681818 
+Precision micro: 0.738095 
+Recall Macro: 0.648649 
+Recall micro: 0.738095 
+F1Score Macro: 0.664820 
+F1Score micro: 0.738095 
+Accuracy: 0.725108 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+221,56
+65,120
+MS_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.666667 
+Precision micro: 0.731602 
+Recall Macro: 0.659459 
+Recall micro: 0.731602 
+F1Score Macro: 0.663043 
+F1Score micro: 0.731602 
+Accuracy: 0.740260 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+216,61
+63,122
+MS_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.664804 
+Precision micro: 0.727273 
+Recall Macro: 0.643243 
+Recall micro: 0.727273 
+F1Score Macro: 0.653846 
+F1Score micro: 0.727273 
+Accuracy: 0.738095 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+217,60
+66,119
+MS_Original_Matrix_Binary_KNN 
+Precision Macro: 0.659218 
+Precision micro: 0.722944 
+Recall Macro: 0.637838 
+Recall micro: 0.722944 
+F1Score Macro: 0.648352 
+F1Score micro: 0.722944 
+Accuracy: 0.746753 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+216,61
+67,118
+Original Number of features: 26 
+Number of outliers removed: 30 
+
+11 Columns Chosen by CFS : 
+ 1  4  5  10  13  15  16  17  18  22  26 
+3 Columns Chosen by FCBF : 
+ 17  15  16 
+5 Columns Chosen by Fisher : 
+ 18  4  1  2  3 
+Recreated_Month_Simple_Half_Hour_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.751479 
+Precision micro: 0.797674 
+Recall Macro: 0.738372 
+Recall micro: 0.797674 
+F1Score Macro: 0.744868 
+F1Score micro: 0.797674 
+Accuracy: 0.806977 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+216,42
+45,127
+Recreated_Month_Simple_Half_Hour_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.738562 
+Precision micro: 0.769767 
+Recall Macro: 0.656977 
+Recall micro: 0.769767 
+F1Score Macro: 0.695385 
+F1Score micro: 0.769767 
+Accuracy: 0.772093 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+218,40
+59,113
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.715909 
+Precision micro: 0.776744 
+Recall Macro: 0.732558 
+Recall micro: 0.776744 
+F1Score Macro: 0.724138 
+F1Score micro: 0.776744 
+Accuracy: 0.760465 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+208,50
+46,126
+Recreated_Month_Simple_Half_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.766871 
+Precision micro: 0.802326 
+Recall Macro: 0.726744 
+Recall micro: 0.802326 
+F1Score Macro: 0.746269 
+F1Score micro: 0.802326 
+Accuracy: 0.774419 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+220,38
+47,125
+Original Number of features: 26 
+Number of outliers removed: 30 
+
+7 Columns Chosen by CFS : 
+ 1  4  5  13  17  18  26 
+4 Columns Chosen by FCBF : 
+ 18  26  13  16 
+5 Columns Chosen by Fisher : 
+ 18  4  1  2  3 
+Recreated_Month_Simple_Hour_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.761628 
+Precision micro: 0.810304 
+Recall Macro: 0.766082 
+Recall micro: 0.810304 
+F1Score Macro: 0.763848 
+F1Score micro: 0.810304 
+Accuracy: 0.805621 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+215,41
+40,131
+Recreated_Month_Simple_Hour_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.777778 
+Precision micro: 0.798595 
+Recall Macro: 0.695906 
+Recall micro: 0.798595 
+F1Score Macro: 0.734568 
+F1Score micro: 0.798595 
+Accuracy: 0.775176 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+222,34
+52,119
+Recreated_Month_Simple_Hour_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.774390 
+Precision micro: 0.810304 
+Recall Macro: 0.742690 
+Recall micro: 0.810304 
+F1Score Macro: 0.758209 
+F1Score micro: 0.810304 
+Accuracy: 0.791569 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+219,37
+44,127
+Recreated_Month_Simple_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.776316 
+Precision micro: 0.796253 
+Recall Macro: 0.690058 
+Recall micro: 0.796253 
+F1Score Macro: 0.730650 
+F1Score micro: 0.796253 
+Accuracy: 0.796253 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+222,34
+53,118
+Original Number of features: 26 
+Number of outliers removed: 76 
+
+9 Columns Chosen by CFS : 
+ 1  2  4  5  13  17  18  24  26 
+3 Columns Chosen by FCBF : 
+ 1  26  13 
+5 Columns Chosen by Fisher : 
+ 4  1  2  3  18 
+Recreated_Week_Simple_Half_Hour_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.858995 
+Precision micro: 0.869804 
+Recall Macro: 0.870279 
+Recall micro: 0.869804 
+F1Score Macro: 0.864600 
+F1Score micro: 0.869804 
+Accuracy: 0.825098 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+579,87
+79,530
+Recreated_Week_Simple_Half_Hour_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.820679 
+Precision micro: 0.833725 
+Recall Macro: 0.834154 
+Recall micro: 0.833725 
+F1Score Macro: 0.827362 
+F1Score micro: 0.833725 
+Accuracy: 0.803137 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+555,111
+101,508
+Recreated_Week_Simple_Half_Hour_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.807496 
+Precision micro: 0.805490 
+Recall Macro: 0.778325 
+Recall micro: 0.805490 
+F1Score Macro: 0.792642 
+F1Score micro: 0.805490 
+Accuracy: 0.800000 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+553,113
+135,474
+Recreated_Week_Simple_Half_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.834163 
+Precision micro: 0.838431 
+Recall Macro: 0.825944 
+Recall micro: 0.838431 
+F1Score Macro: 0.830033 
+F1Score micro: 0.838431 
+Accuracy: 0.814118 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+566,100
+106,503
+Original Number of features: 26 
+Number of outliers removed: 79 
+
+11 Columns Chosen by CFS : 
+ 1  2  4  5  13  14  17  18  24  25  26 
+3 Columns Chosen by FCBF : 
+ 1  26  13 
+5 Columns Chosen by Fisher : 
+ 18  4  1  2  3 
+Recreated_Week_Simple_Hour_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.840836 
+Precision micro: 0.856918 
+Recall Macro: 0.863036 
+Recall micro: 0.856918 
+F1Score Macro: 0.851792 
+F1Score micro: 0.856918 
+Accuracy: 0.827830 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+567,99
+83,523
+Recreated_Week_Simple_Hour_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.810147 
+Precision micro: 0.821541 
+Recall Macro: 0.816832 
+Recall micro: 0.821541 
+F1Score Macro: 0.813476 
+F1Score micro: 0.821541 
+Accuracy: 0.792453 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+550,116
+111,495
+Recreated_Week_Simple_Hour_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.791878 
+Precision micro: 0.794811 
+Recall Macro: 0.772277 
+Recall micro: 0.794811 
+F1Score Macro: 0.781955 
+F1Score micro: 0.794811 
+Accuracy: 0.795597 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+543,123
+138,468
+Recreated_Week_Simple_Hour_Original_Matrix_Binary_KNN 
+Precision Macro: 0.834405 
+Precision micro: 0.850629 
+Recall Macro: 0.856436 
+Recall micro: 0.850629 
+F1Score Macro: 0.845277 
+F1Score micro: 0.850629 
+Accuracy: 0.811321 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+563,103
+87,519
+Original Number of features: 336 
+Number of outliers removed: 194 
+
+43 Columns Chosen by CFS : 
+ 8  16  32  40  41  67  75  89  111  124  130  176  177  190  191  199  201  208  209  212  224  225  233  241  242  248  255  256  258  267  269  271  272  273  274  285  298  300  306  307  314  321  327 
+18 Columns Chosen by FCBF : 
+ 32  89  117  190  124  201  233  255  307  271  241  314  272  274  273  321  226  203 
+67 Columns Chosen by Fisher : 
+ 164  17  89  90  92  165  41  113  65  18  42  66  32  112  130  111  19  16  114  40  45  34  67  234  15  258  93  35  8  68  91  140  134  233  190  163  9  20  307  104  33  167  110  225  106  36  64  141  115  57  43  166  139  88  108  257  131  109  241  135  132  117  283  142  155  44  260 
+SAHD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.833333 
+Precision micro: 0.818182 
+Recall Macro: 0.681818 
+Recall micro: 0.818182 
+F1Score Macro: 0.750000 
+F1Score micro: 0.818182 
+Accuracy: 0.827273 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+120,12
+28,60
+SAHD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.794872 
+Precision micro: 0.809091 
+Recall Macro: 0.704545 
+Recall micro: 0.809091 
+F1Score Macro: 0.746988 
+F1Score micro: 0.809091 
+Accuracy: 0.809091 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+116,16
+26,62
+SAHD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.750000 
+Precision micro: 0.781818 
+Recall Macro: 0.681818 
+Recall micro: 0.781818 
+F1Score Macro: 0.714286 
+F1Score micro: 0.781818 
+Accuracy: 0.768182 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+112,20
+28,60
+SAHD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.817073 
+Precision micro: 0.836364 
+Recall Macro: 0.761364 
+Recall micro: 0.836364 
+F1Score Macro: 0.788235 
+F1Score micro: 0.836364 
+Accuracy: 0.781818 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+117,15
+21,67
+Original Number of features: 672 
+Number of outliers removed: 261 
+
+48 Columns Chosen by CFS : 
+ 15  59  63  77  82  160  178  180  212  215  221  247  248  252  263  309  351  372  381  400  401  420  449  450  451  467  469  486  496  498  499  508  515  519  544  545  547  554  555  559  565  570  600  607  636  642  645  663 
+18 Columns Chosen by FCBF : 
+ 160  247  180  663  467  451  565  545  263  559  400  449  351  555  508  636  600  499 
+134 Columns Chosen by Fisher : 
+ 183  229  160  496  226  208  180  565  227  64  184  133  135  181  185  179  225  38  16  228  37  178  136  84  82  224  83  36  222  516  330  328  85  230  326  217  138  89  35  186  280  329  182  232  281  211  113  210  279  231  327  177  34  223  209  137  140  467  40  69  221  65  161  134  220  219  234  33  132  114  39  450  265  469  325  215  66  41  284  508  17  88  218  18  90  515  400  139  131  482  216  30  278  617  381  187  233  86  68  31  260  421  87  264  351  29  554  28  451  267  471  283  173  79  544  26  235  141  63  27  600  566  285  32  333  212  498  162  70  468  372  352  67  214 
+SAHHD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.830508 
+Precision micro: 0.851613 
+Recall Macro: 0.790323 
+Recall micro: 0.851613 
+F1Score Macro: 0.809917 
+F1Score micro: 0.851613 
+Accuracy: 0.832258 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+83,10
+13,49
+SAHHD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.823529 
+Precision micro: 0.812903 
+Recall Macro: 0.677419 
+Recall micro: 0.812903 
+F1Score Macro: 0.743363 
+F1Score micro: 0.812903 
+Accuracy: 0.819355 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+84,9
+20,42
+SAHHD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.673077 
+Precision micro: 0.716129 
+Recall Macro: 0.564516 
+Recall micro: 0.716129 
+F1Score Macro: 0.614035 
+F1Score micro: 0.716129 
+Accuracy: 0.677419 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+76,17
+27,35
+SAHHD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.902439 
+Precision micro: 0.812903 
+Recall Macro: 0.596774 
+Recall micro: 0.812903 
+F1Score Macro: 0.718447 
+F1Score micro: 0.812903 
+Accuracy: 0.819355 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+89,4
+25,37
+Original Number of features: 14 
+Number of outliers removed: 20 
+
+10 Columns Chosen by CFS : 
+ 3  4  6  8  9  10  11  12  13  14 
+1 Columns Chosen by FCBF : 
+ 8 
+3 Columns Chosen by Fisher : 
+ 10  14  13 
+SAPD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.700000 
+Precision micro: 0.771493 
+Recall Macro: 0.751412 
+Recall micro: 0.771493 
+F1Score Macro: 0.724796 
+F1Score micro: 0.771493 
+Accuracy: 0.760181 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+208,57
+44,133
+SAPD_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.595238 
+Precision micro: 0.690045 
+Recall Macro: 0.706215 
+Recall micro: 0.690045 
+F1Score Macro: 0.645995 
+F1Score micro: 0.690045 
+Accuracy: 0.694570 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+180,85
+52,125
+SAPD_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.661616 
+Precision micro: 0.744344 
+Recall Macro: 0.740113 
+Recall micro: 0.744344 
+F1Score Macro: 0.698667 
+F1Score micro: 0.744344 
+Accuracy: 0.748869 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+198,67
+46,131
+SAPD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.694301 
+Precision micro: 0.769231 
+Recall Macro: 0.757062 
+Recall micro: 0.769231 
+F1Score Macro: 0.724324 
+F1Score micro: 0.769231 
+Accuracy: 0.769231 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+206,59
+43,134
+Original Number of features: 14 
+Number of outliers removed: 50 
+
+13 Columns Chosen by CFS : 
+ 1  3  4  5  6  7  8  9  10  11  12  13  14 
+1 Columns Chosen by FCBF : 
+ 3 
+3 Columns Chosen by Fisher : 
+ 5  6  7 
+SAPD_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.801336 
+Precision micro: 0.792467 
+Recall Macro: 0.760697 
+Recall micro: 0.792467 
+F1Score Macro: 0.780488 
+F1Score micro: 0.792467 
+Accuracy: 0.790161 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+551,119
+151,480
+SAPD_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.725429 
+Precision micro: 0.737125 
+Recall Macro: 0.736926 
+Recall micro: 0.737125 
+F1Score Macro: 0.731132 
+F1Score micro: 0.737125 
+Accuracy: 0.735588 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+494,176
+166,465
+SAPD_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.756979 
+Precision micro: 0.755573 
+Recall Macro: 0.730586 
+Recall micro: 0.755573 
+F1Score Macro: 0.743548 
+F1Score micro: 0.755573 
+Accuracy: 0.751729 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+522,148
+170,461
+SAPD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.796667 
+Precision micro: 0.788624 
+Recall Macro: 0.757528 
+Recall micro: 0.788624 
+F1Score Macro: 0.776604 
+F1Score micro: 0.788624 
+Accuracy: 0.784012 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+548,122
+153,478
+Original Number of features: 96 
+Number of outliers removed: 87 
+
+17 Columns Chosen by CFS : 
+ 17  19  34  39  51  52  62  64  67  68  71  72  73  80  83  91  92 
+5 Columns Chosen by FCBF : 
+ 73  67  64  92  51 
+19 Columns Chosen by Fisher : 
+ 73  35  36  72  71  69  83  67  74  37  68  34  25  84  70  39  38  33  26 
+SAPHH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.788732 
+Precision micro: 0.816976 
+Recall Macro: 0.741722 
+Recall micro: 0.816976 
+F1Score Macro: 0.764505 
+F1Score micro: 0.816976 
+Accuracy: 0.798408 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+196,30
+39,112
+SAPHH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.750000 
+Precision micro: 0.785146 
+Recall Macro: 0.695364 
+Recall micro: 0.785146 
+F1Score Macro: 0.721649 
+F1Score micro: 0.785146 
+Accuracy: 0.798408 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+191,35
+46,105
+SAPHH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.731707 
+Precision micro: 0.801061 
+Recall Macro: 0.794702 
+Recall micro: 0.801061 
+F1Score Macro: 0.761905 
+F1Score micro: 0.801061 
+Accuracy: 0.795756 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+182,44
+31,120
+SAPHH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.763889 
+Precision micro: 0.801061 
+Recall Macro: 0.728477 
+Recall micro: 0.801061 
+F1Score Macro: 0.745763 
+F1Score micro: 0.801061 
+Accuracy: 0.795756 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+192,34
+41,110
+Original Number of features: 96 
+Number of outliers removed: 266 
+
+22 Columns Chosen by CFS : 
+ 34  35  40  41  44  46  47  63  64  65  66  67  68  69  72  73  79  81  83  84  88  90 
+1 Columns Chosen by FCBF : 
+ 41 
+19 Columns Chosen by Fisher : 
+ 35  34  36  33  37  42  41  40  39  83  25  32  43  73  72  38  26  44  24 
+SAPHH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.787149 
+Precision micro: 0.810138 
+Recall Macro: 0.796748 
+Recall micro: 0.810138 
+F1Score Macro: 0.791919 
+F1Score micro: 0.810138 
+Accuracy: 0.811060 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+487,106
+100,392
+SAPHH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.658494 
+Precision micro: 0.713364 
+Recall Macro: 0.764228 
+Recall micro: 0.713364 
+F1Score Macro: 0.707432 
+F1Score micro: 0.713364 
+Accuracy: 0.717051 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+398,195
+116,376
+SAPHH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.790393 
+Precision micro: 0.791705 
+Recall Macro: 0.735772 
+Recall micro: 0.791705 
+F1Score Macro: 0.762105 
+F1Score micro: 0.791705 
+Accuracy: 0.783410 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+497,96
+130,362
+SAPHH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.825688 
+Precision micro: 0.808295 
+Recall Macro: 0.731707 
+Recall micro: 0.808295 
+F1Score Macro: 0.775862 
+F1Score micro: 0.808295 
+Accuracy: 0.804608 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+517,76
+132,360
+Original Number of features: 48 
+Number of outliers removed: 48 
+
+12 Columns Chosen by CFS : 
+ 13  17  26  31  32  33  34  36  37  41  45  46 
+6 Columns Chosen by FCBF : 
+ 34  37  45  32  26  31 
+10 Columns Chosen by Fisher : 
+ 37  18  36  35  17  34  13  20  19  12 
+SAPH_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.715116 
+Precision micro: 0.782716 
+Recall Macro: 0.759259 
+Recall micro: 0.782716 
+F1Score Macro: 0.736527 
+F1Score micro: 0.782716 
+Accuracy: 0.750617 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+194,49
+39,123
+SAPH_Month_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.710983 
+Precision micro: 0.780247 
+Recall Macro: 0.759259 
+Recall micro: 0.780247 
+F1Score Macro: 0.734328 
+F1Score micro: 0.780247 
+Accuracy: 0.765432 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+193,50
+39,123
+SAPH_Month_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.703488 
+Precision micro: 0.772840 
+Recall Macro: 0.746914 
+Recall micro: 0.772840 
+F1Score Macro: 0.724551 
+F1Score micro: 0.772840 
+Accuracy: 0.760494 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+192,51
+41,121
+SAPH_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.704403 
+Precision micro: 0.760494 
+Recall Macro: 0.691358 
+Recall micro: 0.760494 
+F1Score Macro: 0.697819 
+F1Score micro: 0.760494 
+Accuracy: 0.780247 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+196,47
+50,112
+Original Number of features: 48 
+Number of outliers removed: 143 
+
+17 Columns Chosen by CFS : 
+ 8  18  19  20  22  24  32  33  34  35  36  37  39  41  42  44  45 
+2 Columns Chosen by FCBF : 
+ 22  32 
+10 Columns Chosen by Fisher : 
+ 18  17  19  20  21  13  37  16  22  14 
+SAPH_Week_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.789199 
+Precision micro: 0.809603 
+Recall Macro: 0.806050 
+Recall micro: 0.809603 
+F1Score Macro: 0.797535 
+F1Score micro: 0.809603 
+Accuracy: 0.806291 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+525,121
+109,453
+SAPH_Week_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.716667 
+Precision micro: 0.750000 
+Recall Macro: 0.765125 
+Recall micro: 0.750000 
+F1Score Macro: 0.740103 
+F1Score micro: 0.750000 
+Accuracy: 0.745861 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+476,170
+132,430
+SAPH_Week_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.773788 
+Precision micro: 0.787252 
+Recall Macro: 0.766904 
+Recall micro: 0.787252 
+F1Score Macro: 0.770331 
+F1Score micro: 0.787252 
+Accuracy: 0.782285 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+520,126
+131,431
+SAPH_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.836190 
+Precision micro: 0.826987 
+Recall Macro: 0.781139 
+Recall micro: 0.826987 
+F1Score Macro: 0.807728 
+F1Score micro: 0.826987 
+Accuracy: 0.811258 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+560,86
+123,439
+WS_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.746106 
+Precision micro: 0.750755 
+Recall Macro: 0.741486 
+Recall micro: 0.750755 
+F1Score Macro: 0.743789 
+F1Score micro: 0.750755 
+Accuracy: 0.765106 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+515,163
+167,479
+WS_FCBF_Matrix_Binary_KNN 
+Precision Macro: 0.756211 
+Precision micro: 0.761329 
+Recall Macro: 0.753870 
+Recall micro: 0.761329 
+F1Score Macro: 0.755039 
+F1Score micro: 0.761329 
+Accuracy: 0.766616 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+521,157
+159,487
+WS_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.760563 
+Precision micro: 0.763595 
+Recall Macro: 0.752322 
+Recall micro: 0.763595 
+F1Score Macro: 0.756420 
+F1Score micro: 0.763595 
+Accuracy: 0.762085 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+525,153
+160,486
+WS_Original_Matrix_Binary_KNN 
+Precision Macro: 0.760252 
+Precision micro: 0.761329 
+Recall Macro: 0.746130 
+Recall micro: 0.761329 
+F1Score Macro: 0.753125 
+F1Score micro: 0.761329 
+Accuracy: 0.762840 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+526,152
+164,482

@@ -1,0 +1,18 @@
+AHH_Month_Fisher_Matrix_MultiClass_SVM 
+Precision Macro: 0.608696 
+Precision micro: 0.419540 
+Recall Macro: 0.254545 
+Recall micro: 0.419540 
+F1Score Macro: 0.358974 
+F1Score micro: 0.419540 
+Accuracy: 0.419540 
+Best Cost: 32768.000000 
+Best Gamma: 5.333344 
+
+90,39,3,12,1,0
+24,83,9,16,2,2
+4,46,16,31,2,3
+0,7,1,4,1,4
+5,22,5,23,12,0
+2,15,6,17,1,14
+0,0,0,0,0,0

@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\author{Sam Stern (s1134468)}
+\title {Interim Report}
+
+
+
+\begin{document}
+\maketitle
+\section*{Aim of the project and goals}
+
+Amidst international pressure on countries to reduce their carbon footprint \cite{E-comm} and the British public becoming increasingly frustrated by rising energy bills will little explanation to the cause in this rising price \cite{E-spending}, the UK Government is currently executing on a plan to distribute smart meters to households accross the country by 2020. Smart meters, which measure a household's gas and electricity consumption in real-time, are expected to both help a household reduce its energy usage by displaying how much energy is being used , as well as increase transparency in the household's bills by eliminating the need for monthly meter readings and estimations by the energy companies. Instead, the energy providers are given a much more accurate description of the household's consumption and as a result, will be able give a more accurate bill.
+
+While there has generally been strong support for the smart meter program, there has also been resistance to the campaign with fears that the energy companies will use the information as an opportunity to raise their customers bills and increase their own profit \cite{stop}. Perhaps more interestingly though, and therefore the focus of this project, are the concerns which have been have been raised regarding the risk associated with measuring and storing energy consumption data \cite{Quinn} \cite{LMW}. Particularly, to what extent can other information about a household be inferred from energy consumption readings?
+
+The aim of this project is to explore whether (and to what extent) it is possible to construct features that can be used to predict detailed personal information of a household from their energy consumption readings, by taking on the role of a malicious individual (or group) who wishes to exploit this information to determine household properties, which will be referred to as classes, that might be of interest to someone wishing to either target advertise or burgle a household. Using household electricity consumption information collected by the Household Electricity Survey (HES), a DEFRA sponsored national survey of energy use collected over a period from 2010 to 2011, classification models are created to predict two household properties: (1) The presence (or absence) of children in a household and (2) the IPSOS social grade of the chief income earner of the household. These properties are chosen because, of the information gathered by the HES survey, they are of logical interest to someone who might wish to intrude on a household.
+\newline
+
+This project has 3 main components:
+
+\begin{enumerate}
+\item Clean the data and create a database that stores the house sets and relevant household and energy-use information
+\item Find useful features from the data that can be used as inputs to a logistic regression model 
+\item Predict household properties using supervised learning methods
+\end{enumerate}
+
+%/Users/samstern/Downloads/TexmakerMacosx64/texmaker.app/Contents/MacOS/../Resources/en_US.dic
+\section*{Results and Accomplishments so far}
+\subsection*{Cleaning The Data}
+Rather than measuring the total energy used by a household in a given time interval, as is required for this task, the HES data contains readings of individual appliances and sockets of the households. To get an estimate of the mains reading, the measurements for individual appliances need to be aggregated together. Cambridge Architectural Research Limited edited much of the data and created a list that maps  the appliances that need to be aggregated for each household, in order to get an estimate of the mains reading. After the mains reading is created, several additional steps are taken to pre-process the data before feature construction and classification can take place.
+
+While some households had readings taken with in two minute intervals, others only have a granularity of 10 minutes. To make the data uniform, every 5 readings of the `two-minute households' are summed, resulting in all households having 10-minute granularity. 
+
+As the smart meters were installed (and uninstalled) in different households at different times of day, the data is topped and tailed so that each instance starts and ends at midnight, ensuring that each instance has contains an integer number of days.
+
+The next task is to ensure that all instances are of equal length. Of the 250 households that participated in the study, 26 had measurements taken for 1 year, while the remaining 224 had readings taken anywhere from 24 to 31 days. The initial approach was take each year-long household and split it into 12 month-long households, resulting (in effect) in 536 household instances.  From there, the shortest instance was found (24 day) and the tail of each household was chopped off to 24 days (or 3456 dimensional data). 
+
+While this does result in a dataset that could be used as an input for a classification model, there are some obvious concerns that can be raised. The first one being: Is it necessary to eliminate so much data? While some households had their electricity read for as few as 24 days, most were measured for closer to 28 days, resulting in an average loss of 4 days or 576 meter readings (if we exclude the households that were measured for a year). Furthermore, visualizing the data indicated that in addition to there being obvious periodicity over each day, many households also exhibit periodicity over a week too. Chopping the data as described above does not capture this pereodicity and fails to account account for any phase shift that would effect frequency domain related features \cite{Smith}.
+
+The solution is to create four-week (28 day) instances. Where the data is reused in households that are less than 28 days long. This is done in in the following steps:
+
+\begin{itemize}
+	\item For the month-long households
+	\begin{enumerate}
+		\item Find the mode (most commonly appearing) day of the week that the measurements begin on (this turns out to be a Sunday).
+		\item Chop the tops off the household instances that don't start on a Sunday (but don't discard as this can often be recycled)
+		\item Append days to the end until there is 4 weeks forth of data, ensuring that a weekly cycle is maintained (i.e a data from a Tuesday can only follow that of a Monday, which can only follow a Sunday etc).
+	\end{enumerate}
+	\item For the year-long households
+	\begin{enumerate}
+		\item Using the mode start day found earlier, group the data into 4 week periods.
+		\item Treat each of these groups as individual households.
+	\end{enumerate}
+\end{itemize}
+
+This method results in 520 instances (once outliers have been removed). The advantage to this method is that it retains more data than the first approach and ensure that the weekly periodicity is still captured.
+
+The cleaning of the data and pre-processing was done by creating a MySQL database and using python with embedded to write scripts that read from and write to the database.
+
+
+\subsection*{Feature Extraction}
+
+In order to both reduce dimensionality, as well as capture the distinction between different classes, the data from the electricity meter readings is manipulated in order to extreact useful features.
+
+According to \cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures are the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption figures and can capture relevant patterns that occure through different time intervals. Temporal features capture the first (or last) time some event takes place which or at what time the daily maximum occures. Finally, statistical properties such as variance, give insight into the consumption curve (for example how a households energy consumption correlates with itself. In addition to these, I also look at frequency domain related features, particularly the discrete fourier transform of the data. 
+\newline
+
+Features Constructed thus far include:
+\begin{itemize}
+	\item Total energy used over the 4 week period
+		\begin{itemize}
+			\item{Sum of all the smart meter readings for the household}
+		\end{itemize}
+	\item Average total energy used for each day of the week
+	\begin{itemize}
+		\item Every 144 readings are summed together (6 readings/hour*24 hours/day=144 readings per day).The data is then grouped by day of the week and the average is taken
+	\end{itemize}
+	\item Part-of-day features
+		\begin{itemize}
+			\item Most schools in the UK start between 8:30 and 9:00 and end between 15:00 and 16:00. With this in mind, as well as with the assumption that children will go to bed before 22:00, days are split into four groups: 6:00-9:00,9:00-15:00,15:00-22:00 and 22:00-6:00. The features created consist of the sums of the grouped data.
+		\end{itemize}
+	\item Average part-of-day for each day of the week
+		\begin{itemize}
+			\item Takes the average of the part-of-day features described above (i.e the average Monday 6:00-9:00, or Thursday 15:00-22:00), as each of these will occur four times over the 28 day period and there is no reason to assume that the first Monday morning is different from the second Monday morning)
+		\end{itemize}
+	\item Discrete Fourier Transform (DFT) of meter readings
+		\begin{itemize}
+			\item Converts the data to a list of coefficients of a sinusoids, ordered by their frequencies [cite wiki]. The F-test ($F=\frac{\textit{variance between classes}}{\textit{variance within classes}}$) is then used to select the features which best discriminate between the classes. 
+		\end{itemize}
+	\item DFT ex-weekend
+		\begin{itemize}
+			\item Remove weekend data before taking the DFT as energy use patterns may be different on the weekends and could therefore affect the resulting coefficients of the sinusoids. 
+		\end{itemize}
+
+\end{itemize}
+
+
+
+\section*{Timeline}
+
+There are still four steps to complete before, each of which I estimate will take a week to complete:
+\begin{itemize}
+	\item Compare features used to classify children vs. no-children households
+	\item Adapt code for multi-class case as well as explore other features that may be relevant for socio-economic classification.
+	\item Construct model for socio-economic classification
+	\item Write final report
+\end{itemize}
+
+\section*{Report Outline}
+\begin{enumerate}
+	\item Introduction
+		\begin{enumerate}
+			\item Introduction
+			\item Smart Meters
+			\item Aim of the Project
+			\item Related Work
+		\end{enumerate}
+	\item Data
+		\begin{enumerate}
+			\item Overview of HES Dataset
+			\item Extracting the Data and Pre-Prossessing 
+			\item Issues Encountered With the Data
+			\item Comparison to Previous Work
+		\end{enumerate}
+	\item Feature Exploration
+		\begin{enumerate}
+			\item Featured for Classifying Households With Children
+			\item Featured for Classifying Socie-Economic Status of Households
+			\item Feature Selection
+			\item Class Cardinality
+		\end{enumerate}
+	\item Models
+		\begin{enumerate}
+			\item Overview and Rationale Behind Choosing Models
+			\item Logistic Regression
+			\item Multinomial Logistic Regression
+		\end{enumerate}
+	\item Results
+		\begin{enumerate}
+			\item Presence/Absence of Children
+			\item IPSOS Socio-Economic Class
+		\end{enumerate}
+	\item Conclusion and Further Work
+		\begin{enumerate}
+			\item Conclusion
+			\item Further Work
+		\end{enumerate}
+\end{enumerate}
+
+
+\begin{thebibliography}{9}
+
+\bibitem{Beckel 1} Christian Beckel, Leyna Sadamori, and Silvia Santini. Automatic socio-economic classification of households using electricity consumption data. In {\em Proceedings of the Fourth International Conference on Future Energy Systems}, e-Energy `13, pages 75–86, New York, NY, USA, 2013. ACM.
+
+\bibitem{Beckel 2} Christian Beckel, Leyna Sadamori, and Silvia Santini. Towards automatic classifi- cation of private households using electricity consumption data. In {\em Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings}, BuildSys `12, pages 169–176, New York, NY, USA, 2012. ACM.
+\bibitem{E-comm} European commission. directive 2006/32/ec of the european parliament and of the council of 5 april 2006 on energy end-use efficiency and energy services and repealing council directive 93/76/eec, 2006.
+
+\bibitem{Quinn} Elias Leake Quinn. Privacy and the new energy infrastructure (february 15, 2009). \texttt{http://ssrn.com/abstract=1370731} or \texttt{http://dx.doi.org/10.2139/ ssrn.1370731}.
+
+\bibitem{LMW} M.A. Lisovich, D.K. Mulligan, and S.B. Wicker. Inferring personal information from demand-response systems. \textit{Security Privacy, IEEE}, 8(1):11–20, Jan 2010.
+
+\bibitem{E-spending} Office for National Statiscics. 2014. Full Report: Household Energy Spending in the UK, 2002-2012. [ONLINE] Available at: \texttt{http://www.ons.gov.uk/ons/dcp171776\_354637.pdf}. [Accessed 26 January 15].
+
+\bibitem{stop}STOPSMARTMETERS. 2012. Stop Smart Meters. [ONLINE] Available at: \texttt{http://stopsmartmeters.org.uk/}. [Accessed 26 January 15].
+
+\bibitem{Smith} Smith Steven W. (1997) \textit{The Scientist and Engineer's Guide to Digital Signal Processing} California Technical Pub
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,14 @@
+SAPH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.736655 
+Precision micro: 0.778146 
+Recall Macro: 0.775281 
+Recall micro: 0.778146 
+F1Score Macro: 0.755474 
+F1Score micro: 0.778146 
+Accuracy: 0.778146 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+526,148
+120,414
+0,0

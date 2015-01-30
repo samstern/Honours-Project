@@ -1,0 +1,17 @@
+SAHHD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.916667 
+Precision micro: 0.645756 
+Recall Macro: 0.916667 
+Recall micro: 0.645756 
+F1Score Macro: 0.916667 
+F1Score micro: 0.645756 
+Accuracy: 0.630996 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+76,20,0,0,0,0
+20,78,2,12,0,1
+1,7,0,2,1,0
+3,22,2,10,0,0
+1,1,0,0,0,0
+0,1,0,0,0,11

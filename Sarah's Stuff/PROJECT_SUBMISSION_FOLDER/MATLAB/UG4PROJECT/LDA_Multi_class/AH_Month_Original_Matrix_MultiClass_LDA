@@ -1,0 +1,16 @@
+AH_Month_Original_Matrix_MultiClass_LDA 
+Precision Macro: 0.187500 
+Precision micro: 0.490421 
+Recall Macro: 0.130435 
+Recall micro: 0.490421 
+F1Score Macro: 0.153846 
+F1Score micro: 0.490421 
+Accuracy: 0.490421 
+
+Confusion Matrix 
+73,47,0,3,0,2
+21,167,0,22,1,1
+2,33,0,5,0,0
+6,76,0,13,0,8
+1,6,0,10,0,2
+0,17,0,0,3,3

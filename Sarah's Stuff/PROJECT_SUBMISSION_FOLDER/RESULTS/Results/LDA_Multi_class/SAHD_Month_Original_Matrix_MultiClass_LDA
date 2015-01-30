@@ -1,0 +1,16 @@
+SAHD_Month_Original_Matrix_MultiClass_LDA 
+Precision Macro: 0.562500 
+Precision micro: 0.405325 
+Recall Macro: 0.642857 
+Recall micro: 0.405325 
+F1Score Macro: 0.600000 
+F1Score micro: 0.405325 
+Accuracy: 0.405325 
+
+Confusion Matrix 
+49,28,10,16,2,0
+34,54,20,24,8,5
+1,4,6,8,2,0
+10,15,3,19,1,2
+1,2,0,0,0,0
+1,0,2,2,0,9

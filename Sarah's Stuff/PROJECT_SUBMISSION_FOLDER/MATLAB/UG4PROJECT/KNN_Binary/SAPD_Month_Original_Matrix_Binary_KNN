@@ -1,0 +1,13 @@
+SAPD_Month_Original_Matrix_Binary_KNN 
+Precision Macro: 0.694301 
+Precision micro: 0.769231 
+Recall Macro: 0.757062 
+Recall micro: 0.769231 
+F1Score Macro: 0.724324 
+F1Score micro: 0.769231 
+Accuracy: 0.769231 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+206,59
+43,134

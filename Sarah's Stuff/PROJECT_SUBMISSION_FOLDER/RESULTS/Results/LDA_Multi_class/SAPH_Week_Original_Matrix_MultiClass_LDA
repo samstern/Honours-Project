@@ -1,0 +1,16 @@
+SAPH_Week_Original_Matrix_MultiClass_LDA 
+Precision Macro: 0.726190 
+Precision micro: 0.540563 
+Recall Macro: 0.743902 
+Recall micro: 0.540563 
+F1Score Macro: 0.734940 
+F1Score micro: 0.540563 
+Accuracy: 0.540563 
+
+Confusion Matrix 
+274,33,5,9,4,0
+98,138,21,56,6,2
+17,34,39,37,3,2
+51,60,33,105,17,16
+4,6,4,13,36,3
+2,8,0,10,1,61

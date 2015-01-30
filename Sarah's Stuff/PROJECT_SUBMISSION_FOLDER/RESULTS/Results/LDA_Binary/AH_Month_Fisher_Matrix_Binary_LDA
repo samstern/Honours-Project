@@ -1,0 +1,12 @@
+AH_Month_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.692857 
+Precision micro: 0.716450 
+Recall Macro: 0.524324 
+Recall micro: 0.716450 
+F1Score Macro: 0.596923 
+F1Score micro: 0.716450 
+Accuracy: 0.716450 
+
+Confusion Matrix 
+234,43
+88,97

@@ -1,0 +1,19 @@
+Author Sam Stern
+
+The files in this directory are used for testing.
+
+Once the data has been stored the database called hes_database in the appliance_group_data table, a subset of households can be extracted using createTestHouseholds.py. This chooses 10 households at random and inserts their raw data into the apg_test table.           
+
+Hopefully, all files in this directory will have a counterpart without the _subset suffix (other than createTestHouseholds.py) which are to be used on the full dataset to do the pre-prossessing.
+
+---WHAT ORDER TO DO STUFF IN------
+
+1) run createTestHouseholds.py
+2) run MakeHouseSets_Subset.py
+3) run dropEmptyTables_subset.py
+4) run chopTopsOff_subset.py
+5) create a database called Ten_Mins_Subset
+6) run to10MinIntervals_subset.py
+7) create a database called Total_Profile_Monthly_Subset
+8) run split_into_ID3_Subset.py
+9) run split_into_ID1_Subset.py (you dont need _ID2 because ID3 appears to contain the ID2 data)

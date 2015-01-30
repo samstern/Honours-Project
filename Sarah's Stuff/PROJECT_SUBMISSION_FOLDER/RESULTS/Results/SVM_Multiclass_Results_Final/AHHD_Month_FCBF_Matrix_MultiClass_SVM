@@ -1,0 +1,18 @@
+AHHD_Month_FCBF_Matrix_MultiClass_SVM 
+Precision Macro: 0.714286 
+Precision micro: 0.540761 
+Recall Macro: 0.714286 
+Recall micro: 0.540761 
+F1Score Macro: 0.714286 
+F1Score micro: 0.540761 
+Accuracy: 0.540761 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+87,43,3,8,1,0
+13,68,5,9,1,1
+6,17,4,14,1,0
+3,12,8,30,1,1
+0,9,2,5,0,2
+0,3,0,1,0,10
+0,0,0,0,0,0

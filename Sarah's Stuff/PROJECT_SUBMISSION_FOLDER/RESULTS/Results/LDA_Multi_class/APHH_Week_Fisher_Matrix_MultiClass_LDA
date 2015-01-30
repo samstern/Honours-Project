@@ -1,0 +1,16 @@
+APHH_Week_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.145455 
+Precision micro: 0.449466 
+Recall Macro: 0.105263 
+Recall micro: 0.449466 
+F1Score Macro: 0.122137 
+F1Score micro: 0.449466 
+Accuracy: 0.449466 
+
+Confusion Matrix 
+272,30,1,12,0,1
+121,107,3,63,12,13
+27,40,3,50,10,9
+51,80,6,130,16,14
+5,10,1,17,27,10
+3,16,0,40,9,8

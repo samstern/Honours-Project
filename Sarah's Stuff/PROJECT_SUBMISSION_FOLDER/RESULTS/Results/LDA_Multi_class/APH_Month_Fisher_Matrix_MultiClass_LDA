@@ -1,0 +1,16 @@
+APH_Month_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.083333 
+Precision micro: 0.489109 
+Recall Macro: 0.047619 
+Recall micro: 0.489109 
+F1Score Macro: 0.060606 
+F1Score micro: 0.489109 
+Accuracy: 0.489109 
+
+Confusion Matrix 
+75,45,0,1,0,1
+38,139,0,20,5,5
+2,27,0,8,1,2
+4,59,1,23,6,3
+1,5,0,4,9,0
+0,15,0,2,3,1

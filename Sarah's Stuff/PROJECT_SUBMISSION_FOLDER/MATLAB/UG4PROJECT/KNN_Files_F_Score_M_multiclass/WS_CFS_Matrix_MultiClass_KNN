@@ -1,0 +1,17 @@
+WS_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.533333 
+Precision micro: 0.451662 
+Recall Macro: 0.494845 
+Recall micro: 0.451662 
+F1Score Macro: 0.513369 
+F1Score micro: 0.451662 
+Accuracy: 0.481873 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+218,90,7,21,2,2
+62,152,26,80,10,8
+16,52,15,48,4,8
+37,82,20,155,17,22
+7,21,1,32,10,2
+1,15,6,26,1,48

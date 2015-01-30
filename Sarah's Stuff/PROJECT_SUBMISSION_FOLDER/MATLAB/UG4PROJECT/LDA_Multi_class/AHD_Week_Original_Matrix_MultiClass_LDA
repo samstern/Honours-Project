@@ -1,0 +1,16 @@
+AHD_Week_Original_Matrix_MultiClass_LDA 
+Precision Macro: 0.901961 
+Precision micro: 0.565410 
+Recall Macro: 0.779661 
+Recall micro: 0.565410 
+F1Score Macro: 0.836364 
+F1Score micro: 0.565410 
+Accuracy: 0.565410 
+
+Confusion Matrix 
+244,36,3,14,1,1
+79,115,20,32,6,1
+17,23,13,18,3,0
+46,34,22,89,6,3
+5,3,1,5,3,0
+4,4,1,4,0,46

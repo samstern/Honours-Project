@@ -1,0 +1,13 @@
+ASD_Month_CFS_Matrix_Binary_KNN 
+Precision Macro: 0.715232 
+Precision micro: 0.746067 
+Recall Macro: 0.606742 
+Recall micro: 0.746067 
+F1Score Macro: 0.656535 
+F1Score micro: 0.746067 
+Accuracy: 0.725843 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+224,43
+70,108

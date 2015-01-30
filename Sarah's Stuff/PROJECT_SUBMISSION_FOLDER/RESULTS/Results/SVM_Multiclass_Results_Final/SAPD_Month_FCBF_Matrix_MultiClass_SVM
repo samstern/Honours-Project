@@ -1,0 +1,18 @@
+SAPD_Month_FCBF_Matrix_MultiClass_SVM 
+Precision Macro: 0.304348 
+Precision micro: 0.392578 
+Recall Macro: 0.162791 
+Recall micro: 0.392578 
+F1Score Macro: 0.212121 
+F1Score micro: 0.392578 
+Accuracy: 0.392578 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+102,87,8,17,1,2
+12,57,10,22,3,0
+1,11,5,11,1,1
+5,22,8,26,0,4
+2,20,7,11,4,9
+2,14,2,8,10,7
+0,0,0,0,0,0

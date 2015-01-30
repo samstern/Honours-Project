@@ -1,0 +1,18 @@
+SAHHD_Month_CFS_Matrix_MultiClass_SVM 
+Precision Macro: 0.916667 
+Precision micro: 0.645756 
+Recall Macro: 0.916667 
+Recall micro: 0.645756 
+F1Score Macro: 0.916667 
+F1Score micro: 0.645756 
+Accuracy: 0.645756 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+73,31,4,6,0,0
+16,75,3,13,2,1
+0,2,0,2,0,0
+7,5,3,16,0,0
+0,0,0,0,0,0
+0,0,1,0,0,11
+0,0,0,0,0,0

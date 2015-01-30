@@ -1,0 +1,16 @@
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_MultiClass_LDA 
+Precision Macro: 0.545455 
+Precision micro: 0.561753 
+Recall Macro: 0.571429 
+Recall micro: 0.561753 
+F1Score Macro: 0.558140 
+F1Score micro: 0.561753 
+Accuracy: 0.561753 
+
+Confusion Matrix 
+84,36,1,1,0,0
+29,155,2,11,6,5
+3,26,0,7,3,1
+5,60,1,20,2,4
+1,6,0,1,11,0
+0,4,0,2,3,12

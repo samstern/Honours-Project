@@ -1,0 +1,2176 @@
+AD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.411765 
+Precision micro: 0.452107 
+Recall Macro: 0.304348 
+Recall micro: 0.452107 
+F1Score Macro: 0.350000 
+F1Score micro: 0.452107 
+Accuracy: 0.501916 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+73,28,6,13,5,0
+38,116,16,26,10,6
+4,16,5,10,3,2
+10,38,18,29,6,2
+1,7,2,3,6,0
+0,7,3,6,0,7
+AD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.437500 
+Precision micro: 0.423372 
+Recall Macro: 0.304348 
+Recall micro: 0.423372 
+F1Score Macro: 0.358974 
+F1Score micro: 0.423372 
+Accuracy: 0.528736 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+72,34,6,10,3,0
+38,111,21,28,10,4
+5,19,3,9,3,1
+10,46,12,24,7,4
+2,6,2,5,4,0
+0,5,6,5,0,7
+AD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.700000 
+Precision micro: 0.513410 
+Recall Macro: 0.304348 
+Recall micro: 0.513410 
+F1Score Macro: 0.424242 
+F1Score micro: 0.513410 
+Accuracy: 0.507663 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+74,46,0,5,0,0
+26,149,0,31,4,2
+2,28,0,8,2,0
+8,57,0,32,5,1
+2,4,0,7,6,0
+1,10,0,5,0,7
+AD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.416667 
+Precision micro: 0.519157 
+Recall Macro: 0.217391 
+Recall micro: 0.519157 
+F1Score Macro: 0.285714 
+F1Score micro: 0.519157 
+Accuracy: 0.498084 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+74,43,0,8,0,0
+21,155,0,28,4,4
+4,25,0,10,1,0
+8,56,2,31,4,2
+1,5,0,6,6,1
+1,9,0,8,0,5
+AD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.535714 
+Precision micro: 0.431269 
+Recall Macro: 0.463918 
+Recall micro: 0.431269 
+F1Score Macro: 0.497238 
+F1Score micro: 0.431269 
+Accuracy: 0.498489 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+214,91,10,19,4,2
+65,155,25,72,13,8
+18,47,16,53,5,4
+32,92,29,134,23,23
+6,20,3,35,7,2
+2,15,8,26,1,45
+AD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.522222 
+Precision micro: 0.459215 
+Recall Macro: 0.484536 
+Recall micro: 0.459215 
+F1Score Macro: 0.502674 
+F1Score micro: 0.459215 
+Accuracy: 0.495468 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+218,88,7,23,2,2
+66,156,26,72,8,10
+17,48,19,49,2,8
+36,82,22,158,14,21
+5,21,3,32,10,2
+2,15,9,24,0,47
+AD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.528090 
+Precision micro: 0.452417 
+Recall Macro: 0.484536 
+Recall micro: 0.452417 
+F1Score Macro: 0.505376 
+F1Score micro: 0.452417 
+Accuracy: 0.484139 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+221,90,6,19,2,2
+67,158,22,73,9,9
+16,52,17,51,1,6
+36,90,22,144,18,23
+6,19,2,32,12,2
+1,18,7,24,0,47
+AD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.542169 
+Precision micro: 0.449396 
+Recall Macro: 0.463918 
+Recall micro: 0.449396 
+F1Score Macro: 0.500000 
+F1Score micro: 0.449396 
+Accuracy: 0.493202 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+215,92,7,23,2,1
+60,156,26,78,9,9
+18,46,18,52,2,7
+39,83,23,152,17,19
+5,22,2,33,9,2
+0,17,5,29,1,45
+AHD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.634660 
+Recall Macro: 0.647059 
+Recall micro: 0.634660 
+F1Score Macro: 0.785714 
+F1Score micro: 0.634660 
+Accuracy: 0.615925 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+78,31,0,3,0,0
+16,145,6,13,0,0
+3,15,4,7,0,0
+9,36,4,30,0,0
+1,5,0,1,3,0
+0,5,0,1,0,11
+AHD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.769231 
+Precision micro: 0.566745 
+Recall Macro: 0.588235 
+Recall micro: 0.566745 
+F1Score Macro: 0.666667 
+F1Score micro: 0.566745 
+Accuracy: 0.590164 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+70,33,2,7,0,0
+22,128,7,22,0,1
+3,13,3,8,2,0
+8,33,5,30,1,2
+0,5,1,3,1,0
+0,4,1,2,0,10
+AHD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.916667 
+Precision micro: 0.632319 
+Recall Macro: 0.647059 
+Recall micro: 0.632319 
+F1Score Macro: 0.758621 
+F1Score micro: 0.632319 
+Accuracy: 0.587822 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+72,40,0,0,0,0
+14,154,0,11,0,1
+2,18,2,7,0,0
+8,42,0,29,0,0
+1,5,0,2,2,0
+0,4,0,2,0,11
+AHD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.627635 
+Recall Macro: 0.705882 
+Recall micro: 0.627635 
+F1Score Macro: 0.827586 
+F1Score micro: 0.627635 
+Accuracy: 0.611241 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+71,40,0,1,0,0
+13,150,0,17,0,0
+2,15,0,12,0,0
+10,35,0,34,0,0
+0,7,0,2,1,0
+1,2,0,2,0,12
+AHD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.958333 
+Precision micro: 0.608647 
+Recall Macro: 0.779661 
+Recall micro: 0.608647 
+F1Score Macro: 0.859813 
+F1Score micro: 0.608647 
+Accuracy: 0.595344 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+238,58,0,3,0,0
+56,180,1,15,0,1
+18,41,2,13,0,0
+47,66,3,83,0,1
+7,8,0,2,0,0
+1,7,0,5,0,46
+AHD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.714286 
+Precision micro: 0.538803 
+Recall Macro: 0.593220 
+Recall micro: 0.538803 
+F1Score Macro: 0.648148 
+F1Score micro: 0.538803 
+Accuracy: 0.552106 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+218,48,4,29,0,0
+70,133,1,45,0,4
+18,27,2,25,0,2
+32,53,9,98,0,8
+6,4,2,5,0,0
+3,12,0,9,0,35
+AHD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.952381 
+Precision micro: 0.553215 
+Recall Macro: 0.677966 
+Recall micro: 0.553215 
+F1Score Macro: 0.792079 
+F1Score micro: 0.553215 
+Accuracy: 0.563193 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+234,49,1,13,1,1
+72,145,7,29,0,0
+20,28,6,18,2,0
+49,70,6,73,1,1
+9,5,0,2,1,0
+1,16,0,2,0,40
+AHD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.978723 
+Precision micro: 0.583149 
+Recall Macro: 0.779661 
+Recall micro: 0.583149 
+F1Score Macro: 0.867925 
+F1Score micro: 0.583149 
+Accuracy: 0.568736 
+Number of Neighbours: 9 
+
+Confusion Matrix 
+243,55,0,1,0,0
+81,159,2,10,0,1
+27,36,0,11,0,0
+71,52,0,76,1,0
+7,7,0,1,2,0
+3,7,0,3,0,46
+AHHD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.576087 
+Recall Macro: 0.714286 
+Recall micro: 0.576087 
+F1Score Macro: 0.833333 
+F1Score micro: 0.576087 
+Accuracy: 0.627717 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+80,22,1,6,0,0
+40,94,5,12,1,0
+5,8,0,9,0,0
+12,26,1,28,0,0
+0,3,1,0,0,0
+1,2,0,1,0,10
+AHHD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.597826 
+Recall Macro: 0.642857 
+Recall micro: 0.597826 
+F1Score Macro: 0.782609 
+F1Score micro: 0.597826 
+Accuracy: 0.633152 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+75,33,0,1,0,0
+26,111,2,13,0,0
+2,12,1,7,0,0
+8,34,1,24,0,0
+0,3,0,1,0,0
+0,2,0,3,0,9
+AHHD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.600543 
+Recall Macro: 0.642857 
+Recall micro: 0.600543 
+F1Score Macro: 0.782609 
+F1Score micro: 0.600543 
+Accuracy: 0.603261 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+84,22,0,3,0,0
+35,109,0,8,0,0
+6,11,0,5,0,0
+16,30,2,19,0,0
+1,3,0,0,0,0
+2,3,0,0,0,9
+AHHD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.638587 
+Recall Macro: 0.785714 
+Recall micro: 0.638587 
+F1Score Macro: 0.880000 
+F1Score micro: 0.638587 
+Accuracy: 0.625000 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+78,31,0,0,0,0
+22,119,0,11,0,0
+3,13,0,6,0,0
+13,27,0,27,0,0
+1,3,0,0,0,0
+0,2,0,1,0,11
+AHHD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.616573 
+Recall Macro: 0.796296 
+Recall micro: 0.616573 
+F1Score Macro: 0.886598 
+F1Score micro: 0.616573 
+Accuracy: 0.623596 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+233,45,0,5,0,0
+57,120,0,5,0,0
+15,27,0,5,0,0
+43,49,0,43,0,0
+5,3,0,3,0,0
+2,8,0,1,0,43
+AHHD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.716981 
+Precision micro: 0.519663 
+Recall Macro: 0.703704 
+Recall micro: 0.519663 
+F1Score Macro: 0.710280 
+F1Score micro: 0.519663 
+Accuracy: 0.540730 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+212,47,2,20,0,2
+60,74,10,31,0,7
+16,21,1,6,0,3
+39,44,5,45,0,2
+1,8,0,1,0,1
+2,6,4,4,0,38
+AHHD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.974359 
+Precision micro: 0.605337 
+Recall Macro: 0.703704 
+Recall micro: 0.605337 
+F1Score Macro: 0.817204 
+F1Score micro: 0.605337 
+Accuracy: 0.592697 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+231,40,2,9,0,1
+57,116,0,9,0,0
+16,18,2,11,0,0
+45,45,1,44,0,0
+6,2,0,3,0,0
+3,13,0,0,0,38
+AHHD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.977778 
+Precision micro: 0.585674 
+Recall Macro: 0.814815 
+Recall micro: 0.585674 
+F1Score Macro: 0.888889 
+F1Score micro: 0.585674 
+Accuracy: 0.575843 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+233,44,1,4,0,1
+75,102,1,4,0,0
+23,24,0,0,0,0
+57,38,2,38,0,0
+5,5,0,1,0,0
+3,5,0,2,0,44
+AHH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.500000 
+Precision micro: 0.513410 
+Recall Macro: 0.260870 
+Recall micro: 0.513410 
+F1Score Macro: 0.342857 
+F1Score micro: 0.513410 
+Accuracy: 0.511494 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+76,43,1,5,0,0
+22,151,1,33,4,1
+2,28,0,7,2,1
+7,58,1,28,6,3
+2,4,0,5,7,1
+0,11,0,6,0,6
+AHH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.636364 
+Precision micro: 0.507663 
+Recall Macro: 0.304348 
+Recall micro: 0.507663 
+F1Score Macro: 0.411765 
+F1Score micro: 0.507663 
+Accuracy: 0.519157 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+70,51,0,4,0,0
+23,152,2,30,3,2
+3,29,0,6,2,0
+9,56,2,31,3,2
+1,6,0,7,5,0
+1,10,0,5,0,7
+AHH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.411765 
+Precision micro: 0.505747 
+Recall Macro: 0.304348 
+Recall micro: 0.505747 
+F1Score Macro: 0.350000 
+F1Score micro: 0.505747 
+Accuracy: 0.515326 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+77,41,2,4,1,0
+27,140,6,30,5,4
+4,24,1,8,1,2
+8,49,7,33,3,3
+2,6,0,4,6,1
+0,10,0,6,0,7
+AHH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.307692 
+Precision micro: 0.511494 
+Recall Macro: 0.173913 
+Recall micro: 0.511494 
+F1Score Macro: 0.222222 
+F1Score micro: 0.511494 
+Accuracy: 0.505747 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+77,43,0,5,0,0
+21,154,0,28,4,5
+3,26,1,8,1,1
+9,59,1,26,5,3
+1,8,0,5,5,0
+1,9,0,9,0,4
+AHH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.488636 
+Precision micro: 0.487915 
+Recall Macro: 0.443299 
+Recall micro: 0.487915 
+F1Score Macro: 0.464865 
+F1Score micro: 0.487915 
+Accuracy: 0.488671 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+235,82,1,17,2,3
+61,180,4,78,6,9
+17,43,4,70,0,9
+32,73,11,180,15,22
+4,24,0,39,4,2
+2,11,3,38,0,43
+AHH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.581395 
+Precision micro: 0.466012 
+Recall Macro: 0.515464 
+Recall micro: 0.466012 
+F1Score Macro: 0.546448 
+F1Score micro: 0.466012 
+Accuracy: 0.484894 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+224,85,7,21,2,1
+61,162,24,73,9,9
+17,46,18,52,2,8
+38,89,24,152,15,15
+9,15,2,33,11,3
+1,11,7,26,2,50
+AHH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.494253 
+Precision micro: 0.485650 
+Recall Macro: 0.443299 
+Recall micro: 0.485650 
+F1Score Macro: 0.467391 
+F1Score micro: 0.485650 
+Accuracy: 0.484894 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+231,83,4,16,3,3
+60,182,9,69,10,8
+18,39,2,72,1,11
+33,73,15,177,15,20
+5,21,2,35,8,2
+1,12,7,34,0,43
+AHH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.534884 
+Precision micro: 0.491692 
+Recall Macro: 0.474227 
+Recall micro: 0.491692 
+F1Score Macro: 0.502732 
+F1Score micro: 0.491692 
+Accuracy: 0.494713 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+229,87,6,14,2,2
+56,181,7,73,13,8
+15,43,4,73,0,8
+31,72,12,183,15,20
+4,19,0,40,8,2
+1,12,5,33,0,46
+AH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.470588 
+Precision micro: 0.446360 
+Recall Macro: 0.347826 
+Recall micro: 0.446360 
+F1Score Macro: 0.400000 
+F1Score micro: 0.446360 
+Accuracy: 0.500000 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+77,31,5,10,2,0
+30,112,21,36,8,5
+5,21,1,10,3,0
+10,43,10,28,8,4
+0,4,3,5,7,0
+0,12,0,2,1,8
+AH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.600000 
+Precision micro: 0.501916 
+Recall Macro: 0.260870 
+Recall micro: 0.501916 
+F1Score Macro: 0.363636 
+F1Score micro: 0.501916 
+Accuracy: 0.500000 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+76,43,0,6,0,0
+25,148,0,34,4,1
+2,25,0,9,2,2
+10,59,0,28,5,1
+1,8,0,6,4,0
+1,9,0,7,0,6
+AH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.400000 
+Precision micro: 0.486590 
+Recall Macro: 0.260870 
+Recall micro: 0.486590 
+F1Score Macro: 0.315789 
+F1Score micro: 0.486590 
+Accuracy: 0.490421 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+80,36,1,8,0,0
+28,129,11,32,7,5
+4,22,4,8,1,1
+10,46,8,32,4,3
+1,10,0,5,3,0
+0,8,0,6,3,6
+AH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.470588 
+Precision micro: 0.486590 
+Recall Macro: 0.347826 
+Recall micro: 0.486590 
+F1Score Macro: 0.400000 
+F1Score micro: 0.486590 
+Accuracy: 0.501916 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+76,37,2,9,1,0
+24,130,12,36,5,5
+5,23,0,10,1,1
+12,45,8,34,2,2
+2,5,0,5,6,1
+0,11,0,4,0,8
+AH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.521277 
+Precision micro: 0.441088 
+Recall Macro: 0.505155 
+Recall micro: 0.441088 
+F1Score Macro: 0.513089 
+F1Score micro: 0.441088 
+Accuracy: 0.491692 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+218,90,10,16,4,2
+70,145,29,76,5,13
+19,49,15,48,5,7
+34,88,27,145,18,21
+6,19,3,31,12,2
+1,15,6,24,2,49
+AH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.500000 
+Precision micro: 0.476586 
+Recall Macro: 0.453608 
+Recall micro: 0.476586 
+F1Score Macro: 0.475676 
+F1Score micro: 0.476586 
+Accuracy: 0.478852 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+221,91,7,16,2,3
+65,167,13,73,11,9
+18,43,14,59,0,9
+31,80,13,174,14,21
+5,20,0,35,11,2
+1,13,4,35,0,44
+AH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.563218 
+Precision micro: 0.460725 
+Recall Macro: 0.505155 
+Recall micro: 0.460725 
+F1Score Macro: 0.532609 
+F1Score micro: 0.460725 
+Accuracy: 0.479607 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+217,93,7,20,2,1
+56,165,25,76,9,7
+17,48,21,50,1,6
+38,88,23,147,15,22
+7,18,2,33,11,2
+1,16,7,23,1,49
+AH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.494624 
+Precision micro: 0.477341 
+Recall Macro: 0.474227 
+Recall micro: 0.477341 
+F1Score Macro: 0.484211 
+F1Score micro: 0.477341 
+Accuracy: 0.479607 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+220,92,9,15,2,2
+61,173,11,71,11,11
+19,43,14,59,0,8
+30,74,20,171,15,23
+5,22,1,34,8,3
+2,12,4,33,0,46
+APD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.937500 
+Precision micro: 0.503891 
+Recall Macro: 0.681818 
+Recall micro: 0.503891 
+F1Score Macro: 0.789474 
+F1Score micro: 0.503891 
+Accuracy: 0.536965 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+73,48,0,4,0,0
+36,133,3,30,9,0
+2,22,2,13,1,0
+13,46,2,29,6,1
+1,10,0,1,7,0
+0,5,0,2,0,15
+APD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.466667 
+Precision micro: 0.494163 
+Recall Macro: 0.318182 
+Recall micro: 0.494163 
+F1Score Macro: 0.378378 
+F1Score micro: 0.494163 
+Accuracy: 0.505837 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+75,43,0,6,1,0
+27,144,3,30,5,2
+4,20,2,13,1,0
+8,54,3,24,5,3
+2,7,0,5,2,3
+0,11,1,3,0,7
+APD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.454545 
+Precision micro: 0.443580 
+Recall Macro: 0.227273 
+Recall micro: 0.443580 
+F1Score Macro: 0.303030 
+F1Score micro: 0.443580 
+Accuracy: 0.519455 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+70,50,0,4,1,0
+37,126,7,34,5,2
+5,24,0,11,0,0
+11,51,4,26,4,1
+1,8,0,6,1,3
+1,12,1,2,1,5
+APD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.511673 
+Recall Macro: 0.772727 
+Recall micro: 0.511673 
+F1Score Macro: 0.871795 
+F1Score micro: 0.511673 
+Accuracy: 0.546693 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+68,52,1,3,1,0
+34,125,8,36,8,0
+2,20,3,14,1,0
+9,39,5,41,3,0
+1,8,0,1,9,0
+1,1,1,2,0,17
+APD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.750000 
+Precision micro: 0.503454 
+Recall Macro: 0.733333 
+Recall micro: 0.503454 
+F1Score Macro: 0.741573 
+F1Score micro: 0.503454 
+Accuracy: 0.521873 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+240,72,2,20,2,2
+82,179,8,55,9,5
+17,46,15,59,2,3
+48,92,16,137,21,8
+5,23,0,22,19,4
+1,13,2,7,1,66
+APD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.388235 
+Precision micro: 0.387567 
+Recall Macro: 0.366667 
+Recall micro: 0.387567 
+F1Score Macro: 0.377143 
+F1Score micro: 0.387567 
+Accuracy: 0.445894 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+221,71,11,28,3,4
+110,113,22,67,12,14
+29,38,17,44,6,8
+47,90,29,111,22,23
+9,22,6,23,10,3
+9,19,7,20,2,33
+APD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.280899 
+Precision micro: 0.425173 
+Recall Macro: 0.277778 
+Recall micro: 0.425173 
+F1Score Macro: 0.279330 
+F1Score micro: 0.425173 
+Accuracy: 0.429777 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+222,85,3,24,3,1
+58,162,7,93,8,10
+12,51,2,63,4,10
+37,107,10,130,16,22
+5,13,1,20,13,21
+0,18,2,27,18,25
+APD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.767442 
+Precision micro: 0.502686 
+Recall Macro: 0.733333 
+Recall micro: 0.502686 
+F1Score Macro: 0.750000 
+F1Score micro: 0.502686 
+Accuracy: 0.514198 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+240,73,5,16,3,1
+80,174,7,66,5,6
+16,45,16,57,4,4
+46,86,24,139,20,7
+4,23,1,23,20,2
+1,10,1,11,1,66
+APHH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.523810 
+Precision micro: 0.594595 
+Recall Macro: 0.647059 
+Recall micro: 0.594595 
+F1Score Macro: 0.578947 
+F1Score micro: 0.594595 
+Accuracy: 0.592516 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+87,26,2,0,0,1
+27,137,5,22,5,2
+4,14,9,11,0,1
+11,39,3,32,3,5
+1,4,1,1,10,1
+1,2,0,3,0,11
+APHH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.125000 
+Precision micro: 0.401247 
+Recall Macro: 0.117647 
+Recall micro: 0.401247 
+F1Score Macro: 0.121212 
+F1Score micro: 0.401247 
+Accuracy: 0.467775 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+66,27,8,9,5,1
+41,87,23,32,6,9
+2,16,6,12,2,1
+12,34,14,24,6,3
+2,5,0,3,8,0
+1,7,3,2,2,2
+APHH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.297297 
+Precision micro: 0.559252 
+Recall Macro: 0.647059 
+Recall micro: 0.559252 
+F1Score Macro: 0.407407 
+F1Score micro: 0.559252 
+Accuracy: 0.550936 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+77,32,1,5,0,1
+26,132,2,18,5,15
+4,18,1,13,1,2
+6,35,3,40,1,8
+1,7,0,2,8,0
+0,5,0,0,1,11
+APHH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.846154 
+Precision micro: 0.607069 
+Recall Macro: 0.647059 
+Recall micro: 0.607069 
+F1Score Macro: 0.733333 
+F1Score micro: 0.607069 
+Accuracy: 0.615385 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+78,37,0,1,0,0
+10,166,1,19,2,0
+2,23,2,11,0,1
+9,53,3,27,0,1
+1,7,0,2,8,0
+0,3,0,2,1,11
+APHH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.784810 
+Precision micro: 0.647494 
+Recall Macro: 0.815789 
+Recall micro: 0.647494 
+F1Score Macro: 0.800000 
+F1Score micro: 0.647494 
+Accuracy: 0.612983 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+268,39,3,5,0,1
+53,208,14,37,7,0
+16,37,38,43,4,1
+42,52,13,175,3,12
+4,15,3,8,37,3
+0,8,0,6,0,62
+APHH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.194690 
+Precision micro: 0.331964 
+Recall Macro: 0.289474 
+Recall micro: 0.331964 
+F1Score Macro: 0.232804 
+F1Score micro: 0.331964 
+Accuracy: 0.417420 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+186,55,30,41,0,4
+86,67,38,88,12,28
+29,27,27,43,3,10
+43,69,50,93,9,33
+5,13,6,21,9,16
+2,8,10,27,7,22
+APHH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.394366 
+Precision micro: 0.529992 
+Recall Macro: 0.736842 
+Recall micro: 0.529992 
+F1Score Macro: 0.513761 
+F1Score micro: 0.529992 
+Accuracy: 0.529170 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+241,54,1,13,0,7
+54,161,10,58,7,29
+25,42,20,43,2,7
+39,65,13,141,5,34
+4,7,6,18,26,9
+3,9,0,6,2,56
+APHH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.709302 
+Precision micro: 0.612983 
+Recall Macro: 0.802632 
+Recall micro: 0.612983 
+F1Score Macro: 0.753086 
+F1Score micro: 0.612983 
+Accuracy: 0.609696 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+250,58,1,6,0,1
+49,228,6,32,4,0
+13,49,23,48,1,5
+44,77,8,152,1,15
+5,19,1,9,32,4
+0,8,0,7,0,61
+APH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.636364 
+Precision micro: 0.621782 
+Recall Macro: 0.666667 
+Recall micro: 0.621782 
+F1Score Macro: 0.651163 
+F1Score micro: 0.621782 
+Accuracy: 0.572277 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+88,26,0,6,0,2
+16,151,5,25,10,0
+2,17,11,6,3,1
+6,37,5,39,5,4
+1,2,1,3,11,1
+1,4,0,2,0,14
+APH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.000000 
+Precision micro: 0.378218 
+Recall Macro: 0.000000 
+Recall micro: 0.378218 
+F1Score Macro: NaN 
+F1Score micro: 0.378218 
+Accuracy: 0.506931 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+53,47,8,13,1,0
+33,104,14,43,10,3
+3,20,4,7,4,2
+14,39,9,26,7,1
+1,9,0,5,4,0
+3,6,3,5,4,0
+APH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.296296 
+Precision micro: 0.542574 
+Recall Macro: 0.380952 
+Recall micro: 0.542574 
+F1Score Macro: 0.333333 
+F1Score micro: 0.542574 
+Accuracy: 0.566337 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+74,41,1,5,0,1
+30,135,1,25,3,13
+4,13,2,17,2,2
+9,36,1,46,3,1
+1,4,0,3,9,2
+1,8,0,0,4,8
+APH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.882353 
+Precision micro: 0.600000 
+Recall Macro: 0.714286 
+Recall micro: 0.600000 
+F1Score Macro: 0.789474 
+F1Score micro: 0.600000 
+Accuracy: 0.601980 
+Number of Neighbours: 2 
+
+Confusion Matrix 
+84,29,3,5,1,0
+17,142,11,28,9,0
+3,12,9,15,1,0
+9,36,3,42,5,1
+0,4,1,2,11,1
+1,2,0,3,0,15
+APH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.686869 
+Precision micro: 0.644427 
+Recall Macro: 0.800000 
+Recall micro: 0.644427 
+F1Score Macro: 0.739130 
+F1Score micro: 0.644427 
+Accuracy: 0.630298 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+278,38,3,6,1,5
+49,222,10,39,10,2
+18,32,41,43,4,3
+40,56,17,177,5,18
+6,17,7,4,35,3
+4,5,1,7,0,68
+APH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.494624 
+Precision micro: 0.492936 
+Recall Macro: 0.541176 
+Recall micro: 0.492936 
+F1Score Macro: 0.516854 
+F1Score micro: 0.492936 
+Accuracy: 0.490581 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+229,71,3,25,0,3
+71,160,6,72,12,11
+17,37,10,65,4,8
+40,76,16,156,6,19
+6,19,2,12,27,6
+3,11,3,22,0,46
+APH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.377778 
+Precision micro: 0.520408 
+Recall Macro: 0.600000 
+Recall micro: 0.520408 
+F1Score Macro: 0.463636 
+F1Score micro: 0.520408 
+Accuracy: 0.527473 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+257,51,2,16,0,5
+71,165,12,53,8,23
+21,36,12,60,3,9
+36,63,19,151,12,32
+4,11,3,12,27,15
+4,12,1,12,5,51
+APH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.700000 
+Precision micro: 0.670330 
+Recall Macro: 0.823529 
+Recall micro: 0.670330 
+F1Score Macro: 0.756757 
+F1Score micro: 0.670330 
+Accuracy: 0.627159 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+280,28,5,15,0,3
+45,232,8,33,6,8
+20,25,38,53,1,4
+40,46,12,195,8,12
+4,16,2,8,39,3
+2,7,0,6,0,70
+ASD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.409091 
+Precision micro: 0.481481 
+Recall Macro: 0.391304 
+Recall micro: 0.481481 
+F1Score Macro: 0.400000 
+F1Score micro: 0.481481 
+Accuracy: 0.528265 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+81,34,0,7,3,0
+30,122,13,36,6,3
+2,24,1,8,1,4
+11,46,2,29,3,5
+1,5,2,5,5,1
+0,7,2,4,1,9
+ASD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.461538 
+Precision micro: 0.448343 
+Recall Macro: 0.260870 
+Recall micro: 0.448343 
+F1Score Macro: 0.333333 
+F1Score micro: 0.448343 
+Accuracy: 0.500975 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+69,35,0,15,6,0
+25,118,12,39,13,3
+4,22,1,10,3,0
+12,36,6,31,7,4
+3,7,1,3,5,0
+0,10,0,7,0,6
+ASD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.533333 
+Precision micro: 0.461988 
+Recall Macro: 0.347826 
+Recall micro: 0.461988 
+F1Score Macro: 0.421053 
+F1Score micro: 0.461988 
+Accuracy: 0.526316 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+75,36,0,12,2,0
+31,123,15,34,6,1
+3,24,0,9,2,2
+8,49,4,25,6,4
+2,7,1,3,6,0
+1,5,3,5,1,8
+ASD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.529412 
+Precision micro: 0.471735 
+Recall Macro: 0.391304 
+Recall micro: 0.471735 
+F1Score Macro: 0.450000 
+F1Score micro: 0.471735 
+Accuracy: 0.524366 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+76,33,0,13,3,0
+31,123,9,40,6,1
+2,24,0,10,1,3
+9,49,1,28,5,4
+1,7,1,4,6,0
+0,6,1,6,1,9
+ASD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.588889 
+Precision micro: 0.496573 
+Recall Macro: 0.552083 
+Recall micro: 0.496573 
+F1Score Macro: 0.569892 
+F1Score micro: 0.496573 
+Accuracy: 0.491241 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+239,76,3,19,0,3
+54,175,9,89,6,5
+13,37,9,72,2,10
+20,87,25,161,15,15
+4,14,1,35,15,4
+2,9,4,27,1,53
+ASD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.518519 
+Precision micro: 0.448591 
+Recall Macro: 0.437500 
+Recall micro: 0.448591 
+F1Score Macro: 0.474576 
+F1Score micro: 0.448591 
+Accuracy: 0.494288 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+215,88,6,25,3,3
+64,161,25,67,11,10
+21,44,16,52,2,8
+36,81,28,146,17,15
+7,24,1,29,9,3
+1,12,8,33,0,42
+ASD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.554455 
+Precision micro: 0.498858 
+Recall Macro: 0.583333 
+Recall micro: 0.498858 
+F1Score Macro: 0.568528 
+F1Score micro: 0.498858 
+Accuracy: 0.507997 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+229,85,1,21,0,4
+55,174,9,88,6,6
+12,44,9,62,2,14
+26,79,14,173,15,16
+4,16,0,34,14,5
+1,8,3,26,2,56
+ASD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.606742 
+Precision micro: 0.497334 
+Recall Macro: 0.562500 
+Recall micro: 0.497334 
+F1Score Macro: 0.583784 
+F1Score micro: 0.497334 
+Accuracy: 0.502666 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+227,86,2,22,0,3
+55,179,8,86,6,4
+13,38,7,72,2,11
+23,82,22,169,14,13
+4,16,1,31,17,4
+1,10,5,24,2,54
+MS_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.545455 
+Precision micro: 0.537285 
+Recall Macro: 0.260870 
+Recall micro: 0.537285 
+F1Score Macro: 0.352941 
+F1Score micro: 0.537285 
+Accuracy: 0.506692 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+77,44,0,4,0,0
+21,152,2,32,2,4
+3,25,1,11,0,0
+7,56,1,36,2,1
+2,3,0,5,9,0
+0,12,0,5,0,6
+MS_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.545455 
+Precision micro: 0.523901 
+Recall Macro: 0.260870 
+Recall micro: 0.523901 
+F1Score Macro: 0.352941 
+F1Score micro: 0.523901 
+Accuracy: 0.489484 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+78,42,0,5,0,0
+19,147,4,35,4,4
+3,25,1,11,0,0
+7,56,2,34,3,1
+1,4,0,6,8,0
+1,11,0,5,0,6
+MS_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.545455 
+Precision micro: 0.531549 
+Recall Macro: 0.260870 
+Recall micro: 0.531549 
+F1Score Macro: 0.352941 
+F1Score micro: 0.531549 
+Accuracy: 0.510516 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+76,45,0,4,0,0
+23,150,3,31,3,3
+3,25,1,11,0,0
+7,55,1,37,2,1
+1,5,0,4,8,1
+0,12,0,5,0,6
+MS_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.350000 
+Precision micro: 0.470363 
+Recall Macro: 0.304348 
+Recall micro: 0.470363 
+F1Score Macro: 0.325581 
+F1Score micro: 0.470363 
+Accuracy: 0.504780 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+74,35,2,10,3,1
+33,117,11,35,8,9
+4,16,7,13,0,0
+8,42,10,35,5,3
+2,5,1,5,6,0
+1,8,0,7,0,7
+Recreated_Month_Simple_Half_Hour_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.761905 
+Precision micro: 0.653386 
+Recall Macro: 0.761905 
+Recall micro: 0.653386 
+F1Score Macro: 0.761905 
+F1Score micro: 0.653386 
+Accuracy: 0.595618 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+82,34,1,5,0,0
+14,161,4,19,6,4
+2,16,11,9,2,0
+8,27,5,47,4,1
+0,7,0,1,11,0
+0,4,0,1,0,16
+Recreated_Month_Simple_Half_Hour_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.600000 
+Precision micro: 0.587649 
+Recall Macro: 0.285714 
+Recall micro: 0.587649 
+F1Score Macro: 0.387097 
+F1Score micro: 0.587649 
+Accuracy: 0.571713 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+74,42,1,3,0,2
+22,168,4,12,0,2
+2,24,6,7,1,0
+8,47,5,30,2,0
+0,6,1,1,11,0
+1,7,0,3,4,6
+Recreated_Month_Simple_Half_Hour_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.812500 
+Precision micro: 0.585657 
+Recall Macro: 0.619048 
+Recall micro: 0.585657 
+F1Score Macro: 0.702703 
+F1Score micro: 0.585657 
+Accuracy: 0.561753 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+80,34,1,3,3,1
+20,153,7,18,8,2
+2,21,5,11,1,0
+9,30,13,33,7,0
+1,5,0,3,10,0
+0,7,0,1,0,13
+Recreated_Month_Simple_Half_Hour_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.941176 
+Precision micro: 0.621514 
+Recall Macro: 0.761905 
+Recall micro: 0.621514 
+F1Score Macro: 0.842105 
+F1Score micro: 0.621514 
+Accuracy: 0.587649 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+77,36,7,1,1,0
+13,159,10,16,9,1
+2,18,14,6,0,0
+5,36,9,34,8,0
+0,6,0,1,12,0
+0,3,0,2,0,16
+Recreated_Month_Simple_Hour_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.941176 
+Precision micro: 0.617530 
+Recall Macro: 0.761905 
+Recall micro: 0.617530 
+F1Score Macro: 0.842105 
+F1Score micro: 0.617530 
+Accuracy: 0.605578 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+68,43,2,8,1,1
+12,165,7,13,11,0
+3,16,11,6,4,0
+3,34,8,39,7,0
+1,3,1,3,11,0
+0,1,1,3,0,16
+Recreated_Month_Simple_Hour_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.692308 
+Precision micro: 0.553785 
+Recall Macro: 0.428571 
+Recall micro: 0.553785 
+F1Score Macro: 0.529412 
+F1Score micro: 0.553785 
+Accuracy: 0.567729 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+80,36,2,4,1,0
+25,146,9,21,7,0
+3,17,8,7,4,1
+6,44,3,30,6,2
+0,7,1,5,5,1
+0,4,0,6,2,9
+Recreated_Month_Simple_Hour_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.777778 
+Precision micro: 0.547809 
+Recall Macro: 0.666667 
+Recall micro: 0.547809 
+F1Score Macro: 0.717949 
+F1Score micro: 0.547809 
+Accuracy: 0.563745 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+73,41,3,5,1,0
+25,145,7,22,8,1
+3,19,6,10,2,0
+7,26,10,30,15,3
+1,7,1,3,7,0
+0,5,1,0,1,14
+Recreated_Month_Simple_Hour_Original_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.639442 
+Recall Macro: 0.714286 
+Recall micro: 0.639442 
+F1Score Macro: 0.833333 
+F1Score micro: 0.639442 
+Accuracy: 0.585657 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+78,37,3,4,1,0
+15,156,9,17,11,0
+4,13,13,7,3,0
+5,32,4,49,1,0
+0,5,1,3,10,0
+0,2,0,4,0,15
+Recreated_Week_Simple_Half_Hour_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.802326 
+Precision micro: 0.712941 
+Recall Macro: 0.802326 
+Recall micro: 0.712941 
+F1Score Macro: 0.802326 
+F1Score micro: 0.712941 
+Accuracy: 0.664314 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+274,31,8,19,1,1
+27,250,12,29,9,5
+12,25,66,31,5,3
+30,35,24,205,6,8
+5,6,4,13,45,0
+0,3,3,11,0,69
+Recreated_Week_Simple_Half_Hour_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.545455 
+Precision micro: 0.545882 
+Recall Macro: 0.558140 
+Recall micro: 0.545882 
+F1Score Macro: 0.551724 
+F1Score micro: 0.545882 
+Accuracy: 0.552157 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+249,56,6,20,2,1
+61,182,13,60,8,8
+17,43,25,47,2,8
+33,58,23,160,13,21
+4,18,5,12,32,2
+3,11,8,16,0,48
+Recreated_Week_Simple_Half_Hour_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.759494 
+Precision micro: 0.536471 
+Recall Macro: 0.697674 
+Recall micro: 0.536471 
+F1Score Macro: 0.727273 
+F1Score micro: 0.536471 
+Accuracy: 0.553725 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+234,70,4,26,0,0
+51,188,9,69,11,4
+14,44,21,51,6,6
+31,79,25,150,18,5
+2,21,2,13,31,4
+1,7,5,13,0,60
+Recreated_Week_Simple_Half_Hour_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.847059 
+Precision micro: 0.711373 
+Recall Macro: 0.837209 
+Recall micro: 0.711373 
+F1Score Macro: 0.842105 
+F1Score micro: 0.711373 
+Accuracy: 0.651765 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+271,38,4,18,1,2
+34,237,16,33,11,1
+8,24,57,39,11,3
+27,29,18,222,7,5
+3,10,3,7,48,2
+0,4,2,8,0,72
+Recreated_Week_Simple_Hour_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.894737 
+Precision micro: 0.681604 
+Recall Macro: 0.790698 
+Recall micro: 0.681604 
+F1Score Macro: 0.839506 
+F1Score micro: 0.681604 
+Accuracy: 0.644654 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+270,35,7,21,0,1
+38,229,13,33,17,2
+15,23,61,36,7,0
+27,42,27,195,10,4
+5,5,8,10,44,1
+1,5,2,10,0,68
+Recreated_Week_Simple_Hour_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.810127 
+Precision micro: 0.617138 
+Recall Macro: 0.744186 
+Recall micro: 0.617138 
+F1Score Macro: 0.775758 
+F1Score micro: 0.617138 
+Accuracy: 0.609277 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+264,42,13,11,2,2
+54,196,18,52,8,4
+15,19,50,52,6,0
+24,47,34,177,17,6
+7,6,7,16,34,3
+1,8,3,10,0,64
+Recreated_Week_Simple_Hour_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.702381 
+Precision micro: 0.547956 
+Recall Macro: 0.686047 
+Recall micro: 0.547956 
+F1Score Macro: 0.694118 
+F1Score micro: 0.547956 
+Accuracy: 0.551887 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+246,65,3,19,1,0
+50,189,8,65,14,6
+14,45,24,47,6,6
+30,79,25,145,16,10
+3,24,0,9,34,3
+1,8,5,13,0,59
+Recreated_Week_Simple_Hour_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.841463 
+Precision micro: 0.683962 
+Recall Macro: 0.802326 
+Recall micro: 0.683962 
+F1Score Macro: 0.821429 
+F1Score micro: 0.683962 
+Accuracy: 0.637579 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+260,52,5,13,1,3
+32,235,12,41,10,2
+13,18,57,43,9,2
+19,35,30,206,9,6
+4,8,4,14,43,0
+2,5,2,8,0,69
+SAHD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.642012 
+Recall Macro: 0.857143 
+Recall micro: 0.642012 
+F1Score Macro: 0.923077 
+F1Score micro: 0.642012 
+Accuracy: 0.677515 
+Number of Neighbours: 9 
+
+Confusion Matrix 
+74,30,0,1,0,0
+18,107,6,14,0,0
+4,8,3,5,1,0
+9,18,2,21,0,0
+3,0,0,0,0,0
+0,2,0,0,0,12
+SAHD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.624260 
+Recall Macro: 0.714286 
+Recall micro: 0.624260 
+F1Score Macro: 0.833333 
+F1Score micro: 0.624260 
+Accuracy: 0.609467 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+79,25,0,1,0,0
+21,106,0,18,0,0
+1,11,0,9,0,0
+6,28,0,16,0,0
+2,0,0,1,0,0
+0,4,0,0,0,10
+SAHD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.916667 
+Precision micro: 0.627219 
+Recall Macro: 0.785714 
+Recall micro: 0.627219 
+F1Score Macro: 0.846154 
+F1Score micro: 0.627219 
+Accuracy: 0.627219 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+72,32,1,0,0,0
+27,111,0,6,0,1
+6,11,1,3,0,0
+8,25,0,17,0,0
+1,2,0,0,0,0
+1,2,0,0,0,11
+SAHD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.923077 
+Precision micro: 0.659763 
+Recall Macro: 0.857143 
+Recall micro: 0.659763 
+F1Score Macro: 0.888889 
+F1Score micro: 0.659763 
+Accuracy: 0.644970 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+70,28,0,7,0,0
+19,113,0,12,0,1
+3,5,0,13,0,0
+9,13,0,28,0,0
+2,0,0,1,0,0
+0,0,0,2,0,12
+SAHHD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.916667 
+Precision micro: 0.616236 
+Recall Macro: 0.916667 
+Recall micro: 0.616236 
+F1Score Macro: 0.916667 
+F1Score micro: 0.616236 
+Accuracy: 0.671587 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+74,18,0,3,0,1
+35,62,0,16,0,0
+1,6,0,4,0,0
+6,11,0,20,0,0
+1,1,0,0,0,0
+0,1,0,0,0,11
+SAHHD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.916667 
+Precision micro: 0.645756 
+Recall Macro: 0.916667 
+Recall micro: 0.645756 
+F1Score Macro: 0.916667 
+F1Score micro: 0.645756 
+Accuracy: 0.630996 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+76,20,0,0,0,0
+20,78,2,12,0,1
+1,7,0,2,1,0
+3,22,2,10,0,0
+1,1,0,0,0,0
+0,1,0,0,0,11
+SAHHD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.697417 
+Recall Macro: 0.833333 
+Recall micro: 0.697417 
+F1Score Macro: 0.909091 
+F1Score micro: 0.697417 
+Accuracy: 0.690037 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+69,27,0,0,0,0
+15,97,0,1,0,0
+2,9,0,0,0,0
+8,16,0,13,0,0
+0,2,0,0,0,0
+0,2,0,0,0,10
+SAHHD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.675277 
+Recall Macro: 0.916667 
+Recall micro: 0.675277 
+F1Score Macro: 0.956522 
+F1Score micro: 0.675277 
+Accuracy: 0.704797 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+74,11,0,11,0,0
+17,76,0,20,0,0
+4,4,0,3,0,0
+6,9,0,22,0,0
+0,2,0,0,0,0
+0,1,0,0,0,11
+SAPD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.888889 
+Precision micro: 0.595703 
+Recall Macro: 0.695652 
+Recall micro: 0.595703 
+F1Score Macro: 0.780488 
+F1Score micro: 0.595703 
+Accuracy: 0.595703 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+82,36,1,5,0,0
+23,146,2,30,9,1
+4,19,4,11,2,0
+6,29,6,47,6,1
+1,4,2,2,10,0
+0,5,0,1,1,16
+SAPD_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.352941 
+Precision micro: 0.498047 
+Recall Macro: 0.260870 
+Recall micro: 0.498047 
+F1Score Macro: 0.300000 
+F1Score micro: 0.498047 
+Accuracy: 0.517578 
+Number of Neighbours: 11 
+
+Confusion Matrix 
+70,47,1,5,1,0
+26,155,3,20,4,3
+5,22,0,10,1,2
+9,56,5,19,4,2
+1,8,0,1,5,4
+0,9,1,4,3,6
+SAPD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.590909 
+Precision micro: 0.535156 
+Recall Macro: 0.565217 
+Recall micro: 0.535156 
+F1Score Macro: 0.577778 
+F1Score micro: 0.535156 
+Accuracy: 0.525391 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+70,47,1,4,1,1
+15,160,5,25,3,3
+2,25,2,10,0,1
+8,57,0,23,5,2
+1,10,0,0,6,2
+0,6,0,3,1,13
+SAPD_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.857143 
+Precision micro: 0.572266 
+Recall Macro: 0.782609 
+Recall micro: 0.572266 
+F1Score Macro: 0.818182 
+F1Score micro: 0.572266 
+Accuracy: 0.593750 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+82,31,1,9,0,1
+31,129,7,30,13,1
+4,12,7,15,2,0
+10,30,6,45,3,1
+0,3,1,3,12,0
+2,2,0,1,0,18
+SAPD_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.785714 
+Precision micro: 0.568025 
+Recall Macro: 0.793814 
+Recall micro: 0.568025 
+F1Score Macro: 0.789744 
+F1Score micro: 0.568025 
+Accuracy: 0.562644 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+247,68,1,15,0,2
+62,188,12,60,10,5
+18,32,24,58,6,4
+40,59,21,168,21,10
+5,9,6,18,35,0
+2,8,3,7,0,77
+SAPD_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.391304 
+Precision micro: 0.418140 
+Recall Macro: 0.463918 
+Recall micro: 0.418140 
+F1Score Macro: 0.424528 
+F1Score micro: 0.418140 
+Accuracy: 0.449654 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+209,91,4,20,2,7
+79,137,14,82,8,17
+18,45,9,53,5,12
+29,95,26,132,12,25
+5,19,6,22,12,9
+3,16,6,25,2,45
+SAPD_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.504132 
+Precision micro: 0.492698 
+Recall Macro: 0.628866 
+Recall micro: 0.492698 
+F1Score Macro: 0.559633 
+F1Score micro: 0.492698 
+Accuracy: 0.502690 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+230,73,4,22,1,3
+55,172,16,72,6,16
+13,39,14,65,4,7
+35,83,17,146,18,20
+5,14,3,19,18,14
+1,11,6,15,3,61
+SAPD_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.770000 
+Precision micro: 0.558801 
+Recall Macro: 0.793814 
+Recall micro: 0.558801 
+F1Score Macro: 0.781726 
+F1Score micro: 0.558801 
+Accuracy: 0.557264 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+246,70,1,14,0,2
+64,181,15,62,12,3
+18,33,19,63,6,3
+36,62,17,170,20,14
+5,8,4,21,34,1
+3,6,4,7,0,77
+SAPHH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.611111 
+Precision micro: 0.573034 
+Recall Macro: 0.647059 
+Recall micro: 0.573034 
+F1Score Macro: 0.628571 
+F1Score micro: 0.573034 
+Accuracy: 0.631461 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+67,39,3,5,0,0
+16,126,9,25,3,1
+4,14,8,8,1,0
+8,29,5,34,2,6
+0,4,2,0,9,0
+1,0,0,5,0,11
+SAPHH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.555556 
+Precision micro: 0.577528 
+Recall Macro: 0.588235 
+Recall micro: 0.577528 
+F1Score Macro: 0.571429 
+F1Score micro: 0.577528 
+Accuracy: 0.537079 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+77,36,0,1,0,0
+24,128,5,17,2,4
+3,16,2,13,1,0
+3,42,2,32,1,4
+0,5,0,2,8,0
+1,3,0,2,1,10
+SAPHH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.451613 
+Precision micro: 0.597753 
+Recall Macro: 0.823529 
+Recall micro: 0.597753 
+F1Score Macro: 0.583333 
+F1Score micro: 0.597753 
+Accuracy: 0.584270 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+85,27,0,1,0,1
+23,130,1,16,2,8
+2,16,4,12,1,0
+8,36,4,27,1,8
+1,3,1,4,6,0
+1,1,0,0,1,14
+SAPHH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.750000 
+Precision micro: 0.633708 
+Recall Macro: 0.705882 
+Recall micro: 0.633708 
+F1Score Macro: 0.727273 
+F1Score micro: 0.633708 
+Accuracy: 0.624719 
+Number of Neighbours: 7 
+
+Confusion Matrix 
+80,28,2,4,0,0
+15,141,6,13,4,1
+4,14,8,8,1,0
+7,34,4,32,4,3
+1,4,1,0,9,0
+1,1,1,2,0,12
+SAPHH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.585859 
+Precision micro: 0.616590 
+Recall Macro: 0.852941 
+Recall micro: 0.616590 
+F1Score Macro: 0.694611 
+F1Score micro: 0.616590 
+Accuracy: 0.600000 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+263,37,2,8,0,0
+48,177,17,36,1,4
+16,22,38,34,2,4
+35,48,27,117,3,32
+4,10,2,13,16,1
+4,3,0,3,0,58
+SAPHH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.553846 
+Precision micro: 0.469124 
+Recall Macro: 0.529412 
+Recall micro: 0.469124 
+F1Score Macro: 0.541353 
+F1Score micro: 0.469124 
+Accuracy: 0.470968 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+226,40,10,30,2,2
+67,98,25,83,7,3
+13,32,22,42,3,4
+31,69,28,115,5,14
+2,10,3,13,12,6
+1,5,2,17,7,36
+SAPHH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.553191 
+Precision micro: 0.590783 
+Recall Macro: 0.764706 
+Recall micro: 0.590783 
+F1Score Macro: 0.641975 
+F1Score micro: 0.590783 
+Accuracy: 0.579724 
+Number of Neighbours: 4 
+
+Confusion Matrix 
+254,39,3,11,0,3
+50,158,12,39,3,21
+26,18,26,37,4,5
+36,51,22,134,7,12
+6,9,4,9,17,1
+1,7,0,7,1,52
+SAPHH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.666667 
+Precision micro: 0.609217 
+Recall Macro: 0.823529 
+Recall micro: 0.609217 
+F1Score Macro: 0.736842 
+F1Score micro: 0.609217 
+Accuracy: 0.606452 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+255,50,1,4,0,0
+52,182,6,38,2,3
+18,28,23,45,2,0
+38,57,13,129,2,23
+5,11,3,9,16,2
+3,4,0,5,0,56
+SAPH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.777778 
+Precision micro: 0.628099 
+Recall Macro: 0.666667 
+Recall micro: 0.628099 
+F1Score Macro: 0.717949 
+F1Score micro: 0.628099 
+Accuracy: 0.609504 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+80,34,1,3,1,0
+16,154,9,18,5,1
+3,18,10,5,1,0
+8,26,12,34,3,3
+1,4,1,0,12,0
+0,2,0,3,2,14
+SAPH_Month_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.523810 
+Precision micro: 0.561983 
+Recall Macro: 0.523810 
+Recall micro: 0.561983 
+F1Score Macro: 0.523810 
+F1Score micro: 0.561983 
+Accuracy: 0.541322 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+68,44,1,4,1,1
+33,134,6,22,4,4
+2,10,8,14,2,1
+2,27,7,43,3,4
+2,4,1,3,8,0
+0,4,0,4,2,11
+SAPH_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.482759 
+Precision micro: 0.599174 
+Recall Macro: 0.666667 
+Recall micro: 0.599174 
+F1Score Macro: 0.560000 
+F1Score micro: 0.599174 
+Accuracy: 0.588843 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+89,24,1,3,0,2
+25,143,5,19,4,7
+4,10,5,15,2,1
+7,36,7,29,2,5
+0,4,1,3,10,0
+1,4,0,0,2,14
+SAPH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.842105 
+Precision micro: 0.634298 
+Recall Macro: 0.761905 
+Recall micro: 0.634298 
+F1Score Macro: 0.800000 
+F1Score micro: 0.634298 
+Accuracy: 0.605372 
+Number of Neighbours: 5 
+
+Confusion Matrix 
+85,24,3,5,1,1
+18,149,13,17,6,0
+5,14,9,7,2,0
+8,29,8,36,3,2
+1,3,1,1,12,0
+0,3,0,2,0,16
+SAPH_Week_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.744444 
+Precision micro: 0.620033 
+Recall Macro: 0.817073 
+Recall micro: 0.620033 
+F1Score Macro: 0.779070 
+F1Score micro: 0.620033 
+Accuracy: 0.623344 
+Number of Neighbours: 12 
+
+Confusion Matrix 
+247,46,6,24,1,1
+50,205,18,38,8,2
+10,30,43,39,7,3
+31,53,26,144,11,17
+4,8,7,4,43,0
+2,8,0,5,0,67
+SAPH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.705882 
+Precision micro: 0.537252 
+Recall Macro: 0.731707 
+Recall micro: 0.537252 
+F1Score Macro: 0.718563 
+F1Score micro: 0.537252 
+Accuracy: 0.533940 
+Number of Neighbours: 18 
+
+Confusion Matrix 
+225,67,9,23,0,1
+60,171,17,55,13,5
+20,42,27,34,4,5
+36,71,17,138,9,11
+5,17,2,11,28,3
+4,6,2,9,1,60
+SAPH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.587629 
+Precision micro: 0.591060 
+Recall Macro: 0.695122 
+Recall micro: 0.591060 
+F1Score Macro: 0.636872 
+F1Score micro: 0.591060 
+Accuracy: 0.564570 
+Number of Neighbours: 8 
+
+Confusion Matrix 
+255,53,3,13,1,0
+50,198,8,43,9,13
+24,33,22,41,9,3
+29,58,19,148,9,19
+6,10,2,9,34,5
+2,11,0,11,1,57
+SAPH_Week_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.739583 
+Precision micro: 0.652318 
+Recall Macro: 0.865854 
+Recall micro: 0.652318 
+F1Score Macro: 0.797753 
+F1Score micro: 0.652318 
+Accuracy: 0.629967 
+Number of Neighbours: 6 
+
+Confusion Matrix 
+273,34,2,11,3,2
+48,214,19,30,6,4
+16,25,41,38,8,4
+40,42,31,144,10,15
+4,9,2,6,45,0
+1,5,0,5,0,71
+WS_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.533333 
+Precision micro: 0.451662 
+Recall Macro: 0.494845 
+Recall micro: 0.451662 
+F1Score Macro: 0.513369 
+F1Score micro: 0.451662 
+Accuracy: 0.481873 
+Number of Neighbours: 16 
+
+Confusion Matrix 
+218,90,7,21,2,2
+62,152,26,80,10,8
+16,52,15,48,4,8
+37,82,20,155,17,22
+7,21,1,32,10,2
+1,15,6,26,1,48
+WS_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.534091 
+Precision micro: 0.475831 
+Recall Macro: 0.484536 
+Recall micro: 0.475831 
+F1Score Macro: 0.508108 
+F1Score micro: 0.475831 
+Accuracy: 0.478097 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+221,92,6,16,2,3
+61,168,16,73,10,10
+18,50,19,48,1,7
+35,74,24,164,18,18
+5,21,1,32,11,3
+0,14,4,31,1,47
+WS_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.518072 
+Precision micro: 0.446375 
+Recall Macro: 0.443299 
+Recall micro: 0.446375 
+F1Score Macro: 0.477778 
+F1Score micro: 0.446375 
+Accuracy: 0.491692 
+Number of Neighbours: 17 
+
+Confusion Matrix 
+211,100,7,18,2,2
+59,162,28,68,12,9
+18,52,12,53,2,6
+31,85,26,153,18,20
+7,19,1,33,10,3
+3,15,5,30,1,43
+WS_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.540230 
+Precision micro: 0.451662 
+Recall Macro: 0.484536 
+Recall micro: 0.451662 
+F1Score Macro: 0.510870 
+F1Score micro: 0.451662 
+Accuracy: 0.484894 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+218,88,9,21,3,1
+75,154,22,73,7,7
+20,44,17,52,4,6
+36,88,22,149,15,23
+8,16,3,30,13,3
+1,15,7,27,0,47

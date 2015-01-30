@@ -1,0 +1,12 @@
+AH_Week_Original_Matrix_Binary_LDA 
+Precision Macro: 0.777778 
+Precision micro: 0.746224 
+Recall Macro: 0.671827 
+Recall micro: 0.746224 
+F1Score Macro: 0.720930 
+F1Score micro: 0.746224 
+Accuracy: 0.746224 
+
+Confusion Matrix 
+554,124
+212,434

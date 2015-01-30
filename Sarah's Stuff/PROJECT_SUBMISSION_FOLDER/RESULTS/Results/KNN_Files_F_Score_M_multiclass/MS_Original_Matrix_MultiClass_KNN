@@ -1,0 +1,17 @@
+MS_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.350000 
+Precision micro: 0.470363 
+Recall Macro: 0.304348 
+Recall micro: 0.470363 
+F1Score Macro: 0.325581 
+F1Score micro: 0.470363 
+Accuracy: 0.504780 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+74,35,2,10,3,1
+33,117,11,35,8,9
+4,16,7,13,0,0
+8,42,10,35,5,3
+2,5,1,5,6,0
+1,8,0,7,0,7

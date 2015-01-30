@@ -1,0 +1,16 @@
+Recreated_Week_Simple_Half_Hour_CFS_Matrix_MultiClass_LDA 
+Precision Macro: 0.626374 
+Precision micro: 0.539608 
+Recall Macro: 0.662791 
+Recall micro: 0.539608 
+F1Score Macro: 0.644068 
+F1Score micro: 0.539608 
+Accuracy: 0.539608 
+
+Confusion Matrix 
+273,46,2,10,0,3
+98,140,15,59,8,12
+17,48,24,40,12,1
+37,73,25,149,6,18
+2,9,4,13,45,0
+3,6,0,12,8,57

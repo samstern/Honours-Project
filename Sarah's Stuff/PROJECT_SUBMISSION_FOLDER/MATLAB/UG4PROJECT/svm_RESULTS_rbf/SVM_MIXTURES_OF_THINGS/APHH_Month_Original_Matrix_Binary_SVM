@@ -1,0 +1,14 @@
+APHH_Month_Original_Matrix_Binary_SVM 
+Precision Macro: 0.679688 
+Precision micro: 0.756250 
+Recall Macro: 0.701613 
+Recall micro: 0.756250 
+F1Score Macro: 0.690476 
+F1Score micro: 0.756250 
+Accuracy: 0.756250 
+Best Cost: 32768.000000 
+Best Gamma: 8.000000 
+
+155,41
+37,87
+0,0

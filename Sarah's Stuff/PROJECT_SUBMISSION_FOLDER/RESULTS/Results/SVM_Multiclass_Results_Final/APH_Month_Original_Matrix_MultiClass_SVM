@@ -1,0 +1,18 @@
+APH_Month_Original_Matrix_MultiClass_SVM 
+Precision Macro: 0.428571 
+Precision micro: 0.473267 
+Recall Macro: 0.375000 
+Recall micro: 0.473267 
+F1Score Macro: 0.400000 
+F1Score micro: 0.473267 
+Accuracy: 0.473267 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+92,55,4,8,0,1
+20,92,11,24,6,1
+7,23,11,20,3,3
+1,29,9,31,4,4
+0,4,3,8,4,3
+2,4,2,5,2,9
+0,0,0,0,0,0

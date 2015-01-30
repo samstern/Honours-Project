@@ -1,0 +1,14 @@
+MS_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.654054 
+Precision micro: 0.733766 
+Recall Macro: 0.672222 
+Recall micro: 0.733766 
+F1Score Macro: 0.663014 
+F1Score micro: 0.733766 
+Accuracy: 0.733766 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+218,64
+59,121
+0,0

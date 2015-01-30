@@ -1,0 +1,14 @@
+APHH_Week_Original_Matrix_Binary_SVM 
+Precision Macro: 0.709622 
+Precision micro: 0.755957 
+Recall Macro: 0.763401 
+Recall micro: 0.755957 
+F1Score Macro: 0.735530 
+F1Score micro: 0.755957 
+Accuracy: 0.755957 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+507,169
+128,413
+0,0

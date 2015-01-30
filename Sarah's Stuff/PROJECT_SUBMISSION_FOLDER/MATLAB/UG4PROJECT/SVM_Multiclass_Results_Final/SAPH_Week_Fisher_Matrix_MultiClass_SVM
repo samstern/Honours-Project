@@ -1,0 +1,18 @@
+SAPH_Week_Fisher_Matrix_MultiClass_SVM 
+Precision Macro: 0.634146 
+Precision micro: 0.456126 
+Recall Macro: 0.393939 
+Recall micro: 0.456126 
+F1Score Macro: 0.485981 
+F1Score micro: 0.456126 
+Accuracy: 0.456126 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+272,99,19,56,7,3
+31,105,33,48,5,7
+10,34,26,53,8,7
+6,33,25,62,5,2
+0,21,20,34,34,11
+6,29,9,29,7,52
+0,0,0,0,0,0

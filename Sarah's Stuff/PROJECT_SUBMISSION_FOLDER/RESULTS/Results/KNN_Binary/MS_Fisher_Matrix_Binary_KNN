@@ -1,0 +1,13 @@
+MS_Fisher_Matrix_Binary_KNN 
+Precision Macro: 0.664804 
+Precision micro: 0.727273 
+Recall Macro: 0.643243 
+Recall micro: 0.727273 
+F1Score Macro: 0.653846 
+F1Score micro: 0.727273 
+Accuracy: 0.738095 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+217,60
+66,119

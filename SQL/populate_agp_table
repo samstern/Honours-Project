@@ -1,0 +1,21 @@
+# populate hes_database.appliance_group_data with the csv files
+load data local infile 'appliance_group_data-1a.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+load data local infile 'appliance_group_data-1b.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+load data local infile 'appliance_group_data-1c.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+load data local infile 'appliance_group_data-1d.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+load data local infile 'appliance_group_data-2.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+load data local infile 'appliance_group_data-3.csv' into table appliance_group_data fields terminated by ','enclosed by '"' lines terminated by '\n' (IntervalID, Household, Appliance, Date, Data, TimeInterval);
+
+load data local infile 'classes.csv' into table classes fields terminated by ','enclosed by '"' lines terminated by '\r' (Household, Occupancy, Children, Social_Grade);
+
+load data local infile 'seasonal_adjustments.csv' into table seasonal_adjustments fields terminated by ','enclosed by '"' lines terminated by '\n' (Day, Apptype, Factor);
+
+load data local infile 'appliance_types.csv' into table appliance_types fields terminated by ','enclosed by '"' lines terminated by '\n' (Appcode, Apptype)
+
+select t.*, app.Apptype, dayofyear(t.dates) from t203493 t inner join hes_database.appliance_types app on t.Appliance = app.Appcode;
+
+select t.*, app.Apptype, dayofyear(t.dates) from t203493 t, hes_database.appliance_types app, hes_database.seasonal_adjustments adj where t.Appliance = app.Appcode and dayofyear(t.dates)=adj.day;
+
+select * from t203493 t, hes_database.seasonal_adjustments adj where dayofyear(t.dates)=adj.day limit 1;
+
+201269 

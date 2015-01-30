@@ -1,0 +1,16 @@
+AHD_Month_CFS_Matrix_MultiClass_LDA 
+Precision Macro: 0.750000 
+Precision micro: 0.615925 
+Recall Macro: 0.705882 
+Recall micro: 0.615925 
+F1Score Macro: 0.727273 
+F1Score micro: 0.615925 
+Accuracy: 0.615925 
+
+Confusion Matrix 
+86,24,0,2,0,0
+32,122,7,14,1,4
+2,17,6,2,2,0
+9,30,3,33,4,0
+2,1,1,2,4,0
+0,2,0,3,0,12

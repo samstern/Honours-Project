@@ -1,0 +1,17 @@
+ASD_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.409091 
+Precision micro: 0.481481 
+Recall Macro: 0.391304 
+Recall micro: 0.481481 
+F1Score Macro: 0.400000 
+F1Score micro: 0.481481 
+Accuracy: 0.528265 
+Number of Neighbours: 13 
+
+Confusion Matrix 
+81,34,0,7,3,0
+30,122,13,36,6,3
+2,24,1,8,1,4
+11,46,2,29,3,5
+1,5,2,5,5,1
+0,7,2,4,1,9

@@ -1,0 +1,17 @@
+APH_Week_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.377778 
+Precision micro: 0.520408 
+Recall Macro: 0.600000 
+Recall micro: 0.520408 
+F1Score Macro: 0.463636 
+F1Score micro: 0.520408 
+Accuracy: 0.527473 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+257,51,2,16,0,5
+71,165,12,53,8,23
+21,36,12,60,3,9
+36,63,19,151,12,32
+4,11,3,12,27,15
+4,12,1,12,5,51

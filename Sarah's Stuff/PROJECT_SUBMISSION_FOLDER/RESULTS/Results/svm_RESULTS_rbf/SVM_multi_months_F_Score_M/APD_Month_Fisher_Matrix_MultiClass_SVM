@@ -1,0 +1,18 @@
+APD_Month_Fisher_Matrix_MultiClass_SVM 
+Precision Macro: 0.545455 
+Precision micro: 0.428016 
+Recall Macro: 0.173913 
+Recall micro: 0.428016 
+F1Score Macro: 0.263736 
+F1Score micro: 0.428016 
+Accuracy: 0.428016 
+Best Cost: 32768.000000 
+Best Gamma: 1.777802 
+
+85,36,4,11,1,0
+27,87,9,19,2,2
+5,38,10,30,2,3
+4,15,8,16,0,1
+2,6,2,6,10,4
+2,29,7,15,4,12
+0,0,0,0,0,0

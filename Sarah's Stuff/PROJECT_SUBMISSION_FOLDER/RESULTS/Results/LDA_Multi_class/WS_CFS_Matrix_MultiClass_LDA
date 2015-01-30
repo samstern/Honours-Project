@@ -1,0 +1,16 @@
+WS_CFS_Matrix_MultiClass_LDA 
+Precision Macro: 0.354839 
+Precision micro: 0.443353 
+Recall Macro: 0.340206 
+Recall micro: 0.443353 
+F1Score Macro: 0.347368 
+F1Score micro: 0.443353 
+Accuracy: 0.443353 
+
+Confusion Matrix 
+285,33,0,17,0,5
+155,91,0,86,0,6
+28,43,0,69,0,3
+64,62,0,178,0,29
+9,4,0,43,0,17
+7,5,0,52,0,33

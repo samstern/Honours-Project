@@ -1,0 +1,14 @@
+SAPHH_Week_FCBF_Matrix_Binary_SVM 
+Precision Macro: 0.648374 
+Precision micro: 0.703226 
+Recall Macro: 0.681624 
+Recall micro: 0.703226 
+F1Score Macro: 0.664583 
+F1Score micro: 0.703226 
+Accuracy: 0.703226 
+Best Cost: 0.000010 
+Best Gamma: 0.000000 
+
+444,173
+149,319
+0,0

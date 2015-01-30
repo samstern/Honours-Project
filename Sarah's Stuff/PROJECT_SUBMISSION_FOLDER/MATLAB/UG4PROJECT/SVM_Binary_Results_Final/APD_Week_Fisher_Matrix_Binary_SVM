@@ -1,0 +1,14 @@
+APD_Week_Fisher_Matrix_Binary_SVM 
+Precision Macro: 0.647528 
+Precision micro: 0.719110 
+Recall Macro: 0.736842 
+Recall micro: 0.719110 
+F1Score Macro: 0.689304 
+F1Score micro: 0.719110 
+Accuracy: 0.719110 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+531,221
+145,406
+0,0

@@ -1,0 +1,17 @@
+SAHHD_Month_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 1.000000 
+Precision micro: 0.697417 
+Recall Macro: 0.833333 
+Recall micro: 0.697417 
+F1Score Macro: 0.909091 
+F1Score micro: 0.697417 
+Accuracy: 0.690037 
+Number of Neighbours: 10 
+
+Confusion Matrix 
+69,27,0,0,0,0
+15,97,0,1,0,0
+2,9,0,0,0,0
+8,16,0,13,0,0
+0,2,0,0,0,0
+0,2,0,0,0,10

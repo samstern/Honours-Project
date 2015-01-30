@@ -1,0 +1,17 @@
+Recreated_Week_Simple_Hour_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.894737 
+Precision micro: 0.681604 
+Recall Macro: 0.790698 
+Recall micro: 0.681604 
+F1Score Macro: 0.839506 
+F1Score micro: 0.681604 
+Accuracy: 0.644654 
+Number of Neighbours: 3 
+
+Confusion Matrix 
+270,35,7,21,0,1
+38,229,13,33,17,2
+15,23,61,36,7,0
+27,42,27,195,10,4
+5,5,8,10,44,1
+1,5,2,10,0,68

@@ -1,0 +1,17 @@
+AH_Month_Original_Matrix_MultiClass_KNN 
+Precision Macro: 0.470588 
+Precision micro: 0.486590 
+Recall Macro: 0.347826 
+Recall micro: 0.486590 
+F1Score Macro: 0.400000 
+F1Score micro: 0.486590 
+Accuracy: 0.501916 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+76,37,2,9,1,0
+24,130,12,36,5,5
+5,23,0,10,1,1
+12,45,8,34,2,2
+2,5,0,5,6,1
+0,11,0,4,0,8

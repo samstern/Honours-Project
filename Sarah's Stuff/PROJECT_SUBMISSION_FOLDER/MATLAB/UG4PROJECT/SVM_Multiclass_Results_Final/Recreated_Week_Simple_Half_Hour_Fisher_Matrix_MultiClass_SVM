@@ -1,0 +1,18 @@
+Recreated_Week_Simple_Half_Hour_Fisher_Matrix_MultiClass_SVM 
+Precision Macro: 0.720930 
+Precision micro: 0.463529 
+Recall Macro: 0.389937 
+Recall micro: 0.463529 
+F1Score Macro: 0.506122 
+F1Score micro: 0.463529 
+Accuracy: 0.463529 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+278,132,22,38,4,4
+31,84,27,48,7,4
+11,25,30,44,0,3
+8,32,29,97,9,5
+0,28,16,52,40,8
+6,31,18,29,13,62
+0,0,0,0,0,0

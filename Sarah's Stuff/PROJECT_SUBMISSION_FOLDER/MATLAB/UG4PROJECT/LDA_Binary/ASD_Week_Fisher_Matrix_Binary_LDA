@@ -1,0 +1,12 @@
+ASD_Week_Fisher_Matrix_Binary_LDA 
+Precision Macro: 0.754955 
+Precision micro: 0.731912 
+Recall Macro: 0.659843 
+Recall micro: 0.731912 
+F1Score Macro: 0.704202 
+F1Score micro: 0.731912 
+Accuracy: 0.731912 
+
+Confusion Matrix 
+542,136
+216,419

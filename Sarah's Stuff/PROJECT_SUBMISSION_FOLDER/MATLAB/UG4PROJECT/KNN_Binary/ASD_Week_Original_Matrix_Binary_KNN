@@ -1,0 +1,13 @@
+ASD_Week_Original_Matrix_Binary_KNN 
+Precision Macro: 0.762195 
+Precision micro: 0.778370 
+Recall Macro: 0.787402 
+Recall micro: 0.778370 
+F1Score Macro: 0.774593 
+F1Score micro: 0.778370 
+Accuracy: 0.766184 
+Number of Neighbours: 19 
+
+Confusion Matrix 
+522,156
+135,500

@@ -1,0 +1,17 @@
+Recreated_Week_Simple_Hour_Fisher_Matrix_MultiClass_KNN 
+Precision Macro: 0.702381 
+Precision micro: 0.547956 
+Recall Macro: 0.686047 
+Recall micro: 0.547956 
+F1Score Macro: 0.694118 
+F1Score micro: 0.547956 
+Accuracy: 0.551887 
+Number of Neighbours: 20 
+
+Confusion Matrix 
+246,65,3,19,1,0
+50,189,8,65,14,6
+14,45,24,47,6,6
+30,79,25,145,16,10
+3,24,0,9,34,3
+1,8,5,13,0,59

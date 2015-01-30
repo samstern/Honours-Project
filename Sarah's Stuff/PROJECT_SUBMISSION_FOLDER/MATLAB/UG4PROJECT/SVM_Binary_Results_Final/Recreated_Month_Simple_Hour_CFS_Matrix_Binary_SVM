@@ -1,0 +1,14 @@
+Recreated_Month_Simple_Hour_CFS_Matrix_Binary_SVM 
+Precision Macro: 0.754386 
+Precision micro: 0.749415 
+Recall Macro: 0.664948 
+Recall micro: 0.749415 
+F1Score Macro: 0.706849 
+F1Score micro: 0.749415 
+Accuracy: 0.749415 
+Best Cost: 100000.000000 
+Best Gamma: 0.000000 
+
+191,42
+65,129
+0,0

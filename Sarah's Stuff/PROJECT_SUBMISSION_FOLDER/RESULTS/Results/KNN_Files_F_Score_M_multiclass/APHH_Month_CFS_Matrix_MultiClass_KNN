@@ -1,0 +1,17 @@
+APHH_Month_CFS_Matrix_MultiClass_KNN 
+Precision Macro: 0.523810 
+Precision micro: 0.594595 
+Recall Macro: 0.647059 
+Recall micro: 0.594595 
+F1Score Macro: 0.578947 
+F1Score micro: 0.594595 
+Accuracy: 0.592516 
+Number of Neighbours: 14 
+
+Confusion Matrix 
+87,26,2,0,0,1
+27,137,5,22,5,2
+4,14,9,11,0,1
+11,39,3,32,3,5
+1,4,1,1,10,1
+1,2,0,3,0,11

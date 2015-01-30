@@ -1,0 +1,12 @@
+APH_Month_CFS_Matrix_Binary_LDA 
+Precision Macro: 0.684564 
+Precision micro: 0.725000 
+Recall Macro: 0.579545 
+Recall micro: 0.725000 
+F1Score Macro: 0.627692 
+F1Score micro: 0.725000 
+Accuracy: 0.725000 
+
+Confusion Matrix 
+217,47
+74,102

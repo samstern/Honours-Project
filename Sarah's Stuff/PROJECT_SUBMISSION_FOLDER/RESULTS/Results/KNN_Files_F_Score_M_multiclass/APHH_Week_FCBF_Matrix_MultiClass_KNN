@@ -1,0 +1,17 @@
+APHH_Week_FCBF_Matrix_MultiClass_KNN 
+Precision Macro: 0.194690 
+Precision micro: 0.331964 
+Recall Macro: 0.289474 
+Recall micro: 0.331964 
+F1Score Macro: 0.232804 
+F1Score micro: 0.331964 
+Accuracy: 0.417420 
+Number of Neighbours: 15 
+
+Confusion Matrix 
+186,55,30,41,0,4
+86,67,38,88,12,28
+29,27,27,43,3,10
+43,69,50,93,9,33
+5,13,6,21,9,16
+2,8,10,27,7,22
