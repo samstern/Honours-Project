@@ -1,4 +1,4 @@
-function x=APOD(numhouse,x_POD,children_filtered)
+function x=APOD(numhouse,x_POD,children_filtered,social_grade)
     
     vec_len=28;
     x.all=zeros(numhouse,vec_len);
@@ -16,7 +16,8 @@ function x=APOD(numhouse,x_POD,children_filtered)
         end
     end
    
-    [x.c,x.nc]=split_children(numhouse,x,children_filtered,vec_len);
+    [x.child,x.nchild]=split_children(numhouse,x,children_filtered,vec_len);
+    [x.a,x.b,x.c1,x.c2,x.d,x.e]=split_se(numhouse,x,social_grade);
  
 end
 
@@ -48,3 +49,30 @@ function [xc,xnc]=split_children(numhouse,x,children_filtered,vec_len)
         end
     end
 end
+
+function [xa,xb,xc1,xc2,xd,xe]=split_se(numhouse,x,social_grade)
+    xa=[];
+    xb=[];
+    xc1=[];
+    xc2=[];
+    xd=[];
+    xe=[];
+    
+    for i=1:numhouse
+        if social_grade.all(i)==1
+            xe=[xe;x.all(i,:)];
+        elseif social_grade.all(i)==2
+            xd=[xd;x.all(i,:)];
+        elseif social_grade.all(i)==3
+            xc2=[xc2;x.all(i,:)];
+        elseif social_grade.all(i)==4
+            xc1=[xc1;x.all(i,:)];
+        elseif social_grade.all(i)==5
+            xb=[xb;x.all(i,:)];
+        elseif social_grade.all(i)==6
+            xa=[xa;x.all(i,:)];
+        end
+    end
+    
+end
+    

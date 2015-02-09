@@ -65,7 +65,7 @@ dayAverages = ATDOW(numhouse,daylength,numpts,x_filtered,children_filtered,socia
 
 %% Average part-of-day for each day of the week
 
-x_APOD=APOD(numhouse,x_POD,children_filtered);
+x_APOD=APOD(numhouse,x_POD,children_filtered,social_grade);
 
 %% Average Day Fourier
 
