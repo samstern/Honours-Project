@@ -1,9 +1,24 @@
-\documentclass[10pt,a4paper]{report}
+\documentclass[12pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{variables}
+\usepackage{features}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=scriptsize]{subfig}
+\usepackage[font=small]{caption}
+\usepackage{subcaption} 
+\graphicspath{/Users/samstern/Uni/Honours_Project/Report/fig/}
+\geometry{ a4paper,
+ total={210mm,297mm},
+ left=30mm,
+ right=30mm,
+ top=20mm,
+ bottom=30mm,}
 \author{Sam Stern (s1134468)}
 \title{Machine Learning with Domestic Energy Use Data}
 \begin{document}
@@ -15,17 +30,16 @@ As part of the UK Government's insentive to reduce the Nation's energy consumpti
 
 \tableofcontents
 
+%Introduction
 \input{tex/introduction}
 
 
-\chapter{Data}
 
+%Data
+\input{tex/Data}
 
-\chapter{Feature Exploration and Extraction}
-
-According to \cite{Beckel 2}, possible features that are interesting for classification of househods based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures are the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption figures and can capture relevant patterns that occure through different time intervals. Temporal features capture the first (or last) time some event takes place which or at what time the daily maximum occures. Finally, statistical properties such as variance, give insight into the consumption curve (for example how a households energy consumption correlates with itself.
-\section{Building Features from Energy Readings}
-
+%Feature Exploration and Extraction
+\input{tex/Features}
 
 
 
@@ -39,5 +53,26 @@ According to \cite{Beckel 2}, possible features that are interesting for classif
 \bibitem{OfGEM} Office of Gas and Electricity Markets (OfGEM). {\em Transition to smart meters}. {\tt https://www.ofgem.gov.uk/electricity/retail-market/metering/ transition-smart-meters}.
 
 \bibitem{Vasc} Jorge Vasconcelos. Survey of regulatory and technological developments concern- ing smart metering in the european union electricity market. {\tt http://hdl.handle. net/1814/9267, 2008.}
+
+\bibitem{Quinn} Elias Leake Quinn. Privacy and the new energy infrastructure (february 15, 2009). \texttt{http://ssrn.com/abstract=1370731} or \texttt{http://dx.doi.org/10.2139/ ssrn.1370731}.
+
+\bibitem{LMW} M.A. Lisovich, D.K. Mulligan, and S.B. Wicker. Inferring personal information from demand-response systems. \textit{Security Privacy, IEEE}, 8(1):11–20, Jan 2010.
+
+\bibitem{E-spending} Office for National Statiscics. 2014. Full Report: Household Energy Spending in the UK, 2002-2012. [ONLINE] Available at: \texttt{http://www.ons.gov.uk/ons/dcp171776\_354637.pdf}. [Accessed 26 January 15].
+
+\bibitem{stop}STOPSMARTMETERS. 2012. Stop Smart Meters. [ONLINE] Available at: \texttt{http://stopsmartmeters.org.uk/}. [Accessed 26 January 15].
+
+\bibitem{Smith} Smith Steven W. (1997) \textit{The Scientist and Engineer's Guide to Digital Signal Processing} California Technical Pub
+
+\bibitem{HES}Household electricity survey. \texttt{https://www.gov.uk/government/ uploads/system/uploads/attachment\_data/file/278809/10043\_ R66141HouseholdElectricitySurveyFinalReportissue4.pdf}, January 2014.
+
+\bibitem{early findings}Jason Palmer, Nicola Terry, Tom Kane \textit{Early Findings: Demand side management} 17 June 2013.
+
+\bibitem{Moerchen} Fabian Moerchen (2003) \textit{Time series feature extraction for data mining using DWT and DFT}
+
+\bibitem{Gomez} Leticia M. Blázquez Gomez, Massimo Filippini, Fabian Heimsch (2013) \textit{Regional impact of changes in disposable income on Spanish electricity demand: A spatial econometric analysis} Energy Economics 40:58–66
+
 \end{thebibliography}
 \end{document}
+
+

@@ -1,5 +1,19 @@
 \chapter{Introduction}
 \section{Introduction}
+Amidst international pressure on countries to reduce their carbon footprint \cite{E-comm} and the British public becoming increasingly frustrated by rising energy bills will little explanation to the cause in this rising price \cite{E-spending}, the UK Government is currently executing on a plan to distribute smart meters to households accross the country by 2020. Smart meters, which measure a household's gas and electricity consumption in real-time, are expected to both help a household reduce its energy usage by displaying how much energy is being used , as well as increase transparency in the household's bills by eliminating the need for monthly meter readings and estimations by the energy companies. Instead, the energy providers are given a much more accurate description of the household's consumption and as a result, will be able give a more accurate bill.
+
+While there has generally been strong support for the smart meter program, there has also been resistance to the campaign with fears that the energy companies will use the information as an opportunity to raise their customers bills and increase their own profit \cite{stop}. Perhaps more interestingly though, and therefore the focus of this project, are the concerns which have been have been raised regarding the risk associated with measuring and storing energy consumption data \cite{Quinn} \cite{LMW}. Particularly, to what extent can other information about a household be inferred from energy consumption readings?
+
+The aim of this project is to explore whether (and to what extent) it is possible to construct features that can be used to predict detailed personal information of a household from their energy consumption readings, by taking on the role of a malicious individual (or group) who wishes to exploit this information to determine household properties that might be of interest to someone wishing to either target advertise or burgle a household. Using household electricity consumption information collected by the Household Electricity Survey (HES), a DEFRA sponsored national survey of energy use collected over a period from 2010 to 2011, classification models are created to predict two household properties: (1) The presence (or absence) of children in a household and (2) the IPSOS social grade of the chief income earner of the household. These properties are chosen because, of the information gathered by the HES survey, they are of logical interest to someone who might wish to intrude on a household.
+\newline
+
+This project has 3 main components:
+
+\begin{enumerate}
+\item Clean the data and create a database that stores the house sets and relevant household and energy-use information
+\item Extract useful features from the data that can be used as inputs to a classification model 
+\item Predict household properties using supervised learning methods
+\end{enumerate}
 \section{Smart Meters}
 Following the example of EU Countries such as Italy, Sweden, Finland, Switzerland and Germany \cite{OfGEM}\cite{Vasc}, 
 \section{Related Work}

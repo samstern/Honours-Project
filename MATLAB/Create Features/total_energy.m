@@ -2,6 +2,7 @@
 
 function [monthSum]=total_energy(numhouse,x_filtered,children_filtered,social_grade)
     monthSum.all=zeros(numhouse,1);
+  
     j=1;
     k=1;
     
@@ -11,15 +12,17 @@ function [monthSum]=total_energy(numhouse,x_filtered,children_filtered,social_gr
     monthSum.sgC2=[];
     monthSum.sgD=[];
     monthSum.sgE=[];
+    monthSum.child=[];
+    monthSum.noChild=[];
     for i = 1:numhouse
         monthSum.all(i)=sum(x_filtered(i,:));
         
         
         if children_filtered(i)==1
-            monthSum.child(j)=monthSum.all(i);
+            monthSum.child=[monthSum.child;monthSum.all(i)];
             j=j+1;
         elseif children_filtered(i)==0
-            monthSum.noChild(k)=monthSum.all(i);
+            monthSum.noChild=[monthSum.noChild;monthSum.all(i)];
             k=k+1;
         else
             'children not 1 or 0'

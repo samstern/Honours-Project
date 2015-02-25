@@ -1,5 +1,5 @@
 function [fourier_features]=fourierFeatures(x,children_filtered)
-x_ft = real(fft(x'))';
+x_ft = abs(fft(x'))';
 numhouse= size(x,1);
 fisher_scores = fsFisher(x_ft',children_filtered.all);
 numFeatures=100;

@@ -4,7 +4,8 @@ testHouseholds=randsample(numhouse,round(numhouse/5));
 length(testHouseholds);
 x_test=zeros(length(testHouseholds),x_data_size(2));
 x_train = zeros(x_data_size(1)-length(testHouseholds),x_data_size(2));
-y_test=zeros(length(testHouseholds),1);
+y_test.class=zeros(length(testHouseholds),1);
+y_test.class=zeros(length(testHouseholds),1);
 y_train=zeros(x_data_size(1)-length(testHouseholds),1);
 
 j=1;
@@ -16,7 +17,8 @@ for i=1:numhouse
         j=j+1;
     else
         x_test(k,:)=x_data(i,:);
-        y_test(k)=y_data(i);
+        y_test.class(k)=y_data(i);
+        y_test.position(k)=i;
         k=k+1;
     end
 end

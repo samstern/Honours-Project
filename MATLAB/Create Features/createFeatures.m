@@ -7,8 +7,10 @@ load('data/x_data_4_weeks.mat')
 
 means=mean(mean(x_data'));
 std3=3*std(mean(x_data'));
-outliers=[42;43]; %42 and 42 are empty
-numOutliers=2;
+%outliers=[37;38;39;40;41;42;43;46;48;261;262;332]; %outliers found from visualising data
+%outliers=[(37:42)'];
+outliers=[42;43];
+numOutliers=length(outliers);
 %find the other outliers
 for i=1:529
     if means+std3<mean(x_data(i,:))||means-std3>mean(x_data(i,:))||social_grade.ints(i)==0
@@ -32,6 +34,10 @@ for i=1:numhouse_data
     end
         
 end
+
+%correcting some of the data
+children_filtered.all([24 90 271 368 438 191 366 143 74 422  336 210 82 298 444 513 374 395 277 391 395 417 449 427 430 434 202 187 178 34 406 488 509 30 479 209 376 386 30 190 214 441 442 445 19 31 31 15 86 87 104 188 335 468 489 13 14 16 17 88 140 211 102 412 308 362 311 303 376 315])=1;
+
 
 %% Define global variables
 
@@ -66,6 +72,18 @@ dayAverages = ATDOW(numhouse,daylength,numpts,x_filtered,children_filtered,socia
 %% Average part-of-day for each day of the week
 
 x_APOD=APOD(numhouse,x_POD,children_filtered,social_grade);
+
+%% Weekend to weekday ratio
+
+x_POW_ratio=POW_rat(numhouse,monthSum,dayAverages,children_filtered,social_grade);
+
+%% Average daily variance
+
+x_ADV=ADV(numhouse,daylength,numpts,x_filtered,children_filtered,social_grade);
+
+%% Average weekday correlation
+
+x_corr=WC(numhouse,x_filtered,children_filtered,social_grade);
 
 %% Average Day Fourier
 
@@ -153,4 +171,4 @@ x_APOD=APOD(numhouse,x_POD,children_filtered,social_grade);
 %    end
 % end
 %% Clearning unnecesarry variables
-clear i j k numhouse_data x divNum means std3 outliers numOutliers %numpts daylength
+clear i j k numhouse_data x divNum means std3 numOutliers %numpts daylength

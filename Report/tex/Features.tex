@@ -1,0 +1,70 @@
+\chapter{Feature Exploration and Extraction}
+
+\section{Types of Features}
+When data mining in time series, it is usually not sufficient to consider each point in time sequentially. In addition to ignoring the high dimensionality of the data,  it does not account for the correlation between consecutive values \cite{Moerchen}. It is therefore beneficial to transform and aggregate the data in such a was as to reduce the dimensionality as well as capture differences in the consumption patterns between classes. 
+
+According to \cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures are the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption figures and can capture relevant patterns that occur through different time intervals. Temporal features capture the first (or last) time some event takes place which or at what time the daily maximum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance, give insight into the consumption curve (for example how a households energy consumption correlates with itself.
+
+
+
+\section{Creating Features}
+One method of extracting features would be to compute as many different types as possible, compare them all and chose those that best discriminate the classes. households could be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it is potentially wasteful of the limited resources to do the project. Instead of creating features in an ad hoc manner, feature selection was done in the following way: 1) An were made regarding the distinction between classes (e.g households with children use more energy overall). 2) features were created to capture this distinction (e.g the average energy over a the 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/didn't discriminate between classes while other times, more sophisticated methods were used, as described in \featureSelectionSection.
+\linebreak
+
+The rest of this section describes features that were created from the energy reading data and justifies why they were may have been able to discriminate between classes. Both classification problems (socio-economic classification and child classification) were considered when choosing features to evaluate.
+
+\begin{itemize}
+\item total energy -different classes use more energy than others
+\item mean weekday, saturday and sunday  -different classes use more energy than others on working days or non-working days
+\item variance on weekday - different classes will be more active than others (i.e unemployed might be at home using appliances, however the appliances that the employed use require require more power)
+\item APOD
+\item APOD/total\_energy ratio - patterns like whether cooking takes place over lunchtime of in the evenings or both
+\item correlation between average days of week
+\end{itemize}
+
+\subsection{Total Electricity}
+When visualising the data, it was noted that households had large differences in how much energy they used. While some households had a mean energy consumption 1500 Watts per 10 minutes, others averaged as little as 65 Watts per 10 minute, and while one household consumed up to 19500 Watts in a 10 minute period, another never used more than 1190. Therefore, the first feature that was explored was the total energy consumed in a give period of time. Since it was, at this stage, not known if other factors such, as time of day and the day of the week, have an influence the consumption. Therefore 28 day timeperiods ensured independence from these.
+Building a classifier using the total electricity as input assumes that some classes use more energy than others. This can be justified as there is a known correlation between a household's disposable income and the amount of energy used by the household \cite{Gomez}
+
+\monthSum
+
+Looking at \ref{fig:monthSum}
+
+
+%\monthSumChild
+%\monthSumSocio
+\subsection*{Average Daily Usage}
+As previously alluded to, visualising the timeseries for individual households indicated that there are differences in the energy consumption depending on what part of the week is being considered. With this in mind, the average energy used by each household for each day of the week was computed. This sort of feature explores, not just if some classes use more energy than others, but if it is dependent of the day of the week. 
+\averageDayChild
+\averageDaySocio
+
+\subsection*{Mean Weekday vs. Saturday and Sunday}
+As well as investigating the differences in how much energy different classes use, it is also worthwhile to see when households use most of their energy, both interday and intraday.Starting with interday, it is reasonable to assume that, while some households will use roughly the same amount of energy each day, others might use proportionally more on the weekends versus weekdays  to Comparing the weekday electricity consumption to that of the weekend.The justification being that manual laborers and shift workers  might not use any more or less energy, while households where the cheif income earner is managerial might use more of their energy on the weekends.
+\POWrat
+
+
+
+\subsection*{Variance on Weekday}
+Thus far, the features that have been computed are dependent on \textit{how much} energy has been consumed. It is also worth considering how much volatility there is in the household's energy consumption. Continuing with the idea that energy usage will be different on weekdays versus weekends, the average daily variance for weekdays was computed separately from weekends.
+
+since households vary dramatically in their energy use profiles, the plot had to remove outliers.
+\ADVChild
+\ADVSocio
+
+\subsection*{Average Part-Of-Day (APOD)}
+
+\APODChild
+\APODSocio
+
+
+\subsection*{Correlation Between Weekdays}
+Examining how different days correlate with one another indicates how
+
+\corrChild
+\corrSocio
+\subsection{Periodicity}
+		
+
+\section{Feature Selection}
+
+\section{Class Cardinality}

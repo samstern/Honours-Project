@@ -13,8 +13,10 @@ function pihat=glm_log_reg(x_train,x_test,y_train,y_test,task)
     y_hat=round(pihat(:,1))';
 
     %count=0;
+    [pihat,y_hat',y_test.class,y_test.position']
+    mean_pihat=mean(pihat)
 
-    accuracy=sum(y_test==y_hat')/length(y_test)
+    accuracy=sum(y_test.class==y_hat')/length(y_test)
 
     if strmatch(task,{'child','children','c'},'exact')~=0
         TP=sum(y_hat'==0 & y_hat'==y_test);
