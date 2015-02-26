@@ -11,12 +11,12 @@ function x=APOD(numhouse,x_POD,children_filtered,social_grade)
     for i=1:numhouse
         for j=1:vec_len
             if x.all(i,j)>three_std(j)
-                x.all(i,j)=means(j);
+               % x.all(i,j)=NaN;%means(j);
             end
         end
     end
    
-    [x.child,x.nchild]=split_children(numhouse,x,children_filtered,vec_len);
+    [x.child,x.noChild]=split_children(numhouse,x,children_filtered,vec_len);
     [x.a,x.b,x.c1,x.c2,x.d,x.e]=split_se(numhouse,x,social_grade);
  
 end

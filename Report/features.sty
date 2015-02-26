@@ -36,7 +36,7 @@
 \centering{\includegraphics[scale=0.7]{fig/Total_Electricity_child.jpg}}
 \caption{Total electricity used by households in a 28 day period, grouped by whether the household has chidren or not}
 %\end{center}
-\caption{•}
+\caption{}
 \end{figure}
 }
 
@@ -46,7 +46,7 @@
 \centering{\includegraphics[scale=0.7]{fig/Total_Electricity_socio.jpg}}
 \caption{Total electricity used by households in a 28 day period, grouped by the IPSOS social grade of the household}
 %\end{center}
-\caption{•}
+\caption{}
 \end{figure}
 }
 
@@ -62,6 +62,7 @@
                 \includegraphics[width=\textwidth]{fig/Average_Daily_socio.jpg}
                 \caption{The average total energy used on each day of the week. Households are grouped by their IPSOS social grade}
         \end{subfigure}
+        \label{fig:averageDay}
 \end{figure}
 }
 
@@ -71,7 +72,8 @@
 \centering{\includegraphics[scale=0.5]{fig/Average_Daily_child.jpg}}
 \caption{The average total energy used on each day of the week. Households are grouped by whether or not there are children present}
 %\end{center}
-\caption{•}
+\caption{}
+\label{fig:averageDayChild}
 \end{figure}
 }
 
@@ -80,6 +82,7 @@
 \centering
 \centerline{\includegraphics[scale=0.5]{fig/Average_Daily_socio.jpg}}
 \caption{The average total energy used on each day of the week. Households are grouped by their IPSOS social grade}
+\label{fig:averageDaySocio}
 \end{figure}
 }
 
@@ -93,9 +96,11 @@
                 \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on whether or not there are children present}
         \end{subfigure}%
         \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/POW_rat_socio.jpg}
+                \includegraphics[width=\textwidth]{fig/POW_rat_socio.eps}
                 \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on their IPSOS social grade}
         \end{subfigure}
+        \caption{}
+        \label{fig:POWrat}
 \end{figure}
 }
 
@@ -105,6 +110,7 @@
 \centering{\includegraphics[scale=0.5]{fig/POW_rat_child.jpg}}
 %\end{center}
 \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on whether or not there are children present}
+\label{fig:POWratChild}
 \end{figure}
 }
 
@@ -112,8 +118,9 @@
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{fig/POW_rat_socio.jpg}}
-\caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on their IPSOS social grade}
-\end{figure}
+\caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are their IPSOS social grade}
+\caption{}
+\label{fig:POWratSocio}
 \end{figure}
 }
 
@@ -127,6 +134,7 @@
         \begin{subfigure}[b]{0.5\textwidth}
                 \includegraphics[width=\textwidth]{fig/APOD_socio.jpg}
         \end{subfigure}
+        \label{fig:APOD}
 \end{figure}
 }
 
@@ -136,15 +144,17 @@
 \centering
 \centerline{\includegraphics[scale=0.5]{fig/APOD_child.jpg}}
 %\end{center}
-\caption{•}
+\caption{}
+\label{fig:APODChild}
 \end{figure}
 }
 
 \def\APODSocio{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{fig/APOD_socio.jpg}}
-\caption{•}
+\centerline{\includegraphics[width=20cm,height=20cm]{fig/APOD_socio}}
+\caption{}
+\label{fig:APODSocio}
 \end{figure}
 }
 
@@ -154,28 +164,66 @@
 \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/ADV_child.jpg}
+                \includegraphics[width=\textwidth]{fig/ADV_child}
         \end{subfigure}%
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/ADV_socio.jpg}
+        \begin{subfigure}[b]{0.7\textwidth}
+                \includegraphics[width=\textwidth]{fig/ADV_socio}
         \end{subfigure}
+        \caption{}
+        \label{fig:ADV}
 \end{figure}
 }
 
 \def\ADVChild{
 \begin{figure}[H]
 %\begin{center}
-\centering{\includegraphics[scale=0.5]{fig/ADV_child.jpg}}
+\centering{\includegraphics[scale=0.5]{fig/ADV_child}}
 %\end{center}
-\caption{•}
+\caption{}
+\label{fig:ADVChild}
 \end{figure}
 }
 
 \def\ADVSocio{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{fig/ADV_socio.jpg}}
-\caption{•}
+\centerline{\includegraphics[scale=0.5]{fig/ADV_socio}}
+\caption{}
+\label{fig:ADVSocio}
+\end{figure}
+}
+
+%%log  ADV
+\def\logADV{
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=\textwidth]{fig/log_ADV_child}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=\textwidth]{fig/log_ADV_socio}
+        \end{subfigure}
+        \caption{}
+        \label{fig:logADV}
+\end{figure}
+}
+
+\def\logADVChild{
+\begin{figure}[H]
+%\begin{center}
+\centering{\includegraphics[scale=0.5]{fig/log_ADV_child}}
+%\end{center}
+\caption{}
+\label{fig:logADVChild}
+\end{figure}
+}
+
+\def\logADVSocio{
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.6]{fig/log_ADV_socio}}
+\caption{}
+\label{fig:logADVSocio}
 \end{figure}
 }
 
@@ -189,6 +237,8 @@
         \begin{subfigure}[b]{0.5\textwidth}
                 \includegraphics[width=\textwidth]{fig/Corr_socio.jpg}
         \end{subfigure}
+        \caption{}
+        \label{fig:corr}
 \end{figure}
 }
 
@@ -197,7 +247,8 @@
 %\begin{center}
 \centering{\includegraphics[scale=0.5]{fig/Corr_child.jpg}}
 %\end{center}
-\caption{•}
+\caption{}
+\label{fig:corrChild}
 \end{figure}
 }
 
@@ -205,6 +256,7 @@
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{fig/Corr_socio.jpg}}
-\caption{•}
+\caption{}
+\label{fig:corrSocio}
 \end{figure}
 }

@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {3.1}Types of Features}{6}
 \contentsline {section}{\numberline {3.2}Creating Features}{6}
 \contentsline {subsection}{\numberline {3.2.1}Total Electricity}{7}
-\contentsline {subsection}{\numberline {3.2.2}Periodicity}{15}
-\contentsline {section}{\numberline {3.3}Feature Selection}{15}
-\contentsline {section}{\numberline {3.4}Class Cardinality}{15}
+\contentsline {subsection}{\numberline {3.2.2}Periodicity}{16}
+\contentsline {section}{\numberline {3.3}Feature Selection}{16}
+\contentsline {section}{\numberline {3.4}Class Cardinality}{16}

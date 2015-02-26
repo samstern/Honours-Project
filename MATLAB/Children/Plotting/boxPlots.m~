@@ -78,23 +78,6 @@ function boxPlots(varargin)
             boxplot(x,{intervals,lables},'factorgap',[5,2]);
             title('Average Daily Variance');
             ylabel('$\sigma$','interpreter','latex','fontsize',15)
-            
-            %log ADV    
-        elseif strcmp(varargin{3},'log ADV')
-            x=log(x);
-            x(find(isnan(x)))=0;
-            %isnan(x).*x
-            m=mean(std(x));
-            %x=x.*(x<(3*m));
-            nulify=find(or((x>3*m),x==0));
-            x(nulify)=NaN;
-            intervals={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
-            intervals=[intervals;intervals];
-            intervals=intervals(:);
-            lables=repmat({'child','no child'},1,size(c_x,2));
-            boxplot(x,{intervals,lables},'factorgap',[5,2]);
-            title('Average Daily Variance');
-            ylabel('log($\sigma$)','interpreter','latex','fontsize',15)
 
             
         %corr
@@ -148,11 +131,11 @@ function boxPlots(varargin)
             intervals={'Sat','Sun'};
             intervals=[intervals;intervals;intervals;intervals;intervals;intervals];
             intervals=intervals(:);
-            p1=x(:,1:2:numFeatures*6);
-            p2=x(:,2:2:numFeatures*6);
+            p1=x(:,1:2:numFeature*s)
+            p2=x(:,2:2:numFeatures);
             p=[p1 p2];
             size(p);
-            boxplot(p,{intervals,lab})
+            boxplot(p,{lab,intervals})
             title('Average Weekend to Weekday Ratio')
             xlabel('$\frac{Consumption of Day}{Average Weekday Use}$','interpreter','latex','fontsize',15)
      
@@ -201,25 +184,6 @@ function boxPlots(varargin)
                 t=sprintf('Average Variance on %s', dow{i});
                 title(t)
                 ylabel('$\sigma$','interpreter','latex','fontsize',15)
-            end
-            
-            %log ADV    
-        elseif strcmp(varargin{7},'log ADV')
-            x=log(x);
-             x(find(isnan(x)))=0;
-            %isnan(x).*x
-            m=mean(std(x));
-            %x=x.*(x<(3*m));
-            nulify=find(or((x>3*m),x==0));
-            x(nulify)=NaN;
-            dow={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
-            for i=1:numFeatures
-                p=x(:,i:numFeatures:numFeatures*6);
-                subplot(3,3,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
-                t=sprintf('Average Variance on %s', dow{i});
-                title(t)
-                ylabel('log($\sigma$)','interpreter','latex','fontsize',15)
             end
         %corr
         elseif strcmp(varargin{7},'corr')

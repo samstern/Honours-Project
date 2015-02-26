@@ -32,7 +32,7 @@ end
 
 function accuracy=runIt(x_train,x_test,y_train,y_test,task)
     if strmatch(task,{'child','children','c'},'exact')~=0
-    
+        
         [b,dev,stats] = glmfit(x_train,y_train,'binomial','link','logit'); % Logistic regression
         pihat = glmval(b,x_test,'logit');
 
@@ -44,6 +44,7 @@ function accuracy=runIt(x_train,x_test,y_train,y_test,task)
         accuracy=sum(y_test==y_hat')/length(y_test);
     
     else 
+        y_train
         [b,dev,stats] = mnrfit(x_train,y_train,'model','ordinal'); % Logistic regression
         size(b)
         size(x_test)

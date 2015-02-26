@@ -8,7 +8,7 @@ function x=POW_rat(numhouse,monthSum,dayAverages,children_filtered,social_grade)
         x.all(i,:)=[pow(i,2)/pow(i,1),pow(i,3)/pow(i,1)];
     end
     
-    [x.child,x.nchild]=split_children(numhouse,x,children_filtered);
+    [x.child,x.noChild]=split_children(numhouse,x,children_filtered);
     [x.a,x.b,x.c1,x.c2,x.d,x.e]=split_se(numhouse,x,social_grade);
 end
 

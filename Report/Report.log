@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  25 FEB 2015 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  26 FEB 2015 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,7 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 File: fig/Total_Electricity_child.jpg Graphic file (type jpg)
 
 <use fig/Total_Electricity_child.jpg>
-Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 29.
+Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 20.
 
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
 
@@ -595,114 +595,200 @@ Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 29.
 File: fig/Total_Electricity_socio.jpg Graphic file (type jpg)
 
 <use fig/Total_Electricity_socio.jpg>
-Package pdftex.def Info: fig/Total_Electricity_socio.jpg used on input line 29.
+Package pdftex.def Info: fig/Total_Electricity_socio.jpg used on input line 20.
 
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
- [7]
-
-LaTeX Warning: Reference `fig:monthSum' on page 8 undefined on input line 31.
-
-<fig/Average_Daily_child.jpg, id=38, 562.1pt x 421.575pt>
+ [7 <./fig/Total_Electricity_child.jpg> <./fig/Total_Electricity_socio.jpg>]
+<fig/Average_Daily_child.jpg, id=40, 562.1pt x 421.575pt>
 File: fig/Average_Daily_child.jpg Graphic file (type jpg)
 
 <use fig/Average_Daily_child.jpg>
-Package pdftex.def Info: fig/Average_Daily_child.jpg used on input line 38.
+Package pdftex.def Info: fig/Average_Daily_child.jpg used on input line 29.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 
-<fig/Average_Daily_socio.jpg, id=39, 1117.17375pt x 638.385pt>
+<fig/Average_Daily_socio.jpg, id=41, 1117.17375pt x 638.385pt>
 File: fig/Average_Daily_socio.jpg Graphic file (type jpg)
 
 <use fig/Average_Daily_socio.jpg>
-Package pdftex.def Info: fig/Average_Daily_socio.jpg used on input line 39.
+Package pdftex.def Info: fig/Average_Daily_socio.jpg used on input line 30.
 (pdftex.def)             Requested size: 558.58551pt x 319.19171pt.
- [8 <./fig/Total_Electricity_child.jpg> <./fig/Total_Electricity_socio.jpg> <./
-fig/Average_Daily_child.jpg>]
-<fig/POW_rat_child.jpg, id=45, 627.34375pt x 476.78125pt>
+ [8 <./fig/Average_Daily_child.jpg>] [9 <./fig/Average_Daily_socio.jpg>]
+<fig/APOD_child.jpg, id=48, 1279.78125pt x 638.385pt>
+File: fig/APOD_child.jpg Graphic file (type jpg)
+ <use fig/APOD_child.jpg>
+Package pdftex.def Info: fig/APOD_child.jpg used on input line 45.
+(pdftex.def)             Requested size: 639.88907pt x 319.19171pt.
+Package epstopdf Info: Source file: <fig/APOD_socio.eps>
+(epstopdf)                    date: 2015-02-25 17:01:40
+(epstopdf)                    size: 81017 bytes
+(epstopdf)             Output file: <fig/APOD_socio-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-25 17:07:20
+(epstopdf)                    size: 28195 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/APOD_socio-eps-convert
+ed-to.pdf fig/APOD_socio.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/APOD_socio-eps-converted-to.pdf, id=49, 1023.825pt x 638.385pt>
+File: fig/APOD_socio-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/APOD_socio-eps-converted-to.pdf>
+Package pdftex.def Info: fig/APOD_socio-eps-converted-to.pdf used on input line
+ 50.
+(pdftex.def)             Requested size: 569.05759pt x 569.05702pt.
+ [10 <./fig/APOD_child.jpg>]
+<fig/POW_rat_child.jpg, id=53, 627.34375pt x 476.78125pt>
 File: fig/POW_rat_child.jpg Graphic file (type jpg)
 
 <use fig/POW_rat_child.jpg>
-Package pdftex.def Info: fig/POW_rat_child.jpg used on input line 43.
+Package pdftex.def Info: fig/POW_rat_child.jpg used on input line 57.
 (pdftex.def)             Requested size: 213.39568pt x 162.1835pt.
+Package epstopdf Info: Source file: <fig/POW_rat_socio.eps>
+(epstopdf)                    date: 2015-02-26 21:27:55
+(epstopdf)                    size: 69846 bytes
+(epstopdf)             Output file: <fig/POW_rat_socio-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-26 21:28:31
+(epstopdf)                    size: 12678 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/POW_rat_socio-eps-conv
+erted-to.pdf fig/POW_rat_socio.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
 
-<fig/POW_rat_socio.jpg, id=46, 742.775pt x 559.08875pt>
-File: fig/POW_rat_socio.jpg Graphic file (type jpg)
+<fig/POW_rat_socio-eps-converted-to.pdf, id=54, 562.1pt x 421.575pt>
+File: fig/POW_rat_socio-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig/POW_rat_socio.jpg>
-Package pdftex.def Info: fig/POW_rat_socio.jpg used on input line 43.
-(pdftex.def)             Requested size: 213.39568pt x 160.6216pt.
- [9 <./fig/Average_Daily_socio.jpg>]
-<fig/ADV_child.jpg, id=50, 788.9475pt x 575.14874pt>
-File: fig/ADV_child.jpg Graphic file (type jpg)
- <use fig/ADV_child.jpg>
-Package pdftex.def Info: fig/ADV_child.jpg used on input line 51.
-(pdftex.def)             Requested size: 394.47278pt x 287.57367pt.
+<use fig/POW_rat_socio-eps-converted-to.pdf>
+Package pdftex.def Info: fig/POW_rat_socio-eps-converted-to.pdf used on input l
+ine 57.
+(pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
+ [11 <./fig/APOD_socio-eps-converted-to.pdf>]
 
-<fig/ADV_socio.jpg, id=51, 983.675pt x 602.25pt>
-File: fig/ADV_socio.jpg Graphic file (type jpg)
- <use fig/ADV_socio.jpg>
-Package pdftex.def Info: fig/ADV_socio.jpg used on input line 52.
-(pdftex.def)             Requested size: 491.8363pt x 301.12425pt.
+LaTeX Warning: Reference `fig: POWrat' on page 12 undefined on input line 59.
 
-[10 <./fig/POW_rat_child.jpg> <./fig/POW_rat_socio.jpg> <./fig/ADV_child.jpg>]
-<fig/APOD_child.jpg, id=55, 1279.78125pt x 638.385pt>
-File: fig/APOD_child.jpg Graphic file (type jpg)
- <use fig/APOD_child.jpg>
-Package pdftex.def Info: fig/APOD_child.jpg used on input line 56.
-(pdftex.def)             Requested size: 639.88907pt x 319.19171pt.
+Package epstopdf Info: Source file: <fig/ADV_child.eps>
+(epstopdf)                    date: 2015-02-26 22:37:09
+(epstopdf)                    size: 50680 bytes
+(epstopdf)             Output file: <fig/ADV_child-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-26 22:38:38
+(epstopdf)                    size: 11867 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/ADV_child-eps-converte
+d-to.pdf fig/ADV_child.eps>
+(epstopdf)             \includegraphics on input line 65.
+Package epstopdf Info: Output file is already uptodate.
+<fig/ADV_child-eps-converted-to.pdf, id=67, 871.255pt x 587.19376pt>
+File: fig/ADV_child-eps-converted-to.pdf Graphic file (type pdf)
 
-<fig/APOD_socio.jpg, id=56, 1268.74pt x 638.385pt>
-File: fig/APOD_socio.jpg Graphic file (type jpg)
- <use fig/APOD_socio.jpg>
-Package pdftex.def Info: fig/APOD_socio.jpg used on input line 57.
-(pdftex.def)             Requested size: 634.36845pt x 319.19171pt.
+<use fig/ADV_child-eps-converted-to.pdf>
+Package pdftex.def Info: fig/ADV_child-eps-converted-to.pdf used on input line 
+65.
+(pdftex.def)             Requested size: 213.39568pt x 143.81444pt.
+Package epstopdf Info: Source file: <fig/ADV_socio.eps>
+(epstopdf)                    date: 2015-02-26 22:36:43
+(epstopdf)                    size: 60188 bytes
+(epstopdf)             Output file: <fig/ADV_socio-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-26 22:38:39
+(epstopdf)                    size: 13957 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/ADV_socio-eps-converte
+d-to.pdf fig/ADV_socio.eps>
+(epstopdf)             \includegraphics on input line 65.
+Package epstopdf Info: Output file is already uptodate.
 
-[11 <./fig/ADV_socio.jpg>] [12 <./fig/APOD_child.jpg>]
-<fig/Corr_child.jpg, id=64, 889.3225pt x 578.16pt>
+<fig/ADV_socio-eps-converted-to.pdf, id=68, 1021.8175pt x 581.17125pt>
+File: fig/ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/ADV_socio-eps-converted-to.pdf>
+Package pdftex.def Info: fig/ADV_socio-eps-converted-to.pdf used on input line 
+65.
+(pdftex.def)             Requested size: 298.75264pt x 169.91875pt.
+
+Overfull \hbox (85.35696pt too wide) in paragraph at lines 65--65
+ [][][] 
+ []
+
+[12 <./fig/POW_rat_child.jpg> <./fig/POW_rat_socio-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/log_ADV_child.eps>
+(epstopdf)                    date: 2015-02-26 22:34:22
+(epstopdf)                    size: 92541 bytes
+(epstopdf)             Output file: <fig/log_ADV_child-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-26 22:45:36
+(epstopdf)                    size: 10489 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_child-eps-conv
+erted-to.pdf fig/log_ADV_child.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/log_ADV_child-eps-converted-to.pdf, id=80, 562.1pt x 421.575pt>
+File: fig/log_ADV_child-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/log_ADV_child-eps-converted-to.pdf>
+Package pdftex.def Info: fig/log_ADV_child-eps-converted-to.pdf used on input l
+ine 69.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+Package epstopdf Info: Source file: <fig/log_ADV_socio.eps>
+(epstopdf)                    date: 2015-02-26 22:33:25
+(epstopdf)                    size: 59938 bytes
+(epstopdf)             Output file: <fig/log_ADV_socio-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-26 22:45:07
+(epstopdf)                    size: 14002 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_socio-eps-conv
+erted-to.pdf fig/log_ADV_socio.eps>
+(epstopdf)             \includegraphics on input line 70.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/log_ADV_socio-eps-converted-to.pdf, id=81, 908.39375pt x 619.31375pt>
+File: fig/log_ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/log_ADV_socio-eps-converted-to.pdf>
+Package pdftex.def Info: fig/log_ADV_socio-eps-converted-to.pdf used on input l
+ine 70.
+(pdftex.def)             Requested size: 545.04047pt x 371.59111pt.
+ [13 <./fig/ADV_child-eps-converted-to.pdf> <./fig/ADV_socio-eps-converted-to.p
+df> <./fig/log_ADV_child-eps-converted-to.pdf>] <fig/Corr_child.jpg, id=115, 88
+9.3225pt x 578.16pt>
 File: fig/Corr_child.jpg Graphic file (type jpg)
- <use fig/Corr_child.jpg>
-Package pdftex.def Info: fig/Corr_child.jpg used on input line 63.
+
+<use fig/Corr_child.jpg>
+Package pdftex.def Info: fig/Corr_child.jpg used on input line 75.
 (pdftex.def)             Requested size: 444.66016pt x 289.07928pt.
 
-Overfull \hbox (17.8688pt too wide) in paragraph at lines 63--63
+Overfull \hbox (17.8688pt too wide) in paragraph at lines 75--75
  [][] 
  []
 
-<fig/Corr_socio.jpg, id=65, 788.9475pt x 609.27625pt>
+<fig/Corr_socio.jpg, id=116, 788.9475pt x 609.27625pt>
 File: fig/Corr_socio.jpg Graphic file (type jpg)
- <use fig/Corr_socio.jpg>
-Package pdftex.def Info: fig/Corr_socio.jpg used on input line 64.
-(pdftex.def)             Requested size: 394.47278pt x 304.63737pt.
 
-[13 <./fig/APOD_socio.jpg>]) [14 <./fig/Corr_child.jpg> <./fig/Corr_socio.jpg>]
-[15]
+<use fig/Corr_socio.jpg>
+Package pdftex.def Info: fig/Corr_socio.jpg used on input line 76.
+(pdftex.def)             Requested size: 394.47278pt x 304.63737pt.
+ [14 <./fig/log_ADV_socio-eps-converted-to.pdf>])
+[15 <./fig/Corr_child.jpg> <./fig/Corr_socio.jpg>] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 \OT1/cmr/m/it/12 ters\OT1/cmr/m/n/12 . \OT1/cmtt/m/n/12 https://www.ofgem.gov.u
 k/electricity/retail-market/metering/
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 55--56
-[]\OT1/cmr/m/n/12 Jorge Vas-con-ce-los. Sur-vey of reg-u-la-tory and tech-no-lo
-g-i-cal de-vel-op-ments
+Underfull \hbox (badness 1412) in paragraph at lines 55--56
+[]\OT1/cmr/m/n/12 Jorge Vas-con-ce-los. "Sur-vey of reg-u-la-tory and tech-no-l
+og-i-cal de-vel-op-ments
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 55--56
+Underfull \hbox (badness 1472) in paragraph at lines 55--56
 \OT1/cmr/m/n/12 concern- ing smart me-ter-ing in the eu-ro-pean union elec-tric
--ity mar-ket.
+-ity mar-ket".
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 61--62
+[]\OT1/cmr/m/n/12 Office for Na-tional Statis-cics. 2014. "Full Re-port: House-
+hold En-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/12 Office for Na-tional Statis-cics. 2014. Full Re-port: House-h
-old En-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\OT1/cmr/m/n/12 ergy Spend-ing in the UK, 2002-2012. [ON-LINE] Avail-able at:
+\OT1/cmr/m/n/12 ergy Spend-ing in the UK, 2002-2012". [ON-LINE] Avail-able at:
  []
 
 
@@ -728,22 +814,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 m/n/12 , Jan-uary
  []
 
-[16
+[17
 
-] [17] (./Report.aux)
+]
+Underfull \hbox (badness 3919) in paragraph at lines 75--76
+[]\OT1/cmr/m/n/12 Teaching Jobs | Sup-ply Teach-ing Jobs - Teach-ing Per-son-ne
+l 2015
+ []
+
+[18] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4489 strings out of 493117
- 65699 string characters out of 6135432
- 139690 words of memory out of 5000000
- 7849 multiletter control sequences out of 15000+600000
- 14082 words of font info for 54 fonts, out of 8000000 for 9000
+ 4545 strings out of 493117
+ 66677 string characters out of 6135432
+ 139364 words of memory out of 5000000
+ 7870 multiletter control sequences out of 15000+600000
+ 13825 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,8n,42p,1170b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -754,10 +843,10 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (19 pages, 806582 bytes).
+Output written on Report.pdf (20 pages, 591091 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

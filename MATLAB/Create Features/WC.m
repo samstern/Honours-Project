@@ -3,7 +3,7 @@ function x=WC(numhouse,x_filtered,children_filtered,social_grade)
     xH=toHours(x_filtered);
     xW=weeksplits(xH);
     x.all=calcCor(xW);
-   [x.child,x.nchild]=split_children(numhouse,x,children_filtered);
+   [x.child,x.noChild]=split_children(numhouse,x,children_filtered);
    [x.a,x.b,x.c1,x.c2,x.d,x.e]=split_se(numhouse,x,social_grade);
     
 end
