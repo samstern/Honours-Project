@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  26 FEB 2015 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  27 FEB 2015 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,7 +556,7 @@ Chapter 1.
 LaTeX Warning: Citation `E-comm' on page 2 undefined on input line 3.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
@@ -576,48 +576,97 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 )
 (./tex/Features.tex [5]
 Chapter 3.
+Package epstopdf Info: Source file: <fig/qquntransformed.eps>
+(epstopdf)                    date: 2015-02-27 19:41:32
+(epstopdf)                    size: 34414 bytes
+(epstopdf)             Output file: <fig/qquntransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-27 19:38:20
+(epstopdf)                    size: 18328 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/qquntransformed-eps-co
+nverted-to.pdf fig/qquntransformed.eps>
+(epstopdf)             \includegraphics on input line 10.
+runsystem(repstopdf --outfile=fig/qquntransformed-eps-converted-to.pdf fig/qqun
+transformed.eps)...executed safely (allowed).
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Package epstopdf Info: Result file: <fig/qquntransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-27 19:42:51
+(epstopdf)                    size: 17940 bytes.
+<fig/qquntransformed-eps-converted-to.pdf, id=30, 1142.2675pt x 402.50375pt>
+File: fig/qquntransformed-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/qquntransformed-eps-converted-to.pdf>
+Package pdftex.def Info: fig/qquntransformed-eps-converted-to.pdf used on input
+ line 10.
+(pdftex.def)             Requested size: 213.39568pt x 75.19289pt.
+Package epstopdf Info: Source file: <fig/qqtransformed.eps>
+(epstopdf)                    date: 2015-02-27 19:42:44
+(epstopdf)                    size: 34262 bytes
+(epstopdf)             Output file: <fig/qqtransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-27 19:38:21
+(epstopdf)                    size: 18984 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/qqtransformed-eps-conv
+erted-to.pdf fig/qqtransformed.eps>
+(epstopdf)             \includegraphics on input line 10.
+runsystem(repstopdf --outfile=fig/qqtransformed-eps-converted-to.pdf fig/qqtran
+sformed.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <fig/qqtransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-27 19:42:52
+(epstopdf)                    size: 18761 bytes.
+
+<fig/qqtransformed-eps-converted-to.pdf, id=31, 1142.2675pt x 411.5375pt>
+File: fig/qqtransformed-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/qqtransformed-eps-converted-to.pdf>
+Package pdftex.def Info: fig/qqtransformed-eps-converted-to.pdf used on input l
+ine 10.
+(pdftex.def)             Requested size: 213.39568pt x 76.88051pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
 [6
 
-] <fig/Total_Electricity_child.jpg, id=33, 562.1pt x 421.575pt>
+ <./fig/qquntransformed-eps-converted-to.pdf> <./fig/qqtransformed-eps-converte
+d-to.pdf>] <fig/Total_Electricity_child.jpg, id=54, 562.1pt x 421.575pt>
 File: fig/Total_Electricity_child.jpg Graphic file (type jpg)
 
 <use fig/Total_Electricity_child.jpg>
-Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 20.
+Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 22.
 
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
 
-<fig/Total_Electricity_socio.jpg, id=34, 562.1pt x 421.575pt>
+<fig/Total_Electricity_socio.jpg, id=55, 562.1pt x 421.575pt>
 File: fig/Total_Electricity_socio.jpg Graphic file (type jpg)
 
 <use fig/Total_Electricity_socio.jpg>
-Package pdftex.def Info: fig/Total_Electricity_socio.jpg used on input line 20.
+Package pdftex.def Info: fig/Total_Electricity_socio.jpg used on input line 22.
 
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
- [7 <./fig/Total_Electricity_child.jpg> <./fig/Total_Electricity_socio.jpg>]
-<fig/Average_Daily_child.jpg, id=40, 562.1pt x 421.575pt>
+ [7]
+<fig/Average_Daily_child.jpg, id=59, 562.1pt x 421.575pt>
 File: fig/Average_Daily_child.jpg Graphic file (type jpg)
 
 <use fig/Average_Daily_child.jpg>
-Package pdftex.def Info: fig/Average_Daily_child.jpg used on input line 29.
+Package pdftex.def Info: fig/Average_Daily_child.jpg used on input line 31.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 
-<fig/Average_Daily_socio.jpg, id=41, 1117.17375pt x 638.385pt>
+<fig/Average_Daily_socio.jpg, id=60, 1117.17375pt x 638.385pt>
 File: fig/Average_Daily_socio.jpg Graphic file (type jpg)
 
 <use fig/Average_Daily_socio.jpg>
-Package pdftex.def Info: fig/Average_Daily_socio.jpg used on input line 30.
+Package pdftex.def Info: fig/Average_Daily_socio.jpg used on input line 32.
 (pdftex.def)             Requested size: 558.58551pt x 319.19171pt.
- [8 <./fig/Average_Daily_child.jpg>] [9 <./fig/Average_Daily_socio.jpg>]
-<fig/APOD_child.jpg, id=48, 1279.78125pt x 638.385pt>
+ [8 <./fig/Total_Electricity_child.jpg> <./fig/Total_Electricity_socio.jpg>] [9
+ <./fig/Average_Daily_child.jpg> <./fig/Average_Daily_socio.jpg>] <fig/APOD_chi
+ld.jpg, id=68, 1279.78125pt x 638.385pt>
 File: fig/APOD_child.jpg Graphic file (type jpg)
- <use fig/APOD_child.jpg>
-Package pdftex.def Info: fig/APOD_child.jpg used on input line 45.
+
+<use fig/APOD_child.jpg>
+Package pdftex.def Info: fig/APOD_child.jpg used on input line 47.
 (pdftex.def)             Requested size: 639.88907pt x 319.19171pt.
+ [10]
 Package epstopdf Info: Source file: <fig/APOD_socio.eps>
 (epstopdf)                    date: 2015-02-25 17:01:40
 (epstopdf)                    size: 81017 bytes
@@ -626,22 +675,22 @@ Package epstopdf Info: Source file: <fig/APOD_socio.eps>
 (epstopdf)                    size: 28195 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/APOD_socio-eps-convert
 ed-to.pdf fig/APOD_socio.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/APOD_socio-eps-converted-to.pdf, id=49, 1023.825pt x 638.385pt>
+<fig/APOD_socio-eps-converted-to.pdf, id=72, 1023.825pt x 638.385pt>
 File: fig/APOD_socio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/APOD_socio-eps-converted-to.pdf>
 Package pdftex.def Info: fig/APOD_socio-eps-converted-to.pdf used on input line
- 50.
+ 52.
 (pdftex.def)             Requested size: 569.05759pt x 569.05702pt.
- [10 <./fig/APOD_child.jpg>]
-<fig/POW_rat_child.jpg, id=53, 627.34375pt x 476.78125pt>
+ [11 <./fig/APOD_child.jpg>] [12 <./fig/APOD_socio-eps-converted-to.pdf>]
+<fig/POW_rat_child.jpg, id=88, 627.34375pt x 476.78125pt>
 File: fig/POW_rat_child.jpg Graphic file (type jpg)
 
 <use fig/POW_rat_child.jpg>
-Package pdftex.def Info: fig/POW_rat_child.jpg used on input line 57.
+Package pdftex.def Info: fig/POW_rat_child.jpg used on input line 59.
 (pdftex.def)             Requested size: 213.39568pt x 162.1835pt.
 Package epstopdf Info: Source file: <fig/POW_rat_socio.eps>
 (epstopdf)                    date: 2015-02-26 21:27:55
@@ -651,19 +700,19 @@ Package epstopdf Info: Source file: <fig/POW_rat_socio.eps>
 (epstopdf)                    size: 12678 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/POW_rat_socio-eps-conv
 erted-to.pdf fig/POW_rat_socio.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/POW_rat_socio-eps-converted-to.pdf, id=54, 562.1pt x 421.575pt>
+<fig/POW_rat_socio-eps-converted-to.pdf, id=89, 562.1pt x 421.575pt>
 File: fig/POW_rat_socio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/POW_rat_socio-eps-converted-to.pdf>
 Package pdftex.def Info: fig/POW_rat_socio-eps-converted-to.pdf used on input l
-ine 57.
+ine 59.
 (pdftex.def)             Requested size: 213.39568pt x 160.04578pt.
- [11 <./fig/APOD_socio-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `fig: POWrat' on page 12 undefined on input line 59.
+
+LaTeX Warning: Reference `fig: POWrat' on page 13 undefined on input line 61.
 
 Package epstopdf Info: Source file: <fig/ADV_child.eps>
 (epstopdf)                    date: 2015-02-26 22:37:09
@@ -673,14 +722,14 @@ Package epstopdf Info: Source file: <fig/ADV_child.eps>
 (epstopdf)                    size: 11867 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/ADV_child-eps-converte
 d-to.pdf fig/ADV_child.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
-<fig/ADV_child-eps-converted-to.pdf, id=67, 871.255pt x 587.19376pt>
+<fig/ADV_child-eps-converted-to.pdf, id=90, 871.255pt x 587.19376pt>
 File: fig/ADV_child-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ADV_child-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ADV_child-eps-converted-to.pdf used on input line 
-65.
+67.
 (pdftex.def)             Requested size: 213.39568pt x 143.81444pt.
 Package epstopdf Info: Source file: <fig/ADV_socio.eps>
 (epstopdf)                    date: 2015-02-26 22:36:43
@@ -690,22 +739,22 @@ Package epstopdf Info: Source file: <fig/ADV_socio.eps>
 (epstopdf)                    size: 13957 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/ADV_socio-eps-converte
 d-to.pdf fig/ADV_socio.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/ADV_socio-eps-converted-to.pdf, id=68, 1021.8175pt x 581.17125pt>
+<fig/ADV_socio-eps-converted-to.pdf, id=91, 1021.8175pt x 581.17125pt>
 File: fig/ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ADV_socio-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ADV_socio-eps-converted-to.pdf used on input line 
-65.
+67.
 (pdftex.def)             Requested size: 298.75264pt x 169.91875pt.
 
-Overfull \hbox (85.35696pt too wide) in paragraph at lines 65--65
+Overfull \hbox (85.35696pt too wide) in paragraph at lines 67--67
  [][][] 
  []
 
-[12 <./fig/POW_rat_child.jpg> <./fig/POW_rat_socio-eps-converted-to.pdf>]
+[13 <./fig/POW_rat_child.jpg> <./fig/POW_rat_socio-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/log_ADV_child.eps>
 (epstopdf)                    date: 2015-02-26 22:34:22
 (epstopdf)                    size: 92541 bytes
@@ -714,15 +763,15 @@ Package epstopdf Info: Source file: <fig/log_ADV_child.eps>
 (epstopdf)                    size: 10489 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_child-eps-conv
 erted-to.pdf fig/log_ADV_child.eps>
-(epstopdf)             \includegraphics on input line 69.
+(epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/log_ADV_child-eps-converted-to.pdf, id=80, 562.1pt x 421.575pt>
+<fig/log_ADV_child-eps-converted-to.pdf, id=103, 562.1pt x 421.575pt>
 File: fig/log_ADV_child-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/log_ADV_child-eps-converted-to.pdf>
 Package pdftex.def Info: fig/log_ADV_child-eps-converted-to.pdf used on input l
-ine 69.
+ine 71.
 (pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
 Package epstopdf Info: Source file: <fig/log_ADV_socio.eps>
 (epstopdf)                    date: 2015-02-26 22:33:25
@@ -732,37 +781,57 @@ Package epstopdf Info: Source file: <fig/log_ADV_socio.eps>
 (epstopdf)                    size: 14002 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_socio-eps-conv
 erted-to.pdf fig/log_ADV_socio.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/log_ADV_socio-eps-converted-to.pdf, id=81, 908.39375pt x 619.31375pt>
+<fig/log_ADV_socio-eps-converted-to.pdf, id=104, 908.39375pt x 619.31375pt>
 File: fig/log_ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/log_ADV_socio-eps-converted-to.pdf>
 Package pdftex.def Info: fig/log_ADV_socio-eps-converted-to.pdf used on input l
-ine 70.
+ine 72.
 (pdftex.def)             Requested size: 545.04047pt x 371.59111pt.
- [13 <./fig/ADV_child-eps-converted-to.pdf> <./fig/ADV_socio-eps-converted-to.p
-df> <./fig/log_ADV_child-eps-converted-to.pdf>] <fig/Corr_child.jpg, id=115, 88
+ [14 <./fig/ADV_child-eps-converted-to.pdf> <./fig/ADV_socio-eps-converted-to.p
+df> <./fig/log_ADV_child-eps-converted-to.pdf>] <fig/Corr_child.jpg, id=138, 88
 9.3225pt x 578.16pt>
 File: fig/Corr_child.jpg Graphic file (type jpg)
 
 <use fig/Corr_child.jpg>
-Package pdftex.def Info: fig/Corr_child.jpg used on input line 75.
+Package pdftex.def Info: fig/Corr_child.jpg used on input line 79.
 (pdftex.def)             Requested size: 444.66016pt x 289.07928pt.
 
-Overfull \hbox (17.8688pt too wide) in paragraph at lines 75--75
+Overfull \hbox (17.8688pt too wide) in paragraph at lines 79--79
  [][] 
  []
 
-<fig/Corr_socio.jpg, id=116, 788.9475pt x 609.27625pt>
+[15 <./fig/log_ADV_socio-eps-converted-to.pdf>]
+<fig/Corr_socio.jpg, id=151, 788.9475pt x 609.27625pt>
 File: fig/Corr_socio.jpg Graphic file (type jpg)
 
 <use fig/Corr_socio.jpg>
-Package pdftex.def Info: fig/Corr_socio.jpg used on input line 76.
+Package pdftex.def Info: fig/Corr_socio.jpg used on input line 83.
 (pdftex.def)             Requested size: 394.47278pt x 304.63737pt.
- [14 <./fig/log_ADV_socio-eps-converted-to.pdf>])
-[15 <./fig/Corr_child.jpg> <./fig/Corr_socio.jpg>] [16]
+ [16 <./fig/Corr_child.jpg>]
+Package epstopdf Info: Source file: <fig/household369.eps>
+(epstopdf)                    date: 2015-02-27 14:49:26
+(epstopdf)                    size: 34162 bytes
+(epstopdf)             Output file: <fig/household369-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-27 16:05:35
+(epstopdf)                    size: 27599 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/household369-eps-conve
+rted-to.pdf fig/household369.eps>
+(epstopdf)             \includegraphics on input line 90.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/household369-eps-converted-to.pdf, id=155, 1178.4025pt x 689.57625pt>
+File: fig/household369-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/household369-eps-converted-to.pdf>
+Package pdftex.def Info: fig/household369-eps-converted-to.pdf used on input li
+ne 90.
+(pdftex.def)             Requested size: 589.19981pt x 344.78728pt.
+ [17 <./fig/Corr_socio.jpg>])
+[18 <./fig/household369-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 \OT1/cmr/m/it/12 ters\OT1/cmr/m/n/12 . \OT1/cmtt/m/n/12 https://www.ofgem.gov.u
 k/electricity/retail-market/metering/
@@ -814,24 +883,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 m/n/12 , Jan-uary
  []
 
-[17
+[19
 
 ]
-Underfull \hbox (badness 3919) in paragraph at lines 75--76
+Underfull \hbox (badness 3919) in paragraph at lines 76--77
 []\OT1/cmr/m/n/12 Teaching Jobs | Sup-ply Teach-ing Jobs - Teach-ing Per-son-ne
 l 2015
  []
 
-[18] (./Report.aux)
+[20] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4545 strings out of 493117
- 66677 string characters out of 6135432
- 139364 words of memory out of 5000000
- 7870 multiletter control sequences out of 15000+600000
+ 4565 strings out of 493117
+ 67298 string characters out of 6135432
+ 140980 words of memory out of 5000000
+ 7887 multiletter control sequences out of 15000+600000
  13825 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,8n,42p,1170b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -843,10 +912,10 @@ sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (20 pages, 591091 bytes).
+Output written on Report.pdf (22 pages, 648191 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 204 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,8 +10,9 @@
 \contentsline {section}{\numberline {2.4}Comparison to Previous Work}{5}
 \contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{6}
 \contentsline {section}{\numberline {3.1}Types of Features}{6}
-\contentsline {section}{\numberline {3.2}Creating Features}{6}
+\contentsline {section}{\numberline {3.2}Creating Features}{7}
 \contentsline {subsection}{\numberline {3.2.1}Total Electricity}{7}
-\contentsline {subsection}{\numberline {3.2.2}Periodicity}{16}
-\contentsline {section}{\numberline {3.3}Feature Selection}{16}
-\contentsline {section}{\numberline {3.4}Class Cardinality}{16}
+\contentsline {subsection}{\numberline {3.2.2}Periodicity}{17}
+\contentsline {subsection}{\numberline {3.2.3}Signal Smoothing}{18}
+\contentsline {section}{\numberline {3.3}Feature Selection}{18}
+\contentsline {section}{\numberline {3.4}Class Cardinality}{18}

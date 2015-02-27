@@ -35,6 +35,13 @@ for i=1:numhouse_data
         
 end
 
+%%Gaussian Filter to smooth the data
+g = gausswin(15);
+g = g/sum(g);
+for i=1:519
+x_gauss(i,:)=conv(x_filtered(i,:),g,'same');
+end
+
 %correcting some of the data
 children_filtered.all([24 90 271 368 438 191 366 143 74 422  336 210 82 298 444 513 374 395 277 391 395 417 449 427 430 434 202 187 178 34 406 488 509 30 479 209 376 386 30 190 214 441 442 445 19 31 31 15 86 87 104 188 335 468 489 13 14 16 17 88 140 211 102 412 308 362 311 303 376 315])=1;
 
@@ -92,83 +99,10 @@ x_corr=WC(numhouse,x_filtered,children_filtered,social_grade);
 
 %pod_atd_ratio=POD_ATDOW_ratio(numhouse,x_POD,numPOD,dayAverages);
 
+%% taking the log of some of the features as it resulted in normaly distributed data when usint qqplot
 
-%% Splitting to child vs no child households
-% 
-% 
-% 
-% c_POD = zeros(children_filtered.numChild,numPOD);
-% c_less_POD = zeros(children_filtered.numNoChild, numPOD);
-% c_ratio = zeros(children_filtered.numChild,numPOD);
-% c_less_ratio = zeros(children_filtered.numNoChild,numPOD);
-% 
-% j=1;
-% k=1;
-% for i= 1:numhouse
-%     if children_filtered.all(i)==1
-%         c_POD(j,:)=x_POD(i,:);
-%         c_ratio(j,:)=pod_atd_ratio(i,:);
-%         j=j+1;
-%     elseif children_filtered.all(i)==0
-%         c_less_POD(k,:)=x_POD(i,:);
-%         c_less_ratio(k,:)=pod_atd_ratio(i,:);
-%         k=k+1;
-%     end
-% end
-% 
-% 
-% c_morn_pod = [];
-% c_less_morn_pod = [];
-% c_aft_pod = [];
-% c_less_aft_pod = [];
-% c_eve_pod = [];
-% c_less_eve_pod = [];
-% c_night_pod = [];
-% c_less_night_pod = [];
-% 
-% c_morn_ratio = [];
-% c_less_morn_ratio = [];
-% c_aft_ratio = [];
-% c_less_aft_ratio = [];
-% c_eve_ratio = [];
-% c_less_eve_ratio = [];
-% c_night_ratio = [];
-% c_less_night_ratio = [];
-% 
-% for i = 1:max(size(c_POD))
-%    for j= 1:min(size(c_POD))
-%       if mod(j,4)==1
-%          c_morn_pod = cat(1,c_morn_pod,c_POD(i,j));
-%          c_morn_ratio = cat(1,c_morn_ratio, c_ratio(i,j));
-%       elseif mod(j,4)==2
-%           c_aft_pod = cat(1,c_aft_pod, c_POD(i,j));
-%           c_aft_ratio = cat(1,c_aft_ratio,c_ratio(i,j));
-%       elseif mod(j,4)==3
-%           c_eve_pod = cat(1,c_eve_pod,c_POD(i,j));
-%           c_eve_ratio = cat(1,c_eve_ratio,c_ratio(i,j));
-%       else
-%           c_night_pod = cat(1, c_night_pod, c_POD(i,j));
-%           c_night_ratio = cat(1,c_night_ratio, c_ratio(i,j));
-%       end
-%    end
-% end
-% 
-% for i = 1:max(size(c_less_POD))
-%    for j= 1:min(size(c_less_POD))
-%       if mod(j,4)==1
-%          c_less_morn_pod = cat(1,c_less_morn_pod,c_less_POD(i,j));
-%          c_less_morn_ratio = cat(1,c_less_morn_ratio, c_less_ratio(i,j));
-%       elseif mod(j,4)==2
-%           c_less_aft_pod = cat(1,c_less_aft_pod, c_less_POD(i,j));
-%           c_less_aft_ratio = cat(1,c_less_aft_ratio, c_less_ratio(i,j));
-%       elseif mod(j,4)==3
-%           c_less_eve_pod = cat(1,c_less_eve_pod,c_less_POD(i,j));
-%           c_less_eve_ratio = cat(1,c_less_eve_ratio, c_less_ratio(i,j));
-%       else
-%           c_less_night_pod = cat(1, c_less_night_pod, c_less_POD(i,j));
-%           c_less_night_ratio = cat(1,c_less_night_ratio, c_less_ratio(i,j));
-%       end
-%    end
-% end
+monthSum=structfun(@(x) log(x),monthSum,'UniformOutput',0);
+x_APOD=structfun(@(x) log(x),x_APOD,'UniformOutput',0);
+x_ADV=structfun(@(x) log(x),x_ADV,'UniformOutput',0);
 %% Clearning unnecesarry variables
 clear i j k numhouse_data x divNum means std3 numOutliers %numpts daylength
