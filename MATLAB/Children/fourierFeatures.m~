@@ -1,15 +1,26 @@
-function [fourier_features]=fourierFeatures(x,children_filtered,social_grade)
+function [fourier_features]=fourierFeatures(x,children_filtered)
 x_ft = fft(x')';
 numhouse= size(x,1);
 fisher_scores = fsFisher(x_ft',children_filtered.all);
 numFeatures=10;
 fList=fisher_scores.fList(1:numFeatures);
 fisher_scores.W;
-
+%fourier_features.all=zeros(numhouse,numFeatures);
+%fourier_features.children=zeros(children_filtered.numChild,numFeatures);
+%fourier_features.noChildren=zeros(children_filtered.numNoChild,numFeatures);
+%j=1;
+%k=1;
 fourier_features.all=bestEnergy(x_ft);
-[fourier_features.child,fourier_features.noChild]=split_children(numhouse,fourier_features,children_filtered);
-[fourier_features.a,fourier_features.b,fourier_features.c1,fourier_features.c2,fourier_features.d,fourier_features.e]=split_se(numhouse,fourier_features,social_grade);
-
+% for i=1:numhouse
+%     %fourier_features.all(i,:)=x_ft(i,fList);
+%     if children_filtered.all(i)==1
+%         fourier_features.children(j,:)=fourier_features.all(i,:);
+%         j=j+1;
+%     else
+%         fourier_features.noChildren(k,:)=fourier_features.all(i,:);
+%         k=k+1;
+%     end
+% end
 end
     
 function out=bestEnergy(x)

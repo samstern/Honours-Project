@@ -109,7 +109,17 @@ function boxPlots(varargin)
                 annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Correlation between Weekdays ($\rho$)','EdgeColor', 'none','interpreter','latex')
                 %ylabel('Correlation ($\rho$)','interpreter','latex')%,'fontsize',5)
             end
-        end
+        %fourier    
+        elseif strcmp(varargin{3},'fourier')
+                intervals={'c1','c2','c3','c4','c5'};
+                intervals=[intervals;intervals];
+                intervals=intervals(:);
+                lables=repmat({'child','no child'},1,size(c_x,2));
+                boxplot(x,{intervals,lables},'factorgap',[5,2]);
+                title('Frequancy Domain Features')
+                ylabel('Amplitude')
+            end
+        
         
     %% social grade
     elseif length(varargin)==7
@@ -232,6 +242,14 @@ function boxPlots(varargin)
                 title(t(i));  
                 annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Correlation between Weekdays ($\rho$)','EdgeColor', 'none','interpreter','latex')
                 %ylabel('Correlation ($\rho$)','interpreter','latex')%,'fontsize',5)
+            end
+            
+        %fourier
+        elseif strcmp(varargin{7},'fourier')
+            for i=1:numFeatures
+                p=x(:,i:numFeatures:numFeatures*6);
+                subplot(1,5,i)
+                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
             end
         end
         

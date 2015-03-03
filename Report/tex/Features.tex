@@ -5,7 +5,7 @@ When data mining in time series, it is usually not sufficient to consider each p
 
 According to \cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures are the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption figures and can capture relevant patterns that occur through different time intervals. Temporal features capture the first (or last) time some event takes place which or at what time the daily maximum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance, give insight into the consumption curve (for example how a households energy consumption correlates with itself.
 
-Numerous statistical methods expect the input data to follow a normal distribution. Therefore, the data was visualized and compared against a normal quantile plot in order to find the right non-linear transformations \cite{Osborne}\cite{Wang}. Figure \ref{fig:qqPlot} shows the normal quantile plot of the average standard deviation of a household on Mondays (left) and the logarithm of this feature (right). The linearity of the sample quantiles of the features (x-axis) versus the theoretical quantiles of a normal distribution (y-axis) implies that the transformed features are (roughly) normally distributed. Thiese transformations are important for classifiers such as k-nearest neighbor which rely on the distance between samples based on their features
+Numerous statistical methods expect the input data to follow a normal distribution. Therefore, the data was visualized and compared against a normal quantile plot in order to find the right non-linear transformations \cite{Osborne} \cite{Wang}. Figure \ref{fig:qqPlot} shows the normal quantile plot of the average standard deviation of a household on Mondays (left) and the logarithm of this feature (right). The linearity of the sample quantiles of the features (x-axis) versus the theoretical quantiles of a normal distribution (y-axis) implies that the transformed features are (roughly) normally distributed. Thiese transformations are important for classifiers such as k-nearest neighbor which rely on the distance between samples based on their features
 
 \qqPlot
 
@@ -85,19 +85,51 @@ Looking at figure \ref{fig:corrChild}, it appears that, although the correlation
 
 \subsection{Periodicity}
 
-Another approach used for feature extraction was to exploit the periodic consumption patterns exhibited by many of the households in order to search for temporal structures that are present in some classes but not others. This method of feature extraction has proven to be 
+Another approach used for feature extraction was to exploit the periodic consumption patterns exhibited by many of the households in order to search for temporal structures that are present in some classes but not others. This method of feature extraction has been used particularly in studies involving forcasting and clustering. Methods outlined by Fabian Mörchen \cite{Moerchen} for time series feature extraction are used to project the household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
 
-\household369
 
 \subsection{Signal Smoothing}
 
+Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings filter the noise whilst retaining the temporal structure of the data. Gaussian filter can improve performance compared with direct averaging as more structure is retained whilst noise is removed \cite{Nixon}. This is done as Fourier transforms have difficulty characterising small intervals of large electricity demand \cite{Graps}
+
+Gaussian filtering (or Gaussian smoothing) is performed by convolving the time series with the Gaussian function.
+
+\household369
 
 
-\cite{Nixon}
 
-One of the most popular methods for finding temporal structures, as presented by \cite{Moerchen}, is described 
+\subsection{Fourier Transform}
+
+For uniform samples $[f(1)...,f(n)]$ of a real signal $f(x)$, the \textit{Discrete Fourier Transform} (DFT), is the projection of a signal from the time domain into the frequency domain by
+
+\[c_f=\frac{1}{\sqrt{n}}\sum_{t=1}^nf(t)\exp{\frac{-2\pi ift}{n}}\]
+
+where $f=1,...n$ and $i=\sqrt{-1}$ The $c_f$ are complex numbers and represent
+the amplitudes and shifts of a decomposition of the signal into sinusoid functions \cite{Moerchen}.
+
+
+Issues do present themselves when using this method, as already mentioned, the the Fourier transform measure global frequencies and the signal is assumed to be periodic. This assumption can cause poor aproximations at the boarders of the time series \cite{Moerchen}.
+
+\subsection{Energy Preservation}
+
+The for $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$ is small compared to the length of each time series $m=4032$, the number of coefficients must be reduced in order to reduce redundancy, noise and computational time. According to Mörchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
+
+\[E(f(t))=\sum_{j=1}^ma_jc^2_j\] 
+
+where $c_j$ is the $j^{th}$ column and $a_j$ is an appropriate scaling coefficient correspondent to signal $f(t)$. 
+
+Let $I$ be a function measuring the importance of coefficient $j$ on all $l$ values, and let $J_k(I,C)$ be a function that chooses a subset of $M = {1, ..., m}$ of the $k$ largest values of $I$. Mörchen \cite{Moerchen} proves that $J_k(mean(c_j^2),C)$ is optimal in energy preservation.
+
+The MATLAB fast Fourier transform function (fft) was used to find the discrete Fourier transform, and the five best features were chosen, based on the energy preservation method.
+
+
 		
-
 \section{Feature Selection}
+
+\subsection{Energy Preservation}
+
+
+
+
 
 \section{Class Cardinality}
