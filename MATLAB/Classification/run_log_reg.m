@@ -5,7 +5,7 @@ function y_hat=run_log_reg(x_train,x_test,y_train,y_test,task)
         y_train=y_train+1;
     end
     
-    [b,dev,stats] = mnrfit(x_train,y_train,'model','nominal','interactions','on'); % Logistic regression
+    [b,dev,stats] = mnrfit(x_train,y_train,'model','nominal'); % Logistic regression
     pihat = mnrval(b,x_test,'model','nominal');
 
     [m_prob,y_hat]= max(pihat');
@@ -13,8 +13,8 @@ function y_hat=run_log_reg(x_train,x_test,y_train,y_test,task)
     %y_hat=round(pihat(:,1));
 
     %count=0;
-
-    accuracy=sum(y_test==y_hat')/length(y_test)
+    accuracy=sum(y_test.class==y_hat')/length(y_test)
+    accuracyPlusMinusOne=(sum(y_test.class==y_hat')+sum(y_test.class==y_hat'+1)+sum(y_test.class==y_hat'-1))/length(y_test)
 
     if strmatch(task,{'child','children','c'},'exact')~=0
         TP=sum(y_hat'==2 & y_hat'==y_test);

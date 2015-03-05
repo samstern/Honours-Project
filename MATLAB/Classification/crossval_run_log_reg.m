@@ -9,7 +9,7 @@ function acc=crossval_run_log_reg(x_train,y_train,task)
     splitt=split(x_shuffled,y_shuffled,k);
     x_split=splitt.x;
     y_split=splitt.y;
-           accuracy=zeros(k,1);
+    accuracy=zeros(k,1);
     for i=1:k
        x_trn=[];
        y_trn=[];
@@ -22,10 +22,10 @@ function acc=crossval_run_log_reg(x_train,y_train,task)
               y_trn=[y_trn;y_split{j}'];
            end
        end
-       accuracy(i)=runIt(x_trn,x_tst,y_trn,y_tst,task);
+       acc.each(i)=runIt(x_trn,x_tst,y_trn,y_tst,task);
     end
     
-    acc=sum(accuracy)/k;
+    acc.ave=sum(acc.each)/k;
     
 
 end
@@ -44,15 +44,15 @@ function accuracy=runIt(x_train,x_test,y_train,y_test,task)
         accuracy=sum(y_test==y_hat')/length(y_test);
     
     else 
-        y_train
+        y_train;
         [b,dev,stats] = mnrfit(x_train,y_train,'model','ordinal'); % Logistic regression
-        size(b)
-        size(x_test)
+        size(b);
+        size(x_test);
         pihat = mnrval(b,x_test,'model','ordinal');
 
         [m_prob,y_hat]= max(pihat');
 
-        accuracy=sum(y_test==y_hat')/length(y_test)
+        accuracy=sum(y_test==y_hat')/length(y_test);
     end
 
     if strmatch(task,{'child','children','c'},'exact')~=0
@@ -63,7 +63,7 @@ function accuracy=runIt(x_train,x_test,y_train,y_test,task)
 
         precision=TP/(TP+FP);
         recall=TP/(TP+FN);
-        f_one=2*(precision*recall)/(precision+recall)
+        f_one=2*(precision*recall)/(precision+recall);
     end
 
 end

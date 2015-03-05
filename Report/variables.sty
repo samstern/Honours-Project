@@ -1,6 +1,13 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{variables}
   [2011/01/11 v0.01 LaTeX package for my own purpose]
+\RequirePackage{amsmath}
+\RequirePackage{graphicx}
+\RequirePackage{subcaption}
+\RequirePackage{float}
+\RequirePackage[font=scriptsize]{subfig}
+\RequirePackage[font=small]{caption}
+\graphicspath{/Users/samstern/Uni/Honours_Project/Report/fig}
   
 %sections
 \def\aggregationSection{2.2}
@@ -18,3 +25,8 @@
 %figures
 \def\exampleTimeSeries{}
 \def\exampleWeek{}
+
+%vectors}
+\def\weights{\textbf{w}}
+\def\vect{x}
+\def\sigmoid{\frac{1}{1-e^{w\dot{x}}}

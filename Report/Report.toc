@@ -15,5 +15,13 @@
 \contentsline {subsection}{\numberline {3.2.2}Periodicity}{17}
 \contentsline {subsection}{\numberline {3.2.3}Signal Smoothing}{17}
 \contentsline {subsection}{\numberline {3.2.4}Fourier Transform}{18}
+\contentsline {subsection}{\numberline {3.2.5}Energy Preservation}{19}
 \contentsline {section}{\numberline {3.3}Feature Selection}{19}
+\contentsline {subsection}{\numberline {3.3.1}Energy Preservation}{19}
 \contentsline {section}{\numberline {3.4}Class Cardinality}{19}
+\contentsline {chapter}{\numberline {4}Models}{20}
+\contentsline {section}{\numberline {4.1}Overview}{20}
+\contentsline {section}{\numberline {4.2}Logistic Regression}{20}
+\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{21}
+\contentsline {section}{\numberline {4.3}Random Forrest}{21}
+\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{21}

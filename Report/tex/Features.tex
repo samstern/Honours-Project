@@ -1,43 +1,47 @@
 \chapter{Feature Exploration and Extraction}
 
 \section{Types of Features}
-When data mining in time series, it is usually not sufficient to consider each point in time sequentially. In addition to ignoring the high dimensionality of the data,  it does not account for the correlation between consecutive values \cite{Moerchen}. It is therefore beneficial to transform and aggregate the data in such a was as to reduce the dimensionality as well as capture differences in the consumption patterns between classes. 
+When data mining in time series, it is usually not sufficient to consider each point in time sequentially. In addition to ignoring the high dimensionality of the data,  it does not account for the correlation between consecutive values \cite{Moerchen}. It is therefore beneficial to transform and aggregate the data in such a way as to reduce the dimensionality as well as capture differences in the consumption patterns between classes. 
 
-According to \cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures are the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption figures and can capture relevant patterns that occur through different time intervals. Temporal features capture the first (or last) time some event takes place which or at what time the daily maximum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance, give insight into the consumption curve (for example how a households energy consumption correlates with itself.
+According to Beckel et. al\cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures represent the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption different figures, and can capture relevant patterns that occur through different time intervals. Temporal features capture the first or last time some event takes place, the time at which the daily maximum or minimum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance or correlation, give insight into the consumption curve.
 
-Numerous statistical methods expect the input data to follow a normal distribution. Therefore, the data was visualized and compared against a normal quantile plot in order to find the right non-linear transformations \cite{Osborne} \cite{Wang}. Figure \ref{fig:qqPlot} shows the normal quantile plot of the average standard deviation of a household on Mondays (left) and the logarithm of this feature (right). The linearity of the sample quantiles of the features (x-axis) versus the theoretical quantiles of a normal distribution (y-axis) implies that the transformed features are (roughly) normally distributed. Thiese transformations are important for classifiers such as k-nearest neighbor which rely on the distance between samples based on their features
+Numerous statistical methods presume that input data follows a normal distribution. Therefore, the HES data was visualized and compared against a normal quantile plot in order to find the right non-linear transformations \cite{Osborne} \cite{Wang}. Figure \ref{fig:qqPlot} shows the normal quantile plot of the average standard deviation of a household on Mondays (left) and the logarithm of this feature (right). The linearity of the sample quantiles of the features (x-axis) versus the theoretical quantiles of a normal distribution (y-axis) implies that the transformed features are (roughly) normally distributed. These transformations are important for classifiers, such as k-nearest neighbour, which rely on the distance between samples based on their features.
 
 \qqPlot
 
 \section{Creating Features}
-One method of extracting features would be to compute as many different types as possible, compare them all and chose those that best discriminate the classes. households could be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it is potentially wasteful of the limited resources to do the project. Instead of creating features in an ad hoc manner, feature selection was done in the following way: 1) An were made regarding the distinction between classes (e.g households with children use more energy overall). 2) features were created to capture this distinction (e.g the average energy over a the 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/didn't discriminate between classes while other times, more sophisticated methods were used, as described in \featureSelectionSection.
-\linebreak
+One method of extracting features is to compute as many different types as possible, compare them all and chose those that best discriminate the classes. Households can be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it is potentially wasteful of the limited resources available to do the project. 
 
-The rest of this section describes features that were created from the energy reading data and justifies why they were may have been able to discriminate between classes. Both classification problems (socio-economic classification and child classification) were considered when choosing features to evaluate.
+Instead of creating features in an ad hoc manner, a more cost efficient approach was taken.Feature selection was done in the following way: 1) Assumptions were made regarding the distinction between classes (e.g., households with children use more energy overall). 2) Features were created to capture this distinction (e.g., the average energy over a 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/did not discriminate between classes. At other times, more sophisticated methods were used, as described in \featureSelectionSection.
+\newline
+
+The remainder of this chapter describes features that were created from the energy reading data and justifies why it was assumed that they assumed would be able to discriminate between classes. The results of computing these features are then evaluated. Both classification problems (socio-economic classification and child classification) were considered when choosing features to evaluate.
 
 \subsection{Total Electricity}
-When visualising the data, it was noted that households had large differences in how much energy they used. While some households had a mean energy consumption 1500 Watts per 10 minutes, others averaged as little as 65 Watts per 10 minute, and while one household consumed up to 19500 Watts in a 10 minute period, another never used more than 1190. Therefore, the first feature that was explored was the total energy consumed in a give period of time. Since it was, at this stage, not known if other factors such, as time of day and the day of the week, have an influence the consumption. Therefore 28 day timeperiods ensured independence from these.
-Building a classifier using the total electricity as input assumes that some classes use more energy than others. This can be justified as there is a known correlation between a household's disposable income and the amount of energy used by the household \cite{Gomez}
+In visualising the data, it was noted that households had large differences in how much energy they used. While some households had a mean energy consumption rate of 1500 Watts per 10 minutes, others averaged as little as 65 Watts per 10 minutes; while one household consumed up to 19500 Watts in a 10 minute period, another never used more than 1190 Watts in the same time interval. To determine if these discrepancies can be attributed to different classes, the first feature that was explored was the total energy consumed within a given period of time. Since it was not known at this stage whether other factors, such as time of day, or day of the week, influence consumption, 28-day time frames were used to ensure independence of these factors.
+
+Building a classifier using the total electricity as input assumes that some classes use more energy than others. This can be justified as there is a known correlation between a household's disposable income and the amount of energy it uses \cite{Gomez}.
 
 \monthSum
 
-Looking at figure \ref{fig:monthSum} it appears as though there is a difference in total electricity consumption between different classes. The left hand figure, which compares the households with children against those without, shows that those with children do indeed tend to use more energy. The right hand graph, which compares the total electricity grouped by social grade does indicate that the highest socio-economic households do use more energy than those of the lowest social grade. It does not, however distinguish well between intermediate social grades.
+Looking at Figure \ref{fig:monthSum}, it appears as though there is a difference in total electricity consumption between different classes. The left hand plot, which compares households with children against those without, shows that those with children do indeed tend to use more energy. The right hand plot, which compares total electricity, grouped by social grade, indicates that the highest socio-economic households do use more energy than those of the lowest social grade. It does not, however, distinguish well between intermediate social grades.
 
 %\monthSumChild
 %\monthSumSocio
 \subsection*{Average Daily Usage}
-As it has been established that some classes of households do use more energy than others, it is worthwhile to dig deeper and determine if there is any factor that influences these differences. With this in mind, the average energy used by each household for each day of the week was computed. This sort of feature explores, not just if some classes use more energy than others, but if it is dependent on the day of the week. 
+As it has been established that some classes of households do indeed use more energy than others, it is worthwhile to dig deeper and determine whether there are any factors that influence these differences. With this in mind, the average energy used by each household for each day of the week was computed. This sort of feature explores not just if some classes use more electricity than others, but if the electricity consumption is dependent on the day of the week. 
 
 \averageDayChild
 \averageDaySocio
 
-While figure \ref{fig:averageDayChild} does further show that households with children use more than those without, it does not give any more insight into when, how or why this is the case. Households with children tend to use 1kW more electricity per day regardless of what day of the week it is.
-Similarly, looking at the average daily usage of different socio-economic groups does not give any more understanding of the differences between classes. There is no particular day where the differences in electricity consumption between classes is different than other days.
+While Figure \ref{fig:averageDayChild} does further show that households with children use more power than those without, it does not give any additional insight as to when, how or why this is the case. Households with children tend to use 1kW more electricity per day regardless of what day of the week it is.
+
+Similarly, Figure \ref{fig:averageDaySocio}, which compares the average daily usage of different socio-economic groups, does not offer any more insight into the differences between classes. There is no particular day where the differences in electricity consumption between classes is more visible than other days.
 
 \subsection*{Average Part-Of-Day (APOD)}
-Going further, it could be that different classes use more or less energy at different times of the day. For example, that lower socio-economic households might use more of their energy during the day than those of medium or high socio-economic status since they are more likely to be employed \cite{Bartley}. Similarly, it is reasonable to assume that, the consumption gap between households with and without children might shrink when the children are at school and widen when they are at home.
+Going further, it could be that different classes use more or less energy at different times of the day. For example, lower socio-economic households might use more of their energy during the day than those of medium or high socio-economic status since they are more likely to be unemployed \cite{Bartley}. Similarly, it is reasonable to assume that the consumption gap between households with and without children might shrink when the children are at school and widen when they are at home.
 
-According to \cite{school times}, most schools days in England begin at 9:00 and finish between between 15:00 and 16:00. Using this fact and the assumption that as children go to bed, the activity of the other members of the household will decrease and therefore electricity consumption will drop, then it is worthwhile to split each day into the following groups.
+Most schools days in England begin at 9:00 and finish between 15:00 and 16:00 \cite{school times}. Using this fact and the assumption that as children go to bed, the activity of the other members of the household will decrease and therefore electricity consumption will drop, then it is worthwhile to split each day into the following groups.
 \begin{enumerate}
 \item Morning (6:00-9:00): The time when members of the household would wake up and prepare themselves for work, school etc.
 \item Afternoon (9:00-15:00): The time that children are at school.
@@ -47,50 +51,50 @@ According to \cite{school times}, most schools days in England begin at 9:00 and
 \APODChild
 
 
-The data portrayed in figure \ref{fig:APODChild} does indicate that the energy use patterns are indeed different for households with and without children. We see that much of the differences in household electricity consumption can be attributed that used in the evenings, with the average household with children using 40kW more electricity during this period than households without. Furthermore, it can be seen that on weekday afternoons (9:00-15:00, Monday-Friday) the two classes use similar amounts of electricity however on Saturdays and Sundays, the gap widens and those with children tend to use more than those without. 
+The data portrayed in Figure \ref{fig:APODChild} indicates that energy use patterns are indeed different for households with and without children. We see that much of the difference in household electricity consumption can be attributed to household activity in the evenings (15:00-22:00), with the average household with children using 40kW more electricity during this period than households without. Furthermore, it can be seen that on weekday afternoons (9:00-15:00, Monday-Friday) the two classes use similar amounts of electricity, however on Saturdays and Sundays, the gap widens and those with children tend to use more than those without. 
 
 \APODSocio
 
-Figure \ref{fig:APODSocio} Shows again the same results as the previously computed features. Households of social grade E appear to use particularly little energy at night than the households of other socio-economic groups, yet they seem to make up for it in the morning period where their consumption is more akin to the other groups. Households of group A appear to have the opposite pattern, using more energy than others in the evening but normal amounts (compared to the other classes) in the mornings.
+Figure \ref{fig:APODSocio} Shows again the same results as the previously computed features. Households of social grade E appear to use relatively little energy at night than the households of other socio-economic groups, yet they seem to make up for it in the morning period where their consumption is more akin to the other groups. Households of group A show the opposite pattern, using more energy than others in the evenings but normal amounts (compared to the other classes) in the mornings.
 
 
 \subsection*{Mean Weekday vs. Saturday and Sunday}
-In addition to looking at consumption features, ratios can also give insight into when a household is using its energy. Taking the ratio of the energy used on an average weekend day and weekday is capable of determining if a household is using proportionally more of it's energy during the week or the weekend. The rational being that households of social grades E,D and C2, whose chef income earner is either unemployed or a manual worker is more likely to have a job that requires working on the weeknds than households of class C1,B or A who, given their supervisory and managerial professions, are less likely to work on weekends. It is therefore possible that the higher households will use a greater proportion of their energy on weekends than weekdays. 
+In addition to looking at consumption features, ratios can also give insight into when a household is using its energy. Taking the ratio of the energy consumed on an average weekend day and an average weekday, one can determine if a household is using proportionally more of its energy during the week or at the weekend. The rationale being that households of social grades E,D and C2, whose chief income earner is either unemployed or a manual worker, is more likely to have a job that requires working on the weeknds than households of class C1,B or A who, given their supervisory and managerial professions, are less likely to work on weekends. It is therefore possible that the higher households will use a greater proportion of their energy on weekends than weekdays. 
 \POWrat
 
-After computing the ratio between weekend and weekday electricity consumption, classes seem to use similar proportions of their energy. And while figure \ref{fig: POWrat} suggests that household's use more of their energy on Sundays than they do on Saturdays, this is independent of the socio-economic class and therefore is unlikely to be of use in distinguishing between classes.
+After computing the ratio between weekend and weekday electricity consumption, classes seem to use similar proportions of their energy. And while Figure \ref{fig:POWrat} suggests that households use more of their energy on Sundays than they do on Saturdays, this is independent of the socio-economic their class and therefore is unlikely to be of use in distinguishing between classes.
 
 
-\subsection*{Variance on Weekday}
-Thus far, the features that have been computed are dependent on \textit{how much} energy has been consumed. It is also worth considering how much volatility there is in the household's energy consumption. Continuing with the idea that energy usage will be different on weekdays versus weekends, the average daily variance for weekdays was computed separately from weekends. 
+\subsection*{Variance on Weekdays}
+Thus far, the features that have been computed have been dependent on \textit{how much} energy has been consumed. It is also worth considering how much volatility there is in the household's energy consumption. Continuing with the idea that energy usage will be different on weekdays versus weekends, the average daily variance for weekdays was computed separately from weekends. 
 
 \ADV
 
-Although the average daily variance of households is volatile in and of itself, the results shown in figure \ref{fig:ADV} indicate that the electricity use of households with children does tend to fluctuate more than those without children. Furthermore, the skewness indicates that it might be beneficial to take a transformation of the feature, such as the logarithm, the results of which are plotted in figures figures \ref{fig:logADVChild} and \ref{fig:logADVSocio}. Here it can be seen that households in socio-economic group C2 tend to have lower volatility in their daily consumption than some of the other classes. This is of interest because the consumption features failed to distinguish between the middle socio-economic classes.
+Although the average daily variance of households is volatile in and of itself, the results shown in Figure \ref{fig:ADV} indicate that the electricity use of households with children does tend to fluctuate more than those without children. Furthermore, the skew indicates that it might be beneficial to take a transformation of the feature, such as the logarithm, the results of which are plotted in Figures \ref{fig:logADVChild} and \ref{fig:logADVSocio}. Here it can be seen that households in socio-economic group C2 tend to have lower volatility in their daily consumption than some of the other classes. This is of interest because the consumption features failed to distinguish between the middle socio-economic classes.
 
 \logADVChild
 \logADVSocio
 
 \subsection*{Correlation Between Weekdays}
 
-The average correlation coefficient between a weekday and every other weekday was calculated. Rather than using the 10 minute intervals, which appeared to be too granular to capture any covariance between days, electricity readings were summed into one hour intervals.
+The average correlation coefficient between one weekday and every other weekday was calculated. Rather than using the 10-minute intervals, which appeared to be too granular to capture any covariance between days, electricity readings were summed into one-hour intervals.
 
 
 \corrChild
 
-Looking at figure \ref{fig:corrChild}, it appears that, although the correlation coefficients are generally close to 0 (which means there is no correlation), there are differences between the two classes and that depending on which two days are being considered, the correlations of one class tend to be greater or smaller than the others. For example, it would appear that households with children have a slightly higher correlation between their Monday and Tuesday electricity use pattern than those without.
+Looking at Figure \ref{fig:corrChild}, it appears that, although the correlation coefficients are generally close to 0 (which means there is no correlation), there are differences between the two classes. Depending on which two days are being considered, the correlations of one class tend to be greater or smaller than that of the others. For example, it would appear that households with children demonstrate a slightly higher correlation between their Monday and Tuesday electricity use patterns than those without.
 
 \corrSocio 
 
 
 \subsection{Periodicity}
 
-Another approach used for feature extraction was to exploit the periodic consumption patterns exhibited by many of the households in order to search for temporal structures that are present in some classes but not others. This method of feature extraction has been used particularly in studies involving forcasting and clustering. Methods outlined by Fabian Mörchen \cite{Moerchen} for time series feature extraction are used to project the household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
+Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households, in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Mörchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
 
 
 \subsection{Signal Smoothing}
 
-Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings filter the noise whilst retaining the temporal structure of the data. Gaussian filter can improve performance compared with direct averaging as more structure is retained whilst noise is removed \cite{Nixon}. This is done as Fourier transforms have difficulty characterising small intervals of large electricity demand \cite{Graps}
+Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings to filter noise whilst retaining the temporal structure of the data. Gaussian filtering can improve performance compared with direct averaging, as more structure is retained whilst noise is removed \cite{Nixon}. This is done as the time-frequency transformation used (the discrete Fourier transform method) has difficulty characterising small intervals of large electricity demand \cite{Graps}
 
 Gaussian filtering (or Gaussian smoothing) is performed by convolving the time series with the Gaussian function.
 
@@ -100,19 +104,19 @@ Gaussian filtering (or Gaussian smoothing) is performed by convolving the time s
 
 \subsection{Fourier Transform}
 
-For uniform samples $[f(1)...,f(n)]$ of a real signal $f(x)$, the \textit{Discrete Fourier Transform} (DFT), is the projection of a signal from the time domain into the frequency domain by
+For uniform samples $[f(1)...,f(n)]$ of a real signal $f(x)$, the \textit{Discrete Fourier Transform} (DFT) is the projection of a signal from the time domain into the frequency domain by
 
 \[c_f=\frac{1}{\sqrt{n}}\sum_{t=1}^nf(t)\exp{\frac{-2\pi ift}{n}}\]
 
-where $f=1,...n$ and $i=\sqrt{-1}$ The $c_f$ are complex numbers and represent
+where $f=1,...n$ and $i=\sqrt{-1}$ the $c_f$ are complex numbers and represent
 the amplitudes and shifts of a decomposition of the signal into sinusoid functions \cite{Moerchen}.
 
 
-Issues do present themselves when using this method, as already mentioned, the the Fourier transform measure global frequencies and the signal is assumed to be periodic. This assumption can cause poor aproximations at the boarders of the time series \cite{Moerchen}.
+Issues do present themselves when using this method. As already mentioned, the Fourier transform measures global frequencies and the signal is assumed to be periodic. This assumption can cause poor aproximations at the boarders of the time series \cite{Moerchen}.
 
 \subsection{Energy Preservation}
 
-The for $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$ is small compared to the length of each time series $m=4032$, the number of coefficients must be reduced in order to reduce redundancy, noise and computational time. According to Mörchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
+For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Mörchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
 
 \[E(f(t))=\sum_{j=1}^ma_jc^2_j\] 
 

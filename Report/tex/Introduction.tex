@@ -5,9 +5,9 @@ Amidst international pressure on countries to reduce their carbon footprints \ci
 While there has generally been strong support for the smart meter program, there has also been resistance to the campaign, with fears that the energy companies will use the information as an opportunity to raise their customers' bills and increase their own profits \cite{stop}. Perhaps more interestingly though, and therefore the focus of this project, are concerns that have been raised regarding the security risks associated with measuring and storing energy consumption data \cite{Quinn} \cite{LMW}. Specifically, how much other information about a household can be inferred from energy consumption readings? 
 
 In looking to answer whether these fears are well-founded, the aim of this project is to explore whether (and to what extent) it is
-possible to construct features that predict detailed personal information about a household from its energy consumption readings, and if so, if the results would be reliable, and whether such intrusive knowledge of household habits could effectively be exploited for targeted marketing or advertising campaigns, Big Brother-type government “watching”, or equally if not more maliciously, for timing burglaries or other crimes. 
+possible to construct features that predict detailed personal information about a household based on its energy consumption readings, and if so, if the results would be reliable. Breach of privacy issues would include whether such intrusive knowledge of household habits could effectively be exploited for targeted marketing or advertising campaigns, Big Brother-type government “watching”, or equally if not more maliciously, for timing burglaries or other crimes. 
 
-Using household electricity consumption information collected by the Household Electricity Survey (HES), a DEFRA sponsored national survey of energy use collected over a period from 2010 to 2011, classifcation models are created to predict two household properties: (1) The presence (or absence) of children in a household and (2) the IPSOS social grade of the chief income earner of the household. These properties are chosen because, of all the information gathered by the HES survey, they would logically be of interest to someone who might wish to intrude on a household.
+Using electricity consumption information collected by the Household Electricity Survey (HES), a DEFRA\footnote{Department for Environment, Food and Rural Affairs} sponsored national survey of energy use collected over a period from 2010 to 2011, classification models are created to predict two properties of households: (1) The presence (or absence) of and (2) the Ipsos MORI social grade of the chief income earner. These properties are chosen because, of all the information gathered by the HES survey, they would logically be of interest to someone who might wish to intrude on a household.
 \newline
 
 This project has 3 main components:
@@ -17,6 +17,10 @@ This project has 3 main components:
 \item Extract useful features from the data that can be used as inputs to a classification model; 
 \item Predict household properties using supervised learning methods.
 \end{enumerate}
+
+It should be noted that although the terms \textit{electricity, power} and \textit{energy} are not synonymous, within the context of this paper, they all refer to the electrical power consumed by a household and are therefore used interchangeably. 
+
+
 \section{Smart Meters}
 Following the example of EU Countries such as Italy, Sweden, Finland, Switzerland and Germany \cite{OfGEM}\cite{Vasc}, 
 \section{Related Work}
