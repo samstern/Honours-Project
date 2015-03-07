@@ -2,26 +2,20 @@
 \contentsline {section}{\numberline {1.1}Introduction}{2}
 \contentsline {section}{\numberline {1.2}Smart Meters}{3}
 \contentsline {section}{\numberline {1.3}Related Work}{3}
-\contentsline {section}{\numberline {1.4}This Project}{3}
-\contentsline {chapter}{\numberline {2}Data}{4}
-\contentsline {section}{\numberline {2.1}Overview of the HES Dataset}{4}
-\contentsline {section}{\numberline {2.2}Extracting the Data and Pre-Processing}{4}
-\contentsline {section}{\numberline {2.3}Issues}{5}
-\contentsline {section}{\numberline {2.4}Comparison to Previous Work}{5}
-\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{6}
-\contentsline {section}{\numberline {3.1}Types of Features}{6}
-\contentsline {section}{\numberline {3.2}Creating Features}{7}
-\contentsline {subsection}{\numberline {3.2.1}Total Electricity}{7}
-\contentsline {subsection}{\numberline {3.2.2}Periodicity}{17}
-\contentsline {subsection}{\numberline {3.2.3}Signal Smoothing}{17}
-\contentsline {subsection}{\numberline {3.2.4}Fourier Transform}{18}
-\contentsline {subsection}{\numberline {3.2.5}Energy Preservation}{19}
-\contentsline {section}{\numberline {3.3}Feature Selection}{19}
-\contentsline {subsection}{\numberline {3.3.1}Energy Preservation}{19}
-\contentsline {section}{\numberline {3.4}Class Cardinality}{19}
-\contentsline {chapter}{\numberline {4}Models}{20}
-\contentsline {section}{\numberline {4.1}Overview}{20}
-\contentsline {section}{\numberline {4.2}Logistic Regression}{20}
-\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{21}
-\contentsline {section}{\numberline {4.3}Random Forrest}{21}
-\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{21}
+\contentsline {section}{\numberline {1.4}This Project}{4}
+\contentsline {chapter}{\numberline {2}Data}{5}
+\contentsline {section}{\numberline {2.1}Overview of the HES Dataset}{5}
+\contentsline {section}{\numberline {2.2}Extracting the Data and Pre-Processing}{5}
+\contentsline {section}{\numberline {2.3}Issues}{6}
+\contentsline {section}{\numberline {2.4}Comparison to Previous Work}{6}
+\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{7}
+\contentsline {section}{\numberline {3.1}Types of Features}{7}
+\contentsline {section}{\numberline {3.2}Creating Features}{8}
+\contentsline {subsection}{\numberline {3.2.1}Total Electricity}{8}
+\contentsline {subsection}{\numberline {3.2.2}Periodicity}{18}
+\contentsline {subsection}{\numberline {3.2.3}Signal Smoothing}{18}
+\contentsline {subsection}{\numberline {3.2.4}Fourier Transform}{19}
+\contentsline {subsection}{\numberline {3.2.5}Energy Preservation}{20}
+\contentsline {section}{\numberline {3.3}Feature Selection}{20}
+\contentsline {subsection}{\numberline {3.3.1}Energy Preservation}{20}
+\contentsline {section}{\numberline {3.4}Class Cardinality}{20}

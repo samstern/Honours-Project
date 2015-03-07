@@ -22,8 +22,16 @@ It should be noted that although the terms \textit{electricity, power} and \text
 
 
 \section{Smart Meters}
-Following the example of EU Countries such as Italy, Sweden, Finland, Switzerland and Germany \cite{OfGEM}\cite{Vasc}, 
+%Following the example of EU Countries such as Italy, Sweden, Finland, Switzerland and Germany \cite{OfGEM}\cite{Vasc}, 
 \section{Related Work}
-In recent years researchers have been putting much effort into it in focusing on N I LM (nonintrusive load of monitoring)Using aggregated electricity readings from households researchers tackle the problem of disaggregating thisBad consumption into its constituent appliances.
+Particularly in recent years, an increasing number of researchers have applied machine learning and data mining techniques to  model and analyse domestic electricity consumption. This field of research is of particular interest to energy providers as understanding who their clients are and how and when they use energy lets the providers optimise their resourses (providing more power during peak times and less during periods of low demand), and create and market products to specifit client groups. 
+
+\begin{itemize}
+\item Chicco gives an overview of the clustering techniques used to establish suitable client groups for analysing electricity load pattern data \cite{Chicco}. Cao et.al also grouped consumers using electricity load profiles, however focusing on finding households with the same peak usage \cite{Cao}. 
+\item Others, such as Zoha et. al and Carrie et.al have performed research on NILM (\textit{non intrusive load monitoring}). Taking aggregated energy consumption data from households and disaggregating the consumption of the constituent appliances.\cite{Zoha}\cite{Carrie}. 
+ 
+\item Beckel et. al. used supervised learning methods to classify household properties of 4232 Irish households. Their work involved classifying the inhabitants, such as the age of the cheif income earner , presence/absence of children and socio economic status of the household. They also looked to identify properties of the home itself, such as the number of appliances, the number of bedrooms and the type of cooking facilities \cite{Beckel 3}. While much of the of the work presented in the report overlaps with that done the authors, we concider a different set of classifiers (random forrest and logistic regression) as well as a nother class of features taken from the time-frequency transorm of the data.
+\end{itemize}
+
 
 \section{This Project}
