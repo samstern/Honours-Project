@@ -1,0 +1,41 @@
+\chapter{Results}
+
+This section discusses the quantitative evaluation methods used to determine the potential for each of the classifiers to reveal household characteristics and then analyses the results from training and running each classifier.
+
+\section{Evaluation Methods}
+
+For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification proble, returns a $K\times K$ matrix where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
+
+
+The accuracy of a classifier is defined as the sum of the diagonal elements of CM, divided by the total number of samples,$S$.
+
+\[ACC=\frac{\sum_{i=1}^KCM_{i,i}}{S}\]
+
+This is compared to the accuracy of performing a random guess (RG), which assigns a household to one of the $K$ classes at random.
+\[ACC_{RG}=\frac{1}{K}\]
+
+To account for the imbalances in classes, we also calculate the most probable class (MPC) which uses knowlege of the prior probability of each class in the training data to find a baseline by assigning all samples to the most probable class. 
+
+\[ACC_{MPC}=\frac{argmax(S^K)}{S}\]
+where $S^K$ is the number of samples from the test data that are in class $K$.
+
+\bigskip
+
+For socio-economic classification problem, the ordinal structure of the classes should also be taken into account i.e it is worse for our classifier to predict a household of social grade B as D, then it is to predict it as C1 or A. Therefore, the \textit{accuracy within n}\cite{Gaudette}. 
+
+
+
+
+
+\begin{itemize}
+\item confusion matrix
+\item accuracy
+\item For ordinal data -- accuracy within n (i.e accuracy +- one class) ans mean absolute error 
+\item baseline - ($ACC_{RG}$ - random guess and ($ACC_{BRG}$ -biased random guess)
+\item TPD and FPR
+\item ROC curve
+\item explain how cross validation was used
+\end{itemize}
+
+
+\section{Classifiers}

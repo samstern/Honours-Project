@@ -3,7 +3,7 @@
 \section{Types of Features}
 When data mining in time series, it is usually not sufficient to consider each point in time sequentially. In addition to ignoring the high dimensionality of the data,  it does not account for the correlation between consecutive values \cite{Moerchen}. It is therefore beneficial to transform and aggregate the data in such a way as to reduce the dimensionality as well as capture differences in the consumption patterns between classes. 
 
-According to Beckel et. al\cite{Beckel 2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures represent the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption different figures, and can capture relevant patterns that occur through different time intervals. Temporal features capture the first or last time some event takes place, the time at which the daily maximum or minimum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance or correlation, give insight into the consumption curve.
+According to Beckel et. al\cite{Beckel_2}, possible features that are interesting for classification of households based on energy consumption are: consumption figures, ratios, temporal properties, and statistical properties. Consumption figures represent the average, maximum and minimum energy consumption over some time period. Ratios are features that calculate the ratio between consumption different figures, and can capture relevant patterns that occur through different time intervals. Temporal features capture the first or last time some event takes place, the time at which the daily maximum or minimum occurs or any periodicity within the household's electricity consumption. Finally, statistical properties, such as variance or correlation, give insight into the consumption curve.
 
 Numerous statistical methods presume that input data follows a normal distribution. Therefore, the HES data was visualized and compared against a normal quantile plot in order to find the right non-linear transformations \cite{Osborne} \cite{Wang}. Figure \ref{fig:qqPlot} shows the normal quantile plot of the average standard deviation of a household on Mondays (left) and the logarithm of this feature (right). The linearity of the sample quantiles of the features (x-axis) versus the theoretical quantiles of a normal distribution (y-axis) implies that the transformed features are (roughly) normally distributed. These transformations are important for classifiers, such as k-nearest neighbour, which rely on the distance between samples based on their features.
 
@@ -41,7 +41,7 @@ Similarly, Figure \ref{fig:averageDaySocio}, which compares the average daily us
 \subsection*{Average Part-Of-Day (APOD)}
 Going further, it could be that different classes use more or less energy at different times of the day. For example, lower socio-economic households might use more of their energy during the day than those of medium or high socio-economic status since they are more likely to be unemployed \cite{Bartley}. Similarly, it is reasonable to assume that the consumption gap between households with and without children might shrink when the children are at school and widen when they are at home.
 
-Most schools days in England begin at 9:00 and finish between 15:00 and 16:00 \cite{school times}. Using this fact and the assumption that as children go to bed, the activity of the other members of the household will decrease and therefore electricity consumption will drop, then it is worthwhile to split each day into the following groups.
+Most schools days in England begin at 9:00 and finish between 15:00 and 16:00 \cite{school_times}. Using this fact and the assumption that as children go to bed, the activity of the other members of the household will decrease and therefore electricity consumption will drop, then it is worthwhile to split each day into the following groups.
 \begin{enumerate}
 \item Morning (6:00-9:00): The time when members of the household would wake up and prepare themselves for work, school etc.
 \item Afternoon (9:00-15:00): The time that children are at school.
@@ -89,7 +89,7 @@ Looking at Figure \ref{fig:corrChild}, it appears that, although the correlation
 
 \subsection{Periodicity}
 
-Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households, in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Mörchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
+Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households, in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Moerchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
 
 
 \subsection{Signal Smoothing}
@@ -116,13 +116,13 @@ Issues do present themselves when using this method. As already mentioned, the F
 
 \subsection{Energy Preservation}
 
-For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Mörchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
+For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Moerchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
 
 \[E(f(t))=\sum_{j=1}^ma_jc^2_j\] 
 
 where $c_j$ is the $j^{th}$ column and $a_j$ is an appropriate scaling coefficient correspondent to signal $f(t)$. 
 
-Let $I$ be a function measuring the importance of coefficient $j$ on all $l$ values, and let $J_k(I,C)$ be a function that chooses a subset of $M = {1, ..., m}$ of the $k$ largest values of $I$. Mörchen \cite{Moerchen} proves that $J_k(mean(c_j^2),C)$ is optimal in energy preservation.
+Let $I$ be a function measuring the importance of coefficient $j$ on all $l$ values, and let $J_k(I,C)$ be a function that chooses a subset of $M = {1, ..., m}$ of the $k$ largest values of $I$. Moerchen \cite{Moerchen} proves that $J_k(mean(c_j^2),C)$ is optimal in energy preservation.
 
 The MATLAB fast Fourier transform function (fft) was used to find the discrete Fourier transform, and the five best features were chosen, based on the energy preservation method.
 

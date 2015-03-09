@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Report.aux
+The style file: unsrt.bst
+Database file #1: Bib/bibl2.bib
+Warning--I didn't find a database entry for "Beckel3"
+Warning--empty publisher in E_spending
+Warning--empty publisher in HES
+Warning--empty publisher in early_findings
+Warning--empty publisher in Moerchen
+Warning--empty year in Gaudette
+You've used 24 entries,
+            1791 wiz_defined-function locations,
+            589 strings with 6788 characters,
+and the built_in function-call counts, 4780 in all, are:
+= -- 405
+> -- 181
+< -- 2
++ -- 72
+- -- 48
+* -- 270
+:= -- 750
+add.period$ -- 70
+call.type$ -- 24
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 234
+empty$ -- 517
+format.name$ -- 48
+if$ -- 1098
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 29
+newline$ -- 121
+num.names$ -- 24
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 97
+stack$ -- 0
+substring$ -- 262
+swap$ -- 44
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 38
+width$ -- 26
+write$ -- 244
+(There were 6 warnings)

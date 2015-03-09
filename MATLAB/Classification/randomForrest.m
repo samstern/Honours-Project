@@ -7,4 +7,7 @@ function [B,Y]=randomForrest(x_train,x_test,y_train,y_test,task)
     
     confusionmat(y_test,Y)
     
+    [x,y] = perfcurve(y_test,Y,1)
+    plot(x,y)
+    
 end

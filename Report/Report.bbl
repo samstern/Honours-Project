@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{E_spending}
+Office for National~Statiscics.
+\newblock {\em Full Report: Household Energy Spending in the UK, 2002-2012}.
+\newblock 2014.
+
+\bibitem{stop}
+Stop Smart~Meters! (UK).
+\newblock Stop smart meters! (uk), 2015.
+
+\bibitem{Quinn}
+Elias~Leake Quinn.
+\newblock Privacy and the new energy infrastructure.
+\newblock {\em SSRN Journal}, 2014.
+
+\bibitem{LMW}
+Mikhail~A. Lisovich, Deirdre~K. Mulligan, and Stephen~B. Wicker.
+\newblock Inferring personal information from demand-response systems.
+\newblock {\em IEEE Security and Privacy Magazine}, 8(1):11--20, 2010.
+
+\bibitem{Chicco}
+Gianfranco Chicco.
+\newblock Overview and performance assessment of the clustering methods for
+  electrical load pattern grouping.
+\newblock {\em Energy}, 42(1):68--80, 2012.
+
+\bibitem{Cao}
+Hong-An Cao.
+\newblock {\em Are domestic load profiles stable over time? An attempt to
+  identify target households for demand side management campaigns}, pages 4733
+  -- 4738.
+\newblock IEEE, 2013.
+
+\bibitem{Zoha}
+Ahmed Zoha, Alexander Gluhak, Muhammad Imran, and Sutharshan Rajasegarar.
+\newblock Non-intrusive load monitoring approaches for disaggregated energy
+  sensing: A survey.
+\newblock {\em Sensors}, 12(12):16838--16866, 2012.
+
+\bibitem{Carrie}
+K.~Carrie~Armel, Abhay Gupta, Gireesh Shrimali, and Adrian Albert.
+\newblock Is disaggregation the holy grail of energy efficiency? the case of
+  electricity.
+\newblock {\em Energy Policy}, 52:213--234, 2013.
+
+\bibitem{Beckel_3}
+Christian Beckel, Leyna Sadamori, Thorsten Staake, and Silvia Santini.
+\newblock Revealing household characteristics from smart meter data.
+\newblock {\em Energy}, 78:397--410, 2014.
+
+\bibitem{HES}
+Intertek.
+\newblock {\em Household Electricity Survey A study of domestic electrical
+  product usage}.
+\newblock 2012.
+
+\bibitem{early_findings}
+Jason Palmer, Nicola Terry, and Tom Kane.
+\newblock {\em Early Findings: Demand side management}.
+\newblock 2013.
+
+\bibitem{Moerchen}
+Fabian Moerchen.
+\newblock {\em Time series feature extraction for data mining using DWT and
+  DFT}.
+\newblock 2003.
+
+\bibitem{Beckel_2}
+Christian Beckel, Leyna Sadamori, and Silvia Santini.
+\newblock {\em Towards automatic classifi-cation of private households using
+  electricity consumption data}, pages 75--86.
+\newblock ACM, 2013.
+
+\bibitem{Osborne}
+Jason Osborne.
+\newblock Notes on the use of data transformations.
+\newblock {\em Practical Assessment, Research and Evaluation}, 2002.
+
+\bibitem{Wang}
+Morgan~C. Wang and Brad~J. Bushman.
+\newblock Using the normal quantile plot to explore meta-analytic data sets.
+\newblock {\em Psychological Methods}, 3(1):46--54, 1998.
+
+\bibitem{Gomez}
+Leticia~M. Blazquez~Gomez, Massimo Filippini, and Fabian Heimsch.
+\newblock Regional impact of changes in disposable income on spanish
+  electricity demand: A spatial econometric analysis.
+\newblock {\em Energy Economics}, 40:S58--S66, 2013.
+
+\bibitem{Bartley}
+M.~Bartley and C.~Owen.
+\newblock Relation between socioeconomic status, employment, and health during
+  economic change, 1973-93.
+\newblock {\em BMJ}, 313(7055):445--449, 1996.
+
+\bibitem{school_times}
+Teachingintheuk.com.
+\newblock Teaching jobs | supply teaching jobs - teaching personnel, 2015.
+
+\bibitem{McLoughlin}
+Fintan McLoughlin, Aidan Duffy, and Michael Conlon.
+\newblock Evaluation of time series techniques to characterise domestic
+  electricity demand.
+\newblock {\em Energy}, 50:120--130, 2013.
+
+\bibitem{Nixon}
+Mark~S Nixon and Alberto~S Aguado.
+\newblock {\em Feature extraction and image processing for computer vision}.
+\newblock Academic Press, 2012.
+
+\bibitem{Graps}
+Amara Graps.
+\newblock An instroduction to wavlents.
+\newblock {\em IEEE Computational Science and Engineering}, 2(2):50--61, 1995.
+
+\bibitem{Williams}
+Carl~Edward Rasmussen and Christopher K.~I Williams.
+\newblock {\em Gaussian processes for machine learning}.
+\newblock MIT Press, 2006.
+
+\bibitem{Stefanowski}
+JERZY STEFANOWSKI.
+\newblock Data mining - evaluation of classifiers.
+\newblock Poznan University of Technology.
+
+\bibitem{Gaudette}
+Lisa Gaudette and Nathalie Japkowicz.
+\newblock title = {Evaluation Methods for Ordinal Classification},.
+\newblock In {\em Advances in Artificial Intelligence}.
+
+\end{thebibliography}

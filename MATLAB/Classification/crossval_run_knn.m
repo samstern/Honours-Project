@@ -1,4 +1,4 @@
-function output=crossval_run_log_reg(x_train,y_train,task)
+function acc=crossval_run_knn(x_train,y_train,task)
 
     %cross validation
     shuffled=shuffle(x_train,y_train);
@@ -22,44 +22,41 @@ function output=crossval_run_log_reg(x_train,y_train,task)
               y_trn=[y_trn;y_split{j}'];
            end
        end
-       output.each(i)=runIt(x_trn,x_tst,y_trn,y_tst,task);
+       acc.each(i)=runIt(x_trn,x_tst,y_trn,y_tst,task);
     end
     
-    output.accuracy=sum(output.each)/k;
+    acc.ave=sum(acc.each)/k;
     
 
 end
 
 function accuracy=runIt(x_train,x_test,y_train,y_test,task)
-    if strmatch(task,{'child','children','c'},'exact')~=0
+    %if strmatch(task,{'child','children','c'},'exact')~=0
         
-        [b,dev,stats] = glmfit(x_train,y_train,'binomial','link','logit'); % Logistic regression
-        pihat = glmval(b,x_test,'logit');
+        mdl = fitcknn(x_train,y_train,'NumNeighbors',5,'Distance','euclidean');
+        y_hat = predict(mdl,x_test);
+        size(y_hat)
+        size(y_test)
 
-        %[m_prob,y_hat]= max(pihat');
-
-        y_hat=round(pihat(:,1))';
-
-
-        accuracy=sum(y_test==y_hat')/length(y_test);
+        accuracy=sum(y_test==y_hat)/length(y_test);
     
-    else 
-        y_train;
-        [b,dev,stats] = mnrfit(x_train,y_train,'model','ordinal'); % Logistic regression
-        size(b);
-        size(x_test);
-        pihat = mnrval(b,x_test,'model','ordinal');
-
-        [m_prob,y_hat]= max(pihat');
-
-        accuracy=sum(y_test==y_hat')/length(y_test);
-    end
+%     else 
+%         y_train;
+%         [b,dev,stats] = mnrfit(x_train,y_train,'model','ordinal'); % Logistic regression
+%         size(b);
+%         size(x_test);
+%         pihat = mnrval(b,x_test,'model','ordinal');
+% 
+%         [m_prob,y_hat]= max(pihat');
+% 
+%         accuracy=sum(y_test==y_hat')/length(y_test);
+%     end
 
     if strmatch(task,{'child','children','c'},'exact')~=0
-        TP=sum(y_hat'==0 & y_hat'==y_test);
-        TN=sum(y_hat'==1 & y_hat'==y_test);
-        FP=sum(y_hat'==0 & y_hat'~=y_test);
-        FN=sum(y_hat'==1 & y_hat'~=y_test);
+        TP=sum(y_hat==0 & y_hat==y_test);
+        TN=sum(y_hat==1 & y_hat==y_test);
+        FP=sum(y_hat==0 & y_hat~=y_test);
+        FN=sum(y_hat==1 & y_hat~=y_test);
 
         precision=TP/(TP+FP);
         recall=TP/(TP+FN);
@@ -87,12 +84,3 @@ function out=split(x_in,y_in,k)
         split_counter=split_counter+splitOn;
     end
 end
-
-
-% for i=1:length(y_hat)
-%     if y_hat(i)==y_test(i)
-%         count=count+1;
-%     end
-% end
-% count/length(y_hat)
-% end

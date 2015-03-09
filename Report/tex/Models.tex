@@ -7,11 +7,11 @@ There are several classification algorithms that can be used to perform supervis
 All three methods are examples of discriminative classifiers. The discriminative approach is appealing in that it is directly modelling what we want, $p(y|\textbf{x})$. Also, density estimation for the class-conditional distributions is a hard problem, particularly when $\textbf{x}$ is high dimensional, so if we are just interested in classification then the generative approach may mean that we are trying to solve a harder problem than we need to\cite{Williams}. We are also fortunate in that there is no missing data. 
 
 \section{Logistic Regression}
-For a binary classification problem $y\in \{0,1\}$, such as discriminating between households with children ($y=1$) and households without ($y=0$), the logistic regression model learns a weight vector $\textbf{w}$ such that given some new household with feature vector $textbf{x}$, the posterior probability of that household being in class, $p(y=1|\textbf{x})=g(\textbf{x}; \textbf{w})$ where $g(x)$ is the logistic (or sigmoid) function.
+For a binary classification problem $y\in \{0,1\}$, such as discriminating between households with children ($y=1$) and households without ($y=0$), the logistic regression model learns a weight vector $\textbf{w}$ such that given some new household with feature vector $\textbf{x}$, the posterior probability of that household being in class, $p(y=1|\textbf{x})=g(\textbf{x}; \textbf{w})$ where $g(x)$ is the logistic (or sigmoid) function.
 
 \[g(\textbf{x}; \textbf{w})=\sigma(\textbf{x};\textbf{w})=\frac{1}{1-e^{-(b+\textbf{w}\cdot{\textbf{x}})}}\]
 
-There are numerous pros to using logistic regression for the household classification task. Firstly, logistic regression is interpretable. After the model has been trained and the weight vectors established, they can be used to determine how important each feature is to the classifier
+There are numerous pros to using logistic regression for the household classification task. Firstly, logistic regression is interpretable. After the model has been trained and the weight vectors established, they can be used to determine how important each feature is to the classifier. Secondly, the confidence of a prediction can be inferred, resulting in interpretable results.
 
 
 \begin{itemize}
@@ -21,7 +21,15 @@ There are numerous pros to using logistic regression for the household classific
 
 \subsection{Multi-class Logistic Regression}
 
+\subsection{Implementation}
+
 \section{Random Forrest}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+
 
 \section{K-Nearest Neighbour}
 

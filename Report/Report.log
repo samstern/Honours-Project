@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  7 MAR 2015 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  9 MAR 2015 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,6 +414,14 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 (./features.sty
 Package: features 2011/01/11 v0.01 LaTeX package for my own purpose
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+)
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (597.50787pt) is ignored.
@@ -425,18 +433,18 @@ Package geometry Warning: Over-specification in `v'-direction.
 (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -533,11 +541,11 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -554,9 +562,6 @@ Report.toc)
 ]
 Chapter 1.
 
-LaTeX Warning: Citation `E-comm' on page 2 undefined on input line 3.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
@@ -570,28 +575,13 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-
-
-LaTeX Warning: Citation `Chicco' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Cao' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Zoha' on page 3 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Carrie' on page 3 undefined on input line 31.
-
-) (./tex/Data.tex [3] [4]
+)
+(./tex/Data.tex [3] [4]
 Chapter 2.
 [5
 
 ]) (./tex/Features.tex [6]
 Chapter 3.
-
-LaTeX Warning: Citation `Wang' on page 7 undefined on input line 8.
-
 Package epstopdf Info: Source file: <fig/qquntransformed.eps>
 (epstopdf)                    date: 2015-02-27 19:41:32
 (epstopdf)                    size: 34414 bytes
@@ -834,120 +824,50 @@ Package pdftex.def Info: fig/household369Conv-eps-converted-to.pdf used on inpu
 t line 101.
 (pdftex.def)             Requested size: 567.61923pt x 335.75356pt.
  [18 <./fig/Corr_socio.jpg>]
-[19 <./fig/household369Conv-eps-converted-to.pdf>]) [20]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-\OT1/cmtt/m/n/12 https://www.ofgem.gov.uk/electricity/retail-market/metering/
- []
+[19 <./fig/household369Conv-eps-converted-to.pdf>]) (./tex/Models.tex [20]
+Chapter 4.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/12 Elias Leake Quinn. "Pri-vacy and the new en-ergy in-fras-truc
--
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\OT1/cmr/m/n/12 ture" (febru-ary 15, 2009). \OT1/cmtt/m/n/12 http://ssrn.com/ab
-stract=1370731 \OT1/cmr/m/n/12 or
- []
-
-
-Underfull \hbox (badness 3942) in paragraph at lines 65--66
-[]\OT1/cmr/m/n/12 Office for Na-tional Statis-cics. 2014. "Full Re-port: House-
-hold En-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\OT1/cmr/m/n/12 ergy Spend-ing in the UK, 2002-2012". [ON-LINE] Avail-able at:
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 65--66
-\OT1/cmtt/m/n/12 http://www.ons.gov.uk/ons/dcp171776[]354637.pdf\OT1/cmr/m/n/12
- . [Ac-cessed 26 Jan-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-[]\OT1/cmr/m/n/12 Household elec-tric-ity sur-vey. \OT1/cmtt/m/n/12 https://www
-.gov.uk/government/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/cmtt/m/n/12 uploads/system/uploads/attachment[]data/file/278809/10043[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/cmtt/m/n/12 R66141HouseholdElectricitySurveyFinalReportissue4.pdf\OT1/cmr/
-m/n/12 , Jan-uary
- []
+LaTeX Warning: Citation `Beckel3' on page 21 undefined on input line 5.
 
 [21
 
-]
-Underfull \hbox (badness 1735) in paragraph at lines 80--81
-[]\OT1/cmr/m/n/12 Teaching Jobs | Sup-ply Teach-ing Jobs - Teach-ing Per-son-ne
-l 2015
- []
+]) (./tex/Results.tex [22]
+Chapter 5.
+[23
 
+]) (./Report.bbl [24] [25
 
-Overfull \hbox (7.08781pt too wide) in paragraph at lines 80--81
-\OT1/cmtt/m/n/12 http://www.teachingintheuk.com/go/uk-teaching-info/school-syst
-em/ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-[]\OT1/cmr/m/n/12 Graps A.\OT1/cmr/m/it/12 An in-tro-duc-tion to wavelets\OT1/c
-mr/m/n/12 . IEEE Com-pu-ta-tional Sci-
- []
-
-
-Underfull \hbox (badness 5578) in paragraph at lines 93--94
-\OT1/cmr/m/n/12 ence and Engi-neering Sum-mer 1995;2(2) [On-line]. Avail-able f
-rom:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-\OT1/cmr/m/n/12 http://www.amara.com/IEEEwave/IEEEwavelet.html [ac-cessed:
- []
-
-[22] (./Report.aux)
+]) [26] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4581 strings out of 493117
- 67446 string characters out of 6135432
- 141188 words of memory out of 5000000
- 7901 multiletter control sequences out of 15000+600000
- 14470 words of font info for 56 fonts, out of 8000000 for 9000
+ 4672 strings out of 493117
+ 68753 string characters out of 6135432
+ 143074 words of memory out of 5000000
+ 7977 multiletter control sequences out of 15000+600000
+ 15091 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,42p,1020b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,8n,42p,1021b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (24 pages, 713925 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Report.pdf (28 pages, 735065 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
