@@ -140,10 +140,9 @@ Random forrests are not as succeptible to the problem of overparameteristaion as
 
 Dimensionality reduction can usually be charachterised as one of two tasks: \textit{Feature selection} and \textit{feature transformation}. Feature transformation methods involve performing a transformation the data (such as a rotation of projection) to create a new set of features (of smaller size) that has ore descriptive power than the origional set. An commonly used example of this is \textit{principal component analysis} (PCA) which finds a set of orthogonal unit vectors which point in the directions of greats variance of the data. The features are then just the result of projecting the data onto this basis. While these sorts of methods are popular and do tend to perform well, the resulting features are usually not interpretable \cite{Guyon}. 
 
-As is might be of interest to see which features are more responsible for differences between classes. Therefore, instead of using feature transformation methods, instead feature selection is used to find. There exist numerous methods of performing feature selection such as nested subset methods, filters of direct objective optimisation \cite{Guyon}, as well adaptive boosting \cite{Wang_2}
+As is might be of interest to see which features are more responsible for differences between classes. Therefore, instead of using feature transformation methods, instead feature selection is used to find. There exist numerous methods of performing feature selection such as nested subset methods, filters or direct objective optimisation \cite{Guyon}, as well as adaptive boosting \cite{Wang_2}.
 
-
-
+We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set for features. Starting with an empty list, SFS sequentially consideres each feature not present in the list for selection and assesses it's impact on a given evaluation score, choosing the feature that scores best and adding it to the list. This is repeated until the list is full \cite{Juha}. A superior mechod \textit{sequential forward floating selection} has been proven superior \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
 
 
 \section{Class Cardinality}

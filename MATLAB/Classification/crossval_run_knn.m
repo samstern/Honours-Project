@@ -35,8 +35,7 @@ function accuracy=runIt(x_train,x_test,y_train,y_test,task)
         
         mdl = fitcknn(x_train,y_train,'NumNeighbors',5,'Distance','euclidean');
         y_hat = predict(mdl,x_test);
-        size(y_hat)
-        size(y_test)
+
 
         accuracy=sum(y_test==y_hat)/length(y_test);
     

@@ -130,6 +130,16 @@ Ruihu Wang.
   svm, a review.
 \newblock {\em Physics Procedia}, 25:800--807, 2012.
 
+\bibitem{Somol}
+Somol P., P.~Pundil, J.~Novicova, and P~Pacli'k.
+\newblock Adaptive floating search methods in feature selection.
+\newblock {\em Pattern Recognition Letters}, 20(11-13):1157--1163, 1999.
+
+\bibitem{Juha}
+Juha Reunanen.
+\newblock Overfitting in making comparisons between variable selection methods.
+\newblock {\em Journal of Machine Learning Research}, 2003.
+
 \bibitem{Williams}
 Carl~Edward Rasmussen and Christopher K.~I Williams.
 \newblock {\em Gaussian processes for machine learning}.

@@ -20,12 +20,12 @@ function dayStd = ADV(numhouse,daylength,numpts,x_filtered,children_filtered,soc
     j=1;
     k=1;
     
-    dayStd.sgA=[];
-    dayStd.sgB=[];
-    dayStd.sgC1=[];
-    dayStd.sgC2=[];
-    dayStd.sgD=[];
-    dayStd.sgE=[];
+    dayStd.a=[];
+    dayStd.b=[];
+    dayStd.c1=[];
+    dayStd.c2=[];
+    dayStd.d=[];
+    dayStd.e=[];
     
     for i= 1:numhouse
         if children_filtered.all(i)==0
@@ -37,17 +37,17 @@ function dayStd = ADV(numhouse,daylength,numpts,x_filtered,children_filtered,soc
         end
         
         if social_grade.all(i)==1
-            dayStd.sgE=[dayStd.sgE;dayStd.all(i,:)];
+            dayStd.e=[dayStd.e;dayStd.all(i,:)];
         elseif social_grade.all(i)==2
-            dayStd.sgD=[dayStd.sgD;dayStd.all(i,:)];
+            dayStd.d=[dayStd.d;dayStd.all(i,:)];
         elseif social_grade.all(i)==3
-            dayStd.sgC2=[dayStd.sgC2;dayStd.all(i,:)];
+            dayStd.c2=[dayStd.c2;dayStd.all(i,:)];
         elseif social_grade.all(i)==4
-            dayStd.sgC1=[dayStd.sgC1;dayStd.all(i,:)];
+            dayStd.c1=[dayStd.c1;dayStd.all(i,:)];
         elseif social_grade.all(i)==5
-            dayStd.sgB=[dayStd.sgB;dayStd.all(i,:)];
+            dayStd.b=[dayStd.b;dayStd.all(i,:)];
         elseif social_grade.all(i)==6
-            dayStd.sgA=[dayStd.sgA;dayStd.all(i,:)];
+            dayStd.a=[dayStd.a;dayStd.all(i,:)];
         end
     end
 end

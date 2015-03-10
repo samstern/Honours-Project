@@ -20,12 +20,12 @@ function [dayAverages] = ATDOW(numhouse,daylength,numpts,x_filtered,children_fil
     j=1;
     k=1;
     
-    dayAverages.sgA=[];
-    dayAverages.sgB=[];
-    dayAverages.sgC1=[];
-    dayAverages.sgC2=[];
-    dayAverages.sgD=[];
-    dayAverages.sgE=[];
+    dayAverages.a=[];
+    dayAverages.b=[];
+    dayAverages.c1=[];
+    dayAverages.c2=[];
+    dayAverages.d=[];
+    dayAverages.e=[];
     
     for i= 1:numhouse
         if children_filtered.all(i)==0
@@ -37,17 +37,17 @@ function [dayAverages] = ATDOW(numhouse,daylength,numpts,x_filtered,children_fil
         end
         
         if social_grade.all(i)==1
-            dayAverages.sgE=[dayAverages.sgE;dayAverages.all(i,:)];
+            dayAverages.e=[dayAverages.e;dayAverages.all(i,:)];
         elseif social_grade.all(i)==2
-            dayAverages.sgD=[dayAverages.sgD;dayAverages.all(i,:)];
+            dayAverages.d=[dayAverages.d;dayAverages.all(i,:)];
         elseif social_grade.all(i)==3
-            dayAverages.sgC2=[dayAverages.sgC2;dayAverages.all(i,:)];
+            dayAverages.c2=[dayAverages.c2;dayAverages.all(i,:)];
         elseif social_grade.all(i)==4
-            dayAverages.sgC1=[dayAverages.sgC1;dayAverages.all(i,:)];
+            dayAverages.c1=[dayAverages.c1;dayAverages.all(i,:)];
         elseif social_grade.all(i)==5
-            dayAverages.sgB=[dayAverages.sgB;dayAverages.all(i,:)];
+            dayAverages.b=[dayAverages.b;dayAverages.all(i,:)];
         elseif social_grade.all(i)==6
-            dayAverages.sgA=[dayAverages.sgA;dayAverages.all(i,:)];
+            dayAverages.a=[dayAverages.a;dayAverages.all(i,:)];
         end
     end
 end
