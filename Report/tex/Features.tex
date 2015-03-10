@@ -17,7 +17,7 @@ Instead of creating features in an ad hoc manner, a more cost efficient approach
 
 The remainder of this chapter describes features that were created from the energy reading data and justifies why it was assumed that they assumed would be able to discriminate between classes. The results of computing these features are then evaluated. Both classification problems (socio-economic classification and child classification) were considered when choosing features to evaluate.
 
-\subsection{Total Electricity}
+\subsection*{Total Electricity}
 In visualising the data, it was noted that households had large differences in how much energy they used. While some households had a mean energy consumption rate of 1500 Watts per 10 minutes, others averaged as little as 65 Watts per 10 minutes; while one household consumed up to 19500 Watts in a 10 minute period, another never used more than 1190 Watts in the same time interval. To determine if these discrepancies can be attributed to different classes, the first feature that was explored was the total energy consumed within a given period of time. Since it was not known at this stage whether other factors, such as time of day, or day of the week, influence consumption, 28-day time frames were used to ensure independence of these factors.
 
 Building a classifier using the total electricity as input assumes that some classes use more energy than others. This can be justified as there is a known correlation between a household's disposable income and the amount of energy it uses \cite{Gomez}.
@@ -87,12 +87,12 @@ Looking at Figure \ref{fig:corrChild}, it appears that, although the correlation
 \corrSocio 
 
 
-\subsection{Periodicity}
+\section{Periodicity}
 
 Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households, in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Moerchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
 
 
-\subsection{Signal Smoothing}
+\subsection*{Signal Smoothing}
 
 Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings to filter noise whilst retaining the temporal structure of the data. Gaussian filtering can improve performance compared with direct averaging, as more structure is retained whilst noise is removed \cite{Nixon}. This is done as the time-frequency transformation used (the discrete Fourier transform method) has difficulty characterising small intervals of large electricity demand \cite{Graps}
 
@@ -102,7 +102,7 @@ Gaussian filtering (or Gaussian smoothing) is performed by convolving the time s
 
 
 
-\subsection{Fourier Transform}
+\subsection*{Fourier Transform}
 
 For uniform samples $[f(1)...,f(n)]$ of a real signal $f(x)$, the \textit{Discrete Fourier Transform} (DFT) is the projection of a signal from the time domain into the frequency domain by
 
@@ -114,7 +114,7 @@ the amplitudes and shifts of a decomposition of the signal into sinusoid functio
 
 Issues do present themselves when using this method. As already mentioned, the Fourier transform measures global frequencies and the signal is assumed to be periodic. This assumption can cause poor aproximations at the boarders of the time series \cite{Moerchen}.
 
-\subsection{Energy Preservation}
+\subsection*{Energy Preservation}
 
 For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Moerchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
 
@@ -128,9 +128,19 @@ The MATLAB fast Fourier transform function (fft) was used to find the discrete F
 
 
 		
-\section{Feature Selection}
+\section{Dimensionality Reduction}
 
-\subsection{Energy Preservation}
+Even though the success of a classifier is dependent on several variables, which may differ from one classifier to another, they are all dependent on the input data. In order to achieve accurate results with the least amount of computational time, it is necessary to insure that as little noise and redundancy is present in the input. Feature selection is the process of identifying and filtering out as much irrelevant and redundant information as possible \cite{Hall}. 
+
+As mentioned, different classification algorithms will be affected by overparameterisation in different ways. In the k-nearest neighbour classifier, additional features can largely effect the distance between two points. While redundant features (i.e those that don't change the distance between points) would only affect computational cost, added noise to the system can effect the distance between points, likely in a negative way. 
+
+Like k-nearest neighbour, the need for dimensional reduction is less to do with removing redundancy, but more to reduce noise and computational cost. logistic regression will account for highly correlated features by lowering their weight, however uninformative features would cause learn weights that do not improve the performance of the classifier.
+
+Random forrests are not as succeptible to the problem of overparameteristaion as other methods. When training each tree, since the `best' features will be branched on towards the top of the tree, pruning could be used to limit the size of each tree (therefore avoiding overfitting). An issue would only start to arise when the number of redundant or noise features is much larger than the number of good features. This is because, when training a tree, a random subset of features is selected when creating a branch. If the number of bad features is much larger than the number of good ones, then the probability of choosing a subet where no good features are present becomes significant.
+
+Dimensionality reduction can usually be charachterised as one of two tasks: \textit{Feature selection} and \textit{feature transformation}. Feature transformation methods involve performing a transformation the data (such as a rotation of projection) to create a new set of features (of smaller size) that has ore descriptive power than the origional set. An commonly used example of this is \textit{principal component analysis} (PCA) which finds a set of orthogonal unit vectors which point in the directions of greats variance of the data. The features are then just the result of projecting the data onto this basis. While these sorts of methods are popular and do tend to perform well, the resulting features are usually not interpretable \cite{Guyon}. 
+
+As is might be of interest to see which features are more responsible for differences between classes. Therefore, instead of using feature transformation methods, instead feature selection is used to find. There exist numerous methods of performing feature selection such as nested subset methods, filters of direct objective optimisation \cite{Guyon}, as well adaptive boosting \cite{Wang_2}
 
 
 

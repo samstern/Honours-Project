@@ -92,6 +92,10 @@ x_ADV=ADV(numhouse,daylength,numpts,x_filtered,children_filtered,social_grade);
 
 x_corr=WC(numhouse,x_filtered,children_filtered,social_grade);
 
+%% Fourier transform features
+
+x_fourier=fourierFeatures(x_gauss,children_filtered,social_grade);
+
 %% Average Day Fourier
 
 %x_ADF = ADF(numhouse,x_filtered,children_filtered);

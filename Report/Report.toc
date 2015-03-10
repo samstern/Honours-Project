@@ -12,22 +12,17 @@
 \contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{7}
 \contentsline {section}{\numberline {3.1}Types of Features}{7}
 \contentsline {section}{\numberline {3.2}Creating Features}{8}
-\contentsline {subsection}{\numberline {3.2.1}Total Electricity}{8}
-\contentsline {subsection}{\numberline {3.2.2}Periodicity}{18}
-\contentsline {subsection}{\numberline {3.2.3}Signal Smoothing}{18}
-\contentsline {subsection}{\numberline {3.2.4}Fourier Transform}{19}
-\contentsline {subsection}{\numberline {3.2.5}Energy Preservation}{20}
-\contentsline {section}{\numberline {3.3}Feature Selection}{20}
-\contentsline {subsection}{\numberline {3.3.1}Energy Preservation}{20}
-\contentsline {section}{\numberline {3.4}Class Cardinality}{20}
-\contentsline {chapter}{\numberline {4}Models}{21}
-\contentsline {section}{\numberline {4.1}Overview}{21}
-\contentsline {section}{\numberline {4.2}Logistic Regression}{21}
-\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{22}
-\contentsline {subsection}{\numberline {4.2.2}Implementation}{22}
-\contentsline {section}{\numberline {4.3}Random Forrest}{22}
-\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{22}
-\contentsline {chapter}{\numberline {5}Results}{23}
-\contentsline {section}{\numberline {5.1}Evaluation Methods}{23}
-\contentsline {section}{\numberline {5.2}Classifiers}{24}
-\contentsline {chapter}{Bibliography}{25}
+\contentsline {section}{\numberline {3.3}Periodicity}{18}
+\contentsline {section}{\numberline {3.4}Dimensionality Reduction}{20}
+\contentsline {section}{\numberline {3.5}Class Cardinality}{21}
+\contentsline {chapter}{\numberline {4}Models}{22}
+\contentsline {section}{\numberline {4.1}Overview}{22}
+\contentsline {section}{\numberline {4.2}Logistic Regression}{22}
+\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{23}
+\contentsline {subsection}{\numberline {4.2.2}Implementation}{23}
+\contentsline {section}{\numberline {4.3}Random Forrest}{23}
+\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{23}
+\contentsline {chapter}{\numberline {5}Results}{24}
+\contentsline {section}{\numberline {5.1}Evaluation Methods}{24}
+\contentsline {section}{\numberline {5.2}Classifiers}{25}
+\contentsline {chapter}{Bibliography}{26}

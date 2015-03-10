@@ -114,6 +114,22 @@ Amara Graps.
 \newblock An instroduction to wavlents.
 \newblock {\em IEEE Computational Science and Engineering}, 2(2):50--61, 1995.
 
+\bibitem{Hall}
+Mark~A. Hall and Lloyd~A. Smith.
+\newblock Feature selection for machine learning: Comparing a correlation-based
+  filter approach to the wrapper, 1999.
+
+\bibitem{Guyon}
+Andre~Elisseeff Isabelle~Guyon.
+\newblock An introduction to variable and feature selection.
+\newblock {\em Journal of Machine Learning Research}, 2003.
+
+\bibitem{Wang_2}
+Ruihu Wang.
+\newblock Adaboost for feature selection, classification and its relation with
+  svm, a review.
+\newblock {\em Physics Procedia}, 25:800--807, 2012.
+
 \bibitem{Williams}
 Carl~Edward Rasmussen and Christopher K.~I Williams.
 \newblock {\em Gaussian processes for machine learning}.
@@ -128,5 +144,10 @@ JERZY STEFANOWSKI.
 Lisa Gaudette and Nathalie Japkowicz.
 \newblock title = {Evaluation Methods for Ordinal Classification},.
 \newblock In {\em Advances in Artificial Intelligence}.
+
+\bibitem{Waegeman}
+Willem Waegeman, Bernard De~Baets, and Luc Boullart.
+\newblock Roc analysis in ordinal regression learning.
+\newblock {\em Pattern Recognition Letters}, 29(1):1--9, 2008.
 
 \end{thebibliography}

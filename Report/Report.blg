@@ -9,45 +9,45 @@ Warning--empty publisher in HES
 Warning--empty publisher in early_findings
 Warning--empty publisher in Moerchen
 Warning--empty year in Gaudette
-You've used 24 entries,
+You've used 28 entries,
             1791 wiz_defined-function locations,
-            589 strings with 6788 characters,
-and the built_in function-call counts, 4780 in all, are:
-= -- 405
-> -- 181
+            614 strings with 7338 characters,
+and the built_in function-call counts, 5459 in all, are:
+= -- 462
+> -- 208
 < -- 2
-+ -- 72
-- -- 48
-* -- 270
-:= -- 750
-add.period$ -- 70
-call.type$ -- 24
-change.case$ -- 16
++ -- 83
+- -- 55
+* -- 306
+:= -- 862
+add.period$ -- 81
+call.type$ -- 28
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 234
-empty$ -- 517
-format.name$ -- 48
-if$ -- 1098
+cite$ -- 33
+duplicate$ -- 265
+empty$ -- 592
+format.name$ -- 55
+if$ -- 1251
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 29
-newline$ -- 121
-num.names$ -- 24
-pop$ -- 99
+int.to.str$ -- 28
+missing$ -- 32
+newline$ -- 140
+num.names$ -- 28
+pop$ -- 111
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 97
+skip$ -- 111
 stack$ -- 0
-substring$ -- 262
-swap$ -- 44
+substring$ -- 292
+swap$ -- 48
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 38
-width$ -- 26
-write$ -- 244
+while$ -- 44
+width$ -- 30
+write$ -- 284
 (There were 6 warnings)
