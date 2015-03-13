@@ -18,11 +18,11 @@
 \contentsline {chapter}{\numberline {4}Models}{22}
 \contentsline {section}{\numberline {4.1}Overview}{22}
 \contentsline {section}{\numberline {4.2}Logistic Regression}{22}
-\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{23}
-\contentsline {subsection}{\numberline {4.2.2}Implementation}{23}
-\contentsline {section}{\numberline {4.3}Random Forrest}{23}
-\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{23}
-\contentsline {chapter}{\numberline {5}Results}{24}
-\contentsline {section}{\numberline {5.1}Evaluation Methods}{24}
-\contentsline {section}{\numberline {5.2}Classifiers}{25}
-\contentsline {chapter}{Bibliography}{26}
+\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{22}
+\contentsline {subsection}{\numberline {4.2.2}Implementation}{22}
+\contentsline {section}{\numberline {4.3}Random Forrest}{22}
+\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{22}
+\contentsline {chapter}{\numberline {5}Results}{23}
+\contentsline {section}{\numberline {5.1}Evaluation Methods}{23}
+\contentsline {section}{\numberline {5.2}Classifiers}{24}
+\contentsline {chapter}{Bibliography}{25}

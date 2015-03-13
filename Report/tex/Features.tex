@@ -82,21 +82,21 @@ The average correlation coefficient between one weekday and every other weekday 
 
 \corrChild
 
-Looking at Figure \ref{fig:corrChild}, it appears that, although the correlation coefficients are generally close to 0 (which means there is no correlation), there are differences between the two classes. Depending on which two days are being considered, the correlations of one class tend to be greater or smaller than that of the others. For example, it would appear that households with children demonstrate a slightly higher correlation between their Monday and Tuesday electricity use patterns than those without.
+Looking at Figure \ref{fig:corrChild}, it appears that although the correlation coefficients are generally close to 0 (which means there is no correlation), there are differences between the two classes. Depending on which two days are being considered, the correlations of one class tend to be greater or smaller than that of the others. For example, it would appear that households with children demonstrate a slightly higher correlation between their Monday and Tuesday electricity use patterns than those without.
 
 \corrSocio 
 
 
 \section{Periodicity}
 
-Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households, in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Moerchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are used as features. McLoughlin \textit{et. al.} \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
+Another approach used for feature extraction is to exploit the periodic consumption patterns exhibited by many households in order to search for temporal structures that are present in some classes but not in others. This method of feature extraction has been used successfully in previous studies involving forecasting and clustering. Methods outlined by Fabian Moerchen \cite{Moerchen} for time series feature extraction are used to project each household's consumption into the frequency domain from which the most important frequencies are found. McLoughlin et. al. \cite{McLoughlin} showed in their research that temporal structure is present in household electricity consumption data and can be used to charachterise domestic energy demand.
 
 
 \subsection*{Signal Smoothing}
 
-Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings to filter noise whilst retaining the temporal structure of the data. Gaussian filtering can improve performance compared with direct averaging, as more structure is retained whilst noise is removed \cite{Nixon}. This is done as the time-frequency transformation used (the discrete Fourier transform method) has difficulty characterising small intervals of large electricity demand \cite{Graps}
+Before projecting the electricity consumption into frequency space, the Gaussian averaging operator was applied to each set of readings to filter noise whilst retaining the temporal structure of the data. Gaussian filtering (or Gaussian smoothing) is accomplished by convolving a time series with the Gaussian function. It can improve performance compared with direct averaging, as more structure is retained whilst noise is removed \cite{Nixon}. This is done because the time-frequency transformation used (the discrete Fourier transform method) has difficulty characterising small intervals of large electricity demand \cite{Graps}.
 
-Gaussian filtering (or Gaussian smoothing) is performed by convolving the time series with the Gaussian function.
+
 
 \household369
 
@@ -107,42 +107,40 @@ Gaussian filtering (or Gaussian smoothing) is performed by convolving the time s
 For uniform samples $[f(1)...,f(n)]$ of a real signal $f(x)$, the \textit{Discrete Fourier Transform} (DFT) is the projection of a signal from the time domain into the frequency domain by
 
 \[c_f=\frac{1}{\sqrt{n}}\sum_{t=1}^nf(t)\exp{\frac{-2\pi ift}{n}}\]
-
-where $f=1,...n$ and $i=\sqrt{-1}$ the $c_f$ are complex numbers and represent
+where $f=1,...n$ and $i=\sqrt{-1}$. The $c_f$ are complex numbers and represent
 the amplitudes and shifts of a decomposition of the signal into sinusoid functions \cite{Moerchen}.
 
 
-Issues do present themselves when using this method. As already mentioned, the Fourier transform measures global frequencies and the signal is assumed to be periodic. This assumption can cause poor aproximations at the boarders of the time series \cite{Moerchen}.
+Issues do present themselves when using this method. As already mentioned, the Fourier transform measures global frequencies and the signal is assumed to be periodic. This assumption can cause poor approximations at the borders of the time series \cite{Moerchen}.
 
 \subsection*{Energy Preservation}
 
-For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients of $l$ rows and $m$ columns, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Moerchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
+For $l$ time series of length $m$, the DFT produces an $l \times m$ matrix $C $ of coefficients, such that element $c_{i,j}$ is the $j^{th}$ coefficient of time series $i$. In our case, since the number of households, $l=519$, is small compared to the length of each time series, $m=4032$, the number of coefficients must be reduced in order to minimise redundancy, noise and computational time. According to Moerchen \cite{Moerchen}, the best subset of $k$ columns is found by selecting those that optimize energy preservation $E$, defined as
 
 \[E(f(t))=\sum_{j=1}^ma_jc^2_j\] 
+where $c_j$ is the $j^{th}$ column and $a_j$ is an appropriate scaling coefficient corresponding to signal $f(t)$. 
 
-where $c_j$ is the $j^{th}$ column and $a_j$ is an appropriate scaling coefficient correspondent to signal $f(t)$. 
+Let $I$ be a function measuring the importance of coefficient $j$ on all values of $l$, and let $J_k(I,C)$ be a function that chooses a subset of $M = {1, ..., m}$ of the $k$ largest values of $I$. Moerchen \cite{Moerchen} proves that $J_k(mean(c_j^2),C)$ is optimal in energy preservation.
 
-Let $I$ be a function measuring the importance of coefficient $j$ on all $l$ values, and let $J_k(I,C)$ be a function that chooses a subset of $M = {1, ..., m}$ of the $k$ largest values of $I$. Moerchen \cite{Moerchen} proves that $J_k(mean(c_j^2),C)$ is optimal in energy preservation.
-
-The MATLAB fast Fourier transform function (fft) was used to find the discrete Fourier transform, and the five best features were chosen, based on the energy preservation method.
+The MATLAB fast Fourier transform function (fft) was used to find the discrete Fourier transform; the five best features were chosen, based on the energy preservation method.
 
 
 		
 \section{Dimensionality Reduction}
 
-Even though the success of a classifier is dependent on several variables, which may differ from one classifier to another, they are all dependent on the input data. In order to achieve accurate results with the least amount of computational time, it is necessary to insure that as little noise and redundancy is present in the input. Feature selection is the process of identifying and filtering out as much irrelevant and redundant information as possible \cite{Hall}. 
+Even though the success of a classifier is dependent on several variables, which may differ from one classifier to another, all classifiers are dependent on the quality of their input data. To achieve accurate results with the least amount of computational time, it is necessary to ensure that as little noise and redundancy as possible is present in the input. This may involve dimensionality reduction, the process of identifying and filtering out as much irrelevant and redundant information as possible \cite{Hall}. 
 
-As mentioned, different classification algorithms will be affected by overparameterisation in different ways. In the k-nearest neighbour classifier, additional features can largely effect the distance between two points. While redundant features (i.e those that don't change the distance between points) would only affect computational cost, added noise to the system can effect the distance between points, likely in a negative way. 
+As mentioned, different classification algorithms will be affected by overparameterisation in different ways. In the k-nearest neighbour classifier, additional features can largely affect the distance between two points. While redundant features (i.e, those that don't change the distance between points) would only influence computational cost, added noise to the system can impact the distance between points, likely in a negative way. 
 
-Like k-nearest neighbour, the need for dimensional reduction is less to do with removing redundancy, but more to reduce noise and computational cost. logistic regression will account for highly correlated features by lowering their weight, however uninformative features would cause learn weights that do not improve the performance of the classifier.
+Like k-nearest neighbour, the need for feature reduction in logistic regression has less to do with removing redundancy than with reducing noise and computational cost. Logistic regression accounts for highly correlated features by lowering their weights. Uninformative features, however, would cause weights to be learned that do not improve the performance of the classifier.
 
-Random forrests are not as succeptible to the problem of overparameteristaion as other methods. When training each tree, since the `best' features will be branched on towards the top of the tree, pruning could be used to limit the size of each tree (therefore avoiding overfitting). An issue would only start to arise when the number of redundant or noise features is much larger than the number of good features. This is because, when training a tree, a random subset of features is selected when creating a branch. If the number of bad features is much larger than the number of good ones, then the probability of choosing a subet where no good features are present becomes significant.
+Random forests are not as susceptible to the problem of overparameterisation as other methods. When training each tree, since the `best' features will be branched on towards the top of the tree, pruning could be used to limit the size of each tree (thus avoiding overfitting). An issue would only start to arise when the number of redundant or noisy features is much larger than the number of good features. This is because, when training a tree, a random subset of features is selected when creating a branch. If the number of bad features is much larger than the number of good ones, then the probability of choosing a subset where no good features are present becomes significant.
 
-Dimensionality reduction can usually be charachterised as one of two tasks: \textit{Feature selection} and \textit{feature transformation}. Feature transformation methods involve performing a transformation the data (such as a rotation of projection) to create a new set of features (of smaller size) that has ore descriptive power than the origional set. An commonly used example of this is \textit{principal component analysis} (PCA) which finds a set of orthogonal unit vectors which point in the directions of greats variance of the data. The features are then just the result of projecting the data onto this basis. While these sorts of methods are popular and do tend to perform well, the resulting features are usually not interpretable \cite{Guyon}. 
+Dimensionality reduction can usually be characterised as one of two tasks: \textit{feature selection} and \textit{feature transformation}. Feature transformation methods involve performing a transformation of the data (such as a rotation or projection) to create a new set of features (of smaller size) that has more descriptive power than the original set. A commonly used example of this is \textit{principal component analysis} (PCA) which finds a set of orthogonal unit vectors that point in the directions of greatest variance of the data. The features are given by projecting the data onto this basis. While these sorts of methods are popular and do tend to perform well, the resulting features are usually not interpretable \cite{Guyon}. 
 
-As is might be of interest to see which features are more responsible for differences between classes. Therefore, instead of using feature transformation methods, instead feature selection is used to find. There exist numerous methods of performing feature selection such as nested subset methods, filters or direct objective optimisation \cite{Guyon}, as well as adaptive boosting \cite{Wang_2}.
+It might be of interest to see which features are most responsible for differences between classes. Therefore, instead of using feature transformation methods, feature selection is used to find a subset of features for which a classifier achieves its best performance. There exist numerous methods for performing feature selection, such as nested subset methods, filters or direct objective optimisation \cite{Guyon}, as well as adaptive boosting \cite{Wang_2}.
 
-We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set for features. Starting with an empty list, SFS sequentially consideres each feature not present in the list for selection and assesses it's impact on a given evaluation score, choosing the feature that scores best and adding it to the list. This is repeated until the list is full \cite{Juha}. A superior mechod \textit{sequential forward floating selection} has been proven superior \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
+We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set of features. Starting with an empty list, SFS sequentially considers each feature not present in the list for selection and assesses its impact on a given evaluation score, choosing the feature that scores best and adding it to the list. This is repeated until the list is full \cite{Juha}. A superior method, \textit{sequential forward floating selection}, has been proven superior \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
 
 
 \section{Class Cardinality}

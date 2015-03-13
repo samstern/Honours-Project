@@ -4,7 +4,7 @@ This section discusses the quantitative evaluation methods used to determine the
 
 \section{Evaluation Methods}
 
-For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification proble, returns a $K\times K$ matrix where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
+For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification problem, returns a $K\times K$ matrix where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
 
 
 The accuracy of a classifier is defined as the sum of the diagonal elements of CM, divided by the total number of samples,$S$.
@@ -14,7 +14,7 @@ The accuracy of a classifier is defined as the sum of the diagonal elements of C
 This is compared to the accuracy of performing a random guess (RG), which assigns a household to one of the $K$ classes at random.
 \[ACC_{RG}=\frac{1}{K}\]
 
-To account for the imbalances in classes, we also calculate the most probable class (MPC) which uses knowlege of the prior probability of each class in the training data to find a baseline by assigning all samples to the most probable class. 
+To account for the imbalances in classes, we also calculate the most probable class (MPC) which uses knowledge of the prior probability of each class in the training data to find a baseline by assigning all samples to the most probable class. 
 
 \[ACC_{MPC}=\frac{argmax(S^K)}{S}\]
 where $S^K$ is the number of samples from the test data that are in class $K$.
@@ -26,13 +26,13 @@ For socio-economic classification problem, the ordinal structure of the classes 
 
 Particularly for unbalanced classes, reporting the accuracy alone is not satisfactory in determining the quality of a classifier. The obvious and well known example being; constructing a classification problem where 99\% of instances are in class A and only 1\% in class B. A classifier that simply predicts all new data as class A would be correct 99\% of the time, but would still not be a good classifier. 
 
-A widely applied method for evaluating a classifier is to compute the \textit{true positive rate} (TPR) and \textit{true negative rate}(TNR). The TPR gives the porportion of positives that are correctly identified as being positive, while the TNR gives the porportion of negatives that are correctly identified as negative.
+A widely applied method for evaluating a classifier is to compute the \textit{true positive rate} (TPR) and \textit{true negative rate}(TNR). The TPR gives the proportion of positives that are correctly identified as being positive, while the TNR gives the porportion of negatives that are correctly identified as negative.
 
 \begin{align*}
 TPR&=\frac{TP}{TP+FN}   &   TNR&=\frac{TN}{TN+FP}   
 \end{align*}
 
-From these statistics, it is common to plot an ROC curve, which is a plot of the TPR against the \textit{false positive rate}(FPR), which is defined as 1-TNR. The evaluation criterion (the area under the ROC curve) is preffered over the accuracy, particularly when considering unbalanced classes as the impact of skewness can be analysed \cite{Waegeman}.
+From these statistics, it is common to plot an ROC curve, which is a plot of the TPR against the \textit{false positive rate}(FPR), which is defined as 1-TNR. The evaluation criterion (the area under the ROC curve) is preferred over the accuracy, particularly when considering unbalanced classes as the impact of skewness can be analysed \cite{Waegeman}.
 
 This method of evaluation can be easily applied to the binary classification task of discriminating between households with and without children. However for multi-class classification it is unclear what is`positive' and what is `negative'. When evaluating their socio-economic classifier, Beckel et. al. group nearby groups together and then use a one-versus-all approach\cite{Beckel_2,Beckel_3}. A similar method is used, analogous to the \textit{accuracy within n} method described above, where classes within $n$ are considered positive and all else are negative.
 

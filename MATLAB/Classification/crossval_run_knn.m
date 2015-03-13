@@ -1,39 +1,39 @@
-function acc=crossval_run_knn(x_train,y_train,task)
+function acc=crossval_run_knn(x_train,y_train,task,k)
 
     %cross validation
     shuffled=shuffle(x_train,y_train);
     x_shuffled=shuffled.x;
     y_shuffled=shuffled.y;
     
-    k=5;%5 fold cross validation
-    splitt=split(x_shuffled,y_shuffled,k);
+    numFolds=5;%5 fold cross validation
+    splitt=split(x_shuffled,y_shuffled,numFolds);
     x_split=splitt.x;
     y_split=splitt.y;
-    accuracy=zeros(k,1);
-    for i=1:k
+    accuracy=zeros(numFolds,1);
+    for i=1:numFolds
        x_trn=[];
        y_trn=[];
        x_tst=x_split{i};
        y_tst=y_split{i}';
 
-       for j=1:k
+       for j=1:numFolds
            if j~=i
               x_trn=[x_trn;x_split{j}];
               y_trn=[y_trn;y_split{j}'];
            end
        end
-       acc.each(i)=runIt(x_trn,x_tst,y_trn,y_tst,task);
+       acc.each(i)=runIt(x_trn,x_tst,y_trn,y_tst,task,k);
     end
     
-    acc.ave=sum(acc.each)/k;
+    acc.ave=sum(acc.each)/numFolds;
     
 
 end
 
-function accuracy=runIt(x_train,x_test,y_train,y_test,task)
+function accuracy=runIt(x_train,x_test,y_train,y_test,task,k)
     %if strmatch(task,{'child','children','c'},'exact')~=0
         
-        mdl = fitcknn(x_train,y_train,'NumNeighbors',5,'Distance','euclidean');
+        mdl = fitcknn(x_train,y_train,'NumNeighbors',k,'Distance','euclidean');
         y_hat = predict(mdl,x_test);
 
 
