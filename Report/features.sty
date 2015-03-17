@@ -263,14 +263,50 @@
 
 %% Timeseries Plots
 
-\def\household369{
+\def\householdConv{
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{fig/household369Conv}}
 \caption{The electricity use of household No.369 shows that households may have both a daily and weekly pattern. The clusters of peaks represent individual days while the regions without peaks are the indicative of night time. Additionaly, the large spikes are observed roughly every seven days, on either Saturdays, Sundays or both. After applying the Gaussian filter, the time series maintains its temporal structure however the sharp peaks are smoothed, which would not be handled well by the Fourier transform}
+\label{fig:household369Conv}
+\end{figure}
+}
+
+\def\householdPlot{
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.5]{fig/household369}}
+\caption{The electricity use of household No.369 over a four week period after being pre-processed}
 \label{fig:household369}
 \end{figure}
 }
+
+\def\householdOneWeek{
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.5]{fig/household369OneWeek}}
+\caption{The electricity use of household No.369 over a week after being pre-processed}
+\label{fig:household369OneWeek}
+\end{figure}
+}
+% households 75 and 121
+\def\badHouseholds{
+\begin{figure}[H]
+        \hspace*{-3cm}                                                           
+        \begin{subfigure}[b]{0.7\textwidth}
+        	\hspace{2mm}
+                \includegraphics[width=\textwidth]{fig/household75}
+        \end{subfigure}%
+        \begin{subfigure}[b]{0.7\textwidth}
+        		%\hspace{2mm}
+                \includegraphics[width=\textwidth]{fig/household121}
+        \end{subfigure}
+        \caption{The electricity consumption of two households that do not show the same pattern of consumption as other households}
+        \label{fig:badHouseholds}
+\end{figure}
+}
+
+
 
 %% qq
 
@@ -287,3 +323,35 @@
         \label{fig:qqPlot}
 \end{figure}
 }
+
+%% Appliances table
+\def\applianceTable{
+\begin{table}[h]
+\caption{\textbf{Energy used by various household appliances}}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Appliance}  & \textbf{Rating} & \textbf{} & \textbf{Appliance}   & \textbf{Rating} \\ \hline
+Immersion heater    & 3,000W          &           & Fridge               & 40-120W         \\ \hline
+Electric fire       & 2,000-3,000W    &           & Fridge-freezer       & 200-400W        \\ \hline
+Oil-filled radiator & 1,500-2,500W    &           & Freeze               & 150W            \\ \hline
+Electric shower     & 7,000-10,500W   &           & Electric mower       & 500-1,500W      \\ \hline
+Dishwasher          & 1,050-1,500W    &           & Electric drill       & 900-1,000W      \\ \hline
+Washing machine     & 1,200-3,000W    &           & Hairdryer            & 1,000W          \\ \hline
+Tumble dryer        & 2,000-4,000W    &           & Heating blanket      & 130-200W        \\ \hline
+Iron                & 1,000-1,800W    &           & Plasma TV            & 280-450         \\ \hline
+Vacuum cleaner      & 500-1,200W      &           & LCD TV               & 125-200W        \\ \hline
+Towel rail          & 250W            &           & Video, DVD or CD     & 20-60W          \\ \hline
+Deep fryer          & 1,200W          &           & TV box               & 30-40W          \\ \hline
+Toaster             & 800-1,500W      &           & Games console        & 45-190W         \\ \hline
+Kettle              & 2,200-3,000W    &           & Laptop               & 20-50W          \\ \hline
+Microwave           & 600-1,500W      &           & Desktop computer     & 80-150W         \\ \hline
+Oven                & 2,000-2,200W    &           & Tablet (charge)      & 10W             \\ \hline
+Grill/hob           & 1,000-2,000W    &           & Broadband router     & 7-10W           \\ \hline
+Dehumidifier        & 300-700W        &           & Smart phone (charge) & 2.5-5W          \\ \hline
+Extractor fan       & 1-36W           &           &                      &                 \\ \hline
+\end{tabular}
+\label{tab:applianceTable}
+
+\end{table}
+}
+

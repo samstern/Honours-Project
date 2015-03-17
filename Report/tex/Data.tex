@@ -21,30 +21,46 @@ Next, the inconsistency in measurement intervals was accounted for. While some h
 
 The last stage in pre-processing was to ensure that each instance was of the same length. As explained in \fourierSection, temporal structure was observed both intraday and intraweek. Therefore, the time series instances were manipulated so that each had a length of 28 days and started on the same day of the week.
 
+\section{Discussion}
+
+After the data had been extracted from the csv files, pre-processed and imported into MATLAB, plots of the data were made in order to visually gain insight into how households used energy and increase domainn knowlege. Figures \ref{fig:household369OneWeek} and \ref{fig:household369} are examples of how some of the households consumed energy. Both figures show the data gathered from the same households, but over different time periods. Studying these plots gives valuable insight into the households which is used later to aid in feature extraction, as well as ensure that the data appears reasonable. 
+
+In figure \ref{fig:household369OneWeek}, the first thing to be noted is that the consumption is not smooth. There are sharp peaks that vary in height, which can be used to make assumptions about which appliances are being used. For example, many of the peaks  are around 1kW, which is roughly the amount of power used by a kettle. The next thing to note is that there is an obvious underlying daily repetition. The household tends to use more electricity at night than it does during the day time. Finally, it can be seen that the energy consumption on weekends is slightly different than that of week days, particularly, there are short periods of abnormally high electricity on Saturdays and Sundays which are observed less frequently during the week. To see this, note that both figure \ref{fig:household369OneWeek} and \ref{fig:household369} start on a Sunday, and that each `wavelet' is one day long.
+
+It is a result of these observations that the data was made to be four weeks long. Ensuring that each day of the week appears exactly 4 times for each household means that features such as the total energy used is not influenced by which days of the week are present.
+
+\householdOneWeek
+\householdPlot
 
 
 
 
 \section{Issues}
-\begin{enumerate}
-\item Homes were not perfectly representative of the population
-\begin{itemize}
-	\item only homeowners were included
-	\item only concidered homes in England, not the entire UK
-	\item class size ratios not representative of population
-\end{itemize} 
-\item 
-\item The purpose of the project was to determine whether it is \textit{possible} to distinguish between households, and to show how this might be achieved.  
-\item Several households have periods where their energy consumption pattern vanishes and very little or no energy is used. It is likely that these are periods where the members of the household are away or on holiday.
-\item The `total' electricity is not always well estimated. 
-\item Initially, data from the IDEAL study was going to be used however as this was not available, data from the HES study was used. This resulted in a delay to the project.
-\end{enumerate}
+
+As with any study, numerous issues arose with the data that needed to be acknowledged. While some of these are simply the result of environmental issues, others relate more to the way the study was conducted.
+
+The first problem with the data is the number of households that participated in the HES study. Only 250 individual households took part. Comparing this to the 4232 households that took part in the CER\footnote{www.ucd.ie/issda/data/commissionforenergyregulationcer/} (Commission for Energy Regulation) study of household electricity consumption in Ireland, it is less likely that the results generalise as well, particularly for the multi class classification problem where there are as few as 32 households in a class. Moreover, only households in England took part in the study, and all of them were owner occupied. This means that the subset homes considered in the HES study is fully representative of the UK as a whole since 84\% of people in the UK live in England and only 64\% of homes in England are owner occupied \cite{ONS}. The aim of this project, however, is to determine \textit{whether it is possible} to infer household properties from a household's electrical power consumption, not to build a classifier that can be used to infer British household properties from smart meter data. The distinction being that this project looks at whether information about a household is contained in they energy use patterns rather than to build a commercial product. Therefore, the quality of the sample population (or lack thereof) households is detrimental to the aims of this project.
+
+A more bothersome issue is the quality of data that gathered during the HES study. While household shown in figure \ref{fig:household369} shows the characteristics of a typical home's consumption well, it is one of the `better' households in the sample. There are many others that no not follow the same kind of trend such as those in figure \ref{fig:badHouseholds}. Either they do not have the same well-defined periodicity, or they may use significantly more (or less) energy that the average household. The task then becomes determining whether these discrepancies are reasonable differences that could be attributed to differences between households, or whether they are the result of poor execution of data collection. Since the HES study involved recording individual appliances, rather than the mains reading of a household, the total energy consumed by each household can not be given with certainty as it is not known if all appliances and sockets in a household were recorded. This is made evident in figure \ref{fig:badHouseholds} where household \#72 is always using at least some energy while household \#121 sees its consumption drop to 0. Household \#72 is a better estimate as it is reasonable that there will always be a small amount of electricity used by a home since the appliances are not 100\% efficient and leak electricity.
+
+\badHouseholds
+
+Table \ref{tab:applianceTable}, is taken from the Center for Sustainable Energy \cite{CSE} and shows how much power various appliances use. Comparing these values to the data from the meter readings shows that it is reasonable to see a household use  anywhere from 50W to upwards of 15,000W at a time. However, it is also noted that some of the expensive appliances (which will have large effects on a households consumption) will not be present in all households. These include electric cookers, electric showers, electric heaters and tumble driers. Only 38 of the 250 households used electric water hearing. While it can be expected that these factors will impact a households consumption and having knowledge of these would aid in classifying households, this is left to further work as the so called \textit{disagregation problem} (see section~\ref{sec:previousWork}) is a popular topic of research in and of itself.
+
+\applianceTable
+
+
+While visualising the data, it was noted that some households had periods where their consumption vanished for several days. It was manually determined if these were instances of the household simply being unoccupied for a time, or if it was a case of erroneous data. Households were only discarded if the amount of time where their consumption was 0kWh was a significant proportional of the total time for which they were being observed. If a household appeared to be on holiday (meaning their consumption patterns stopped but a small amount of energy was still being used by the house), then the data was kept. And if a given day's readings appeared to be erroneous, then that day was discarded and was replaced by an equivalent day of the week.
+
+The next factor that needed to be considered is the effects of weather, particularly the time of year. Colder temperatures and shorter periods of sunlight cause households to use more electricity in during colder months \cite{DECC}. Although CAR was able to provide a document outlining which appliances need to have their readings adjusted to account for seasonal factors, these did not appear to be well reasoned and didn't include many of the appliances used by households. Since most households were recorded in the colder months between November 2010 and April 2011, and those that were measured for a year didn't appear to significantly change their consumption in the warmer months, season adjustments were disregarded.
+
+Finally, the project had a delayed start as originally, a dataset created by the IDEAL\footnote{http://www.energyoracle.org/} research group, which would have also gathered information pertaining to household electricity consumption, however as this proved to be unavailable, the HES dataset was used instead.
+
+
+
+
 
 \section{Comparison to Previous Work}
-
-
-
-
-
+\label{sec:previousWork}
 
 

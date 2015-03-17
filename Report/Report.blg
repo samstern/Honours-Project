@@ -7,47 +7,50 @@ Warning--I didn't find a database entry for "Beckel3"
 Warning--empty publisher in E_spending
 Warning--empty publisher in HES
 Warning--empty publisher in early_findings
+Warning--all relevant fields are empty in ONS
+Warning--all relevant fields are empty in CSE
+Warning--empty publisher in DECC
 Warning--empty publisher in Moerchen
 Warning--empty year in Gaudette
-You've used 30 entries,
+You've used 33 entries,
             1791 wiz_defined-function locations,
-            625 strings with 7561 characters,
-and the built_in function-call counts, 5862 in all, are:
-= -- 496
-> -- 226
+            633 strings with 7718 characters,
+and the built_in function-call counts, 6187 in all, are:
+= -- 510
+> -- 236
 < -- 2
-+ -- 90
-- -- 60
-* -- 334
-:= -- 930
-add.period$ -- 87
-call.type$ -- 30
++ -- 95
+- -- 62
+* -- 343
+:= -- 961
+add.period$ -- 92
+call.type$ -- 33
 change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 282
-empty$ -- 632
-format.name$ -- 60
-if$ -- 1339
+cite$ -- 41
+duplicate$ -- 302
+empty$ -- 687
+format.name$ -- 62
+if$ -- 1417
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 34
-newline$ -- 150
-num.names$ -- 30
-pop$ -- 115
+int.to.str$ -- 33
+missing$ -- 36
+newline$ -- 161
+num.names$ -- 31
+pop$ -- 133
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 117
+skip$ -- 140
 stack$ -- 0
 substring$ -- 319
-swap$ -- 50
+swap$ -- 53
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 47
-width$ -- 32
-write$ -- 305
-(There were 6 warnings)
+warning$ -- 8
+while$ -- 48
+width$ -- 35
+write$ -- 322
+(There were 9 warnings)

@@ -9,10 +9,11 @@ Numerous statistical methods presume that input data follows a normal distributi
 
 \qqPlot
 
-\section{Creating Features}
-One method of extracting features is to compute as many different types as possible, compare them all and chose those that best discriminate the classes. Households can be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it is potentially wasteful of the limited resources available to do the project. 
 
-Instead of creating features in an ad hoc manner, a more cost efficient approach was taken.Feature selection was done in the following way: 1) Assumptions were made regarding the distinction between classes (e.g., households with children use more energy overall). 2) Features were created to capture this distinction (e.g., the average energy over a 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/did not discriminate between classes. At other times, more sophisticated methods were used, as described in \featureSelectionSection.
+\section{Creating Features}
+One method of extracting features is to compute as many different types as possible, compare them all and chose those that best discriminate the classes. Households can be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it ignores any domain knowlege that we might have and is therefore potentially wasteful of the limited resources available to do the project. 
+
+Instead of creating features in an ad hoc manner, a more cost efficient approach was taken. Feature selection was done in the following way: 1) Assumptions were made regarding the distinction between classes (e.g., households with children use more energy overall). 2) Features were created to capture this distinction (e.g., the average energy over a 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/did not discriminate between classes. At other times, more sophisticated methods were used, as described in \featureSelectionSection.
 \newline
 
 The remainder of this chapter describes features that were created from the energy reading data and justifies why it was assumed that they assumed would be able to discriminate between classes. The results of computing these features are then evaluated. Both classification problems (socio-economic classification and child classification) were considered when choosing features to evaluate.
@@ -98,7 +99,7 @@ Before projecting the electricity consumption into frequency space, the Gaussian
 
 
 
-\household369
+\householdConv
 
 
 
@@ -140,7 +141,11 @@ Dimensionality reduction can usually be characterised as one of two tasks: \text
 
 It might be of interest to see which features are most responsible for differences between classes. Therefore, instead of using feature transformation methods, feature selection is used to find a subset of features for which a classifier achieves its best performance. There exist numerous methods for performing feature selection, such as nested subset methods, filters or direct objective optimisation \cite{Guyon}, as well as adaptive boosting \cite{Wang_2}.
 
-We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set of features. Starting with an empty list, SFS sequentially considers each feature not present in the list for selection and assesses its impact on a given evaluation score, choosing the feature that scores best and adding it to the list. This is repeated until the list is full \cite{Juha}. A superior method, \textit{sequential forward floating selection}, has been proven superior \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
+We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set of features. SFS is a greedy algorithm that works in the following way: Starting with an empty list, sequentially consider each feature selection and assesses its impact on a given evaluation score. Choose the feature that scores best and adding it to the list. Then, again, go through each of the features that have not been added to the list, and assess their impact in combination with the features already added to the list. Find the best one and add it to the list This is repeated until the list is full \cite{Juha}. A superior method, \textit{sequential forward floating selection}, has been proven to perform better \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
+
+\subsection{Implementation}
+The question at this point becomes, how do you \textit{evaluate} the features and what defines the \textit{best} feature (or combination of features)? 
+
 
 
 \section{Class Cardinality}

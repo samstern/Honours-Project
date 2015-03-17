@@ -7,22 +7,24 @@
 \contentsline {chapter}{\numberline {2}Data}{5}
 \contentsline {section}{\numberline {2.1}Overview of the HES Dataset}{5}
 \contentsline {section}{\numberline {2.2}Extracting the Data and Pre-Processing}{5}
-\contentsline {section}{\numberline {2.3}Issues}{6}
-\contentsline {section}{\numberline {2.4}Comparison to Previous Work}{6}
-\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{7}
-\contentsline {section}{\numberline {3.1}Types of Features}{7}
-\contentsline {section}{\numberline {3.2}Creating Features}{8}
-\contentsline {section}{\numberline {3.3}Periodicity}{18}
-\contentsline {section}{\numberline {3.4}Dimensionality Reduction}{20}
-\contentsline {section}{\numberline {3.5}Class Cardinality}{21}
-\contentsline {chapter}{\numberline {4}Models}{22}
-\contentsline {section}{\numberline {4.1}Overview}{22}
-\contentsline {section}{\numberline {4.2}Logistic Regression}{22}
-\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{22}
-\contentsline {subsection}{\numberline {4.2.2}Implementation}{22}
-\contentsline {section}{\numberline {4.3}Random Forrest}{22}
-\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{22}
-\contentsline {chapter}{\numberline {5}Results}{23}
-\contentsline {section}{\numberline {5.1}Evaluation Methods}{23}
-\contentsline {section}{\numberline {5.2}Classifiers}{24}
-\contentsline {chapter}{Bibliography}{25}
+\contentsline {section}{\numberline {2.3}Discussion}{6}
+\contentsline {section}{\numberline {2.4}Issues}{7}
+\contentsline {section}{\numberline {2.5}Comparison to Previous Work}{10}
+\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{11}
+\contentsline {section}{\numberline {3.1}Types of Features}{11}
+\contentsline {section}{\numberline {3.2}Creating Features}{12}
+\contentsline {section}{\numberline {3.3}Periodicity}{22}
+\contentsline {section}{\numberline {3.4}Dimensionality Reduction}{24}
+\contentsline {subsection}{\numberline {3.4.1}Implementation}{25}
+\contentsline {section}{\numberline {3.5}Class Cardinality}{25}
+\contentsline {chapter}{\numberline {4}Models}{26}
+\contentsline {section}{\numberline {4.1}Overview}{26}
+\contentsline {section}{\numberline {4.2}Logistic Regression}{26}
+\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{26}
+\contentsline {subsection}{\numberline {4.2.2}Implementation}{26}
+\contentsline {section}{\numberline {4.3}Random Forrest}{26}
+\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{26}
+\contentsline {chapter}{\numberline {5}Results}{27}
+\contentsline {section}{\numberline {5.1}Evaluation Methods}{27}
+\contentsline {section}{\numberline {5.2}Classifiers}{28}
+\contentsline {chapter}{Bibliography}{29}
