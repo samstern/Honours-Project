@@ -5,6 +5,8 @@ social_grade.ints=socialGradeToInts(social_grade.unfiltered);
 load('data/x_data_4_weeks.mat')
 %% Removing outliers
 
+
+
 means=mean(mean(x_data'));
 std3=3*std(mean(x_data'));
 %outliers=[37;38;39;40;41;42;43;46;48;261;262;332]; %outliers found from visualising data
@@ -34,6 +36,9 @@ for i=1:numhouse_data
     end
         
 end
+
+%Convert from Watts to Watt Hours
+%x_filtered=x_filtered.\6;
 
 %%Gaussian Filter to smooth the data
 g = gausswin(15);
@@ -106,6 +111,7 @@ x_fourier=fourierFeatures(x_gauss,children_filtered,social_grade);
 %% taking the log of some of the features as it resulted in normaly distributed data when usint qqplot
 
 monthSum=structfun(@(x) log(x),monthSum,'UniformOutput',0);
+dayAverages=structfun(@(x) log(x),dayAverages,'UniformOutput',0);
 x_APOD=structfun(@(x) log(x),x_APOD,'UniformOutput',0);
 x_ADV=structfun(@(x) log(x),x_ADV,'UniformOutput',0);
 %% Clearning unnecesarry variables

@@ -22,10 +22,10 @@ log_reg_child=runLogReg(x_train,x_test,y_train,y_test,'c');
 [log_reg_child.FPR,log_reg_child.TPR,log_reg_child.T,log_reg_child.AUC] = perfcurve(y_test,log_reg_child.predProb,1);
 % 
 % %random forest
-% %x_opt_rf=selectFeatures(x,children_filtered,'c',numFeatures,'rf');
-% [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x.all,children_filtered.all);
-% randomForest= runRandomForest(x_train,x_test,y_train,y_test,'c');
-% [randomForest.FPR,randomForest.TPR, randomForest.T,randomForest.AUC] = perfcurve(y_test,randomForest.scores(:,2),1);
+ x_opt_rf=selectFeatures(x,children_filtered,'c',numFeatures,'rf');
+ [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_rf.all,children_filtered.all);
+ randomForest= runRandomForest(x_train,x_test,y_train,y_test,'c');
+ [randomForest.FPR,randomForest.TPR, randomForest.T,randomForest.AUC] = perfcurve(y_test,randomForest.scores(:,2),1);
 % 
 % %Plot ROC
 % plot(knn.FPR,knn.TPR,'b')
@@ -42,7 +42,7 @@ log_reg_child=runLogReg(x_train,x_test,y_train,y_test,'c');
 %% Social Grade
 
 %logistic regression
-x_opt_log_reg_sg=selectFeatures(x,social_grade,'s',numFeatures,'log_reg');
+%x_opt_log_reg_sg=selectFeatures(x,social_grade,'s',numFeatures,'log_reg');
 [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_log_reg_sg.all,social_grade.all);
 log_reg_sg=runLogReg(x_train,x_test,y_train,y_test,'sg');
 %[log_reg_sg.FPR,log_reg_sg.TPR,log_reg_sg.T,log_reg_sg.AUC] = perfcurve(y_test,log_reg_sg.predProb,1);

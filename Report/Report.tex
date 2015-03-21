@@ -8,6 +8,7 @@
 \usepackage{variables}
 \usepackage{features}
 \usepackage{graphicx}
+\usepackage{pgfplots} 
 \usepackage{multicol}
 \usepackage{float}
 \usepackage{url}
@@ -15,6 +16,15 @@
 \usepackage[font=small]{caption}
 \usepackage{subcaption} 
 \usepackage{tocbibind}
+
+
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight
+\newlength\figurewidth 
+
+
+
 \graphicspath{/Users/samstern/Uni/Honours_Project/Report/fig/}
 \geometry{ a4paper,
 total={210mm,297mm},
@@ -32,7 +42,7 @@ bottom=30mm,}
 \end{abstract}
 
 \tableofcontents
-
+%\input{/Users/samstern/desktop/testFig.tex} 
 %Introduction
 \input{tex/introduction}
 

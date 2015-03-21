@@ -15,7 +15,7 @@ for i = 1:length(data)
     x_data(i,:) = cell2mat(data{i}(1:x_length,3));
 end
 
-%convert to wats
+%convert to watts
 x_data=x_data.*0.6;
 
 %create time series for plotting

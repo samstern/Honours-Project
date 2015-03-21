@@ -45,14 +45,14 @@ Going further, it could be that different classes use more or less energy at dif
 Most schools days in England begin at 9:00 and finish between 15:00 and 16:00 \cite{school_times}. Using this fact and the assumption that as children go to bed, the activity of the other members of the household will decrease and therefore electricity consumption will drop, then it is worthwhile to split each day into the following groups.
 \begin{enumerate}
 \item Morning (6:00-9:00): The time when members of the household would wake up and prepare themselves for work, school etc.
-\item Afternoon (9:00-15:00): The time that children are at school.
+\item Daytime (9:00-15:00): The time that children are at school.
 \item Evening (15:00-22:00):  When a household can be presumed to be most active
 \item Night (22:00-6:00): Depending on the type of household, people might be more of less active during this time period. For example, couples without children might stay up later.
 \end{enumerate}
 \APODChild
 
 
-The data portrayed in Figure \ref{fig:APODChild} indicates that energy use patterns are indeed different for households with and without children. We see that much of the difference in household electricity consumption can be attributed to household activity in the evenings (15:00-22:00), with the average household with children using 40kW more electricity during this period than households without. Furthermore, it can be seen that on weekday afternoons (9:00-15:00, Monday-Friday) the two classes use similar amounts of electricity, however on Saturdays and Sundays, the gap widens and those with children tend to use more than those without. 
+The data portrayed in Figure \ref{fig:APODChild} indicates that energy use patterns are indeed different for households with and without children. We see that much of the difference in household electricity consumption can be attributed to household activity in the evenings (15:00-22:00), with the average household with children using 40kW more electricity during this period than households without. Furthermore, it can be seen that on weekday daytime (9:00-15:00, Monday-Friday) the two classes use similar amounts of electricity, however on Saturdays and Sundays, the gap widens and those with children tend to use more than those without. 
 
 \APODSocio
 
@@ -69,23 +69,23 @@ After computing the ratio between weekend and weekday electricity consumption, c
 \subsection*{Variance on Weekdays}
 Thus far, the features that have been computed have been dependent on \textit{how much} energy has been consumed. It is also worth considering how much volatility there is in the household's energy consumption. Continuing with the idea that energy usage will be different on weekdays versus weekends, the average daily variance for weekdays was computed separately from weekends. 
 
-\ADV
+%\ADV
 
 Although the average daily variance of households is volatile in and of itself, the results shown in Figure \ref{fig:ADV} indicate that the electricity use of households with children does tend to fluctuate more than those without children. Furthermore, the skew indicates that it might be beneficial to take a transformation of the feature, such as the logarithm, the results of which are plotted in Figures \ref{fig:logADVChild} and \ref{fig:logADVSocio}. Here it can be seen that households in socio-economic group C2 tend to have lower volatility in their daily consumption than some of the other classes. This is of interest because the consumption features failed to distinguish between the middle socio-economic classes.
 
-\logADVChild
-\logADVSocio
+%\logADVChild
+%\logADVSocio
 
 \subsection*{Correlation Between Weekdays}
 
 The average correlation coefficient between one weekday and every other weekday was calculated. Rather than using the 10-minute intervals, which appeared to be too granular to capture any covariance between days, electricity readings were summed into one-hour intervals.
 
 
-\corrChild
+%\corrChild
 
 Looking at Figure \ref{fig:corrChild}, it appears that although the correlation coefficients are generally close to 0 (which means there is no correlation), there are differences between the two classes. Depending on which two days are being considered, the correlations of one class tend to be greater or smaller than that of the others. For example, it would appear that households with children demonstrate a slightly higher correlation between their Monday and Tuesday electricity use patterns than those without.
 
-\corrSocio 
+%\corrSocio 
 
 
 \section{Periodicity}
@@ -99,7 +99,7 @@ Before projecting the electricity consumption into frequency space, the Gaussian
 
 
 
-\householdConv
+%\householdConv
 
 
 
@@ -144,8 +144,6 @@ It might be of interest to see which features are most responsible for differenc
 We use \textit{sequential floating selection} (SFS) \cite{Somol} to find the optimal set of features. SFS is a greedy algorithm that works in the following way: Starting with an empty list, sequentially consider each feature selection and assesses its impact on a given evaluation score. Choose the feature that scores best and adding it to the list. Then, again, go through each of the features that have not been added to the list, and assess their impact in combination with the features already added to the list. Find the best one and add it to the list This is repeated until the list is full \cite{Juha}. A superior method, \textit{sequential forward floating selection}, has been proven to perform better \cite{Somol}, which backtracks after a new feature is included to solve the \textit{nesting} problem, it proved inefficient to implement for the multi class.
 
 \subsection{Implementation}
-The question at this point becomes, how do you \textit{evaluate} the features and what defines the \textit{best} feature (or combination of features)? 
+Since it is not necessarily the case that the best features are the same for each classification proplem, or even for each classification algorithm, the best features are found for each classifier irrespective of the others. The figure of merit for each, which is optimises the classifier is found by using cross-validation and training a classification model model with training data and then evaluating it on a validation set. If at any stage, the feature being considered improves the figure of merit, then the feature will be added to the set of `kept' features.
 
-
-
-\section{Class Cardinality}
+Different evaluation scores are used depending on the classifier. In the k-nearest neighbors classifiers, the \textit{mincost} is, which is the predicted label with the smallest expected misclassification cost. The expectation is taken over the posterior probability, and cost as given by the Cost property of the classifier (a matrix). The loss is then the true misclassification cost averaged over the observations. For the random forest implementation, the cumulative misclassification probability of the entire ensemble is used as the cost to evaluate combination of features. In the case of logistic regression, the deviance of the fit is used. These methods were used for two reasons, firstly because efficient implementations exist with MATLAB's stats toolkit, and they produced the sets of features that performed best on when tested on a validation set.

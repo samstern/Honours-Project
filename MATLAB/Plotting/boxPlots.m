@@ -1,4 +1,4 @@
-function boxPlots(varargin)
+function tikz_boxplots(varargin)
     numFeatures=size(varargin{1},2);
     %% Children
     if length(varargin)==3
@@ -16,53 +16,58 @@ function boxPlots(varargin)
         end
         %monthSum
         if strcmp(varargin{3},'monthSum')
-            boxplot(x,{'children','no children'})
-            ylabel('Power (Watts)')
-            title('Total Electricity Used in 4 Week Period')
+            tikz_boxplot(x,{'children','no children'},{})
+            %ylabel('log(Wh)')
+            title('Total (log) Monthly Consumption')
         %dayAverages
         elseif strcmp(varargin{3},'dayAverages')
             intervals={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
             intervals=[intervals;intervals];
             intervals=intervals(:);
-            lables=repmat({'child','no child'},1,size(c_x,2));
-            colors=repmat(['r','b'],1,size(c_x,2));
-        
-            figure;
-            %boxplot(x,{intervals,lables},'color',colors,'factorgap',[5,2]);
-            boxplot(x,{intervals,lables},'factorgap',[5,2]);
-            title('Average Daily Electricity Consumption')
-            ylabel('Power (Watts)')
+            lables=repmat({'child','no child'},1,size(c_x,2))';
+            a=cellfun(@(d,c) {d,c}, intervals, lables,'UniformOutput', false);
+            
+            
+            %figure;
+            %tikz_boxplot(x,{intervals,lables},'color',colors,'factorgap',[5,2]);
+            %tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
+            tikz_boxplot(x,a,{});
+            title('Average Daily (log) Electricity Consumption')
+            %ylabel('Power (Watts)')
          
         %POW_ratio    
         elseif strcmp(varargin{3},'POW_ratio')
-            lables=repmat({'child','no child'},1,2);
-            intervals={'Sat÷Weekday','Sun÷Weekday'};
+            lables=repmat({'child','no child'},1,2)';
+            intervals={'$\frac{Sat}{Weekday}$','$\frac{Sun}{Weekday}$'};
             intervals=[intervals;intervals];
             intervals=intervals(:);
-            boxplot(x,{intervals,lables})
+            a=cellfun(@(d,c) {d,c}, lables,intervals, 'UniformOutput', false);
+            tikz_boxplot(x,a,{})
             title('Average Weekend to Weekday Ratio')
             
         %APOD
         elseif strcmp(varargin{3},'APOD')
-            yMax=2.6*(10^5);
-            yMin=0;
+            yMax=13;
+            yMin=8;
             yRange=[yMin,yMax];
             dow={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
-            tod={'M','A','E','N'};
+            tod={'M','D','E','N'};
             tod=[tod;tod];
             tod=tod(:);
-            lables=repmat({'child','no child'},1,4);
+            lables=repmat({'C','nC'},1,4)';
+            a=cellfun(@(d,c) {d,c}, tod, lables,'UniformOutput', false);
             j=1;
             for i=1:length(dow)
                 p=x(:,j:j+7);
                 j=j+8;
                 subplot(3,3,i)
-                boxplot(p,{tod,lables})
-                ylim(yRange);
-                ylabel('Power (Watts)')
+                tikz_boxplot(p,a,{});
+                %ylim(yRange);
+                %ylabel('Power (Watts)')
                 title(dow(i))
-                
             end
+            annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Average (log) Consumption for Each Part of Day','EdgeColor', 'none')
+
         %ADV    
         elseif strcmp(varargin{3},'ADV')
             x(find(isnan(x)))=0;
@@ -75,7 +80,7 @@ function boxPlots(varargin)
             intervals=[intervals;intervals];
             intervals=intervals(:);
             lables=repmat({'child','no child'},1,size(c_x,2));
-            boxplot(x,{intervals,lables},'factorgap',[5,2]);
+            tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
             title('Average Daily Variance');
             ylabel('$\sigma$','interpreter','latex','fontsize',15)
             
@@ -92,7 +97,7 @@ function boxPlots(varargin)
             intervals=[intervals;intervals];
             intervals=intervals(:);
             lables=repmat({'child','no child'},1,size(c_x,2));
-            boxplot(x,{intervals,lables},'factorgap',[5,2]);
+            tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
             title('Average Daily Variance');
             ylabel('log($\sigma$)','interpreter','latex','fontsize',15)
 
@@ -100,10 +105,12 @@ function boxPlots(varargin)
         %corr
         elseif strcmp(varargin{3},'corr')
             t={'(Mon,Tue)','(Mon,Wed)','(Mon,Thu)','(Mon,Fri)','(Tue,Wed)','(Tue,Thu)','(Tue,Fri)','(Wed,Thu)','(Wed,Fri)','(Thu,Fri)'};
+            labels={'chide','no child'};
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*2);
                 subplot(2,5,i)
-                boxplot(p,'labels',{'chile','no child'})
+                
+                tikz_boxplot(p,labels,{})
                 title(t(i));  
                 ylim([-1,1])
                 annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Correlation between Weekdays ($\rho$)','EdgeColor', 'none','interpreter','latex')
@@ -115,7 +122,7 @@ function boxPlots(varargin)
                 intervals=[intervals;intervals];
                 intervals=intervals(:);
                 lables=repmat({'child','no child'},1,size(c_x,2));
-                boxplot(x,{intervals,lables},'factorgap',[5,2]);
+                tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
                 title('Frequancy Domain Features')
                 ylabel('Amplitude')
             end
@@ -133,44 +140,48 @@ function boxPlots(varargin)
         end
         %monthSum
         if strcmp(varargin{7},'monthSum')
-        boxplot(x,'labels',{'E','D','C1','C2','B','A'})
-        title('Total Electricity Used in 4 Week Period')
-        ylabel('Power (Watts)')
-        xlabel('Socio-Economic Class')
+        %tikz_boxplot(x,'labels',{'E','D','C1','C2','B','A'})
+        tikz_boxplot(x,{'E','D','C1','C2','B','A'},{})
+        title('Total (log) Monthly Consumption')
+        %ylabel('Power (Watts)')
+        %xlabel('Socio-Economic Class')
         
         %dayAverages
         elseif strcmp(varargin{7},'dayAverages')
             dow={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
+            labels={'E','D','C1','C2','B','A'};
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
                 subplot(3,3,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'});
-                t=sprintf('Average Total Electricity used on %s', dow{i});
-                title(t)
-                ylabel('Power (Watts)')
+                %tikz_boxplot(p,'labels',{'E','D','C1','C2','B','A'});
+                tikz_boxplot(p,{'E','D','C1','C2','B','A'},{});
+                %t=sprintf('Average Total Electricity used on %s', dow{i});
+                title(dow{i})
+                %annotation('textbox', [0.3 0.9 0.9 0.1],  'String', 'Average (log) Consumption for Each Day of the Week','EdgeColor', 'none')
+                %ylabel('Power (Watts)')
             end
+            annotation('textbox', [0.3 0.9 0.9 0.1],  'String', 'Average (log) Consumption for Each Day of the Week','EdgeColor', 'none')
             
         % POW_rtaio
         elseif strcmp(varargin{7},'POW_ratio')
             lab={'E','D','C1','C2','B','A'};
             lab=repmat(lab',2)
             lab=lab(:,1)
-            intervals={'Sat','Sun'};
+            intervals={'$\frac{Sat}{Weekday}$','$\frac{Sun}{Weekday}$'};
             intervals=[intervals;intervals;intervals;intervals;intervals;intervals];
             intervals=intervals(:);
+            a=cellfun(@(d,c) {d,c}, intervals,lab, 'UniformOutput', false);
             p1=x(:,1:2:numFeatures*6);
             p2=x(:,2:2:numFeatures*6);
             p=[p1 p2];
-            size(p);
-            boxplot(p,{intervals,lab})
+            tikz_boxplot(p,a,{})
             title('Average Weekend to Weekday Ratio')
-            xlabel('$\frac{Consumption of Day}{Average Weekday Use}$','interpreter','latex','fontsize',15)
+            %xlabel('$\frac{Consumption of Day}{Average Weekday Use}$','interpreter','latex','fontsize',15)
      
           
         %APOD
         elseif strcmp(varargin{7},'APOD')
             size(x(:,1))
-            figure;
             yMax=2.6*(10^5);
             yMin=0;
             yRange=[yMin,yMax];
@@ -182,9 +193,9 @@ function boxPlots(varargin)
             for i=1:numFeatures
                 subplot(7,4,i)
                 p=x(:,j:numFeatures:numFeatures*6)
-                boxplot(p,lables)
+                tikz_boxplot(p,lables,{});
                 %ylim(yRange);
-                annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Average Power for Each Part of Day','EdgeColor', 'none','fontweight','bold')
+                annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Average (log) Consumption for Each Part of Day','EdgeColor', 'none')
                 j=j+1;
                 if sum(i==([1:4:28]))==1
                     ylabel(dow{k});
@@ -207,7 +218,7 @@ function boxPlots(varargin)
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
                 subplot(3,3,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
+                tikz_boxplot(p,'labels',{'E','D','C1','C2','B','A'})
                 t=sprintf('Average Variance on %s', dow{i});
                 title(t)
                 ylabel('$\sigma$','interpreter','latex','fontsize',15)
@@ -226,18 +237,19 @@ function boxPlots(varargin)
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
                 subplot(3,3,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
+                tikz_boxplot(p,'labels',{'E','D','C1','C2','B','A'})
                 t=sprintf('Average Variance on %s', dow{i});
                 title(t)
                 ylabel('log($\sigma$)','interpreter','latex','fontsize',15)
             end
         %corr
         elseif strcmp(varargin{7},'corr')
-            t={'(Mon,Tue)','(Mon,Wed)','(Mon,Thu)','(Mon,Fri)','(Tue,Wed)','(Tue,Thu)','(Tue,Fri)','(Wed,Thu)','(Wed,Fri)','(Thu,Fri)'};
+            t={'(Mon,Tue)','(Mon,Wed)','(Mon,Thu)','(Mon,Fri)','(Tue,Wed)','(Tue,Thu)','(Tue,Fri)','(Wed,Thu)','(Wed,Fri)','(Thu,Fri)'}';
+            lables={'E','D','C1','C2','B','A'}';
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
-                subplot(2,5,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
+                subplot(2,5,i)  
+                tikz_boxplot(p,lables,{});
                 %ylim([-1,1])
                 title(t(i));  
                 annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Correlation between Weekdays ($\rho$)','EdgeColor', 'none','interpreter','latex')
@@ -249,7 +261,7 @@ function boxPlots(varargin)
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
                 subplot(1,5,i)
-                boxplot(p,'labels',{'E','D','C1','C2','B','A'})
+                tikz_boxplot(p,'labels',{'E','D','C1','C2','B','A'})
             end
         end
         

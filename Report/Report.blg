@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Report.aux
 The style file: unsrt.bst
 Database file #1: Bib/bibl2.bib
-Warning--I didn't find a database entry for "Beckel3"
 Warning--empty publisher in E_spending
 Warning--empty publisher in HES
 Warning--empty publisher in early_findings
@@ -12,45 +11,45 @@ Warning--all relevant fields are empty in CSE
 Warning--empty publisher in DECC
 Warning--empty publisher in Moerchen
 Warning--empty year in Gaudette
-You've used 33 entries,
+You've used 34 entries,
             1791 wiz_defined-function locations,
-            633 strings with 7718 characters,
-and the built_in function-call counts, 6187 in all, are:
-= -- 510
-> -- 236
+            634 strings with 7763 characters,
+and the built_in function-call counts, 6261 in all, are:
+= -- 515
+> -- 237
 < -- 2
-+ -- 95
++ -- 96
 - -- 62
 * -- 343
-:= -- 961
-add.period$ -- 92
-call.type$ -- 33
-change.case$ -- 22
+:= -- 968
+add.period$ -- 93
+call.type$ -- 34
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 302
-empty$ -- 687
+cite$ -- 42
+duplicate$ -- 308
+empty$ -- 699
 format.name$ -- 62
-if$ -- 1417
+if$ -- 1435
 int.to.chr$ -- 0
-int.to.str$ -- 33
+int.to.str$ -- 34
 missing$ -- 36
-newline$ -- 161
+newline$ -- 164
 num.names$ -- 31
-pop$ -- 133
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 140
+skip$ -- 144
 stack$ -- 0
 substring$ -- 319
-swap$ -- 53
+swap$ -- 54
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
 while$ -- 48
-width$ -- 35
-write$ -- 322
-(There were 9 warnings)
+width$ -- 36
+write$ -- 327
+(There were 8 warnings)

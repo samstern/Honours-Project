@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  17 MAR 2015 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  21 MAR 2015 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,56 +414,454 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 (./features.sty
 Package: features 2011/01/11 v0.01 LaTeX package for my own purpose
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen130
+\pgfutil@tempdimb=\dimen131
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen132
+\pgf@y=\dimen133
+\pgf@xa=\dimen134
+\pgf@ya=\dimen135
+\pgf@xb=\dimen136
+\pgf@yb=\dimen137
+\pgf@xc=\dimen138
+\pgf@yc=\dimen139
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count109
+\c@pgf@countb=\count110
+\c@pgf@countc=\count111
+\c@pgf@countd=\count112
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count113
+\pgfsyssoftpath@bigbuffer@items=\count114
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen140
+\pgfmath@count=\count115
+\pgfmath@box=\box31
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count116
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen141
+\pgf@picmaxx=\dimen142
+\pgf@picminy=\dimen143
+\pgf@picmaxy=\dimen144
+\pgf@pathminx=\dimen145
+\pgf@pathmaxx=\dimen146
+\pgf@pathminy=\dimen147
+\pgf@pathmaxy=\dimen148
+\pgf@xx=\dimen149
+\pgf@xy=\dimen150
+\pgf@yx=\dimen151
+\pgf@yy=\dimen152
+\pgf@zx=\dimen153
+\pgf@zy=\dimen154
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen155
+\pgf@path@lasty=\dimen156
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen157
+\pgf@shorten@start@additional=\dimen158
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count117
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen159
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen160
+\pgf@pt@y=\dimen161
+\pgf@pt@temp=\dimen162
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen163
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen164
+\pgf@sys@shading@range@num=\count118
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box35
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box36
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen165
+\pgf@nodesepend=\dimen166
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen167
+\pgffor@skip=\dimen168
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count119
+\pgfplotmarksize=\dimen169
+)
+\tikz@lastx=\dimen170
+\tikz@lasty=\dimen171
+\tikz@lastxsaved=\dimen172
+\tikz@lastysaved=\dimen173
+\tikzleveldistance=\dimen174
+\tikzsiblingdistance=\dimen175
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count120
+\tikznumberofchildren=\count121
+\tikznumberofcurrentchild=\count122
+\tikz@fig@count=\count123
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count124
+\pgfmatrixcurrentcolumn=\count125
+\pgf@matrix@numberofcolumns=\count126
+)
+\tikz@expandcount=\count127
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
+\pgfplots@tmpa=\dimen176
+\c@pgfplots@coordindex=\count128
+\c@pgfplots@scanlineindex=\count129
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex
+\c@pgfplotsarray@tmp=\count130
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex
+\c@pgfplotstable@counta=\count131
+\t@pgfplotstable@a=\toks40
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count132
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen177
+\pgfdecoratedremainingdistance=\dimen178
+\pgfdecoratedinputsegmentcompleteddistance=\dimen179
+\pgfdecoratedinputsegmentremainingdistance=\dimen180
+\pgf@decorate@distancetomove=\dimen181
+\pgf@decorate@repeatstate=\count133
+\pgfdecorationsegmentamplitude=\dimen182
+\pgfdecorationsegmentlength=\dimen183
+)
+\tikz@lib@dec@box=\box41
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count134
+\pgfplots@xmin@reg=\dimen184
+\pgfplots@xmax@reg=\dimen185
+\pgfplots@ymin@reg=\dimen186
+\pgfplots@ymax@reg=\dimen187
+\pgfplots@zmin@reg=\dimen188
+\pgfplots@zmax@reg=\dimen189
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex
+File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
+))) (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
-\c@tracingmulticols=\count109
-\mult@box=\box30
-\multicol@leftmargin=\dimen130
-\c@unbalance=\count110
-\c@collectmore=\count111
-\doublecol@number=\count112
-\multicoltolerance=\count113
-\multicolpretolerance=\count114
-\full@width=\dimen131
-\page@free=\dimen132
-\premulticols=\dimen133
-\postmulticols=\dimen134
+\c@tracingmulticols=\count135
+\mult@box=\box42
+\multicol@leftmargin=\dimen190
+\c@unbalance=\count136
+\c@collectmore=\count137
+\doublecol@number=\count138
+\multicoltolerance=\count139
+\multicolpretolerance=\count140
+\full@width=\dimen191
+\page@free=\dimen192
+\premulticols=\dimen193
+\postmulticols=\dimen194
 \multicolsep=\skip51
 \multicolbaselineskip=\skip52
-\partial@page=\box31
-\last@line=\box32
-\maxbalancingoverflow=\dimen135
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
-\@tempa=\box40
-\@tempa=\box41
-\@tempa=\box42
-\@tempa=\box43
-\@tempa=\box44
-\@tempa=\box45
-\@tempa=\box46
-\@tempa=\box47
-\@tempa=\box48
+\partial@page=\box43
+\last@line=\box44
+\maxbalancingoverflow=\dimen195
+\mult@rightbox=\box45
+\mult@grightbox=\box46
+\mult@gfirstbox=\box47
+\mult@firstbox=\box48
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count115
-\c@finalcolumnbadness=\count116
-\last@try=\dimen136
-\multicolovershoot=\dimen137
-\multicolundershoot=\dimen138
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\mc@col@check@num=\count117
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\c@columnbadness=\count141
+\c@finalcolumnbadness=\count142
+\last@try=\dimen196
+\multicolovershoot=\dimen197
+\multicolundershoot=\dimen198
+\mult@nat@firstbox=\box66
+\colbreak@box=\box67
+\mc@col@check@num=\count143
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -475,6 +873,9 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
+\figureheight=\skip53
+\figurewidth=\skip54
+
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (597.50787pt) is ignored.
@@ -486,32 +887,32 @@ Package geometry Warning: Over-specification in `v'-direction.
 (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen139
-\scratchbox=\box56
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen140
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count144
+\scratchdimen=\dimen199
+\scratchbox=\box68
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen200
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -594,11 +995,15 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.10}).
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -606,8 +1011,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./
 Report.toc)
-\tf@toc=\write3
-\openout3 = `Report.toc'.
+\tf@toc=\write4
+\openout4 = `Report.toc'.
 
 
 (./tex/introduction.tex [1
@@ -622,12 +1027,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
 )
 (./tex/Data.tex [3] [4]
 Chapter 2.
@@ -646,7 +1051,7 @@ s-converted-to.pdf fig/household369OneWeek.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/household369OneWeek-eps-converted-to.pdf, id=33, 1172.38pt x 444.66125pt>
+<fig/household369OneWeek-eps-converted-to.pdf, id=36, 1172.38pt x 444.66125pt>
 File: fig/household369OneWeek-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/household369OneWeek-eps-converted-to.pdf>
@@ -664,7 +1069,7 @@ rted-to.pdf fig/household369.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/household369-eps-converted-to.pdf, id=34, 1283.79625pt x 517.935pt>
+<fig/household369-eps-converted-to.pdf, id=37, 1283.79625pt x 517.935pt>
 File: fig/household369-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/household369-eps-converted-to.pdf>
@@ -684,7 +1089,7 @@ ted-to.pdf fig/household75.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/household75-eps-converted-to.pdf, id=53, 809.0225pt x 435.6275pt>
+<fig/household75-eps-converted-to.pdf, id=56, 809.0225pt x 435.6275pt>
 File: fig/household75-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/household75-eps-converted-to.pdf>
@@ -706,7 +1111,7 @@ Package epstopdf Info: Source file: <fig/household121.eps>
 rted-to.pdf fig/household121.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
-<fig/household121-eps-converted-to.pdf, id=54, 798.985pt x 433.62pt>
+<fig/household121-eps-converted-to.pdf, id=57, 798.985pt x 433.62pt>
 File: fig/household121-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/household121-eps-converted-to.pdf>
@@ -718,8 +1123,8 @@ Overfull \hbox (82.27629pt too wide) in paragraph at lines 46--46
 []|  [][] 
  []
 
-[8 <./fig/household75-eps-converted-to.pdf> <./fig/household121-eps-converted-t
-o.pdf>] [9]) (./tex/Features.tex [10]
+[8] [9 <./fig/household75-eps-converted-to.pdf> <./fig/household121-eps-convert
+ed-to.pdf>]) (./tex/Features.tex [10]
 Chapter 3.
 Package epstopdf Info: Source file: <fig/qquntransformed.eps>
 (epstopdf)                    date: 2015-02-27 19:41:32
@@ -731,7 +1136,7 @@ Package epstopdf Info: Source file: <fig/qquntransformed.eps>
 nverted-to.pdf fig/qquntransformed.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
-<fig/qquntransformed-eps-converted-to.pdf, id=77, 1142.2675pt x 402.50375pt>
+<fig/qquntransformed-eps-converted-to.pdf, id=80, 1142.2675pt x 402.50375pt>
 File: fig/qquntransformed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/qquntransformed-eps-converted-to.pdf>
@@ -749,7 +1154,7 @@ erted-to.pdf fig/qqtransformed.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/qqtransformed-eps-converted-to.pdf, id=78, 1142.2675pt x 411.5375pt>
+<fig/qqtransformed-eps-converted-to.pdf, id=81, 1142.2675pt x 411.5375pt>
 File: fig/qqtransformed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/qqtransformed-eps-converted-to.pdf>
@@ -764,250 +1169,1777 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
  []
 
 [12 <./fig/qquntransformed-eps-converted-to.pdf> <./fig/qqtransformed-eps-conve
-rted-to.pdf>] <fig/Total_Electricity_child.jpg, id=104, 562.1pt x 421.575pt>
-File: fig/Total_Electricity_child.jpg Graphic file (type jpg)
+rted-to.pdf>] (./fig/Total_Electricity_child.tex
 
-<use fig/Total_Electricity_child.jpg>
-Package pdftex.def Info: fig/Total_Electricity_child.jpg used on input line 26.
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 98
+.
 
-(pdftex.def)             Requested size: 206.28249pt x 154.71306pt.
 
-<fig/Total_Electricity_socio.jpg, id=105, 562.1pt x 421.575pt>
-File: fig/Total_Electricity_socio.jpg Graphic file (type jpg)
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 98.
 
-<use fig/Total_Electricity_socio.jpg>
-Package pdftex.def Info: fig/Total_Electricity_socio.jpg used on input line 26.
+ [warning /pgfplots/warning/plot without coordinates]
 
-(pdftex.def)             Requested size: 206.28249pt x 154.71306pt.
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+2.
 
-<fig/Average_Daily_child.jpg, id=106, 562.1pt x 421.575pt>
-File: fig/Average_Daily_child.jpg Graphic file (type jpg)
 
-<use fig/Average_Daily_child.jpg>
-Package pdftex.def Info: fig/Average_Daily_child.jpg used on input line 35.
-(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 102.
 
-<fig/Average_Daily_socio.jpg, id=107, 1117.17375pt x 638.385pt>
-File: fig/Average_Daily_socio.jpg Graphic file (type jpg)
+ [warning /pgfplots/warning/plot without coordinates]
+) (./fig/Total_Electricity_socio.tex
 
-<use fig/Average_Daily_socio.jpg>
-Package pdftex.def Info: fig/Average_Daily_socio.jpg used on input line 36.
-(pdftex.def)             Requested size: 558.58551pt x 319.19171pt.
- [13 <./fig/Total_Electricity_child.jpg> <./fig/Total_Electricity_socio.jpg>] [
-14 <./fig/Average_Daily_child.jpg> <./fig/Average_Daily_socio.jpg>] <fig/APOD_c
-hild.jpg, id=114, 1279.78125pt x 638.385pt>
-File: fig/APOD_child.jpg Graphic file (type jpg)
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+0.
 
-<use fig/APOD_child.jpg>
-Package pdftex.def Info: fig/APOD_child.jpg used on input line 52.
-(pdftex.def)             Requested size: 639.88907pt x 319.19171pt.
- [15]
-Package epstopdf Info: Source file: <fig/APOD_socio.eps>
-(epstopdf)                    date: 2015-02-25 17:01:40
-(epstopdf)                    size: 81017 bytes
-(epstopdf)             Output file: <fig/APOD_socio-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-25 17:07:20
-(epstopdf)                    size: 28195 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/APOD_socio-eps-convert
-ed-to.pdf fig/APOD_socio.eps>
-(epstopdf)             \includegraphics on input line 57.
-Package epstopdf Info: Output file is already uptodate.
 
-<fig/APOD_socio-eps-converted-to.pdf, id=118, 1023.825pt x 638.385pt>
-File: fig/APOD_socio-eps-converted-to.pdf Graphic file (type pdf)
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 230.
 
-<use fig/APOD_socio-eps-converted-to.pdf>
-Package pdftex.def Info: fig/APOD_socio-eps-converted-to.pdf used on input line
- 57.
-(pdftex.def)             Requested size: 569.05759pt x 569.05702pt.
- [16 <./fig/APOD_child.jpg>] [17 <./fig/APOD_socio-eps-converted-to.pdf>]
-<fig/POW_rat_child.jpg, id=134, 627.34375pt x 476.78125pt>
-File: fig/POW_rat_child.jpg Graphic file (type jpg)
+ [warning /pgfplots/warning/plot without coordinates]
 
-<use fig/POW_rat_child.jpg>
-Package pdftex.def Info: fig/POW_rat_child.jpg used on input line 64.
-(pdftex.def)             Requested size: 206.28249pt x 156.7781pt.
-Package epstopdf Info: Source file: <fig/POW_rat_socio.eps>
-(epstopdf)                    date: 2015-02-26 21:27:55
-(epstopdf)                    size: 69846 bytes
-(epstopdf)             Output file: <fig/POW_rat_socio-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 21:28:31
-(epstopdf)                    size: 12678 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/POW_rat_socio-eps-conv
-erted-to.pdf fig/POW_rat_socio.eps>
-(epstopdf)             \includegraphics on input line 64.
-Package epstopdf Info: Output file is already uptodate.
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+4.
 
-<fig/POW_rat_socio-eps-converted-to.pdf, id=135, 562.1pt x 421.575pt>
-File: fig/POW_rat_socio-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig/POW_rat_socio-eps-converted-to.pdf>
-Package pdftex.def Info: fig/POW_rat_socio-eps-converted-to.pdf used on input l
-ine 64.
-(pdftex.def)             Requested size: 206.28249pt x 154.71306pt.
-Package epstopdf Info: Source file: <fig/ADV_child.eps>
-(epstopdf)                    date: 2015-02-26 22:37:09
-(epstopdf)                    size: 50680 bytes
-(epstopdf)             Output file: <fig/ADV_child-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 22:38:38
-(epstopdf)                    size: 11867 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/ADV_child-eps-converte
-d-to.pdf fig/ADV_child.eps>
-(epstopdf)             \includegraphics on input line 72.
-Package epstopdf Info: Output file is already uptodate.
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 234.
 
-<fig/ADV_child-eps-converted-to.pdf, id=136, 871.255pt x 587.19376pt>
-File: fig/ADV_child-eps-converted-to.pdf Graphic file (type pdf)
+ [warning /pgfplots/warning/plot without coordinates]
 
-<use fig/ADV_child-eps-converted-to.pdf>
-Package pdftex.def Info: fig/ADV_child-eps-converted-to.pdf used on input line 
-72.
-(pdftex.def)             Requested size: 206.28249pt x 139.02094pt.
-Package epstopdf Info: Source file: <fig/ADV_socio.eps>
-(epstopdf)                    date: 2015-02-26 22:36:43
-(epstopdf)                    size: 60188 bytes
-(epstopdf)             Output file: <fig/ADV_socio-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 22:38:39
-(epstopdf)                    size: 13957 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/ADV_socio-eps-converte
-d-to.pdf fig/ADV_socio.eps>
-(epstopdf)             \includegraphics on input line 72.
-Package epstopdf Info: Output file is already uptodate.
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+8.
 
-<fig/ADV_socio-eps-converted-to.pdf, id=137, 1021.8175pt x 581.17125pt>
-File: fig/ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig/ADV_socio-eps-converted-to.pdf>
-Package pdftex.def Info: fig/ADV_socio-eps-converted-to.pdf used on input line 
-72.
-(pdftex.def)             Requested size: 288.79422pt x 164.25212pt.
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 238.
 
-Overfull \hbox (82.51173pt too wide) in paragraph at lines 72--72
- [][][] 
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 24
+2.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 242.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 24
+6.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 246.
+
+ [warning /pgfplots/warning/plot without coordinates]
+)
+Overfull \hbox (28.65645pt too wide) in paragraph at lines 266--26
+[][] 
  []
 
-[18 <./fig/POW_rat_child.jpg> <./fig/POW_rat_socio-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <fig/log_ADV_child.eps>
-(epstopdf)                    date: 2015-02-26 22:34:22
-(epstopdf)                    size: 92541 bytes
-(epstopdf)             Output file: <fig/log_ADV_child-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 22:45:36
-(epstopdf)                    size: 10489 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_child-eps-conv
-erted-to.pdf fig/log_ADV_child.eps>
-(epstopdf)             \includegraphics on input line 76.
-Package epstopdf Info: Output file is already uptodate.
+(./fig/Average_Daily_child.tex
 
-<fig/log_ADV_child-eps-converted-to.pdf, id=149, 562.1pt x 421.575pt>
-File: fig/log_ADV_child-eps-converted-to.pdf Graphic file (type pdf)
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 50
+4.
 
-<use fig/log_ADV_child-eps-converted-to.pdf>
-Package pdftex.def Info: fig/log_ADV_child-eps-converted-to.pdf used on input l
-ine 76.
-(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
-Package epstopdf Info: Source file: <fig/log_ADV_socio.eps>
-(epstopdf)                    date: 2015-02-26 22:33:25
-(epstopdf)                    size: 59938 bytes
-(epstopdf)             Output file: <fig/log_ADV_socio-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 22:45:07
-(epstopdf)                    size: 14002 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/log_ADV_socio-eps-conv
-erted-to.pdf fig/log_ADV_socio.eps>
-(epstopdf)             \includegraphics on input line 77.
-Package epstopdf Info: Output file is already uptodate.
 
-<fig/log_ADV_socio-eps-converted-to.pdf, id=150, 908.39375pt x 619.31375pt>
-File: fig/log_ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 504.
 
-<use fig/log_ADV_socio-eps-converted-to.pdf>
-Package pdftex.def Info: fig/log_ADV_socio-eps-converted-to.pdf used on input l
-ine 77.
-(pdftex.def)             Requested size: 545.04047pt x 371.59111pt.
- [19 <./fig/ADV_child-eps-converted-to.pdf> <./fig/ADV_socio-eps-converted-to.p
-df> <./fig/log_ADV_child-eps-converted-to.pdf>] <fig/Corr_child.jpg, id=185, 88
-9.3225pt x 578.16pt>
-File: fig/Corr_child.jpg Graphic file (type jpg)
+ [warning /pgfplots/warning/plot without coordinates]
 
-<use fig/Corr_child.jpg>
-Package pdftex.def Info: fig/Corr_child.jpg used on input line 84.
-(pdftex.def)             Requested size: 444.66016pt x 289.07928pt.
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+2.
 
-Overfull \hbox (32.09518pt too wide) in paragraph at lines 84--84
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 512.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 525.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+9.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 529.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 53
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 537.
+
+ [warning /pgfplots/warning/plot without coordinates]
+)
+Overfull \hbox (45.44377pt too wide) in paragraph at lines 581--35
+[][] 
+ []
+
+(./fig/Average_Daily_socio.tex
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 251.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 255.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 26
+3.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 263.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 26
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 267.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 50
+8.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 508.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+2.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 512.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+0.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 520.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+4.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 524.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+8.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 528.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 76
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 765.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 76
+9.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 769.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 77
+3.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 773.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 77
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 777.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 78
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 781.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 78
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 785.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+22.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1022.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+26.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1026.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+34.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1034.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+38.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1038.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+80.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1280.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+84.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1284.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+88.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1288.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+92.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1292.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 13
+00.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1300.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+37.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1537.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+46.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1546.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+50.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1550.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+54.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1554.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 17
+95.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1795.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 18
+07.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1807.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 18
+11.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1811.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 18
+15.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1815.
+
+ [warning /pgfplots/warning/plot without coordinates]
+) [13] [14] [15] (./fig/APOD_child.tex
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 32
+8.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 328.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 33
+2.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 332.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 35
+0.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 350.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 65
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 657.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 66
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 661.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 66
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 665.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 67
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 677.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 68
+8.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 688.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 99
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 995.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 99
+9.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 999.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+16.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1016.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+26.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1026.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 13
+46.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1346.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 13
+57.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1357.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 16
+72.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1672.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 16
+97.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1697.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 17
+05.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1705.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+16.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2016.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+25.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2025.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+34.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2034.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+38.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2038.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+65.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2365.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+81.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2381.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+85.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2385.
+
+ [warning /pgfplots/warning/plot without coordinates]
+)
+Overfull \hbox (41.94496pt too wide) in paragraph at lines 2405--52
  [][] 
  []
 
-[20 <./fig/log_ADV_socio-eps-converted-to.pdf>]
-<fig/Corr_socio.jpg, id=198, 788.9475pt x 609.27625pt>
-File: fig/Corr_socio.jpg Graphic file (type jpg)
+(./fig/APOD_socio.tex
 
-<use fig/Corr_socio.jpg>
-Package pdftex.def Info: fig/Corr_socio.jpg used on input line 88.
-(pdftex.def)             Requested size: 394.47278pt x 304.63737pt.
- [21 <./fig/Corr_child.jpg>]
-Package epstopdf Info: Source file: <fig/household369Conv.eps>
-(epstopdf)                    date: 2015-03-16 09:24:41
-(epstopdf)                    size: 55499 bytes
-(epstopdf)             Output file: <fig/household369Conv-eps-converted-to.pdf>
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+7.
 
-(epstopdf)                    date: 2015-03-16 09:48:07
-(epstopdf)                    size: 45829 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/household369Conv-eps-c
-onverted-to.pdf fig/household369Conv.eps>
-(epstopdf)             \includegraphics on input line 102.
-Package epstopdf Info: Output file is already uptodate.
 
-<fig/household369Conv-eps-converted-to.pdf, id=202, 1088.065pt x 626.34pt>
-File: fig/household369Conv-eps-converted-to.pdf Graphic file (type pdf)
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 237.
 
-<use fig/household369Conv-eps-converted-to.pdf>
-Package pdftex.def Info: fig/household369Conv-eps-converted-to.pdf used on inpu
-t line 102.
-(pdftex.def)             Requested size: 544.03117pt x 313.16922pt.
- [22 <./fig/Corr_socio.jpg>]
-[23 <./fig/household369Conv-eps-converted-to.pdf>] [24]) (./tex/Models.tex
-[25]
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 24
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 241.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 49
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 491.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 49
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 495.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 49
+9.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 499.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 50
+3.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 503.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 511.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 74
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 747.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 75
+1.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 751.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 75
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 755.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 75
+9.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 759.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 76
+3.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 763.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 76
+7.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 767.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+04.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1004.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+08.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1008.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 10
+26.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1026.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+72.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1272.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 12
+76.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1276.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+27.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1527.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+31.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1531.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+35.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1535.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+39.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1539.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 15
+43.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1543.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 17
+83.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1783.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 17
+87.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1787.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 17
+91.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1791.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 18
+03.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 1803.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+40.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2040.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+49.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2049.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+53.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2053.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+57.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2057.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 20
+61.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2061.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+04.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2304.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 23
+08.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2308.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+56.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2556.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+60.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2560.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+68.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2568.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 25
+72.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2572.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 28
+12.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2812.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 28
+20.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2820.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 28
+24.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 2824.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 30
+69.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3069.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 30
+90.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3090.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 33
+31.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3331.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 33
+35.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3335.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 35
+87.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3587.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 35
+91.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3591.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 35
+95.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3595.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 35
+99.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3599.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 36
+03.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3603.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 36
+07.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3607.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 38
+43.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3843.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 38
+47.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3847.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 38
+63.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 3863.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 41
+00.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4100.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 41
+12.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4112.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 41
+16.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4116.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 41
+20.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4120.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 43
+63.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4363.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 43
+67.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4367.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 43
+71.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4371.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 46
+18.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4618.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 46
+22.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4622.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 46
+30.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4630.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 46
+38.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4638.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 48
+74.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4874.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 48
+86.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 4886.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+31.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5131.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+48.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5148.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 51
+52.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5152.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 53
+99.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5399.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 56
+53.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5653.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 56
+61.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5661.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 56
+65.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5665.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 59
+05.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5905.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 59
+13.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5913.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 59
+17.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5917.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 59
+25.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 5925.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 61
+62.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6162.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 61
+66.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6166.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 61
+70.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6170.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 61
+74.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6174.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 61
+82.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6182.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 64
+26.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6426.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 64
+30.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6430.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 66
+79.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6679.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 66
+87.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6687.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 66
+91.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6691.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 67
+00.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6700.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+37.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6937.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+41.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6941.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+45.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6945.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+49.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6949.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+53.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6953.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 69
+57.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 6957.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 72
+70.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 7270.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 72
+74.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 7274.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 72
+94.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 7294.
+
+ [warning /pgfplots/warning/plot without coordinates]
+)
+Overfull \hbox (49.01799pt too wide) in paragraph at lines 7310--57
+ [][] 
+ []
+
+[16] [17] (./fig/POW_rat_child.tex) (./fig/POW_rat_socio.tex
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 42
+8.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 428.
+
+ [warning /pgfplots/warning/plot without coordinates]
+
+Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
+n'. Only the first occurence can be accessed via column names. on input line 52
+5.
+
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 525.
+
+ [warning /pgfplots/warning/plot without coordinates]
+)
+Overfull \hbox (41.51735pt too wide) in paragraph at lines 553--64
+[][] 
+ []
+
+[18]
+
+LaTeX Warning: Reference `fig:ADV' on page 19 undefined on input line 74.
+
+
+LaTeX Warning: Reference `fig:logADVChild' on page 19 undefined on input line 7
+4.
+
+
+LaTeX Warning: Reference `fig:logADVSocio' on page 19 undefined on input line 7
+4.
+
+
+LaTeX Warning: Reference `fig:corrChild' on page 19 undefined on input line 86.
+
+
+[19] [20] [21]) (./tex/Models.tex [22]
 Chapter 4.
+[23
 
-LaTeX Warning: Citation `Beckel3' on page 26 undefined on input line 5.
-
-) (./tex/Results.tex [26
-
-]
+]) (./tex/Results.tex [24]
 Chapter 5.
-[27
+[25
 
-]) (./Report.bbl [28] [29
+]) (./Report.bbl [26] [27
 
-] [30]) [31] (./Report.aux)
+] [28]) [29] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4896 strings out of 493117
- 72348 string characters out of 6135432
- 155304 words of memory out of 5000000
- 8188 multiletter control sequences out of 15000+600000
+ 25950 strings out of 493117
+ 720704 string characters out of 6135432
+ 1509817 words of memory out of 5000000
+ 28898 multiletter control sequences out of 15000+600000
  15399 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,42p,1439b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,107p,1439b,2029s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Report.pdf (33 pages, 844869 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Report.pdf (31 pages, 437306 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

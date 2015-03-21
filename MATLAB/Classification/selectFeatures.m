@@ -7,7 +7,7 @@ function x_opt = selectFeatures(x,y,task,numfeatures,classifier)
     opts = statset('display','iter','TolTypeFun','abs');
     fun = @(XT,yT,Xt,yt)(sum(~strcmp(yt,classify(Xt,XT,yT))));
     funKnn = @(x_tst,y_tst,x_trn,y_trn)(getfield(runKNN(x_trn,x_tst,y_trn,y_tst),'loss'));
-    funRF = @(x_tst,y_tst,x_trn,y_trn)(getfield(runRandomForest(x_trn,x_tst,y_trn,y_tst),'meanOOBError'));
+    funRF = @(x_tst,y_tst,x_trn,y_trn)(getfield(runRandomForest(x_trn,x_tst,y_trn,y_tst),'err'));
     funLR_child = @(x_tst,y_tst,x_trn,y_trn)(getfield(runLogReg(x_trn,x_tst,y_trn,y_tst,task),'SSE'));
     funLR_se = @(x_tst,y_tst,x_trn,y_trn)(getfield(runLogReg(x_trn,x_tst,y_trn,y_tst,task),'SSE'));
     if strmatch(task,{'child','children','c'},'exact')
