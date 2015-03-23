@@ -3,6 +3,8 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Report.aux
 The style file: unsrt.bst
 Database file #1: Bib/bibl2.bib
+Warning--entry type for "Peterson" isn't style-file defined
+--line 363 of file Bib/bibl2.bib
 Warning--empty publisher in E_spending
 Warning--empty publisher in HES
 Warning--empty publisher in early_findings
@@ -11,45 +13,45 @@ Warning--all relevant fields are empty in CSE
 Warning--empty publisher in DECC
 Warning--empty publisher in Moerchen
 Warning--empty year in Gaudette
-You've used 34 entries,
+You've used 38 entries,
             1791 wiz_defined-function locations,
-            634 strings with 7763 characters,
-and the built_in function-call counts, 6261 in all, are:
-= -- 515
-> -- 237
-< -- 2
-+ -- 96
-- -- 62
-* -- 343
-:= -- 968
-add.period$ -- 93
-call.type$ -- 34
-change.case$ -- 23
+            655 strings with 8308 characters,
+and the built_in function-call counts, 6950 in all, are:
+= -- 579
+> -- 252
+< -- 5
++ -- 103
+- -- 65
+* -- 347
+:= -- 1068
+add.period$ -- 104
+call.type$ -- 38
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 308
-empty$ -- 699
-format.name$ -- 62
-if$ -- 1435
+cite$ -- 46
+duplicate$ -- 356
+empty$ -- 774
+format.name$ -- 65
+if$ -- 1608
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 36
-newline$ -- 164
-num.names$ -- 31
-pop$ -- 138
+int.to.str$ -- 38
+missing$ -- 38
+newline$ -- 183
+num.names$ -- 37
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 144
+skip$ -- 183
 stack$ -- 0
-substring$ -- 319
-swap$ -- 54
-text.length$ -- 2
+substring$ -- 321
+swap$ -- 77
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 48
-width$ -- 36
-write$ -- 327
-(There were 8 warnings)
+while$ -- 55
+width$ -- 40
+write$ -- 367
+(There were 9 warnings)

@@ -79,10 +79,12 @@ function tikz_boxplots(varargin)
             intervals={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
             intervals=[intervals;intervals];
             intervals=intervals(:);
-            lables=repmat({'child','no child'},1,size(c_x,2));
-            tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
-            title('Average Daily Variance');
-            ylabel('$\sigma$','interpreter','latex','fontsize',15)
+            lables=repmat({'C','NC'},1,size(c_x,2))';
+            a=cellfun(@(d,c) {d,c}, intervals, lables,'UniformOutput', false);
+            %tikz_boxplot(x,{intervals,lables},'factorgap',[5,2]);
+            tikz_boxplot(x,a,{});
+            title('(log) Average Daily Variance');
+            ylabel('$\log(\sigma$)','interpreter','latex','fontsize',15)
             
             %log ADV    
         elseif strcmp(varargin{3},'log ADV')
@@ -181,12 +183,11 @@ function tikz_boxplots(varargin)
           
         %APOD
         elseif strcmp(varargin{7},'APOD')
-            size(x(:,1))
             yMax=2.6*(10^5);
             yMin=0;
             yRange=[yMin,yMax];
             dow={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
-            tod={'Morning','Afternoon','Evening','Night'};
+            tod={'Morning','Daytime','Evening','Night'};
             lables={'E','D','C1','C2','B','A'};
             j=1;
             k=1;
@@ -195,7 +196,7 @@ function tikz_boxplots(varargin)
                 p=x(:,j:numFeatures:numFeatures*6)
                 tikz_boxplot(p,lables,{});
                 %ylim(yRange);
-                annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Average (log) Consumption for Each Part of Day','EdgeColor', 'none')
+                annotation('textbox', [0.4 0.9 0.9 0.1],  'String', '(log) Average Daily Variance','EdgeColor', 'none')
                 j=j+1;
                 if sum(i==([1:4:28]))==1
                     ylabel(dow{k});
@@ -215,13 +216,16 @@ function tikz_boxplots(varargin)
             nulify=find(or((x>3*m),x==0));
             x(nulify)=NaN;
             dow={'Sun','Mon','Tue','Wed','Thur','Fri','Sat'};
+            lables={'E','D','C1','C2','B','A'};
+            
             for i=1:numFeatures
                 p=x(:,i:numFeatures:numFeatures*6);
                 subplot(3,3,i)
-                tikz_boxplot(p,'labels',{'E','D','C1','C2','B','A'})
-                t=sprintf('Average Variance on %s', dow{i});
-                title(t)
-                ylabel('$\sigma$','interpreter','latex','fontsize',15)
+                tikz_boxplot(p,lables,{});
+                %t=sprintf('(log) Average Variance on %s', dow{i});
+                title(dow{i});
+                ylabel('$\log(\sigma)$','interpreter','latex','fontsize',15);
+                %annotation('textbox', [0.4 0.9 0.9 0.1],  'String', 'Correlation between Weekdays ($\rho$)','EdgeColor', 'none','interpreter','latex')
             end
             
             %log ADV    

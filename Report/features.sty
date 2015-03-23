@@ -95,12 +95,12 @@
 \def\POWrat{
 \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.5\textwidth}
+        \begin{subfigure}[t]{0.5\textwidth}
         		\hspace*{-3cm}
                 \input{fig/POW_rat_child.tex}
                 \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on whether or not there are children present}
         \end{subfigure}%
-        \begin{subfigure}[b]{0.5\textwidth}
+        \begin{subfigure}[t]{0.5\textwidth}
                 \input{fig/POW_rat_socio.tex}
                 \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on their IPSOS social grade}
         \end{subfigure}
@@ -203,10 +203,12 @@
 \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/log_ADV_child}
+                %\includegraphics[width=\textwidth]{fig/log_ADV_child}
+                 \input{fig/ADV_child.tex}
         \end{subfigure}%
         \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/log_ADV_socio}
+                %\includegraphics[width=\textwidth]{fig/log_ADV_socio}
+                 \input{fig/ADV_socio.tex}
         \end{subfigure}
         \caption{}
         \label{fig:logADV}
@@ -216,9 +218,10 @@
 \def\logADVChild{
 \begin{figure}[H]
 %\begin{center}
-\centering{\includegraphics[scale=0.5]{fig/log_ADV_child}}
+%\centering{\includegraphics[scale=0.5]{fig/log_ADV_child}}
+\centering{\input{fig/ADV_child.tex}}
 %\end{center}
-\caption{}
+\caption{The variance of a household's daily consumption grouped by the day of the week and whether the household has children (C) or not (NC)}
 \label{fig:logADVChild}
 \end{figure}
 }
@@ -226,8 +229,9 @@
 \def\logADVSocio{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.6]{fig/log_ADV_socio}}
-\caption{}
+%\centerline{\includegraphics[scale=0.6]{fig/log_ADV_socio}}
+\input{fig/ADV_socio.tex}
+\caption{The variance of a household's daily consumption grouped by the day of the week and the Ipsos social grade}
 \label{fig:logADVSocio}
 \end{figure}
 }
@@ -250,9 +254,10 @@
 \def\corrChild{
 \begin{figure}[H]
 %\begin{center}
+\hspace{-2cm}
 \input{fig/Corr_child.tex}
 %\end{center}
-\caption{}
+\caption{Average correlation coefficient between weekdays grouped by whether a household has children (C) or not (NC)}
 \label{fig:corrChild}
 \end{figure}
 }
@@ -260,8 +265,9 @@
 \def\corrSocio{
 \begin{figure}[H]
 \centering
-\input{fig/Corr_child.tex}
-\caption{}
+\hspace{-2cm}
+\input{fig/Corr_socio.tex}
+\caption{Average correlation coefficient between weekdays grouped by Ipsos social grade}
 \label{fig:corrSocio}
 \end{figure}
 }
@@ -271,7 +277,9 @@
 \def\householdConv{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{fig/household369Conv}}
+%\centerline{\includegraphics[scale=0.5]{fig/household369Conv}}
+\hspace*{-2.5cm}
+\input{fig/household369Conv.tex}
 \caption{The electricity use of household No.369 shows that households may have both a daily and weekly pattern. The clusters of peaks represent individual days while the regions without peaks are the indicative of night time. Additionaly, the large spikes are observed roughly every seven days, on either Saturdays, Sundays or both. After applying the Gaussian filter, the time series maintains its temporal structure however the sharp peaks are smoothed, which would not be handled well by the Fourier transform}
 \label{fig:household369Conv}
 \end{figure}
@@ -280,7 +288,9 @@
 \def\householdPlot{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{fig/household369}}
+%\centerline{\includegraphics[scale=0.5]{fig/household369}}
+%\hspace*{-1in}
+\input{fig/household369.tex}
 \caption{The electricity use of household No.369 over a four week period after being pre-processed}
 \label{fig:household369}
 \end{figure}
@@ -289,7 +299,9 @@
 \def\householdOneWeek{
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{fig/household369OneWeek}}
+%\centerline{\includegraphics[scale=0.5]{fig/household369OneWeek}}
+%\hspace*{-1in}
+\input{fig/household369OneWeek.tex}
 \caption{The electricity use of household No.369 over a week after being pre-processed}
 \label{fig:household369OneWeek}
 \end{figure}
@@ -300,11 +312,13 @@
         \hspace*{-3cm}                                                           
         \begin{subfigure}[b]{0.7\textwidth}
         	\hspace{2mm}
-                \includegraphics[width=\textwidth]{fig/household75}
+                %\includegraphics[width=\textwidth]{fig/household75}
+                \input{fig/household75.tex}
         \end{subfigure}%
         \begin{subfigure}[b]{0.7\textwidth}
         		%\hspace{2mm}
-                \includegraphics[width=\textwidth]{fig/household121}
+               % \includegraphics[width=\textwidth]{fig/household121}
+               \input{fig/household121.tex}
         \end{subfigure}
         \caption{The electricity consumption of two households that do not show the same pattern of consumption as other households}
         \label{fig:badHouseholds}
@@ -343,20 +357,58 @@ Electric shower     & 7,000-10,500W   &           & Electric mower       & 500-1
 Dishwasher          & 1,050-1,500W    &           & Electric drill       & 900-1,000W      \\ \hline
 Washing machine     & 1,200-3,000W    &           & Hairdryer            & 1,000W          \\ \hline
 Tumble dryer        & 2,000-4,000W    &           & Heating blanket      & 130-200W        \\ \hline
-Iron                & 1,000-1,800W    &           & Plasma TV            & 280-450         \\ \hline
-Vacuum cleaner      & 500-1,200W      &           & LCD TV               & 125-200W        \\ \hline
-Towel rail          & 250W            &           & Video, DVD or CD     & 20-60W          \\ \hline
-Deep fryer          & 1,200W          &           & TV box               & 30-40W          \\ \hline
 Toaster             & 800-1,500W      &           & Games console        & 45-190W         \\ \hline
 Kettle              & 2,200-3,000W    &           & Laptop               & 20-50W          \\ \hline
 Microwave           & 600-1,500W      &           & Desktop computer     & 80-150W         \\ \hline
 Oven                & 2,000-2,200W    &           & Tablet (charge)      & 10W             \\ \hline
 Grill/hob           & 1,000-2,000W    &           & Broadband router     & 7-10W           \\ \hline
-Dehumidifier        & 300-700W        &           & Smart phone (charge) & 2.5-5W          \\ \hline
-Extractor fan       & 1-36W           &           &                      &                 \\ \hline
+ LCD TV               & 125-200W        &           & Smart phone (charge) & 2.5-5W          \\ \hline
 \end{tabular}
 \label{tab:applianceTable}
 
 \end{table}
 }
 
+%%Class Tables
+
+\def\sgTable{
+\begin{table}[h]
+\hspace{-2cm}
+\begin{tabular}{lllll}
+%\hline
+\textbf{\begin{tabular}[c]{@{}l@{}}Social \\ Grade\end{tabular}} & \textbf{Description}                                                                                                                & \textbf{Sample Size} & \textbf{\% Sample} & \textbf{\% Pupulation} \\ \hline
+A                                                                & \begin{tabular}[c]{@{}l@{}}High managerial, administrative or \\ professional\end{tabular}                                          & 33                   & 6.4                & 4                      \\ %\hline
+B                                                                & \begin{tabular}[c]{@{}l@{}}Intermediate managerial, \\ administrative or professional\end{tabular}                                  & 95                   & 18.3               & 23                     \\ %\hline
+C1                                                               & \begin{tabular}[c]{@{}l@{}}Supervisory, clerical and junior managerial, \\ administrative or professional\end{tabular}              & 197                  & 38.0               & 29                     \\ %\hline
+C2                                                               & Skilled manual workers                                                                                                              & 128                  & 24.7               & 21                     \\ %\hline
+D                                                                & Semi and unskilled manual workers                                                                                                   & 34                   & 6.6                & 15                     \\ %\hline
+E                                                                & \begin{tabular}[c]{@{}l@{}}State pensioners, casual or \\ lowest grade workers, \\ unemployed with state benefits only\end{tabular} & 32                   & 6.2                & 8                      \\ %\hline
+\end{tabular}
+\caption{}
+\label{tab:sgTable}
+\end{table}
+}
+
+\def\childTable{
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\textbf{Class} & \textbf{Sample Size} & \textbf{\% Sample} & \textbf{\% Pupulation} \\ \hline
+Children       & 187                  & 36                 & 39                     \\
+No Children    & 332                  & 64                 & 61                    
+\end{tabular}
+\caption{}
+\label{tab:childTable}
+\end{table}
+}
+
+
+%% Visualisation of 28 days
+
+\def\to28days{
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.6]{fig/preProcess}}
+\caption{}
+\label{fig:preProcess}
+\end{figure}
+}

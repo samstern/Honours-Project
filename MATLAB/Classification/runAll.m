@@ -8,24 +8,24 @@ x=compositeFeatures(monthSum,dayAverages,x_APOD,x_POW_ratio,x_ADV,x_corr,x_fouri
 %Baseline
 baseline.acc=max([children_filtered.numChild, children_filtered.numNoChild])/numhouse;
 
+%find the best features
+%findOptFeatures;
 
-% %knn
-% %x_opt_knn=selectFeatures(x,children_filtered,'c',10,'knn');
-% [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_knn.all,children_filtered.all);
-% knn=runKNN(x_train,x_test,y_train,y_test);
-% [knn.FPR,knn.TPR,knn.T,knn.AUC] = perfcurve(y_test,knn.score(:,2),1);
-% 
-% %logistic regression
-%x_opt_log_reg_child=selectFeatures(x,children_filtered,'c',numFeatures,'log_reg');
+
+%knn
+[x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_knn_child.all,children_filtered.all);
+knn.child=runKNN(x_train,x_test,y_train,y_test);
+[knn.child.FPR,knn.child.TPR,knn.child.T,knn.child.AUC] = perfcurve(y_test,knn.child.score(:,2),1);
+ 
+%logistic regression
 [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_log_reg_child.all,children_filtered.all);
-log_reg_child=runLogReg(x_train,x_test,y_train,y_test,'c');
-[log_reg_child.FPR,log_reg_child.TPR,log_reg_child.T,log_reg_child.AUC] = perfcurve(y_test,log_reg_child.predProb,1);
-% 
-% %random forest
- x_opt_rf=selectFeatures(x,children_filtered,'c',numFeatures,'rf');
- [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_rf.all,children_filtered.all);
- randomForest= runRandomForest(x_train,x_test,y_train,y_test,'c');
- [randomForest.FPR,randomForest.TPR, randomForest.T,randomForest.AUC] = perfcurve(y_test,randomForest.scores(:,2),1);
+log_reg.child=runLogReg(x_train,x_test,y_train,y_test,'c');
+[log_reg.child.FPR,log_reg.child.TPR,log_reg_child.T,log_reg.child.AUC] = perfcurve(y_test,log_reg.child.predProb,1);
+ 
+%random forest
+[x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_rf_child.all,children_filtered.all);
+randomForest.child= runRandomForest(x_train,x_test,y_train,y_test,'c');
+[randomForest.child.FPR,randomForest.child.TPR, randomForest.child.T,randomForest.child.AUC] = perfcurve(y_test,randomForest.child.scores(:,2),1);
 % 
 % %Plot ROC
 % plot(knn.FPR,knn.TPR,'b')
@@ -42,19 +42,16 @@ log_reg_child=runLogReg(x_train,x_test,y_train,y_test,'c');
 %% Social Grade
 
 %logistic regression
-%x_opt_log_reg_sg=selectFeatures(x,social_grade,'s',numFeatures,'log_reg');
 [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_log_reg_sg.all,social_grade.all);
-log_reg_sg=runLogReg(x_train,x_test,y_train,y_test,'sg');
-%[log_reg_sg.FPR,log_reg_sg.TPR,log_reg_sg.T,log_reg_sg.AUC] = perfcurve(y_test,log_reg_sg.predProb,1);
+log_reg.sg=runLogReg(x_train,x_test,y_train,y_test,'sg');
+%[log_reg.sg.FPR,log_reg_sg.TPR,log_reg.sg.T,log_reg.sg.AUC] = perfcurve(y_test,log_reg.sg.predProb,1);
 
 %knn
-%x_opt_knn_social=selectFeatures(x,social_grade,'s',numFeatures,'knn');
 [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_knn_social.all,social_grade.all);
-knn=runKNN(x_train,x_test,y_train,y_test);
-[knn.FPR,knn.TPR,knn.T,knn.AUC] = perfcurve(y_test,knn.score(:,2),1);
+knn.sg=runKNN(x_train,x_test,y_train,y_test);
+[knn.sg.FPR,knn.sg.TPR,knn.sg.T,knn.sg.AUC] = perfcurve(y_test,knn.sg.score(:,2),1);
 
 %random forest
-%x_opt_rf_social=selectFeatures(x,social_grade,'s',numFeatures,'rf');
 [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_opt_rf_social.all,social_grade.all);
-randomForest=runRandomForest(x_train,x_test,y_train,y_test);
-[randomForest.FPR,randomForest.TPR,randomForest.T,randomForest.AUC] = perfcurve(y_test,randomForest.scores(:,2),1);
+randomForest.sg=runRandomForest(x_train,x_test,y_train,y_test);
+[randomForest.sg.FPR,randomForest.sg.TPR,randomForest.sg.T,randomForest.sg.AUC] = perfcurve(y_test,randomForest.sg.scores(:,2),1);

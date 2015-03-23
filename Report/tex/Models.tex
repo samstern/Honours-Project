@@ -4,20 +4,15 @@
 \section{Overview}
 There are several classification algorithms that can be used to perform supervised learning tasks and vary in their computational complexity, implementation and assumptions that they make about the distributions of the data \cite{Beckel_3}. Three well known methods are used to classify the data: Logistic regression, random forrest and k-nearest neighbour.
 
-All three methods are examples of discriminative classifiers. The discriminative approach is appealing in that it is directly modelling what we want, $p(y|\textbf{x})$. Also, density estimation for the class-conditional distributions is a hard problem, particularly when $\textbf{x}$ is high dimensional, so if we are just interested in classification then the generative approach may mean that we are trying to solve a harder problem than we need to\cite{Williams}. We are also fortunate in that there is no missing data. 
+All three methods are examples of discriminative classifiers. The discriminative approach is appealing in that it it directly models $p(y|\textbf{x})$. Also, density estimation for the class-conditional distributions is a hard problem, particularly when $\textbf{x}$ is high dimensional, so if we are just interested in classification, then the generative approach may mean that we are trying to solve a harder problem than we need to\cite{Williams}.
 
 \section{Logistic Regression}
 For a binary classification problem $y\in \{0,1\}$, such as discriminating between households with children ($y=1$) and households without ($y=0$), the logistic regression model learns a weight vector $\textbf{w}$ such that given some new household with feature vector $\textbf{x}$, the posterior probability of that household being in class, $p(y=1|\textbf{x})=g(\textbf{x}; \textbf{w})$ where $g(x)$ is the logistic (or sigmoid) function.
 
 \[g(\textbf{x}; \textbf{w})=\sigma(\textbf{x};\textbf{w})=\frac{1}{1-e^{-(b+\textbf{w}\cdot{\textbf{x}})}}\]
 
-There are numerous pros to using logistic regression for the household classification task. Firstly, logistic regression is interpretable. After the model has been trained and the weight vectors established, they can be used to determine how important each feature is to the classifier. Secondly, the confidence of a prediction can be inferred, resulting in interpretable results.
+There are numerous advantages to using logistic regression for the household classification task. Firstly, logistic regression is interpretable. After the model has been trained and the weight vectors established, they can be used to determine how important each feature is to the classifier. Secondly, the confidence of a prediction can be inferred, resulting in interpretable results. There are, however, also drawbacks to logistic regression. Since the maximum likelihood function does not have a closed form solution, an iterative process must be used instead to learn the weights, which is not guaranteed to converge. 
 
-
-\begin{itemize}
-\item interpretable -can look at the weights
-\item gives a confidence in our predictions -probability
-\end{itemize}
 
 \subsection{Multi-class Logistic Regression}
 
@@ -27,7 +22,7 @@ To extend the problem of logistic regression to the multi-class case, often time
 
 Although this is a valid method of classifying the data, it fails to acknowledge the ordinal property of the classes and assumes the data to be nominal. Ideally we would be able to build a model that exploits the fact that some classes are more similar than others. For example, if the true label of a household is B, then we would rather misclassify the instance as A or C1 than as D or E. Luckily, ordinal logistic regression (or ordered ligit) can be used to build a model that incorporated the ordering of the classes.
 
-Defining $p_i$ as the proportion of instances that are in class $i$, then the ordered logit model has the form
+Using McCullagh's proportional odds model \cite{McCullagh}, $p_i$ is defined as the proportion of instances that are in class $i$, then the ordered logit model has the form
 \begin{align*}
 logit(p_1) &=\log(\frac{p_1}{1-p_1}) = b_1 +\textbf{w}\cdot{\textbf{x}} \\
 logit(p_2) &=\log(\frac{p_1+p_2}{1-p_1-p_2}) = b_2 +\textbf{w}\cdot{\textbf{x}}\\
@@ -35,14 +30,34 @@ logit(p_2) &=\log(\frac{p_1+p_2}{1-p_1-p_2}) = b_2 +\textbf{w}\cdot{\textbf{x}}\
 logit(p_6) &=\log(\frac{p_1+p_2+p_3+p_4+p_5+p_6}{1-p_1-p_2-p_3-p_4-p_5-p_6}) = b_6 +\textbf{w}\cdot{\textbf{x}}
 \end{align*}
 
-The model assumes \textit{proportional odds} which is that each explanatory variable exerts the same effect on each cumulative logit. This translates to the assumption that the weights are the same for each cutoff, but rather the classes have different intercepts $b$.
+The model assumes \textit{proportional odds} which is that each explanatory variable exerts the same effect on each cumulative logit. This translates to the assumption that the weights are the same for each cutoff, but rather the classes have different intercepts $b$. A pragmatic description of regression models for ordinal data in the context of machine learning is given by Herbrich et. al. \cite{Herbrich}.
 \subsection{Implementation}
 
-\section{Random Forrest}
+\section{Random Forest}
 
+Random Forest is a classification method that grows an ensemble of decision trees from a set of training instances and determines the class of a new instance by allowing the trees in the ensemble to vote on the most popular class. For $N$ training sets and $M$ features, each tree is grown by:
+
+\begin{itemize}
+\item Randomly sample $n$ training instances from the $N$ training with replacement (this will be the training sample to grow the tree).
+\item At each node, $m$ features are selected at random (where $m < M$). The best of the $m$ features is used to split the node.
+\item The trees are grown to the largest possible size (no pruning takes place).
+\end{itemize}
+
+A new instance is then classified by running it through each tree, allowing each of the trees to assign the instance a class. The predicted class of the test instance is then taken given by the vote of each tree.
+
+Although (in contrast to building a single decision tree), it is not easy to visualise a random forest, it is still possible to gain an estimate of the variables that are most important for classification and can be used on data sets with a large number of features (see section \ref{sec:dimensionalityReduction}). Random forests have been shown to perform particularly well on unseen data compared to other classification methods as they avoid overfitting by only ever looking at a random subset of features and data \cite{Breiman}. 
+
+\subsection{Implementation}
+
+MATLAB's builtin treeBagger class was used to build the random forest. Because bootstrap aggregation is used to randomly sample the training data, the out-of-bag estimates were used to optimise the model's parameters, instead of using cross-validation. The parameters to optimise are the number of trees and size of features $m$ to consider for splitting each node. 
 
 \section{K-Nearest Neighbour}
 
+K-nearest neighbor is a fundamental method for classification as it is intuitive and requires little \textit{a priori} knowledge about the data. It is a non-parametric model that classifies an unlabeled input by finding the $k$-nearest training points in feature space, using the classes of the nearest points to predict the class of the unlabeled point \cite{Peterson}. 
+
+\subsection{Implementation}
+
+MATLAB's fitknn tool was used to build a nearest neighbour classification model and the optimum parameters were found using 5-fold cross-validation. The parameters to find were the distance measure, search method and $k$ (the number of neighbours). 
 
 %\begin{itemize}
 %\item number of instances is relatively small so parametric classifier won't be too expensive. 
