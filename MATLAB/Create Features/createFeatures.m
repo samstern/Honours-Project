@@ -38,7 +38,7 @@ for i=1:numhouse_data
 end
 
 %Convert from Watts to Watt Hours
-%x_filtered=x_filtered.\6;
+%x_filtered=x_filtered.\0.6;
 
 %%Gaussian Filter to smooth the data
 g = gausswin(15);

@@ -3,7 +3,7 @@
 function x_opt = selectFeatures(x,y,task,numfeatures,classifier)
     ys=y.all;
     xs=x.all;
-    c = cvpartition(y.all,'k',2);
+    c = cvpartition(y.all,'k',5);
     opts = statset('display','iter','TolTypeFun','abs');
     fun = @(XT,yT,Xt,yt)(sum(~strcmp(yt,classify(Xt,XT,yT))));
     funKnn = @(x_tst,y_tst,x_trn,y_trn)(getfield(runKNN(x_trn,x_tst,y_trn,y_tst),'loss'));

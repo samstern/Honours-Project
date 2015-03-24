@@ -33,6 +33,8 @@ logit(p_6) &=\log(\frac{p_1+p_2+p_3+p_4+p_5+p_6}{1-p_1-p_2-p_3-p_4-p_5-p_6}) = b
 The model assumes \textit{proportional odds} which is that each explanatory variable exerts the same effect on each cumulative logit. This translates to the assumption that the weights are the same for each cutoff, but rather the classes have different intercepts $b$. A pragmatic description of regression models for ordinal data in the context of machine learning is given by Herbrich et. al. \cite{Herbrich}.
 \subsection{Implementation}
 
+To build the binary logistic regression classifier, MATLAB's fitglm tool which fits a generalised linear model to the data. To make the resulting model logistic, a binomial distribution and logit link function were specified. For the case of multi-class classification, two models were created. One McCullagh's proportional odds model (treating the data as ordinal) and one treating the data as nominal. Both methods were implemented in matlab using the mnrfit tool
+
 \section{Random Forest}
 
 Random Forest is a classification method that grows an ensemble of decision trees from a set of training instances and determines the class of a new instance by allowing the trees in the ensemble to vote on the most popular class. For $N$ training sets and $M$ features, each tree is grown by:
