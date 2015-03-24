@@ -38,6 +38,10 @@ This is not as straight forward for random forests and knn as they are not proba
 
 In computing the ROC curve to evaluate the binary classification task of discriminating between households with and without children is straight forward, it is straightforward te determine which class is `positive' and which is `negative' (has children is positive). However for multi-class classification it is unclear what is `positive' and what is `negative'. When evaluating their socio-economic classifier, Beckel et. al. group nearby groups together and then use a one-versus-all approach\cite{Beckel_2,Beckel_3}. A similar method is used, analogous to the \textit{accuracy within n} method described above, where classes within $n$ are considered positive and all else are negative.
 
+The final metric that is presented is the Matthews correlation coefficient (MCC) which is a value between -1 and +1 representing the correlation between the predicted and true values of a binary classifier. A MCC of -1 indicates that that there is no correlation between the predicted a true class while a value of +1 would indicate a perfect classifier while a value of 0 means it is no better or worse than a random guess. MCC is a worthwhile metric to report as it gives a value to the performance without inflating the imbalances in class sizes \cite{Powers}. The MCC can be calculated using the formula:
+
+\[MCC=\frac{TP\times TN-FP\times FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}\]
+
 %\begin{itemize}
 %\item confusion matrix
 %\item accuracy

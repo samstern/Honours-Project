@@ -1,12 +1,23 @@
-function sgEvaluate(log_reg,rf,knn,y_test)
-acc=[log_reg.accuracy,rf.accuracy,knn.accuracy]%
-acc1=[accuracyWithinN(log_reg,1),accuracyWithinN(rf,1),accuracyWithinN(knn,1)]%
-acc2=[accuracyWithinN(log_reg,2),accuracyWithinN(rf,2),accuracyWithinN(knn,2)]%
-probAB=[binarizeProb(log_reg,[5,6]),binarizeProb(rf,[5,6]),binarizeProb(knn,[5,6])];
-probC1C2=[binarizeProb(log_reg,[3,4]),binarizeProb(rf,[3,4]),binarizeProb(knn,[3,4])];
-probDE=[binarizeProb(log_reg,[1,2]),binarizeProb(rf,[1,2]),binarizeProb(knn,[1,2])];
-[l,r,k]=perfCurve(probC1C2,y_test);
-plot(r.FPR,r.TPR)
+function sgEvaluate(ord,nom,rf,knn,ordMan,nomMan,rfMan,knnMan,baseline,y_test)
+%--Accuracy
+accuracies=[ord.accuracy,ordMan.accuracy;nom.accuracy,nomMan.accuracy;rf.accuracy,rfMan.accuracy;knn.accuracy,knnMan.accuracy]
+labels={'Ordinal Logistic Regression','Nominal Logistic Regression','Random Forest','K Nearest Neighbor'};
+p1=bar(accuracies*100);
+ylim([0 100])
+title('Classifier Accuracy')
+ylabel('%');
+set(gca,'XTickLabel',labels)
+hold on
+p2=plot(xlim,[baseline.accuracy baseline.accuracy].*100,'black')
+legend('SFS','Man','Baseline')
+hold off
+% acc1=[accuracyWithinN(log_reg,1),accuracyWithinN(rf,1),accuracyWithinN(knn,1)]%
+% acc2=[accuracyWithinN(log_reg,2),accuracyWithinN(rf,2),accuracyWithinN(knn,2)]%
+% probAB=[binarizeProb(log_reg,[5,6]),binarizeProb(rf,[5,6]),binarizeProb(knn,[5,6])];
+% probC1C2=[binarizeProb(log_reg,[3,4]),binarizeProb(rf,[3,4]),binarizeProb(knn,[3,4])];
+% probDE=[binarizeProb(log_reg,[1,2]),binarizeProb(rf,[1,2]),binarizeProb(knn,[1,2])];
+% [l,r,k]=perfCurve(probC1C2,y_test);
+% plot(r.FPR,r.TPR)
 end
 
 

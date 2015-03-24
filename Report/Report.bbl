@@ -1,32 +1,35 @@
 \begin{thebibliography}{1}
 
+\bibitem{Stefanowski}
+JERZY STEFANOWSKI.
+\newblock Data mining - evaluation of classifiers.
+\newblock Poznan University of Technology.
+
+\bibitem{Gaudette}
+Lisa Gaudette and Nathalie Japkowicz.
+\newblock title = {Evaluation Methods for Ordinal Classification},.
+\newblock In {\em Advances in Artificial Intelligence}.
+
+\bibitem{Waegeman}
+Willem Waegeman, Bernard De~Baets, and Luc Boullart.
+\newblock Roc analysis in ordinal regression learning.
+\newblock {\em Pattern Recognition Letters}, 29(1):1--9, 2008.
+
+\bibitem{Beckel_2}
+Christian Beckel, Leyna Sadamori, and Silvia Santini.
+\newblock {\em Towards automatic classifi-cation of private households using
+  electricity consumption data}, pages 75--86.
+\newblock ACM, 2013.
+
 \bibitem{Beckel_3}
 Christian Beckel, Leyna Sadamori, Thorsten Staake, and Silvia Santini.
 \newblock Revealing household characteristics from smart meter data.
 \newblock {\em Energy}, 78:397--410, 2014.
 
-\bibitem{Williams}
-Carl~Edward Rasmussen and Christopher K.~I Williams.
-\newblock {\em Gaussian processes for machine learning}.
-\newblock MIT Press, 2006.
-
-\bibitem{McCullagh}
-Peter McCullagh.
-\newblock Regressuib models for ordinal data.
-\newblock {\em Journal of the Royal Statistical Society}, 1980.
-
-\bibitem{Herbrich}
-Klaus Ob~ermayer Ralf~Herbrich, Thore Graep~el.
-\newblock Regression mo dels for ordinal data: A machine learning approach.
-\newblock Technical report, Technical University of Berlin, 1999.
-
-\bibitem{Breiman}
-leo Breiman.
-\newblock Random forests.
-\newblock {\em Machine learning}, 2001.
-
-\bibitem{Peterson}
-Leif~E. Peterson.
-\newblock K-nearest neighbor, 2009.
+\bibitem{Powers}
+David M~W Powers.
+\newblock Evaluation: From precision, recall and f-factor to roc, informedness,
+  markedness and correlation.
+\newblock Technical report, University of South Australia, 2007.
 
 \end{thebibliography}

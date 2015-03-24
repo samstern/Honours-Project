@@ -1,12 +1,14 @@
 %% create a training and test set, then run the classification algorithms
 
 numFeatures=10;
+
+%Baseline
+baseline.child.accuracy=max([children_filtered.numChild, children_filtered.numNoChild])/numhouse;
+baseline.ord.accuracy=max([social_grade.numE,social_grade.numD,social_grade.numC2,social_grade.numC1,social_grade.numB,social_grade.numA])/numhouse;
+
 %% Children
 x=compositeFeatures(monthSum,dayAverages,x_APOD,x_POW_ratio,x_ADV,x_corr,x_fourier);
 
-
-%Baseline
-baseline.accuracy=max([children_filtered.numChild, children_filtered.numNoChild])/numhouse;
 
 %find the best features
 %findOptFeatures;
@@ -16,6 +18,7 @@ baseline.accuracy=max([children_filtered.numChild, children_filtered.numNoChild]
 [x_test.child.knn,x_train.child.knn,y_test.child.knn,y_train.child.knn]=create_test_set(numhouse,x_opt_knn_child.all,children_filtered.all);
 knn.child=runKNN(x_train.child.knn,x_test.child.knn,y_train.child.knn,y_test.child.knn);
 [knn.child.FPR,knn.child.TPR,knn.child.T,knn.child.AUC] = perfcurve(y_test.child.knn,knn.child.score(:,2),1);
+
  
 %logistic regression
 [x_test.child.log_reg,x_train.child.log_reg,y_test.child.log_reg,y_train.child.log_reg]=create_test_set(numhouse,x_opt_log_reg_child.all,children_filtered.all);
@@ -59,3 +62,6 @@ knn.sg=runKNN(x_train.sg.knn,x_test.sg.knn,y_train.sg.knn,y_test.sg.knn);
 [x_test.sg.rf,x_train.sg.rf,y_test.sg.rf,y_train.sg.rf]=create_test_set(numhouse,x_opt_rf_social.all,social_grade.all);
 randomForest.sg=runRandomForest(x_train.sg.rf,x_test.sg.rf,y_train.sg.rf,y_test.sg.rf);
 [randomForest.sg.FPR,randomForest.sg.TPR,randomForest.sg.T,randomForest.sg.AUC] = perfcurve(y_test.sg.rf,randomForest.sg.score(:,2),1);
+
+%manual set
+[x_test.sg.man,x_train.sg.man,y_test.sg.man,y_train.sg.man]=create_test_set(numhouse,x_man.sg.all,social_grade.all);

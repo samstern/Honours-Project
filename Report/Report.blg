@@ -3,47 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Report.aux
 The style file: unsrt.bst
 Database file #1: Bib/bibl2.bib
-Warning--entry type for "Peterson" isn't style-file defined
---line 363 of file Bib/bibl2.bib
+Warning--empty year in Gaudette
 You've used 6 entries,
             1791 wiz_defined-function locations,
-            482 strings with 4195 characters,
-and the built_in function-call counts, 932 in all, are:
-= -- 76
-> -- 38
-< -- 0
-+ -- 16
-- -- 10
-* -- 36
-:= -- 167
-add.period$ -- 17
+            485 strings with 4436 characters,
+and the built_in function-call counts, 1191 in all, are:
+= -- 99
+> -- 52
+< -- 1
++ -- 20
+- -- 14
+* -- 65
+:= -- 200
+add.period$ -- 18
 call.type$ -- 6
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 46
-empty$ -- 101
-format.name$ -- 10
-if$ -- 205
+cite$ -- 7
+duplicate$ -- 58
+empty$ -- 121
+format.name$ -- 14
+if$ -- 270
 int.to.chr$ -- 0
 int.to.str$ -- 6
 missing$ -- 5
-newline$ -- 32
+newline$ -- 33
 num.names$ -- 6
-pop$ -- 23
+pop$ -- 20
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 24
 stack$ -- 0
-substring$ -- 21
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 50
+swap$ -- 12
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 7
+warning$ -- 1
+while$ -- 10
 width$ -- 7
-write$ -- 62
+write$ -- 64
 (There was 1 warning)
