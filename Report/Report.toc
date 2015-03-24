@@ -1,31 +1,11 @@
 \contentsline {chapter}{Contents}{1}
-\contentsline {chapter}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {1.1}Introduction}{2}
-\contentsline {section}{\numberline {1.2}Smart Meters}{3}
-\contentsline {section}{\numberline {1.3}Related Work}{3}
-\contentsline {section}{\numberline {1.4}This Project}{4}
-\contentsline {chapter}{\numberline {2}Data}{5}
-\contentsline {section}{\numberline {2.1}Overview of the HES Dataset}{5}
-\contentsline {section}{\numberline {2.2}Extracting the Data and Pre-Processing}{5}
-\contentsline {section}{\numberline {2.3}Household Classes}{7}
-\contentsline {section}{\numberline {2.4}Discussion}{8}
-\contentsline {section}{\numberline {2.5}Issues}{9}
-\contentsline {chapter}{\numberline {3}Feature Exploration and Extraction}{12}
-\contentsline {section}{\numberline {3.1}Types of Features}{12}
-\contentsline {section}{\numberline {3.2}Creating Features}{13}
-\contentsline {section}{\numberline {3.3}Periodicity}{23}
-\contentsline {section}{\numberline {3.4}Dimensionality Reduction}{25}
-\contentsline {subsection}{\numberline {3.4.1}Implementation}{26}
-\contentsline {chapter}{\numberline {4}Models}{28}
-\contentsline {section}{\numberline {4.1}Overview}{28}
-\contentsline {section}{\numberline {4.2}Logistic Regression}{28}
-\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{29}
-\contentsline {subsection}{\numberline {4.2.2}Implementation}{29}
-\contentsline {section}{\numberline {4.3}Random Forest}{29}
-\contentsline {subsection}{\numberline {4.3.1}Implementation}{30}
-\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{30}
-\contentsline {subsection}{\numberline {4.4.1}Implementation}{30}
-\contentsline {chapter}{\numberline {5}Results}{31}
-\contentsline {section}{\numberline {5.1}Evaluation Methods}{31}
-\contentsline {section}{\numberline {5.2}Classifiers}{32}
-\contentsline {chapter}{Bibliography}{33}
+\contentsline {chapter}{\numberline {1}Models}{2}
+\contentsline {section}{\numberline {1.1}Overview}{2}
+\contentsline {section}{\numberline {1.2}Logistic Regression}{2}
+\contentsline {subsection}{\numberline {1.2.1}Multi-class Logistic Regression}{3}
+\contentsline {subsection}{\numberline {1.2.2}Implementation}{3}
+\contentsline {section}{\numberline {1.3}Random Forest}{3}
+\contentsline {subsection}{\numberline {1.3.1}Implementation}{4}
+\contentsline {section}{\numberline {1.4}K-Nearest Neighbour}{4}
+\contentsline {subsection}{\numberline {1.4.1}Implementation}{4}
+\contentsline {chapter}{Bibliography}{5}

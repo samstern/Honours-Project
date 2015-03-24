@@ -6,7 +6,7 @@ x=compositeFeatures(monthSum,dayAverages,x_APOD,x_POW_ratio,x_ADV,x_corr,x_fouri
 
 
 %Baseline
-baseline.acc=max([children_filtered.numChild, children_filtered.numNoChild])/numhouse;
+baseline.accuracy=max([children_filtered.numChild, children_filtered.numNoChild])/numhouse;
 
 %find the best features
 %findOptFeatures;

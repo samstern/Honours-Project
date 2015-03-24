@@ -3,7 +3,7 @@
 This section discusses the quantitative evaluation methods used to determine the potential for each of the classifiers to reveal household characteristics and then analyses the results from training and running each classifier.
 
 \section{Evaluation Methods}
-
+\label{sec:evalMethods}
 For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification problem, returns a $K\times K$ matrix where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
 
 
@@ -48,5 +48,15 @@ In computing the ROC curve to evaluate the binary classification task of discrim
 %\item explain how cross validation was used
 %\end{itemize}
 
+\section{Feature Selection}
+
+As explained in section \ref{sec:dimensionalityReduction}, SFS was used to determine which features are of greatest value for each classifier. What was noticed, however, is that when running the SFS algorithm multiple times, the selected features were not always the same for each of the classifiers (even with cross validation). This was seen particularly in random forest (as might be expected for an algorithm that uses bootstrap aggregation).  Therefore, the feature selection algorithm was run multiple times and the features that appeared most often were used. To evaluate the feature selection method, two additional sets of features were made (one for each classification problem) by choosing features based on how they appeared to seperate classes in \ref{sec:creatingFeatures}. All classification models are evaluated using the features found by SFS as well as the features found manually. The lists of features used for each classifier are outlined in tables \ref{tab:childFeatures} and \ref{tab:socioFeatures}. 
+
+\childFeatures
+\socioFeatures
 
 \section{Classifiers}
+
+Here the results of the classifiers are presented of running each model on unseen data as outlined in \ref{sec:evalMethods}.
+
+\subsection{Discriminating Between Households With and Without Children}

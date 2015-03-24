@@ -412,3 +412,57 @@ No Children    & 332                  & 64                 & 61
 \label{fig:preProcess}
 \end{figure}
 }
+
+%% Optimal Features Table
+\def\childFeatures{
+\begin{table}[h]
+\centering
+\tabcolsep=0.1cm
+\hspace{-2cm}
+\small 
+\begin{tabular}{llll}
+\multicolumn{4}{c}{\textbf{Children}} 
+ \\ \hline
+\multicolumn{3}{|l|}{\textbf{SFS}}                   & \multicolumn{1}{l|}{\textbf{Manual}}        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Log Reg}}           & \multicolumn{1}{l|}{\textbf{KNN}}              & \multicolumn{1}{l|}{\textbf{Rand Forest}}      & \multicolumn{1}{l|}{\textbf{}}              \\ \hline
+\multicolumn{1}{|l|}{Monday Daytime}             & \multicolumn{1}{l|}{Monday Evening}            & \multicolumn{1}{l|}{Thursday Total}            & \multicolumn{1}{l|}{Month Total}            \\ \hline
+\multicolumn{1}{|l|}{Tuesday Evening}            & \multicolumn{1}{l|}{Monday Night}              & \multicolumn{1}{l|}{Sunday Night}              & \multicolumn{1}{l|}{Sunday Daytime}         \\ \hline
+\multicolumn{1}{|l|}{Wednesday Night}            & \multicolumn{1}{l|}{Wednesday Evening}         & \multicolumn{1}{l|}{Monday Morning}            & \multicolumn{1}{l|}{Saturday Evening}       \\ \hline
+\multicolumn{1}{|l|}{Thursday Daytime}           & \multicolumn{1}{l|}{Friday Morning}            & \multicolumn{1}{l|}{Monday Daytime}            & \multicolumn{1}{l|}{Thursday Variance}      \\ \hline
+\multicolumn{1}{|l|}{Friday Morning}             & \multicolumn{1}{l|}{Saturday/Weekday Ratio}    & \multicolumn{1}{l|}{Monday Evening}            & \multicolumn{1}{l|}{Monday Morning}         \\ \hline
+\multicolumn{1}{|l|}{Tuesday Variance}           & \multicolumn{1}{l|}{Sunday Variance}           & \multicolumn{1}{l|}{Tuesday Daytime}           & \multicolumn{1}{l|}{Friday Evening}         \\ \hline
+\multicolumn{1}{|l|}{Thursday Variance}          & \multicolumn{1}{l|}{Monday Variance}           & \multicolumn{1}{l|}{Friday Night}              & \multicolumn{1}{l|}{Saturday Variance}      \\ \hline
+\multicolumn{1}{|l|}{Saturday Variance}          & \multicolumn{1}{l|}{$\rho$(Monday Thursday)}   & \multicolumn{1}{l|}{Thursday Variance}         & \multicolumn{1}{l|}{Monday Total}           \\ \hline
+\multicolumn{1}{|l|}{$\rho$(Monday Tuesday)}     & \multicolumn{1}{l|}{$\rho$(Monday Friday)}     & \multicolumn{1}{l|}{Friday Variance}           & \multicolumn{1}{l|}{Saturday Total}         \\ \hline
+\multicolumn{1}{|l|}{$\rho$(Wednesday Thursday)} & \multicolumn{1}{l|}{$\rho$(Tuesday Wednesday)} & \multicolumn{1}{l|}{$\rho$(Monday Wednesday)} & \multicolumn{1}{l|}{$\rho$(Monday Tuesday)} \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:childFeatures}
+\end{table}
+}
+
+\def\socioFeatures{
+\begin{table}[h]
+\tabcolsep=0.1cm
+\hspace{-1cm}
+\footnotesize 
+\begin{tabular}{lllll}
+\multicolumn{4}{c}{\textbf{Social Grade}} 
+ \\ \hline
+\multicolumn{1}{|l|}{\textbf{}}                   & \multicolumn{1}{l|}{\textbf{SFS}}         & \multicolumn{1}{l|}{\textbf{}}                   & \multicolumn{1}{l|}{\textbf{}}                   & \multicolumn{1}{l|}{\textbf{Manual}}        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Ord Log Reg}}        & \multicolumn{1}{l|}{\textbf{Nom Log Reg}} & \multicolumn{1}{l|}{\textbf{KNN}}                & \multicolumn{1}{l|}{\textbf{Rand Forest}}        & \multicolumn{1}{l|}{\textbf{}}              \\ \hline
+\multicolumn{1}{|l|}{Monday Morning}              & \multicolumn{1}{l|}{Friday Total}         & \multicolumn{1}{l|}{Friday Total}                & \multicolumn{1}{l|}{Sunday Total}                & \multicolumn{1}{l|}{Monday Night}           \\ \hline
+\multicolumn{1}{|l|}{Tuesday Morning}             & \multicolumn{1}{l|}{Monday Morning}       & \multicolumn{1}{l|}{Tuesday Morning}             & \multicolumn{1}{l|}{Wednesday Total}             & \multicolumn{1}{l|}{Tuesday Variance}       \\ \hline
+\multicolumn{1}{|l|}{Tuesday Daytime}             & \multicolumn{1}{l|}{Tuesday Morning}      & \multicolumn{1}{l|}{Wednesday Night}             & \multicolumn{1}{l|}{Monday Morning}              & \multicolumn{1}{l|}{Monday Total}           \\ \hline
+\multicolumn{1}{|l|}{Friday Night}                & \multicolumn{1}{l|}{Tuesday Daytime}      & \multicolumn{1}{l|}{Thursday Morning}            & \multicolumn{1}{l|}{Monday Night}                & \multicolumn{1}{l|}{Tuesday day}            \\ \hline
+\multicolumn{1}{|l|}{Friday Variance}             & \multicolumn{1}{l|}{Wednesday Morning}    & \multicolumn{1}{l|}{Friday Morning}              & \multicolumn{1}{l|}{Wednesday Morning}           & \multicolumn{1}{l|}{Sunday Night}           \\ \hline
+\multicolumn{1}{|l|}{Saturday Variance}           & \multicolumn{1}{l|}{Wednesday Daytime}    & \multicolumn{1}{l|}{Saturday Evening}            & \multicolumn{1}{l|}{Wednesday Evening}           & \multicolumn{1}{l|}{Thursday Night}         \\ \hline
+\multicolumn{1}{|l|}{$\rho$(Monday Tuesday)}      & \multicolumn{1}{l|}{Wednesday Evening}    & \multicolumn{1}{l|}{Sunday Total}              & \multicolumn{1}{l|}{Friday Night}                & \multicolumn{1}{l|}{$\rho$(Tuesday,Friday)} \\ \hline
+\multicolumn{1}{|l|}{$\rho$(Monday Friday)}       & \multicolumn{1}{l|}{Fridayday Morning}    & \multicolumn{1}{l|}{Thursday Variance}           & \multicolumn{1}{l|}{Thursday Variance}           & \multicolumn{1}{l|}{Thursday Total}         \\ \hline
+\multicolumn{1}{|l|}{$\rho$(Wednesday Fridayday)} & \multicolumn{1}{l|}{Friday Night}         & \multicolumn{1}{l|}{Friday Variance}             & \multicolumn{1}{l|}{$\rho$(Monday Friday)}       & \multicolumn{1}{l|}{Saturday Night}         \\ \hline
+\multicolumn{1}{|l|}{First Fourier Feature}       & \multicolumn{1}{l|}{Saturday Daytime}     & \multicolumn{1}{l|}{$\rho$(Wednesday, Thursday)} & \multicolumn{1}{l|}{First Fourier Feature} & \multicolumn{1}{l|}{Friday Evening}         \\ \hline
+\end{tabular}
+\caption{}
+\label{tab:socioFeatures}
+\end{table}
+}

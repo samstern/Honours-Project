@@ -12,6 +12,7 @@ Numerous statistical methods presume that input data follows a normal distributi
 
 
 \section{Creating Features}
+\label{sec:creatingFeatures}
 One method of extracting features is to compute as many different types as possible, compare them all and chose those that best discriminate the classes. Households can be further split into weeks, days and even hours. Consumption figures and statistical properties can then be measure for each of these intervals. While this method does provide more coverage and therefore a greater chance of finding the best features, it ignores any domain knowlege that we might have and is therefore potentially wasteful of the limited resources available to do the project. 
 
 Instead of creating features in an ad hoc manner, a more cost efficient approach was taken. Feature selection was done in the following way: 1) Assumptions were made regarding the distinction between classes (e.g., households with children use more energy overall). 2) Features were created to capture this distinction (e.g., the average energy over a 4-week period). 3) Tests were performed to evaluate the validity of the assumption. These tests varied in thoroughness as it was sometimes obvious from visualising the resultant features that they did/did not discriminate between classes. At other times, more sophisticated methods were used, as described in \featureSelectionSection.

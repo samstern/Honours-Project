@@ -9,6 +9,7 @@ log_reg.score=evaluated.predProb;
 %log_reg.loss=loss(mdl,x_test,y_test);
 log_reg.confusion = confusionmat(y_test,log_reg.yhat);
 log_reg.accuracy=sum(diag(log_reg.confusion))/sum(sum(log_reg.confusion));
+log_reg.er=sqrt(mean((log_reg.score(:,1)-y_test).^2));
 log_reg.SSE=mdl.SSE;
 temp=num2cell(log_reg.confusion(:));
 [log_reg.TP,log_reg.FP, log_reg.FN, log_reg.TP]=temp{:};
