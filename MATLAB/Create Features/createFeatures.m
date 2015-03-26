@@ -39,6 +39,7 @@ end
 
 %Convert from Watts to Watt Hours
 %x_filtered=x_filtered.\0.6;
+%x_filtered*10000;
 
 %%Gaussian Filter to smooth the data
 g = gausswin(15);

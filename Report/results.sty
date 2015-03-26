@@ -1,0 +1,70 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{results}
+  [2011/01/11 v0.01 LaTeX package for my own purpose]
+\RequirePackage{graphicx}
+\RequirePackage{subcaption}
+\RequirePackage{float}
+\RequirePackage[font=scriptsize]{subfig}
+\RequirePackage[font=small]{caption}
+%\graphicspath{/Users/samstern/Uni/Honours_Project/Report}
+
+\def\childAccuracy{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig/Results/child_Acc}
+\caption{The accuracy of each classifier when used to classify unseen data defined as the number households classified correctly as a percentage of the total households in the test set. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data}
+\label{fig:childAccuracy}
+\end{figure}
+}
+
+\def\childMat{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig/Results/child_Matthews}
+\caption{The Matthews correlation coefficient of each classifier when used to classify unseen data. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data}
+\label{fig:childMat}
+\end{figure}
+}
+
+\def\childROC{
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{fig/Results/child_ROC}
+     \caption{Reciever operating curve curves that show the trade-off between true positive rate and false positive rate.}
+      \label{fig:childROC}
+ \end{figure}
+}
+
+\def\childROCMAN{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{fig/Results/child_ROC_MAN}
+\caption{The receiver operating characteristic for the features found by visualising the data}
+\label{fig:childROCMAN}
+\end{figure}
+}
+
+\def\childROCSFS{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=3in]{fig/Results/child_ROC_SFS}
+\caption{The receiver operating characteristic for the features found by the SFS method}
+\label{fig:childROCSFS}
+\end{figure}
+}
+
+\def\childResults{
+\begin{table}[h]
+\centering
+\footnotesize
+\tabcolsep=0.1cm
+\begin{tabular}{lllllllllll}
+\multicolumn{11}{c}{\textbf{Children vs No Children}}                                                                                                                                                                                                                                                                                                      \\ \cline{2-11} 
+\multicolumn{1}{c|}{}                        & \multicolumn{2}{c|}{\textbf{Accuracy (\%)}}                      & \multicolumn{2}{c|}{\textbf{MCC}}                         & \multicolumn{2}{c|}{\textbf{ROC Area}}                    & \multicolumn{2}{c|}{\textbf{TPR}}                         & \multicolumn{2}{c|}{\textbf{TNR}}                         \\ \hline
+\multicolumn{1}{|l|}{\textbf{Classifier}}    & \multicolumn{1}{l|}{SFS}     & \multicolumn{1}{l|}{MAN}     & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Log Reg}}       & \multicolumn{1}{l|}{83.6538} & \multicolumn{1}{l|}{74.0385} & \multicolumn{1}{l|}{0.6457} & \multicolumn{1}{l|}{0.4159} & \multicolumn{1}{l|}{0.884}  & \multicolumn{1}{l|}{0.7831} & \multicolumn{1}{l|}{0.8429} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.5833} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Random Forest}} & \multicolumn{1}{l|}{80.7692} & \multicolumn{1}{l|}{78.8462} & \multicolumn{1}{l|}{0.5866} & \multicolumn{1}{l|}{0.5012} & \multicolumn{1}{l|}{0.8397} & \multicolumn{1}{l|}{0.8357} & \multicolumn{1}{l|}{0.8143} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.7941} & \multicolumn{1}{l|}{0.5882} \\ \hline
+\multicolumn{1}{|l|}{\textbf{KNN}}           & \multicolumn{1}{l|}{82.6923} & \multicolumn{1}{l|}{75.9615} & \multicolumn{1}{l|}{0.6013} & \multicolumn{1}{l|}{0.4289} & \multicolumn{1}{l|}{0.8502} & \multicolumn{1}{l|}{0.7905} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.8714} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.5294} \\ \hline
+\end{tabular}
+\end{table}
+}

@@ -1,6 +1,6 @@
-function [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_data,y_data)
+function [x_test,x_train,y_test,y_train]=create_test_set(numhouse,x_data,y_data,testHouseholds)
 x_data_size = size(x_data);
-testHouseholds=randsample(numhouse,round(numhouse/5));
+%testHouseholds=randsample(numhouse,round(numhouse/5));
 length(testHouseholds);
 x_test=zeros(length(testHouseholds),x_data_size(2));
 x_train = zeros(x_data_size(1)-length(testHouseholds),x_data_size(2));

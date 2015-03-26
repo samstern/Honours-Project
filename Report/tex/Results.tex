@@ -36,11 +36,28 @@ From these statistics, it is common to plot an ROC curve, which is a plot of the
 
 This is not as straight forward for random forests and knn as they are not probabilistic classifiers. Probabilities can, however be generated from the classifier results. For random forest the decision boundary may be the ratio of number of trees that vote in favor of assigning an unseen instance to class 1 and the total number of trees. In knn it is the number of nearest neighbors that are of class 1 divided by the total number of nearest neighbors.
 
-In computing the ROC curve to evaluate the binary classification task of discriminating between households with and without children is straight forward, it is straightforward te determine which class is `positive' and which is `negative' (has children is positive). However for multi-class classification it is unclear what is `positive' and what is `negative'. When evaluating their socio-economic classifier, Beckel et. al. group nearby groups together and then use a one-versus-all approach\cite{Beckel_2,Beckel_3}. A similar method is used, analogous to the \textit{accuracy within n} method described above, where classes within $n$ are considered positive and all else are negative.
+In computing the ROC curve to evaluate the binary classification task of discriminating between households with and without children is straight forward, it is straightforward te determine which class is `positive' and which is `negative'. However for multi-class classification it is unclear what is `positive' and what is `negative'. When evaluating their socio-economic classifier, Beckel et. al. group nearby groups together and then use a one-versus-all approach\cite{Beckel_2,Beckel_3}. A similar method is used, analogous to the \textit{accuracy within n} method described above, where classes within $n$ are considered positive and all else are negative.
 
-The final metric that is presented is the Matthews correlation coefficient (MCC) which is a value between -1 and +1 representing the correlation between the predicted and true values of a binary classifier. A MCC of -1 indicates that that there is no correlation between the predicted a true class while a value of +1 would indicate a perfect classifier while a value of 0 means it is no better or worse than a random guess. MCC is a worthwhile metric to report as it gives a value to the performance without inflating the imbalances in class sizes \cite{Powers}. The MCC can be calculated using the formula:
+The final metric that is presented is the Matthews correlation coefficient (MCC) which is a value between -1 and +1 representing the correlation between the predicted and true values of a binary classifier. A MCC of -1 indicates that that there is no correlation between the predicted a true class while a value of +1 would indicate a perfect classifier while a value of 0 means it is no better or worse than a random guess. MCC is a worthwhile metric to report as it gives a value to the performance without inflating the imbalances in class sizes \cite{Powers}. 
+
+Let $X,Y$ each be an $S\times N$ matrix where $S$ is the number households and $N$ is the number classes. $X_s,n=1$ if a sample $s$ is predicted to be the $n^{th}$ class and 0 otherwise, $Y_s,n=1$ if a sample $s$ belongs to the $n^{th}$ class and 0 otherwise. The covariance of $X$ and $Y$ can then be written as
+
+\[cov(X,Y)=\frac{1}{N}\sum^S_{s=1}\sum^N_{n=1}(X_{s,n}-\bar{X_n})((Y_{s,n}-\bar{Y_n})\]
+
+where $\bar{X_n}$ and $\bar{Y_n}$ are the means of the $n^th$ columns of $X$ and $Y$ respectively.
+
+The MCC is then defined as,
+
+\[MCC=\frac{cov(X,Y)}{\sqrt{cov(X,X)\cdot cov(Y,Y)}}\]
+
+
+For binary classification this can be interpreted as,
 
 \[MCC=\frac{TP\times TN-FP\times FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}\]
+
+While the MCC is mot commonly used when assessing binary classifiers, based on the definition of the MCC above, it can be extended to multi-class problems as described by Gorodkin\cite{Gorodkin}. If $C$ the confusion matrix of a given classifier, then the MCC is given as,
+
+\[MCC=\frac{\sum\limits^N_{k,l,m=1}C_{k,k}C_{m,l}-C_{l,m}C_{k,m}}{\sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{l,k}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{g,f}\bigg)\bigg]}\cdot \sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{k,l}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{f,g}\bigg)\bigg]}}\] 
 
 %\begin{itemize}
 %\item confusion matrix
@@ -54,13 +71,36 @@ The final metric that is presented is the Matthews correlation coefficient (MCC)
 
 \section{Feature Selection}
 
-As explained in section \ref{sec:dimensionalityReduction}, SFS was used to determine which features are of greatest value for each classifier. What was noticed, however, is that when running the SFS algorithm multiple times, the selected features were not always the same for each of the classifiers (even with cross validation). This was seen particularly in random forest (as might be expected for an algorithm that uses bootstrap aggregation).  Therefore, the feature selection algorithm was run multiple times and the features that appeared most often were used. To evaluate the feature selection method, two additional sets of features were made (one for each classification problem) by choosing features based on how they appeared to seperate classes in \ref{sec:creatingFeatures}. All classification models are evaluated using the features found by SFS as well as the features found manually. The lists of features used for each classifier are outlined in tables \ref{tab:childFeatures} and \ref{tab:socioFeatures}. 
+As explained in section \ref{sec:dimensionalityReduction}, SFS was used to determine which features are of greatest value for each classifier. What was noticed, however, is that when running the SFS algorithm multiple times, the selected features were not always the same for each of the classifiers (even with cross validation). This was seen particularly in random forest (as might be expected for an algorithm that uses bootstrap aggregation).  Therefore, the feature selection algorithm was run multiple times and the features that appeared most often were used. To evaluate the feature selection method, two additional sets of features were made (one for each classification problem) by choosing features based on how they appeared to seperate classes in \ref{sec:creatingFeatures}. All classification models are evaluated using the features found by SFS as well as the features found manually (labled as MAN). The lists of features used for each classifier are outlined in tables \ref{tab:childFeatures} and \ref{tab:socioFeatures}. 
 
 \childFeatures
 \socioFeatures
 
-\section{Classifiers}
+\section{Classification Results}
 
-Here the results of the classifiers are presented of running each model on unseen data as outlined in \ref{sec:evalMethods}.
+Here the results of the classifiers are presented of running each model on unseen data as outlined in \ref{sec:evalMethods}. First the results of discriminating between households with and without children is presented, then the results of the socio-economic classifiers are shows. In the next section, we will the results are discussed to determine which classifier, and set of features, performs best on a given task and compared to the results obtained by similar studies..
 
-\subsection{Discriminating Between Households With and Without Children}
+The same training and test sets are used for each classifier to ensure the that the results are fair. While the training set is the same that had been used in cross-validation to optimize the classifiers, the test data is completely unused until this point.
+
+\subsection{Children vs No Children}
+
+\childAccuracy
+
+The results from Figure \ref{fig:childAccuracy} show the accuracy of each classifier built to discriminate between households with and without children. All classifiers perform better than a biased random guess with logistic regression with features selected using SFS predicted the greatest percentage of households correctly. Furthermore Figure \ref{fig:childMat} gives the Matthews correlation coefficients of each of the classifier which all take on positive values, meaning that the classifiers are less inclined to miss-classify a household regardless of which class has a higher prior probability. 
+
+While the logistic regression classifier using the SFS features classifier gave both the highest accuracy and MCC, the performance is not significantly better than random forest and Knn. What is noticeable, is that all classifiers performed better when trained with features found by SFS features compared with manually feature selection, with the accuracy of all three classifiers that used SFS having an accuracy of above 80\% and all those with manyally selected features being below 80\%. The distinction is even more pronounced when considering the MCCs of each of the classifiers, where all classifiers using SFS features have an MCC of over 0.5, while none of the ones using manually selected features do. In the case of logistic regression, there is the greatest difference in performance with the SFS classifier having an MCC of 0.64 and the MAN classifier only having an MCC of 0.42. 
+
+%Given that different feature selection methods have been used, it is worthwile to see which features contributed most to the classifiers such. With the logistic regression, we can compare the $\textbf{w}$ coefficients.
+%\begin{align*}
+%\textbf{w}_{MAN}= \begin{bmatrix}-14.9900\\ 0.622\\-1.3699\\-1.1673\\    1.1556\\-0.5732\\1.9194\\0.4214\\0.4015\\1.7463\\ 0.0000\end{bmatrix}
+%&
+%\textbf{w}_{SFS}= \begin{bmatrix}-3.2123 \\  -2.9622  \\ -1.4517   \\ 0.6498 \\   0.8683  \\  1.5765  \\  1.7768    \\     0  \\  0.5442  \\  1.7357  \\ -1.3840
+%\end{bmatrix}
+%\end{align*}
+%
+%What this shows, is that while the model using MAN features relies largely in the prior probability of each class, the model using SFS features relies less on the prior probability and more on on other features.
+\childMat
+
+\childROC
+The ROC curves shown in figure \ref{fig:childROC} shows how the TPR changes when varying the FPR. Again, it can be seen that SFS features generate better results than MAN features and that, again, the logistic regression classifier gives the best performance (indicated by the area under the curve). Especially, for Knn, the TPR quickly increases with little increase in FPR, however once the specifificity (1-FPR) decreases, the performance of the random forest and logistic regression classifier become more accurate than knn.
+\childResults
