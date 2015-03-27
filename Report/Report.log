@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  26 MAR 2015 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  27 MAR 2015 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,28 +1044,110 @@ Report.toc)
 ]
 Chapter 1.
 
+LaTeX Warning: Citation `E_spending' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `E_spending' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `stop' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Quinn' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation `LMW' on page 2 undefined on input line 5.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
 [2
 
-] [3]) (./tex/Data.tex [4]
+]
+
+LaTeX Warning: Citation `Chicco' on page 3 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Cao' on page 3 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Kolter' on page 3 undefined on input line 31.
+
+
+LaTeX Warning: Citation `LMW' on page 3 undefined on input line 31.
+
+[3]) (./tex/Data.tex [4]
 Chapter 2.
+
+LaTeX Warning: Citation `HES' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation `early_findings' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Reference `sec:preprocessing' on page 5 undefined on input line 
+7.
+
 [5
 
-] [6] <fig/preProcess.pdf, id=39, 394.47375pt x 190.7125pt>
-File: fig/preProcess.pdf Graphic file (type pdf)
+]
 
-<use fig/preProcess.pdf>
-Package pdftex.def Info: fig/preProcess.pdf used on input line 36.
-(pdftex.def)             Requested size: 236.68607pt x 114.42838pt.
- [7]
+LaTeX Warning: Citation `CARG_1' on page 6 undefined on input line 19.
+
+[6]
+
+LaTeX Warning: Reference `fig:preProcess' on page 7 undefined on input line 35.
+
+
+
+! LaTeX Error: File `fig/preProcess' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \to28days
+              
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7]
 Overfull \hbox (62.61337pt too wide) in paragraph at lines 42--42
 []  [] 
  []
 
-[8 <./fig/preProcess.pdf>] (./fig/household369OneWeek.tex)
+
+LaTeX Warning: Reference `tab:sgTable' on page 8 undefined on input line 44.
+
+
+LaTeX Warning: Reference `tab:childTable' on page 8 undefined on input line 44.
+
+
+
+LaTeX Warning: Reference `fig:household369OneWeek' on page 8 undefined on input
+ line 49.
+
+
+LaTeX Warning: Reference `fig:household369' on page 8 undefined on input line 4
+9.
+
+
+LaTeX Warning: Reference `fig:household369OneWeek' on page 8 undefined on input
+ line 51.
+
+
+LaTeX Warning: Reference `fig:household369OneWeek' on page 8 undefined on input
+ line 51.
+
+
+LaTeX Warning: Reference `fig:household369' on page 8 undefined on input line 5
+1.
+
+[8] (./fig/household369OneWeek.tex)
 Overfull \hbox (20.01697pt too wide) in paragraph at lines 1043--55
  [][] 
  []
@@ -1075,24 +1157,81 @@ Overfull \hbox (16.42664pt too wide) in paragraph at lines 4070--56
  [][] 
  []
 
-[9] [10] (./fig/household75.tex) (./fig/household121.tex)
+[9]
+
+LaTeX Warning: Citation `early_findings' on page 10 undefined on input line 63.
+
+
+
+LaTeX Warning: Citation `Beckel_1' on page 10 undefined on input line 65.
+
+
+LaTeX Warning: Citation `McLoughlin' on page 10 undefined on input line 65.
+
+
+LaTeX Warning: Citation `ONS' on page 10 undefined on input line 67.
+
+[10]
+
+LaTeX Warning: Reference `fig:household369' on page 11 undefined on input line 
+69.
+
+
+LaTeX Warning: Reference `fig:badHouseholds' on page 11 undefined on input line
+ 69.
+
+
+LaTeX Warning: Reference `fig:badHouseholds' on page 11 undefined on input line
+ 69.
+
+(./fig/household75.tex) (./fig/household121.tex)
 Overfull \hbox (82.27629pt too wide) in paragraph at lines 71--71
 []|  [][] 
  []
 
-[11]) (./tex/Features.tex [12]
+
+LaTeX Warning: Reference `tab:applianceTable' on page 11 undefined on input lin
+e 73.
+
+
+LaTeX Warning: Citation `CSE' on page 11 undefined on input line 73.
+
+
+LaTeX Warning: Reference `sec:previousWork' on page 11 undefined on input line 
+73.
+
+[11]
+
+LaTeX Warning: Citation `DECC' on page 12 undefined on input line 80.
+
+) (./tex/Features.tex [12]
 Chapter 3.
+
+LaTeX Warning: Citation `Moerchen' on page 13 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Osborne' on page 13 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Wang' on page 13 undefined on input line 9.
+
+
+LaTeX Warning: Reference `fig:qqPlot' on page 13 undefined on input line 9.
+
 Package epstopdf Info: Source file: <fig/qquntransformed.eps>
 (epstopdf)                    date: 2015-02-27 19:41:32
 (epstopdf)                    size: 34414 bytes
 (epstopdf)             Output file: <fig/qquntransformed-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-27 19:42:51
-(epstopdf)                    size: 17940 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/qquntransformed-eps-co
 nverted-to.pdf fig/qquntransformed.eps>
 (epstopdf)             \includegraphics on input line 11.
-Package epstopdf Info: Output file is already uptodate.
-<fig/qquntransformed-eps-converted-to.pdf, id=79, 1142.2675pt x 402.50375pt>
+runsystem(repstopdf --outfile=fig/qquntransformed-eps-converted-to.pdf fig/qqun
+transformed.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <fig/qquntransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-27 18:26:59
+(epstopdf)                    size: 17940 bytes.
+<fig/qquntransformed-eps-converted-to.pdf, id=61, 1142.2675pt x 402.50375pt>
 File: fig/qquntransformed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/qquntransformed-eps-converted-to.pdf>
@@ -1103,14 +1242,17 @@ Package epstopdf Info: Source file: <fig/qqtransformed.eps>
 (epstopdf)                    date: 2015-02-27 19:42:44
 (epstopdf)                    size: 34262 bytes
 (epstopdf)             Output file: <fig/qqtransformed-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-27 19:42:52
-(epstopdf)                    size: 18761 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/qqtransformed-eps-conv
 erted-to.pdf fig/qqtransformed.eps>
 (epstopdf)             \includegraphics on input line 11.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=fig/qqtransformed-eps-converted-to.pdf fig/qqtran
+sformed.eps)...executed safely (allowed).
 
-<fig/qqtransformed-eps-converted-to.pdf, id=80, 1142.2675pt x 411.5375pt>
+Package epstopdf Info: Result file: <fig/qqtransformed-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-27 18:27:00
+(epstopdf)                    size: 18761 bytes.
+
+<fig/qqtransformed-eps-converted-to.pdf, id=62, 1142.2675pt x 411.5375pt>
 File: fig/qqtransformed-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/qqtransformed-eps-converted-to.pdf>
@@ -1123,6 +1265,9 @@ ine 11.
 Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
+
+
+LaTeX Warning: Citation `Gomez' on page 14 undefined on input line 26.
 
 [14 <./fig/qquntransformed-eps-converted-to.pdf> <./fig/qqtransformed-eps-conve
 rted-to.pdf>] (./fig/Total_Electricity_child.tex
@@ -1201,6 +1346,9 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
 Overfull \hbox (28.65645pt too wide) in paragraph at lines 266--28
 [][] 
  []
+
+
+LaTeX Warning: Reference `fig:monthSum' on page 15 undefined on input line 30.
 
 (./fig/Average_Daily_child.tex
 
@@ -1579,7 +1727,22 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
  filtered away) on input line 1816.
 
  [warning /pgfplots/warning/plot without coordinates]
-) [15] [16] [17] (./fig/APOD_child.tex
+) [15] [16]
+
+LaTeX Warning: Reference `fig:averageDayChild' on page 17 undefined on input li
+ne 38.
+
+
+LaTeX Warning: Reference `fig:averageDaySocio' on page 17 undefined on input li
+ne 40.
+
+
+LaTeX Warning: Citation `Bartley' on page 17 undefined on input line 43.
+
+
+LaTeX Warning: Citation `school_times' on page 17 undefined on input line 45.
+
+[17] (./fig/APOD_child.tex
 
 Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
 n'. Only the first occurence can be accessed via column names. on input line 32
@@ -1824,6 +1987,10 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
 Overfull \hbox (43.08522pt too wide) in paragraph at lines 2406--52
  [][] 
  []
+
+
+LaTeX Warning: Reference `fig:APODChild' on page 18 undefined on input line 55.
+
 
 (./fig/APOD_socio.tex
 
@@ -2815,10 +2982,18 @@ Overfull \hbox (49.01799pt too wide) in paragraph at lines 7311--57
 Overfull \vbox (0.72662pt too high) has occurred while \output is active []
 
 
-[19] (./fig/POW_rat_child.tex) (./fig/POW_rat_socio.tex)
+[19]
+
+LaTeX Warning: Reference `fig:APODSocio' on page 20 undefined on input line 59.
+
+
+(./fig/POW_rat_child.tex) (./fig/POW_rat_socio.tex)
 Overfull \hbox (34.33005pt too wide) in paragraph at lines 553--64
 [][] 
  []
+
+
+LaTeX Warning: Reference `fig:POWrat' on page 20 undefined on input line 66.
 
 [20] (./fig/ADV_child.tex
 
@@ -2861,7 +3036,12 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
  filtered away) on input line 537.
 
  [warning /pgfplots/warning/plot without coordinates]
-) (./fig/ADV_socio.tex
+)
+
+LaTeX Warning: Reference `fig:logADVChild' on page 21 undefined on input line 7
+5.
+
+(./fig/ADV_socio.tex
 
 Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
 n'. Only the first occurence can be accessed via column names. on input line 25
@@ -3057,7 +3237,16 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
 LaTeX Warning: Reference `fig:logADVsocio' on page 22 undefined on input line 7
 9.
 
-(./fig/Corr_child.tex) [22] (./fig/Corr_socio.tex
+(./fig/Corr_child.tex) [22]
+
+LaTeX Warning: Reference `fig:corrChild' on page 23 undefined on input line 91.
+
+
+
+LaTeX Warning: Reference `fig:corrChild' on page 23 undefined on input line 91.
+
+
+(./fig/Corr_socio.tex
 
 Package pgfplots Warning: Table '<inline_table>' has non-unique column name 'na
 n'. Only the first occurence can be accessed via column names. on input line 23
@@ -3348,7 +3537,20 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
  filtered away) on input line 2705.
 
  [warning /pgfplots/warning/plot without coordinates]
-) [23] [24] (./fig/household369Conv.tex
+) [23]
+
+LaTeX Warning: Citation `Moerchen' on page 24 undefined on input line 98.
+
+
+LaTeX Warning: Citation `McLoughlin' on page 24 undefined on input line 98.
+
+
+LaTeX Warning: Citation `Nixon' on page 24 undefined on input line 103.
+
+
+LaTeX Warning: Citation `Graps' on page 24 undefined on input line 103.
+
+[24] (./fig/household369Conv.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
@@ -3356,23 +3558,78 @@ Overfull \hbox (69.45792pt too wide) in paragraph at lines 107--107
  []|  [] 
  []
 
-[25] [26]) [27] (./tex/Models.tex [28]
+
+LaTeX Warning: Citation `Moerchen' on page 25 undefined on input line 117.
+
+
+LaTeX Warning: Citation `Moerchen' on page 25 undefined on input line 120.
+
+[25]
+
+LaTeX Warning: Citation `Moerchen' on page 26 undefined on input line 124.
+
+
+LaTeX Warning: Citation `Moerchen' on page 26 undefined on input line 129.
+
+
+LaTeX Warning: Citation `Hall' on page 26 undefined on input line 138.
+
+[26]
+
+LaTeX Warning: Citation `Guyon' on page 27 undefined on input line 146.
+
+
+LaTeX Warning: Citation `Guyon' on page 27 undefined on input line 148.
+
+
+LaTeX Warning: Citation `Wang_2' on page 27 undefined on input line 148.
+
+
+LaTeX Warning: Citation `Somol' on page 27 undefined on input line 150.
+
+
+LaTeX Warning: Citation `Juha' on page 27 undefined on input line 150.
+
+
+LaTeX Warning: Citation `Somol' on page 27 undefined on input line 150.
+
+) [27] (./tex/Models.tex [28]
 Chapter 4.
 [29
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+] <fig/ordered_logit.jpg, id=139, 647.41875pt x 324.21124pt>
+File: fig/ordered_logit.jpg Graphic file (type jpg)
+
+<use fig/ordered_logit.jpg>
+Package pdftex.def Info: fig/ordered_logit.jpg used on input line 35.
+(pdftex.def)             Requested size: 412.56497pt x 206.604pt.
+ [30]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
- [30])
-(./tex/Results.tex [31]
-Chapter 5.
-[32
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
 
-] [33] [34]
+
+LaTeX Warning: Reference `sec:dimensionalityReduction' on page 31 undefined on 
+input line 52.
+
+[31 <./fig/ordered_logit.jpg>]) (./tex/Results.tex [32]
+Chapter 5.
+[33
+
+] [34]
+
+LaTeX Warning: Reference `sec:dimensionalityReduction' on page 35 undefined on 
+input line 74.
+
+
+LaTeX Warning: Reference `sec:creatingFeatures' on page 35 undefined on input l
+ine 74.
+
+[35]
 Package epstopdf Info: Source file: <fig/Results/child_Acc.eps>
 (epstopdf)                    date: 2015-03-26 16:06:31
 (epstopdf)                    size: 9733 bytes
@@ -3385,14 +3642,14 @@ converted-to.pdf fig/Results/child_Acc.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_Acc-eps-converted-to.pdf, id=174, 670.505pt x 341.275pt>
+<fig/Results/child_Acc-eps-converted-to.pdf, id=161, 670.505pt x 341.275pt>
 File: fig/Results/child_Acc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_Acc-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/child_Acc-eps-converted-to.pdf used on inp
 ut line 87.
 (pdftex.def)             Requested size: 412.56497pt x 209.98442pt.
- [35]
+ [36]
 Package epstopdf Info: Source file: <fig/Results/child_Matthews.eps>
 (epstopdf)                    date: 2015-03-26 16:06:10
 (epstopdf)                    size: 9364 bytes
@@ -3405,14 +3662,14 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_Matthews-eps-converted-to.pdf, id=181, 673.51625pt x 347.297
+<fig/Results/child_Matthews-eps-converted-to.pdf, id=166, 673.51625pt x 347.297
 5pt>
 File: fig/Results/child_Matthews-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/child_Matthews-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/child_Matthews-eps-converted-to.pdf used o
 n input line 102.
 (pdftex.def)             Requested size: 412.56497pt x 212.74144pt.
- [36 <./fig/Results/child_Acc-eps-converted-to.pdf>]
+ [37 <./fig/Results/child_Acc-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fig/Results/child_ROC.eps>
 (epstopdf)                    date: 2015-03-26 16:03:26
 (epstopdf)                    size: 12938 bytes
@@ -3425,7 +3682,7 @@ converted-to.pdf fig/Results/child_ROC.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_ROC-eps-converted-to.pdf, id=190, 593.21625pt x 240.9pt>
+<fig/Results/child_ROC-eps-converted-to.pdf, id=175, 593.21625pt x 240.9pt>
 File: fig/Results/child_ROC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_ROC-eps-converted-to.pdf>
@@ -3437,23 +3694,74 @@ Overfull \hbox (15.01596pt too wide) in paragraph at lines 106--106
  [][] 
  []
 
-)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./Report.bbl [37 <./fig/Results/child_Matthews-eps-converted-to.pdf> <./fig/Re
-sults/child_ROC-eps-converted-to.pdf>] [38] [39
+[38 <./fig/Results/child_Matthews-eps-converted-to.pdf> <./fig/Results/child_RO
+C-eps-converted-to.pdf>] [39]
 
-] [40]) [41] (./Report.aux)
+LaTeX Warning: Reference `ch:Features' on page 40 undefined on input line 116.
+
+
+LaTeX Warning: Reference `fig:socioAllAcc' on page 40 undefined on input line 1
+18.
+
+Package epstopdf Info: Source file: <fig/Results/socialAccAll.eps>
+(epstopdf)                    date: 2015-03-27 17:46:09
+(epstopdf)                    size: 15797 bytes
+(epstopdf)             Output file: <fig/Results/socialAccAll-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-03-27 17:46:17
+(epstopdf)                    size: 9422 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/Results/socialAccAll-e
+ps-converted-to.pdf fig/Results/socialAccAll.eps>
+(epstopdf)             \includegraphics on input line 121.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/Results/socialAccAll-eps-converted-to.pdf, id=193, 781.92125pt x 485.815pt
+>
+File: fig/Results/socialAccAll-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/Results/socialAccAll-eps-converted-to.pdf>
+Package pdftex.def Info: fig/Results/socialAccAll-eps-converted-to.pdf used on 
+input line 121.
+(pdftex.def)             Requested size: 412.56497pt x 256.33171pt.
+ [40]
+Package epstopdf Info: Source file: <fig/Results/social_Matthews.eps>
+(epstopdf)                    date: 2015-03-27 11:44:58
+(epstopdf)                    size: 9808 bytes
+(epstopdf)             Output file: <fig/Results/social_Matthews-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2015-03-27 17:55:47
+(epstopdf)                    size: 7503 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/Results/social_Matthew
+s-eps-converted-to.pdf fig/Results/social_Matthews.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/Results/social_Matthews-eps-converted-to.pdf, id=197, 704.6325pt x 271.012
+5pt>
+File: fig/Results/social_Matthews-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/Results/social_Matthews-eps-converted-to.pdf>
+Package pdftex.def Info: fig/Results/social_Matthews-eps-converted-to.pdf used 
+on input line 123.
+(pdftex.def)             Requested size: 412.56497pt x 158.67606pt.
+) (./Report.bbl
+[41 <./fig/Results/socialAccAll-eps-converted-to.pdf> <./fig/Results/social_Mat
+thews-eps-converted-to.pdf>] [42]) [43
+
+] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 27290 strings out of 493117
- 1281918 string characters out of 6135432
- 3572343 words of memory out of 5000000
- 30181 multiletter control sequences out of 15000+600000
+ 27310 strings out of 493117
+ 1282505 string characters out of 6135432
+ 3574557 words of memory out of 5000000
+ 30198 multiletter control sequences out of 15000+600000
  17250 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,20n,107p,147675b,2116s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3475,10 +3783,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Report.pdf (43 pages, 618200 bytes).
+Output written on Report.pdf (45 pages, 689656 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

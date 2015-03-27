@@ -1,7 +1,9 @@
 function sgEvaluate(ord,nom,rf,knn,ordMan,nomMan,rfMan,knnMan,baseline,y_test)
 %--Accuracy
+figure;
+subplot(3,1,1)
 accuracies=[ord.accuracy,ordMan.accuracy;nom.accuracy,nomMan.accuracy;rf.accuracy,rfMan.accuracy;knn.accuracy,knnMan.accuracy];
-labels={'Ordinal Logistic Regression','Nominal Logistic Regression','Random Forest','K Nearest Neighbor'};
+labels={'Ordinal LR','Nominal LR','Random Forest','K Nearest Neighbor'};
 p1=bar(accuracies*100);
 ylim([0 100])
 title('Classifier Accuracy')
@@ -9,11 +11,11 @@ ylabel('%');
 set(gca,'XTickLabel',labels)
 hold on
 p2=plot(xlim,[baseline.accuracy baseline.accuracy].*100,'black');
-legend('SFS','Man','Baseline')
+legend('SFS','MAN','Baseline','location','eastoutside')
 hold off
 
 %Accuracy Within 1
-figure;
+subplot(3,1,2)
 acc1=[accuracyWithinN(ord,1),accuracyWithinN(ordMan,1);accuracyWithinN(nom,1),accuracyWithinN(nomMan,1);accuracyWithinN(rf,1),...
     accuracyWithinN(rfMan,1);accuracyWithinN(knn,1),accuracyWithinN(knnMan,1)];
 bar(acc1*100);
@@ -21,18 +23,23 @@ ylim([0 100])
 title('Classifier Accuracy within 1')
 ylabel('%');
 set(gca,'XTickLabel',labels)
-legend('SFS','Man')
+hold on;
+p2=plot(xlim,[0.63 0.63].*100,'black');
+legend('SFS','MAN','C1 or C2','location','eastoutside')
 
 %Accuracy Within 2
-figure;
-acc1=[accuracyWithinN(ord,2),accuracyWithinN(ordMan,2);accuracyWithinN(nom,2),accuracyWithinN(nomMan,2);accuracyWithinN(rf,2),...
+%figure;
+subplot(3,1,3)
+acc2=[accuracyWithinN(ord,2),accuracyWithinN(ordMan,2);accuracyWithinN(nom,2),accuracyWithinN(nomMan,2);accuracyWithinN(rf,2),...
     accuracyWithinN(rfMan,2);accuracyWithinN(knn,2),accuracyWithinN(knnMan,2)];
-bar(acc1*100);
+bar(acc2*100);
 ylim([0 100])
 title('Classifier Accuracy within 2')
 ylabel('%');
 set(gca,'XTickLabel',labels)
-legend('SFS','Man')
+hold on;
+p2=plot(xlim,[0.63 0.63].*100,'black');
+legend('SFS','MAN','C1, C2 or B','location','eastoutside')
 
 %Binarize Classifier (2.vs.all)
 probAB.nom=binarizeProb(nom,[5,6]);probAB.nomMan=binarizeProb(nomMan,[5,6]);probAB.ord=binarizeProb(ord,[5,6]);probAB.ordMan=binarizeProb(ordMan,[5,6]);
@@ -46,12 +53,12 @@ probDE.rf=binarizeProb(rf,[1,2]);probDE.rfMan=binarizeProb(rfMan,[1,2]);probDE.k
 
 
 %--Matthews
-
+figure;
 mats=[matthews(ord),matthews(ordMan);matthews(nom),matthews(nomMan);matthews(rf),matthews(rfMan);matthews(knn),matthews(knnMan)]
 bar(mats)
 set(gca,'XTickLabel',labels)
 legend('SFS','MAN')
-ylim([-1 1])
+%ylim([-1 1])
 title('Matthews Correlation Coefficient')
 
 %--ROC
@@ -66,25 +73,25 @@ title('Matthews Correlation Coefficient')
 [knn.FPR.AB,knn.TPR.AB,knn.T,knn.AUC]=perfcurve(y_test.knn,probAB.knn(:,1),1);
 [knnMan.FPR.AB,knnMan.TPR.AB,knnMan.T,knnMan.AUC]=perfcurve(y_test.knn,probAB.knnMan(:,1),1);
 
-figure;
-plot(nom.FPR.AB,nom.TPR.AB,'b');
-hold on
-plot(nomMan.FPR.AB,nomMan.TPR.AB,':b');
-plot(ord.FPR.AB,ord.TPR.AB,'m');
-plot(ordMan.FPR.AB,ordMan.TPR.AB,':m');
-plot(rf.FPR.AB,rf.TPR.AB,'g');
-plot(rfMan.FPR.AB,rfMan.TPR.AB,':g');
-plot(knn.FPR.AB,knn.TPR.AB,'r');
-plot(knnMan.FPR.AB,knnMan.TPR.AB,':r');
-title('ROC A&B vs All')
-ylabel('TPR')
-xlabel('FPR')
-legend('Nominal Logistic Regression SFS','Nominal Logistic Regression MAN',...
-    'Ordinal Logistic Regression SFS','Ordinal Logistic Regression MAN',...
-    'Random Forest SFS','Random Forest MAN',...
-    'KNN SFS','KNN MAN','Location','eastoutside')
-
-%C1C2
+% figure;
+% plot(nom.FPR.AB,nom.TPR.AB,'b');
+% hold on
+% plot(nomMan.FPR.AB,nomMan.TPR.AB,':b');
+% plot(ord.FPR.AB,ord.TPR.AB,'m');
+% plot(ordMan.FPR.AB,ordMan.TPR.AB,':m');
+% plot(rf.FPR.AB,rf.TPR.AB,'g');
+% plot(rfMan.FPR.AB,rfMan.TPR.AB,':g');
+% plot(knn.FPR.AB,knn.TPR.AB,'r');
+% plot(knnMan.FPR.AB,knnMan.TPR.AB,':r');
+% title('ROC A&B vs All')
+% ylabel('TPR')
+% xlabel('FPR')
+% legend('Nominal Logistic Regression SFS','Nominal Logistic Regression MAN',...
+%     'Ordinal Logistic Regression SFS','Ordinal Logistic Regression MAN',...
+%     'Random Forest SFS','Random Forest MAN',...
+%     'KNN SFS','KNN MAN','Location','eastoutside')
+% 
+% %C1C2
 
 [nom.FPR.C1C2,nom.TPR.C1C2,nom.T,nom.AUC]=perfcurve(y_test.log_reg_nom,probC1C2.nom(:,2),1);
 [nomMan.FPR.C1C2,nomMan.TPR.C1C2,nomMan.T,nomMan.AUC]=perfcurve(y_test.log_reg_nom,probC1C2.nomMan(:,2),1);
@@ -114,7 +121,7 @@ hold on
 p2=plot(ord.FPR.AB,ord.TPR.AB,'m');
 p3=plot(rf.FPR.AB,rf.TPR.AB,'green');
 p4=plot(knn.FPR.AB,knn.TPR.AB,'red');
-p5=plot([0:0.1:1],[0:0.1:1],'black')
+p5=plot([0:0.1:1],[0:0.1:1],'black');
 title('SFS ROC A&B vs All')
 ylabel('TPR')
 xlabel('FPR')
@@ -147,7 +154,7 @@ hold on
 plot(ordMan.FPR.C1C2,ordMan.TPR.C1C2,'m');
 plot(rfMan.FPR.C1C2,rfMan.TPR.C1C2,'g');
 plot(knnMan.FPR.C1C2,knnMan.TPR.C1C2,'r');
-plot([0:0.1:1],[0:0.1:1],'black')
+plot([0:0.1:1],[0:0.1:1],'black');
 title('MAN ROC C1&C2 vs All')
 ylabel('TPR')
 xlabel('FPR')
@@ -162,26 +169,27 @@ title('SFS ROC A&B vs All')
 ylabel('TPR')
 xlabel('FPR')
 %DE_MAN
-subplot(4,8,8)
+subplot(4,2,8)
 p1=plot(nomMan.FPR.DE,nomMan.TPR.DE,'blue');
 hold on
 p2=plot(ordMan.FPR.DE,ordMan.TPR.DE,'m');
 p3=plot(rfMan.FPR.DE,rfMan.TPR.DE,'green');
 p4=plot(knnMan.FPR.DE,knnMan.TPR.DE,'red');
-p5=plot([0:0.1:1],[0:0.1:1],'black')
+p5=plot([0:0.1:1],[0:0.1:1],'black');
 title('MAN ROC D&E vs All')
 ylabel('TPR')
 xlabel('FPR')
 
 pl=subplot(4,2,[1,2]);
+axis off
 pp=get(pl,'position');
-hL = legend([p1,p2,p3,p4,p5],{'Nominal Logistic Regression','Ordinal Logistic Regression','Random Forest','KNN','Randon Guess'},'Orientation','horizontal');
-%legend('Nominal Logistic Regression','Ordinal Logistic Regression','Random Forest','KNN','Location','northoutside','Orientation','horizontal')
+hL = legend([p1,p2,p3,p4,p5],{'Nominal LR','Ordinal LR','Random Forest','KNN','Randon Guess'},'Orientation','horizontal');
+%legend([p1,p2,p3,p4,p5],{'Nominal Logistic Regression','Ordinal Logistic Regression','Random Forest','KNN','Randon Guess'},'Orientation','horizontal')
 %linkaxes([p1,pa])
-%newPosition = [0.9 0.4 0.2 0.2];
+newPosition = [0.9 0.4 0.2 0.2];
 %newUnits = 'normalized';
 set(hL,'Position', pp);
-delete(pl)
+%delete(pl)
 
 
 % probC1C2=[binarizeProb(log_reg,[3,4]),binarizeProb(rf,[3,4]),binarizeProb(knn,[3,4])];

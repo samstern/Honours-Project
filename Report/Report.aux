@@ -28,15 +28,15 @@
 \citation{CARG_1}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Extracting the Data and Pre-Processing}{6}}
 \newlabel{sec:preprocessing}{{2.2}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{7}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:preProcess}{{2.1}{8}}
+\newlabel{fig:preProcess}{{2.1}{7}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Household Classes}{8}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces \relax }}{8}}
 \newlabel{tab:sgTable}{{2.1}{8}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces \relax }}{8}}
 \newlabel{tab:childTable}{{2.2}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Discussion}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Discussion}{8}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The electricity use of household No.369 over a week after being pre-processed\relax }}{9}}
 \newlabel{fig:household369OneWeek}{{2.2}{9}}
 \citation{early_findings}
@@ -122,78 +122,58 @@
 \citation{McCullagh}
 \citation{Herbrich}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Multi-class Logistic Regression}{30}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Implementation}{30}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Random Forest}{30}}
 \citation{Breiman}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The proportional odds model assumes that the regression function for different response categories are parallel on the logit scale. Figure obtained from: http://www.datavis.ca/courses/grcat\relax }}{31}}
+\newlabel{fig:orderedLogit}{{4.1}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Implementation}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Random Forest}{31}}
 \citation{Peterson}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Implementation}{31}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{31}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Implementation}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Implementation}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}K-Nearest Neighbour}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Implementation}{32}}
 \citation{Stefanowski}
 \citation{Gaudette}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results}{32}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results}{33}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Evaluation Methods}{32}}
-\newlabel{sec:evalMethods}{{5.1}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Evaluation Methods}{33}}
+\newlabel{sec:evalMethods}{{5.1}{33}}
 \citation{Waegeman}
 \citation{Beckel_2}
 \citation{Beckel_3}
 \citation{Powers}
 \citation{Gorodkin}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Feature Selection}{34}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces \relax }}{35}}
-\newlabel{tab:childFeatures}{{5.1}{35}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces \relax }}{35}}
-\newlabel{tab:socioFeatures}{{5.2}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Classification Results}{35}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Children vs No Children}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The accuracy of each classifier when used to classify unseen data defined as the number households classified correctly as a percentage of the total households in the test set. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data\relax }}{36}}
-\newlabel{fig:childAccuracy}{{5.1}{36}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Feature Selection}{35}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces \relax }}{36}}
+\newlabel{tab:childFeatures}{{5.1}{36}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces \relax }}{36}}
+\newlabel{tab:socioFeatures}{{5.2}{36}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Classification Results}{36}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Children vs No Children}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The accuracy of each classifier when used to classify unseen data defined as the number households classified correctly as a percentage of the total households in the test set. SFS classifiers are those built using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data\relax }}{37}}
+\newlabel{fig:childAccuracy}{{5.1}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The Matthews correlation coefficient of each classifier when used to classify unseen data. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data\relax }}{38}}
+\newlabel{fig:childMat}{{5.2}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Reciever operating curve curves that show the trade-off between true positive rate and false positive rate.\relax }}{38}}
+\newlabel{fig:childROC}{{5.3}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Socio-Economic Group}{39}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Each confusion matrix shows the number of households that were classified as a given class, compared to their true class. Each row represents the true label of an instance while the columns represent the predicted label, i.e element $(i,j)$ represents the number of households that were classified as $j$ but who's true class is $i$. The rows and columns go in order of increasing social grade, so the $1^{st}$ row/column represents class E, the second represents class D ect.\relax }}{40}}
+\newlabel{tab:socioConf}{{5.3}{40}}
 \bibdata{Bib/bibl2}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The Matthews correlation coefficient of each classifier when used to classify unseen data. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data\relax }}{37}}
-\newlabel{fig:childMat}{{5.2}{37}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Reciever operating curve curves that show the trade-off between true positive rate and false positive rate.\relax }}{37}}
-\newlabel{fig:childROC}{{5.3}{37}}
-\bibcite{E_spending}{1}
-\bibcite{stop}{2}
-\bibcite{Quinn}{3}
-\bibcite{LMW}{4}
-\bibcite{Beckel_3}{5}
-\bibcite{Chicco}{6}
-\bibcite{Cao}{7}
-\bibcite{Kolter}{8}
-\bibcite{HES}{9}
-\bibcite{early_findings}{10}
-\bibcite{CARG_1}{11}
-\bibcite{Beckel_1}{12}
-\bibcite{Beckel_2}{13}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{39}}
-\bibcite{McLoughlin}{14}
-\bibcite{ONS}{15}
-\bibcite{CSE}{16}
-\bibcite{DECC}{17}
-\bibcite{Moerchen}{18}
-\bibcite{Osborne}{19}
-\bibcite{Wang}{20}
-\bibcite{Gomez}{21}
-\bibcite{Bartley}{22}
-\bibcite{school_times}{23}
-\bibcite{Nixon}{24}
-\bibcite{Graps}{25}
-\bibcite{Hall}{26}
-\bibcite{Guyon}{27}
-\bibcite{Wang_2}{28}
-\bibcite{Somol}{29}
-\bibcite{Juha}{30}
-\bibcite{Williams}{31}
-\bibcite{McCullagh}{32}
-\bibcite{Herbrich}{33}
-\bibcite{Breiman}{34}
-\bibcite{Peterson}{35}
-\bibcite{Stefanowski}{36}
-\bibcite{Gaudette}{37}
-\bibcite{Waegeman}{38}
-\bibcite{Powers}{39}
-\bibcite{Gorodkin}{40}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The accuracy of each of a classifier is given by the sum of the diagonal elements of its confusion matrix. The accuracy with $n$ is the sum of the diagonal elements in addition to the elements up to $n$ columns to the left and right of the diagonal.\relax }}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces The Matthews correlation coefficient of each classifier when used to classify unseen data. SFS classifiers are those build using features determined to be best by the sequential forward feature selection method while MAN are the features found by visually determining which features appear to best discriminate between the data\relax }}{41}}
+\newlabel{fig:socioMat}{{5.5}{41}}
+\bibcite{Beckel_3}{1}
+\bibcite{Williams}{2}
+\bibcite{McCullagh}{3}
+\bibcite{Herbrich}{4}
+\bibcite{Breiman}{5}
+\bibcite{Peterson}{6}
+\bibcite{Stefanowski}{7}
+\bibcite{Gaudette}{8}
+\bibcite{Waegeman}{9}
+\bibcite{Beckel_2}{10}
+\bibcite{Powers}{11}
+\bibcite{Gorodkin}{12}
 \bibstyle{unsrt}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{43}}
