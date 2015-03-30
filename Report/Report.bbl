@@ -5,9 +5,26 @@ Office for National~Statiscics.
 \newblock {\em Full Report: Household Energy Spending in the UK, 2002-2012}.
 \newblock 2014.
 
+\bibitem{DECC_1}
+Department of~Energy and Climate Change.
+\newblock {\em Smart Metering Implementation Programme - Data access and
+  privacy: Government response to consultation}.
+\newblock 2012.
+
 \bibitem{stop}
 Stop Smart~Meters! (UK).
 \newblock Stop smart meters! (uk), 2015.
+
+\bibitem{Anderson}
+Ross Anderson.
+\newblock Smart meter security: a survey.
+\newblock Technical report, Cambridge University, 2011.
+
+\bibitem{SAS}
+SAS~United Kingdom.
+\newblock {\em How SAS can help energy companies take advantage of the data
+  explosion}.
+\newblock From smart metering to smart marketing. 2010.
 
 \bibitem{Quinn}
 Elias~Leake Quinn.
@@ -44,6 +61,13 @@ J.~Z. Kolter and Tommi Jaakkola.
 \newblock In Neil~D. Lawrence and Mark~A. Girolami, editors, {\em Proceedings
   of the Fifteenth International Conference on Artificial Intelligence and
   Statistics (AISTATS-12)}, volume~22, pages 1472--1482, 2012.
+
+\bibitem{Wilhite}
+Harold Wilhite, Hidetoshi Nakagami, Takashi Masuda, Yukiko Yamaga, and Hiroshi
+  Haneda.
+\newblock A cross-cultural analysis of household energy use behaviour in japan
+  and norway.
+\newblock {\em Energy Policy}, 24(9):795--803, 1996.
 
 \bibitem{HES}
 Intertek.
@@ -121,6 +145,10 @@ M.~Bartley and C.~Owen.
 \bibitem{school_times}
 Teachingintheuk.com.
 \newblock Teaching jobs | supply teaching jobs - teaching personnel, 2015.
+
+\bibitem{careers}
+Careerbuilder.co.uk.
+\newblock Find jobs on careerbuilder.com, 2015.
 
 \bibitem{Nixon}
 Mark~S Nixon and Alberto~S Aguado.

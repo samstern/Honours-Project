@@ -62,9 +62,9 @@
 \multicolumn{11}{c}{\textbf{Children vs No Children}}                                                                                                                                                                                                                                                                                                      \\ \cline{2-11} 
 \multicolumn{1}{c|}{}                        & \multicolumn{2}{c|}{\textbf{Accuracy (\%)}}                      & \multicolumn{2}{c|}{\textbf{MCC}}                         & \multicolumn{2}{c|}{\textbf{ROC Area}}                    & \multicolumn{2}{c|}{\textbf{TPR}}                         & \multicolumn{2}{c|}{\textbf{TNR}}                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Classifier}}    & \multicolumn{1}{l|}{SFS}     & \multicolumn{1}{l|}{MAN}     & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    & \multicolumn{1}{l|}{SFS}    & \multicolumn{1}{l|}{MAN}    \\ \hline
-\multicolumn{1}{|l|}{\textbf{Log Reg}}       & \multicolumn{1}{l|}{83.6538} & \multicolumn{1}{l|}{74.0385} & \multicolumn{1}{l|}{0.6457} & \multicolumn{1}{l|}{0.4159} & \multicolumn{1}{l|}{0.884}  & \multicolumn{1}{l|}{0.7831} & \multicolumn{1}{l|}{0.8429} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.5833} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Log Reg}}       & \multicolumn{1}{l|}{83.6538} & \multicolumn{1}{l|}{74.0385} & \multicolumn{1}{l|}{0.6457} & \multicolumn{1}{l|}{0.4159} & \multicolumn{1}{l|}{0.8840}  & \multicolumn{1}{l|}{0.7831} & \multicolumn{1}{l|}{0.8429} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.8235} & \multicolumn{1}{l|}{0.5833} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Random Forest}} & \multicolumn{1}{l|}{80.7692} & \multicolumn{1}{l|}{78.8462} & \multicolumn{1}{l|}{0.5866} & \multicolumn{1}{l|}{0.5012} & \multicolumn{1}{l|}{0.8397} & \multicolumn{1}{l|}{0.8357} & \multicolumn{1}{l|}{0.8143} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.7941} & \multicolumn{1}{l|}{0.5882} \\ \hline
-\multicolumn{1}{|l|}{\textbf{KNN}}           & \multicolumn{1}{l|}{82.6923} & \multicolumn{1}{l|}{75.9615} & \multicolumn{1}{l|}{0.6013} & \multicolumn{1}{l|}{0.4289} & \multicolumn{1}{l|}{0.8502} & \multicolumn{1}{l|}{0.7905} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.8714} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.5294} \\ \hline
+\multicolumn{1}{|l|}{\textbf{KNN}}           & \multicolumn{1}{l|}{82.6923} & \multicolumn{1}{l|}{75.9615} & \multicolumn{1}{l|}{0.6013} & \multicolumn{1}{l|}{0.4289} & \multicolumn{1}{l|}{0.8502} & \multicolumn{1}{l|}{0.7905} & \multicolumn{1}{l|}{0.8857} & \multicolumn{1}{l|}{0.8714} & \multicolumn{1}{l|}{0.7500} & \multicolumn{1}{l|}{0.5294} \\ \hline
 \end{tabular}
 \end{table}
 }
@@ -73,10 +73,10 @@
 
 \def\socioAllAcc{
 \begin{figure}[H]
-
 \includegraphics[width=\textwidth]{fig/Results/socialAccAll}
 \caption{The accuracy of each of a classifier is given by the sum of the diagonal elements of its confusion matrix. The accuracy with $n$ is the sum of the diagonal elements in addition to the elements up to $n$ columns to the left and right of the diagonal.}
 \end{figure}
+\label{fig:socioAllAcc}
 }
 
 
@@ -98,80 +98,137 @@
 \end{figure}
 }
 
+\def\socioROC{
+\begin{figure}[H]
+\centering
+\caption{ROC curves of socio-economic classifiers}
+\includegraphics[width=\textwidth]{fig/Results/social_ROC}
+\label{tab:socioROC}
+\end{figure}
+}
+
+
 %Confusion Matricies
 \def\socioConf{
-\begin{table}[H]
-\footnotesize
+\begin{figure}[H]
 \centering
-\begin{tabular}{l|l|l|}
-%\cline{2-3}
-\multicolumn{1}{c}{\textbf{}}               & \multicolumn{2}{c}{\textbf{Confusion Matrix}}                        \\ \cline{2-3} 
-                                             & \multicolumn{1}{c|}{\textbf{SFS}} & \multicolumn{1}{c|}{\textbf{MAN}} \\ \hline
-\multicolumn{1}{|l|}{\textbf{Ord Log Red}}   &                 $ \begin{pmatrix}
-1   &  0  &   4   &  1  &   0  &   0 \\
-0   &  0    & 3  &   5   &  0 &    0 \\
-1  &   0   &  7 &   18   &  3  &   0\\
-0   &  0  &   4   & 32  &   4  &   0\\
-0    & 0   &  3   & 11    & 1    & 0\\
-0   &  0  &   0   &  6  &   0    & 0\\
-\end{pmatrix}$          &      $ \begin{pmatrix}
-0   &  0  &   2   &  4  &   0  &   0 \\
-0   &  0    & 1  &   7   &  0 &    0 \\
-0  &   0   &  3 &   26   &  0  &   0\\
-0   &  0  &    2  & 38  &   0  &   0\\
-0    & 0   &  1   & 14    & 0    & 0\\
-0   &  0  &   0   &  6  &   0    & 0\\
-\end{pmatrix}$ \\ \hline
-\multicolumn{1}{|l|}{\textbf{Nom Log Reg}}   &        $ \begin{pmatrix}
-4   &  0  &   0   &  2  &   0  &   0 \\
-1   &  0    & 1  &   2   &  3 &    1 \\
-0  &   0   &  11 &   16   &  1  &   1\\
-2   &  1  &    4  & 29  &   4  &   0\\
-2    & 0   &  1   & 9    & 2    & 1\\
-0   &  0  &   1   &  3  &   1    & 1\\
-\end{pmatrix}$                          &            $ \begin{pmatrix}
-2   &  0  &   0   &  4  &   0  &   0 \\
-1   &  0    & 0  &   3   &  4 &    0 \\
-1  &   0   &  9 &   16   &  2  &   1\\
-3   &  1  &    4  & 31  &   1  &   0\\
-0    & 0   &  0   & 14    & 1    & 0\\
-0   &  0  &   1   &  4  &   0    & 1\\
-\end{pmatrix}$                             \\ \hline
-\multicolumn{1}{|l|}{\textbf{Random Forest}} &            $ \begin{pmatrix}
-4   &  0  &   0   &  2  &   0  &   0 \\
-0   &  0    & 1  &   2   &  5 &    0 \\
-0  &   1   &  18 &   9   &  1  &   0\\
-1   &  1  &    5  & 26  &   5  &   2\\
-0    & 0   &  1   & 7    & 6    & 1\\
-0   &  0  &   1   &  2  &   2    & 1\\
-\end{pmatrix}$                  &                   $ \begin{pmatrix}
-4   &  0  &   1   &  1  &   0  &   0 \\
-0   &  1    & 1  &   4   &  2 &    0 \\
-0  &   1   &  20 &   7   &  2  &   0\\
-2   &  1  &    6  & 25  &   4  &   4\\
-1    & 0   &  3   & 6    & 4    & 1\\
-0   &  0  &   3   &  1  &   1    & 1\\
-\end{pmatrix}$                \\ \hline
-\multicolumn{1}{|l|}{\textbf{Knn}}           &        $\begin{pmatrix}
-4   &  0  &   0   &  1  &   1  &   0 \\
-0   &  1    & 1  &   4   &  2 &    0 \\
-0  &   1   &  16 &   9   &  1  &   2\\
-2   &  1  &    8  & 24  &   5  &   0\\
-1    & 0   &  2   & 9    & 3    & 0\\
-0   &  0  &   1   &  3  &   2    & 0\\
-\end{pmatrix}$                           &                $ \begin{pmatrix}
-3   &  0  &  20   &  1  &   0  &   0 \\
-1   &  1    & 0  &   2   &  4 &    0 \\
-1  &   0   &  20 &   6   &  2  &   0\\
-1   &  2  &    6  & 28  &   2  &   1\\
-1    & 0   &  0   & 7    & 7    & 0\\
-0   &  0  &   3   &  0  &   2    & 1\\
-\end{pmatrix}$                   \\ \hline
-\end{tabular}
+\includegraphics[scale=0.7]{fig/Results/socialConfusion}
 \caption{Each confusion matrix shows the number of households that were classified as a given class, compared to their true class. Each row represents the true label of an instance while the columns represent the predicted label, i.e element $(i,j)$ represents the number of households that were classified as $j$ but who's true class is $i$. The rows and columns go in order of increasing social grade, so the $1^{st}$ row/column represents class E, the second represents class D ect.}
 \label{tab:socioConf}
-\end{table}
+\end{figure}
+%\begin{table}[H]
+%\footnotesize
+%\centering
+%\begin{tabular}{l|l|l|}
+%%\cline{2-3}
+%\multicolumn{1}{c}{\textbf{}}               & \multicolumn{2}{c}{\textbf{Confusion Matrix}}                        \\ \cline{2-3} 
+%                                             & \multicolumn{1}{c|}{\textbf{SFS}} & \multicolumn{1}{c|}{\textbf{MAN}} \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Ord Log Red}}   &                 $ \begin{pmatrix}
+%1   &  0  &   4   &  1  &   0  &   0 \\
+%0   &  0    & 3  &   5   &  0 &    0 \\
+%1  &   0   &  7 &   18   &  3  &   0\\
+%0   &  0  &   4   & 32  &   4  &   0\\
+%0    & 0   &  3   & 11    & 1    & 0\\
+%0   &  0  &   0   &  6  &   0    & 0\\
+%\end{pmatrix}$          &      $ \begin{pmatrix}
+%0   &  0  &   2   &  4  &   0  &   0 \\
+%0   &  0    & 1  &   7   &  0 &    0 \\
+%0  &   0   &  3 &   26   &  0  &   0\\
+%0   &  0  &    2  & 38  &   0  &   0\\
+%0    & 0   &  1   & 14    & 0    & 0\\
+%0   &  0  &   0   &  6  &   0    & 0\\
+%\end{pmatrix}$ \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Nom Log Reg}}   &        $ \begin{pmatrix}
+%4   &  0  &   0   &  2  &   0  &   0 \\
+%1   &  0    & 1  &   2   &  3 &    1 \\
+%0  &   0   &  11 &   16   &  1  &   1\\
+%2   &  1  &    4  & 29  &   4  &   0\\
+%2    & 0   &  1   & 9    & 2    & 1\\
+%0   &  0  &   1   &  3  &   1    & 1\\
+%\end{pmatrix}$                          &            $ \begin{pmatrix}
+%2   &  0  &   0   &  4  &   0  &   0 \\
+%1   &  0    & 0  &   3   &  4 &    0 \\
+%1  &   0   &  9 &   16   &  2  &   1\\
+%3   &  1  &    4  & 31  &   1  &   0\\
+%0    & 0   &  0   & 14    & 1    & 0\\
+%0   &  0  &   1   &  4  &   0    & 1\\
+%\end{pmatrix}$                             \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Random Forest}} &            $ \begin{pmatrix}
+%4   &  0  &   0   &  2  &   0  &   0 \\
+%0   &  0    & 1  &   2   &  5 &    0 \\
+%0  &   1   &  18 &   9   &  1  &   0\\
+%1   &  1  &    5  & 26  &   5  &   2\\
+%0    & 0   &  1   & 7    & 6    & 1\\
+%0   &  0  &   1   &  2  &   2    & 1\\
+%\end{pmatrix}$                  &                   $ \begin{pmatrix}
+%4   &  0  &   1   &  1  &   0  &   0 \\
+%0   &  1    & 1  &   4   &  2 &    0 \\
+%0  &   1   &  20 &   7   &  2  &   0\\
+%2   &  1  &    6  & 25  &   4  &   4\\
+%1    & 0   &  3   & 6    & 4    & 1\\
+%0   &  0  &   3   &  1  &   1    & 1\\
+%\end{pmatrix}$                \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Knn}}           &        $\begin{pmatrix}
+%4   &  0  &   0   &  1  &   1  &   0 \\
+%0   &  1    & 1  &   4   &  2 &    0 \\
+%0  &   1   &  16 &   9   &  1  &   2\\
+%2   &  1  &    8  & 24  &   5  &   0\\
+%1    & 0   &  2   & 9    & 3    & 0\\
+%0   &  0  &   1   &  3  &   2    & 0\\
+%\end{pmatrix}$                           &                $ \begin{pmatrix}
+%3   &  0  &  20   &  1  &   0  &   0 \\
+%1   &  1    & 0  &   2   &  4 &    0 \\
+%1  &   0   &  20 &   6   &  2  &   0\\
+%1   &  2  &    6  & 28  &   2  &   1\\
+%1    & 0   &  0   & 7    & 7    & 0\\
+%0   &  0  &   3   &  0  &   2    & 1\\
+%\end{pmatrix}$                   \\ \hline
+%\end{tabular}
+
+%\end{table}
 }
+\def\childConf{
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{fig/Results/childConfusion}
+\end{figure}
+%\begin{table}[h]
+%\begin{tabular}{lll}
+%\cline{2-3}
+%\multicolumn{1}{c}{\textbf{$\begin{pmatrix}
+%TP & FN\\ 
+%FP& TN
+%\end{pmatrix}$}}               & \multicolumn{2}{|c|}{\textbf{Child vs. No Child Confusion Matricies}}  \\ \cline{2-3} 
+%                                             & \multicolumn{1}{c|}{\textbf{SFS}} & \multicolumn{1}{c|}{\textbf{MAN}} \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Log Reg}}       & $\begin{pmatrix}
+%59 & 11\\ 
+% 6& 28
+%\end{pmatrix}$                        &                  $\begin{pmatrix}
+%56 & 12\\ 
+% 15& 21
+%\end{pmatrix}$  \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Random Forest}} &   $\begin{pmatrix}
+%57 & 13\\ 
+% 7& 27
+%\end{pmatrix}$                     &             $\begin{pmatrix}
+%62 & 8\\ 
+% 14& 20
+%\end{pmatrix}$   \\ \hline
+%\multicolumn{1}{|l|}{\textbf{Knn}}           &  $\begin{pmatrix}
+%62 & 8\\ 
+% 10& 24
+%\end{pmatrix}$                      &         $\begin{pmatrix}
+%61 & 9\\ 
+%16& 18
+%\end{pmatrix}$  \\ \hline
+%\end{tabular}
+%\end{table}
+}
+
+%%Nominal Regression weights
+%\def\nominalWeights{
+%\
+%}
 
 
 

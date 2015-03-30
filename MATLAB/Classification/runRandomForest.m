@@ -1,6 +1,6 @@
 function rf=runRandomForest(x_train,x_test,y_train,y_test,task)
     NTrees=13;
-    rf.B = TreeBagger(NTrees,x_train,y_train,'FBoot',0.5,'OOBPred','On');
+    rf.B = TreeBagger(NTrees,x_train,y_train,'FBoot',0.7,'OOBPred','On');
     [rf.yhat,rf.score,rf.stdevs]= predict(rf.B,x_test);
     rf.yhat =str2num(cell2mat(rf.yhat));
     rf.confusion=confusionmat(y_test,rf.yhat);

@@ -11,7 +11,9 @@
 \usepackage{graphicx}
 \usepackage{pgfplots} 
 \usepackage{booktabs}
+\usepackage[toc,page]{appendix}
 \usepackage{multicol}
+\usepackage{color,soul}
 \usepackage{float}
 \usepackage{url}
 \usepackage[font=scriptsize]{subfig}
@@ -48,8 +50,6 @@ bottom=30mm,}
 %Introduction
 \input{tex/introduction}
 
-
-
 %Data
 \input{tex/Data}
 
@@ -61,6 +61,19 @@ bottom=30mm,}
 
 %Results
 \input{tex/Results}
+
+%Discussion
+\input{tex/Discussion}
+
+%Conclusion
+\input{tex/Conclusion}
+
+\bibliography{Bib/bibl2}
+\bibliographystyle{unsrt}
+
+%Appendix
+%\appendix
+\input{tex/Appendix}
 
 
 
@@ -113,8 +126,7 @@ bottom=30mm,}
 %
 %\end{thebibliography}
 
-\bibliography{Bib/bibl2}
-\bibliographystyle{unsrt}
+
 
 \end{document}
 

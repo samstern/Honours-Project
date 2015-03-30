@@ -1,0 +1,19 @@
+\chapter{Conclusion}
+
+The goal of this project was to address the privacy concerns raised regarding smart meter data by constructing models to infer household properties. We have been able to confirm that, although there are likely numerous factors that determine the way in which a household uses energy, it is possible to extract meaningful information about the occupants from smart meter data. The main contributions of this project are:
+
+\begin{itemize}
+
+\item \textbf{Dataset} : Data pertaining to the electricity consumed by households that participated in the HES study was extracted and inserted into a MySQL database. This raw data was manipulated to construct a dataset of 519 labeled time-series electricity consumption data, each of which of uniform length and granularity as outlined in Chapter \ref{ch:Data}. 
+
+\item \textbf{Feature Engineering} : The data was extracted from the database and imported to MATLAB where the data could be further analysed in order to search for discrepancies between consumption patterns that could be indicative of different household groups. In Chapter \ref{ch:Features} the features were discussed 
+
+\item Classification
+\end{itemize}
+
+The results from Chapter \ref{ch:Results} give valuable insight into what sorts of information can be inferred about a household from their electricity consumption. The amount of electricity used in a home is dependent on numerous factors concerning the lifestyle of the occupants, as well as properties of the dwelling itself, and while the automatic classifiers presented here .  
+While the average consumer may be put somewhat at ease that it was not possible to infer a household's socio-economic status with confidence, the results presented here have shown that intimate information about a household can be inferred by electricity consumption data gathered by smart meters. 
+
+There were very few trends linking energy lables and socio-eoonomic group
+
+A challenge in applying these methods in practice would be in collecting reliable data. While energy companies will have access to much more smart meter data than that present in the HES study, obtaining labels for the data would be a challenge.
