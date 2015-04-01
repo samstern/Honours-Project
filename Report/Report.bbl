@@ -26,16 +26,6 @@ SAS~United Kingdom.
   explosion}.
 \newblock From smart metering to smart marketing. 2010.
 
-\bibitem{Quinn}
-Elias~Leake Quinn.
-\newblock Privacy and the new energy infrastructure.
-\newblock {\em SSRN Journal}, 2014.
-
-\bibitem{LMW}
-Mikhail~A. Lisovich, Deirdre~K. Mulligan, and Stephen~B. Wicker.
-\newblock Inferring personal information from demand-response systems.
-\newblock {\em IEEE Security and Privacy Magazine}, 8(1):11--20, 2010.
-
 \bibitem{Beckel_3}
 Christian Beckel, Leyna Sadamori, Thorsten Staake, and Silvia Santini.
 \newblock Revealing household characteristics from smart meter data.
@@ -61,6 +51,11 @@ J.~Z. Kolter and Tommi Jaakkola.
 \newblock In Neil~D. Lawrence and Mark~A. Girolami, editors, {\em Proceedings
   of the Fifteenth International Conference on Artificial Intelligence and
   Statistics (AISTATS-12)}, volume~22, pages 1472--1482, 2012.
+
+\bibitem{LMW}
+Mikhail~A. Lisovich, Deirdre~K. Mulligan, and Stephen~B. Wicker.
+\newblock Inferring personal information from demand-response systems.
+\newblock {\em IEEE Security and Privacy Magazine}, 8(1):11--20, 2010.
 
 \bibitem{Wilhite}
 Harold Wilhite, Hidetoshi Nakagami, Takashi Masuda, Yukiko Yamaga, and Hiroshi
@@ -103,10 +98,13 @@ Fintan McLoughlin, Aidan Duffy, and Michael Conlon.
 \newblock {\em Energy}, 50:120--130, 2013.
 
 \bibitem{ONS}
-
+Infuse2011.mimas.ac.uk.
+\newblock Infuse data wizard, 2015.
 
 \bibitem{CSE}
-
+Cse.org.uk.
+\newblock How much electricity am i using? | centre for sustainable energy,
+  2015.
 
 \bibitem{DECC}
 Department of~Energy and Climate Change.
@@ -236,5 +234,10 @@ J.~Gorodkin.
 \newblock Comparing two k-category assignments by a k-category correlation
   coefficient.
 \newblock {\em Computational Biology and Chemistry}, 28(5-6):367--374, 2004.
+
+\bibitem{Frank}
+Eibe Frank and Mark Hal.
+\newblock A simple approach to ordinal classification.
+\newblock Technical report, University of Waikato, 2001.
 
 \end{thebibliography}

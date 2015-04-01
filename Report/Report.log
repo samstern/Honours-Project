@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  30 MAR 2015 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  31 MAR 2015 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,18 +929,18 @@ Package geometry Warning: Over-specification in `v'-direction.
 (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1041,19 +1041,24 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.10}).
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<fig/UoE_Logo.pdf, id=4, 192.72pt x 154.5775pt>
+File: fig/UoE_Logo.pdf Graphic file (type pdf)
+ <use fig/UoE_Logo.pdf>
+Package pdftex.def Info: fig/UoE_Logo.pdf used on input line 46.
+(pdftex.def)             Requested size: 192.71951pt x 154.5771pt.
+ [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./
-Report.toc
-[1
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig/U
+oE_Logo.pdf>] [1] (./Report.toc [1
 
 ])
 \tf@toc=\write4
@@ -1061,44 +1066,93 @@ Report.toc
 
  (./tex/introduction.tex [2]
 Chapter 1.
+
+Overfull \hbox (3.28998pt too wide) in paragraph at lines 7--8
+[]\OT1/cmr/m/n/12 Even well-intentioned pro-grammes run the risk of cross-ing p
+ri-vacy lines. SHIM-
+ []
+
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-[4]) [5] (./tex/Data.tex [6]
+[4] [5]) (./tex/Data.tex [6]
 Chapter 2.
 [7
 
-] [8] <fig/preProcess.pdf, id=45, 394.47375pt x 190.7125pt>
+] [8] <fig/preProcess.pdf, id=57, 394.47375pt x 190.7125pt>
 File: fig/preProcess.pdf Graphic file (type pdf)
 
 <use fig/preProcess.pdf>
-Package pdftex.def Info: fig/preProcess.pdf used on input line 36.
+Package pdftex.def Info: fig/preProcess.pdf used on input line 39.
 (pdftex.def)             Requested size: 236.68607pt x 114.42838pt.
  [9]
-Overfull \hbox (62.61337pt too wide) in paragraph at lines 42--42
+Overfull \hbox (13.90373pt too wide) in paragraph at lines 45--45
 []  [] 
  []
 
-[10 <./fig/preProcess.pdf>] (./fig/household369OneWeek.tex)
-Overfull \hbox (20.01697pt too wide) in paragraph at lines 1043--55
- [][] 
- []
+[10 <./fig/preProcess.pdf>]
+Package epstopdf Info: Source file: <fig/household369OneWeek.eps>
+(epstopdf)                    date: 2015-03-30 23:01:43
+(epstopdf)                    size: 14500 bytes
+(epstopdf)             Output file: <fig/household369OneWeek-eps-converted-to.p
+df>
+(epstopdf)                    date: 2015-03-30 23:02:09
+(epstopdf)                    size: 12125 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/household369OneWeek-ep
+s-converted-to.pdf fig/household369OneWeek.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
 
-(./fig/household369.tex)
-Overfull \hbox (16.42664pt too wide) in paragraph at lines 4070--56
- [][] 
- []
+<fig/household369OneWeek-eps-converted-to.pdf, id=82, 742.775pt x 323.2075pt>
+File: fig/household369OneWeek-eps-converted-to.pdf Graphic file (type pdf)
 
-[11] [12] (./fig/household75.tex) (./fig/household121.tex)
-Overfull \hbox (82.27629pt too wide) in paragraph at lines 71--71
-[]|  [][] 
- []
+<use fig/household369OneWeek-eps-converted-to.pdf>
+Package pdftex.def Info: fig/household369OneWeek-eps-converted-to.pdf used on i
+nput line 58.
+(pdftex.def)             Requested size: 371.38658pt x 161.60335pt.
+Package epstopdf Info: Source file: <fig/household369.eps>
+(epstopdf)                    date: 2015-03-30 23:23:24
+(epstopdf)                    size: 31177 bytes
+(epstopdf)             Output file: <fig/household369-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-30 23:23:50
+(epstopdf)                    size: 24276 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/household369-eps-conve
+rted-to.pdf fig/household369.eps>
+(epstopdf)             \includegraphics on input line 59.
+Package epstopdf Info: Output file is already uptodate.
 
-[13]) (./tex/Features.tex [14]
+<fig/household369-eps-converted-to.pdf, id=83, 536.0025pt x 244.915pt>
+File: fig/household369-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/household369-eps-converted-to.pdf>
+Package pdftex.def Info: fig/household369-eps-converted-to.pdf used on input li
+ne 59.
+(pdftex.def)             Requested size: 412.56497pt x 188.51038pt.
+ [11 <./fig/household369OneWeek-eps-converted-to.pdf>] [12 <./fig/household369-
+eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/householdBad.eps>
+(epstopdf)                    date: 2015-03-30 23:13:54
+(epstopdf)                    size: 50867 bytes
+(epstopdf)             Output file: <fig/householdBad-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-30 23:14:36
+(epstopdf)                    size: 38154 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/householdBad-eps-conve
+rted-to.pdf fig/householdBad.eps>
+(epstopdf)             \includegraphics on input line 76.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/householdBad-eps-converted-to.pdf, id=101, 637.38126pt x 289.08pt>
+File: fig/householdBad-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/householdBad-eps-converted-to.pdf>
+Package pdftex.def Info: fig/householdBad-eps-converted-to.pdf used on input li
+ne 76.
+(pdftex.def)             Requested size: 412.56497pt x 187.11461pt.
+ [13 <./fig/householdBad-eps-converted-to.pdf>]) (./tex/Features.tex [14]
 Chapter 3.
 
 LaTeX Warning: Reference `fig:qqPlot' on page 15 undefined on input line 10.
@@ -1118,8 +1172,8 @@ city_child-eps-converted-to.pdf fig/Features/Total_Electricity_child.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Total_Electricity_child-eps-converted-to.pdf, id=88, 485.815pt x 
-281.05pt>
+<fig/Features/Total_Electricity_child-eps-converted-to.pdf, id=116, 485.815pt x
+ 281.05pt>
 File: fig/Features/Total_Electricity_child-eps-converted-to.pdf Graphic file (t
 ype pdf)
  <use fig/Features/Total_Electricity_child-eps-converted-to.pdf>
@@ -1138,8 +1192,8 @@ city_socio-eps-converted-to.pdf fig/Features/Total_Electricity_socio.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Total_Electricity_socio-eps-converted-to.pdf, id=89, 503.8825pt x
- 310.15875pt>
+<fig/Features/Total_Electricity_socio-eps-converted-to.pdf, id=117, 503.8825pt 
+x 310.15875pt>
 File: fig/Features/Total_Electricity_socio-eps-converted-to.pdf Graphic file (t
 ype pdf)
  <use fig/Features/Total_Electricity_socio-eps-converted-to.pdf>
@@ -1164,8 +1218,8 @@ hild-eps-converted-to.pdf fig/Features/Day_Average_child.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Day_Average_child-eps-converted-to.pdf, id=93, 615.29875pt x 302.
-12875pt>
+<fig/Features/Day_Average_child-eps-converted-to.pdf, id=121, 615.29875pt x 302
+.12875pt>
 File: fig/Features/Day_Average_child-eps-converted-to.pdf Graphic file (type pd
 f)
  <use fig/Features/Day_Average_child-eps-converted-to.pdf>
@@ -1184,8 +1238,8 @@ ocio-eps-converted-to.pdf fig/Features/Day_Average_socio.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Day_Average_socio-eps-converted-to.pdf, id=94, 640.3925pt x 359.3
-425pt>
+<fig/Features/Day_Average_socio-eps-converted-to.pdf, id=122, 640.3925pt x 359.
+3425pt>
 File: fig/Features/Day_Average_socio-eps-converted-to.pdf Graphic file (type pd
 f)
  <use fig/Features/Day_Average_socio-eps-converted-to.pdf>
@@ -1208,7 +1262,7 @@ s-converted-to.pdf fig/Features/APOD_child.eps>
 (epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/APOD_child-eps-converted-to.pdf, id=124, 568.1225pt x 379.4175pt>
+<fig/Features/APOD_child-eps-converted-to.pdf, id=152, 568.1225pt x 379.4175pt>
 File: fig/Features/APOD_child-eps-converted-to.pdf Graphic file (type pdf)
 <use fig/Features/APOD_child-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Features/APOD_child-eps-converted-to.pdf used on i
@@ -1227,7 +1281,7 @@ s-converted-to.pdf fig/Features/APOD_socio.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/APOD_socio-eps-converted-to.pdf, id=128, 723.70375pt x 566.115pt>
+<fig/Features/APOD_socio-eps-converted-to.pdf, id=156, 723.70375pt x 566.115pt>
 File: fig/Features/APOD_socio-eps-converted-to.pdf Graphic file (type pdf)
 <use fig/Features/APOD_socio-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Features/APOD_socio-eps-converted-to.pdf used on i
@@ -1256,7 +1310,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/POW_rat_child-eps-converted-to.pdf, id=148, 583.17876pt x 353.32p
+<fig/Features/POW_rat_child-eps-converted-to.pdf, id=177, 583.17876pt x 353.32p
 t>
 File: fig/Features/POW_rat_child-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Features/POW_rat_child-eps-converted-to.pdf>
@@ -1275,7 +1329,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/POW_rat_socio-eps-converted-to.pdf, id=149, 541.02126pt x 291.087
+<fig/Features/POW_rat_socio-eps-converted-to.pdf, id=178, 541.02126pt x 291.087
 5pt>
 File: fig/Features/POW_rat_socio-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Features/POW_rat_socio-eps-converted-to.pdf>
@@ -1300,7 +1354,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/log_ADV_child-eps-converted-to.pdf, id=165, 595.22375pt x 251.941
+<fig/Features/log_ADV_child-eps-converted-to.pdf, id=196, 595.22375pt x 251.941
 25pt>
 File: fig/Features/log_ADV_child-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Features/log_ADV_child-eps-converted-to.pdf>
@@ -1319,7 +1373,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/log_ADV_socio-eps-converted-to.pdf, id=166, 832.10875pt x 461.725
+<fig/Features/log_ADV_socio-eps-converted-to.pdf, id=197, 832.10875pt x 461.725
 pt>
 File: fig/Features/log_ADV_socio-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Features/log_ADV_socio-eps-converted-to.pdf>
@@ -1340,7 +1394,7 @@ s-converted-to.pdf fig/Features/Corr_child.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Corr_child-eps-converted-to.pdf, id=190, 529.98pt x 262.9825pt>
+<fig/Features/Corr_child-eps-converted-to.pdf, id=220, 529.98pt x 262.9825pt>
 File: fig/Features/Corr_child-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Features/Corr_child-eps-converted-to.pdf>
@@ -1359,7 +1413,7 @@ s-converted-to.pdf fig/Features/Corr_socio.eps>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/Corr_socio-eps-converted-to.pdf, id=191, 786.94pt x 347.2975pt>
+<fig/Features/Corr_socio-eps-converted-to.pdf, id=221, 786.94pt x 347.2975pt>
 File: fig/Features/Corr_socio-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Features/Corr_socio-eps-converted-to.pdf>
@@ -1371,7 +1425,7 @@ _socio-eps-converted-to.pdf>] [26]) [27] (./tex/Models.tex [28]
 Chapter 4.
 [29
 
-] <fig/ordered_logit.jpg, id=239, 647.41875pt x 324.21124pt>
+] <fig/ordered_logit.jpg, id=269, 647.41875pt x 324.21124pt>
 File: fig/ordered_logit.jpg Graphic file (type jpg)
 
 <use fig/ordered_logit.jpg>
@@ -1389,7 +1443,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 5.
 [33
 
-] [34] <fig/Results/childConfusion.png, id=257, 426.393pt x 162.3666pt>
+] [34] <fig/Results/childConfusion.png, id=287, 426.393pt x 162.3666pt>
 File: fig/Results/childConfusion.png Graphic file (type png)
 
 <use fig/Results/childConfusion.png>
@@ -1407,7 +1461,7 @@ converted-to.pdf fig/Results/child_Acc.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_Acc-eps-converted-to.pdf, id=259, 670.505pt x 341.275pt>
+<fig/Results/child_Acc-eps-converted-to.pdf, id=289, 670.505pt x 341.275pt>
 File: fig/Results/child_Acc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_Acc-eps-converted-to.pdf>
@@ -1428,7 +1482,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_Matthews-eps-converted-to.pdf, id=273, 673.51625pt x 347.297
+<fig/Results/child_Matthews-eps-converted-to.pdf, id=303, 673.51625pt x 347.297
 5pt>
 File: fig/Results/child_Matthews-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/child_Matthews-eps-converted-to.pdf>
@@ -1447,7 +1501,7 @@ converted-to.pdf fig/Results/child_ROC.eps>
 (epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_ROC-eps-converted-to.pdf, id=274, 593.21625pt x 240.9pt>
+<fig/Results/child_ROC-eps-converted-to.pdf, id=304, 593.21625pt x 240.9pt>
 File: fig/Results/child_ROC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_ROC-eps-converted-to.pdf>
@@ -1461,7 +1515,7 @@ Overfull \hbox (15.01596pt too wide) in paragraph at lines 104--104
 
 [37 <./fig/Results/child_Matthews-eps-converted-to.pdf> <./fig/Results/child_RO
 C-eps-converted-to.pdf>]
-<fig/Results/socialConfusion.png, id=288, 476.5002pt x 426.393pt>
+<fig/Results/socialConfusion.png, id=318, 476.5002pt x 426.393pt>
 File: fig/Results/socialConfusion.png Graphic file (type png)
 
 <use fig/Results/socialConfusion.png>
@@ -1481,7 +1535,7 @@ ps-converted-to.pdf fig/Results/socialAccAll.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/socialAccAll-eps-converted-to.pdf, id=292, 781.92125pt x 485.815pt
+<fig/Results/socialAccAll-eps-converted-to.pdf, id=322, 781.92125pt x 485.815pt
 >
 File: fig/Results/socialAccAll-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/socialAccAll-eps-converted-to.pdf>
@@ -1501,7 +1555,7 @@ s-eps-converted-to.pdf fig/Results/social_Matthews.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/social_Matthews-eps-converted-to.pdf, id=298, 704.6325pt x 271.012
+<fig/Results/social_Matthews-eps-converted-to.pdf, id=328, 704.6325pt x 271.012
 5pt>
 File: fig/Results/social_Matthews-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/social_Matthews-eps-converted-to.pdf>
@@ -1521,11 +1575,14 @@ Overfull \hbox (2.30156pt too wide) in paragraph at lines 52--53
 
 [44]) (./tex/Conclusion.tex [45]
 Chapter 7.
-) (./Report.bbl [46
 
-] [47
+LaTeX Warning: Reference `ch:Data' on page 46 undefined on input line 7.
 
-] [48]) (./tex/Appendix.tex [49]
+[46
+
+]) (./Report.bbl [47] [48
+
+] [49]) (./tex/Appendix.tex [50]
 Appendix A.
 Package epstopdf Info: Source file: <fig/Results/social_ROC.eps>
 (epstopdf)                    date: 2015-03-27 11:36:55
@@ -1539,33 +1596,33 @@ f>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/social_ROC-eps-converted-to.pdf, id=342, 779.91376pt x 587.19376pt
+<fig/Results/social_ROC-eps-converted-to.pdf, id=375, 779.91376pt x 587.19376pt
 >
 File: fig/Results/social_ROC-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/social_ROC-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/social_ROC-eps-converted-to.pdf used on in
 put line 8.
 (pdftex.def)             Requested size: 412.56497pt x 310.61986pt.
- [50
+ [51
 
 ]
 Overfull \hbox (14.71637pt too wide) in paragraph at lines 12--28
 [][] 
  []
 
-) [51 <./fig/Results/social_ROC-eps-converted-to.pdf>] (./Report.aux)
+) [52 <./fig/Results/social_ROC-eps-converted-to.pdf>] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24093 strings out of 493117
- 922973 string characters out of 6135432
- 2221551 words of memory out of 5000000
- 26968 multiletter control sequences out of 15000+600000
+ 23628 strings out of 493117
+ 572214 string characters out of 6135432
+ 749042 words of memory out of 5000000
+ 26511 multiletter control sequences out of 15000+600000
  17563 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,83p,103255b,2012s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,83p,1440b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1584,10 +1641,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Report.pdf (53 pages, 747574 bytes).
+Output written on Report.pdf (54 pages, 769123 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
+ 447 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
