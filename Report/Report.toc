@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {3.2}Non-Linear Transformation}{15}
 \contentsline {section}{\numberline {3.3}Creating Features}{16}
 \contentsline {section}{\numberline {3.4}Periodicity}{25}
-\contentsline {section}{\numberline {3.5}Dimensionality Reduction}{26}
-\contentsline {subsection}{\numberline {3.5.1}Implementation}{27}
+\contentsline {section}{\numberline {3.5}Dimensionality Reduction}{27}
+\contentsline {subsection}{\numberline {3.5.1}Implementation}{28}
 \contentsline {chapter}{\numberline {4}Models}{29}
 \contentsline {section}{\numberline {4.1}Overview}{29}
 \contentsline {section}{\numberline {4.2}Logistic Regression}{29}
@@ -31,15 +31,16 @@
 \contentsline {section}{\numberline {5.2}Feature Selection}{35}
 \contentsline {section}{\numberline {5.3}Classification Results}{35}
 \contentsline {subsection}{\numberline {5.3.1}Children vs No Children}{36}
-\contentsline {subsection}{\numberline {5.3.2}Socio-Economic Group}{38}
-\contentsline {chapter}{\numberline {6}Discussion}{42}
-\contentsline {section}{\numberline {6.1}Features}{42}
-\contentsline {section}{\numberline {6.2}Classifiers}{43}
-\contentsline {subsection}{\numberline {6.2.1}Logistic Regression}{43}
-\contentsline {subsection}{\numberline {6.2.2}Random Forest}{44}
-\contentsline {subsection}{\numberline {6.2.3}Knn}{44}
-\contentsline {section}{\numberline {6.3}Comparison to Previous work}{45}
-\contentsline {chapter}{\numberline {7}Conclusion and Further Work}{46}
-\contentsline {section}{\numberline {7.1}Further Work}{47}
-\contentsline {chapter}{Bibliography}{48}
-\contentsline {chapter}{\numberline {A}}{51}
+\contentsline {subsection}{\numberline {5.3.2}Socio-Economic Group}{39}
+\contentsline {chapter}{\numberline {6}Discussion}{43}
+\contentsline {section}{\numberline {6.1}Features}{43}
+\contentsline {section}{\numberline {6.2}Classifiers}{45}
+\contentsline {subsection}{\numberline {6.2.1}Logistic Regression}{45}
+\contentsline {subsection}{\numberline {6.2.2}Random Forest}{45}
+\contentsline {subsection}{\numberline {6.2.3}Knn}{45}
+\contentsline {section}{\numberline {6.3}Comparison to Previous work}{46}
+\contentsline {chapter}{\numberline {7}Conclusion and Further Work}{47}
+\contentsline {section}{\numberline {7.1}Conclusion}{47}
+\contentsline {section}{\numberline {7.2}Further Work}{48}
+\contentsline {chapter}{Bibliography}{49}
+\contentsline {chapter}{\numberline {A}}{52}

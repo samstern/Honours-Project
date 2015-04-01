@@ -1,10 +1,10 @@
 \chapter{Results}
 \label{ch:Results}
-This section discusses the quantitative evaluation methods used to determine the potential for each of the classifiers to reveal household characteristics and then analyses the results from training and running each classifier.
+This section discusses the quantitative evaluation methods used to determine the potential for each of the classifiers to reveal household characteristics, and then analyses the results from training and running classifiers.
 
 \section{Evaluation Methods}
 \label{sec:evalMethods}
-For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification problem, returns a $K\times K$ matrix where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
+For each classifier, a \textit{confusion matrix} (CM) is produced using the MATLAB tool \texttt{confusionmat}, which, for a $K$ class classification problem, returns a $K\times K$ matrix, where each element $(i,j)$ contains the number of times an instance of class $i$ has been classified as $j$. The diagonal elements elements of CM contain the number of instances of households that have been classified correctly for each class. \cite{Stefanowski}
 
 
 The accuracy of a classifier is defined as the sum of the diagonal elements of CM, divided by the total number of samples,$S$.
@@ -14,37 +14,36 @@ The accuracy of a classifier is defined as the sum of the diagonal elements of C
 This is compared to the accuracy of performing a random guess (RG), which assigns a household to one of the $K$ classes at random.
 \[ACC_{RG}=\frac{1}{K}\]
 
-To account for the imbalances in classes, we also calculate the most probable class (MPC) which uses knowledge of the prior probability of each class in the training data to find a baseline by assigning all samples to the most probable class. 
+As a benchmark comparison for the classifiers, the baseline accuracy is calculated by assigning all households to the most probable class (MPC), based on the class with highest prior probability.   
 
 \[ACC_{MPC}=\frac{argmax(S^K)}{S}\]
 where $S^K$ is the number of samples from the test data that are in class $K$.
 
 \bigskip
 
-For socio-economic classification problem, the ordinal structure of the classes should also be taken into account i.e it is worse for our classifier to predict a household of social grade B as D, then it is to predict it as C1 or A. Therefore, the \textit{accuracy within n}\cite{Gaudette}. 
+For socio-economic classification problems, the ordinal structure of the classes should also be taken into account (i.e., it is worse for our classifier to predict a household of social grade B as D, than it is to predict B as C1 or A). Therefore, the \textit{accuracy within n}\cite{Gaudette}. 
 
+Particularly for unbalanced classes, reporting the accuracy alone is not satisfactory in determining the quality of a classifier, an obvious and well known example being: construct a classification problem where 99\% of instances are in class A and only 1\% are in class B. A classifier that simply predicts all new data as class A would be correct 99\% of the time, but would still not be a good classifier. 
 
-Particularly for unbalanced classes, reporting the accuracy alone is not satisfactory in determining the quality of a classifier. The obvious and well known example being; constructing a classification problem where 99\% of instances are in class A and only 1\% in class B. A classifier that simply predicts all new data as class A would be correct 99\% of the time, but would still not be a good classifier. 
-
-A widely applied method for evaluating a classifier is to compute the \textit{true positive rate} (TPR) and \textit{true negative rate}(TNR). The TPR gives the proportion of positives that are correctly identified as being positive, while the TNR gives the porportion of negatives that are correctly identified as negative.
+A widely applied method for evaluating a classifier is to compute the \textit{true positive rate} (TPR) and \textit{true negative rate}(TNR). The TPR gives the proportion of positives that are correctly identified as being positive, while the TNR gives the proportion of negatives that are correctly identified as negative.
 
 \begin{align*}
 TPR&=\frac{TP}{TP+FN}   &   TNR&=\frac{TN}{TN+FP}   
 \end{align*}
 
-From these statistics, it is common to plot an ROC curve, which is a plot of the TPR against the \textit{false positive rate}(FPR), which is defined as 1-TNR. The evaluation criterion (the area under the ROC curve) is preferred over the accuracy, particularly when considering unbalanced classes as the impact of skewness can be analysed \cite{Waegeman}. To create the ROC curve, a value is found for each classifier which acts as the threshold above which an instance is classified as positive. Typically for logistic regression, this is the probability of an instance being assigned to class 1.
+From these statistics, it is common to plot an ROC curve.  This is a plot of the TPR against the \textit{false positive rate}(FPR), which is defined as 1-TNR. The evaluation criterion (the area under the ROC curve) is preferred over the accuracy, particularly when considering unbalanced classes since the impact of skewness can be analysed using the trade-off between TNR and FPR at different thresholds. \cite{Waegeman}. 
 
-This is not as straight forward for random forests and knn as they are not probabilistic classifiers. Probabilities can, however be generated from the classifier results. For random forest the decision boundary may be the ratio of number of trees that vote in favor of assigning an unseen instance to class 1 and the total number of trees. In knn it is the number of nearest neighbors that are of class 1 divided by the total number of nearest neighbors.
+This is not as straight forward for random forests and Knn as it is for probabilistic classifiers such as logistic regression. Probabilities can, however be generated from the classifier results. For random forests the decision boundary may be the ratio of the number of trees that vote in favour of assigning an unseen instance to class 1 and the total number of trees. In Knn it is the number of nearest neighbours that are of class 1 divided by the total number of nearest neighbours.
 
-In computing the ROC curve to evaluate the binary classification task of discriminating between households with and without children is straight forward, it is straightforward te determine which class is `positive' and which is `negative'. However for multi-class classification it is unclear what is `positive' and what is `negative'. When evaluating their socio-economic classifier, Beckel et. al. group nearby groups together and then use a one-versus-all approach\cite{Beckel_2,Beckel_3}. A similar method is used, analogous to the \textit{accuracy within n} method described above, where classes within $n$ are considered positive and all else are negative.
+In binary classification problems, such as evaluating whether households have children, the concept of `positives' with relation to `negatives' is quite straight forward.  This is not the case, however, with multi-class problems, where the concepts are clouded.   Beckel et al., binarised their groups and used a one-verses-all approach when constructing their ROC curves \cite{Beckel_2,Beckel_3}.  A similar method was employed in this project, combining pairs of neighbouring classes and then labelling them as positive.  The results were evaluated against the remaining classes.
 
-The final metric that is presented is the Matthews correlation coefficient (MCC) which is a value between -1 and +1 representing the correlation between the predicted and true values of a binary classifier. A MCC of -1 indicates that that there is no correlation between the predicted a true class while a value of +1 would indicate a perfect classifier while a value of 0 means it is no better or worse than a random guess. MCC is a worthwhile metric to report as it gives a value to the performance without inflating the imbalances in class sizes \cite{Powers}. 
+The final metric worth discussing here is the Matthews correlation coefficient (MCC), a value between -1 and +1 that represents the correlation between the predicted and true outcomes of a binary classifier. An MCC of -1 indicates that that there is perfect anticorrelation between the predicted and true class, while a value of +1 suggests a perfect classifier, and a value of 0 means the model is \hl{no better or worse than a random guess}. MCC was selected because it gives a value to the performance without inflating the imbalances among class sizes\footnote{as opposed to, for example, the F1 score, that does not take into account the true negatives, which in our case is the number of correctly identified households with children.}\cite{Powers}.
 
-Let $X,Y$ each be an $S\times N$ matrix where $S$ is the number households and $N$ is the number classes. $X_s,n=1$ if a sample $s$ is predicted to be the $n^{th}$ class and 0 otherwise, $Y_s,n=1$ if a sample $s$ belongs to the $n^{th}$ class and 0 otherwise. The covariance of $X$ and $Y$ can then be written as
+Let $X,Y$ each be an $S\times N$ matrix where $S$ is the number of households and $N$ is the number of classes. $X_{s,n}=1$ if a sample $s$ is predicted to be the $n^{th}$ class and 0 otherwise. $Y_{s,n}=1$ if a sample $s$ belongs to the $n^{th}$ class and 0 otherwise. The covariance of $X$ and $Y$ can then be written as
 
-\[cov(X,Y)=\frac{1}{N}\sum^S_{s=1}\sum^N_{n=1}(X_{s,n}-\bar{X_n})((Y_{s,n}-\bar{Y_n})\]
+\[cov(X,Y)=\frac{1}{N}\sum^S_{s=1}\sum^N_{n=1}(X_{s,n}-\bar{X_n})(Y_{s,n}-\bar{Y_n})\]
 
-where $\bar{X_n}$ and $\bar{Y_n}$ are the means of the $n^th$ columns of $X$ and $Y$ respectively.
+where $\bar{X_n}$ and $\bar{Y_n}$ are the means of the $n^{th}$ columns of $X$ and $Y$, respectively.
 
 The MCC is then defined as,
 
@@ -55,7 +54,7 @@ For binary classification this can be interpreted as,
 
 \[MCC=\frac{TP\times TN-FP\times FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}\]
 
-While the MCC is mot commonly used when assessing binary classifiers, based on the definition of the MCC above, it can be extended to multi-class problems as described by Gorodkin\cite{Gorodkin}. If $C$ the confusion matrix of a given classifier, then the MCC is given as,
+While the MCC is not commonly used when assessing binary classifiers, based on the definition of the MCC above, it can be extended to multi-class problems, as described by Gorodkin\cite{Gorodkin}. If $C$ is the confusion matrix of a classifier, then the MCC is given as,
 
 \[MCC=\frac{\sum\limits^N_{k,l,m=1}C_{k,k}C_{m,l}-C_{l,m}C_{k,m}}{\sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{l,k}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{g,f}\bigg)\bigg]}\cdot \sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{k,l}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{f,g}\bigg)\bigg]}}\] 
 
@@ -71,22 +70,27 @@ While the MCC is mot commonly used when assessing binary classifiers, based on t
 
 \section{Feature Selection}
 
-As explained in section \ref{sec:dimensionalityReduction}, SFS was used to determine which features are of greatest value for each classifier. What was noticed, however, is that when running the SFS algorithm multiple times, the selected features were not always the same for each of the classifiers (even after cross-validation). This was seen particularly in random forest\footnote{This is because random forests rely on bootstrap aggregation}.  Therefore, the feature selection algorithm was run multiple times and the features that appeared most often were used. To evaluate the feature selection method, two additional sets of features were made (one for each classification problem) by choosing features based on how they appeared to separate classes in Section \ref{sec:creatingFeatures} just by visualisation. All classification models are evaluated using the features found by SFS as well as the features found manually (labeled as MAN). The lists of features used for each classifier are outlined in Appendix A. 
+As explained in Section \ref{sec:dimensionalityReduction}, SFS was used to determine the features that are of greatest value for each classifier. However, after running SFS multiple times, we noticed that the features found to be `optimal' for each of the classifiers were not always the same (even after cross-validation). This was especially evident in random forest\footnote{because random forests rely on random feature subset selection.}.  So we ran the feature selection algorithm multiple times and the set of features (for each classifier) that appeared most often was used. To evaluate the feature selection method, two additional sets of features were constructed (one for each classification problem) by choosing features based on how they appeared, by visualisation alone, to separate the classes in Section \ref{sec:creatingFeatures}. This was used as a baseline for comparison because it allowed us to exploit our domain knowledge, rather than have to rely on a random guess.  
+
+All classification models were evaluated using the features found by SFS as well as the features found manually (labeled as MAN). The lists of features used for each classifier are shown in Appendix A. 
+
 
 \section{Classification Results}
 
-In this section the results of the classifiers are presented when running each model on unseen data as outlined in Section \ref{sec:evalMethods}. First the results of discriminating between households with and without children is presented, then the results of the socio-economic classifiers are shows. The results are discussed to determine which classifier, and set of features, performs best on a the classification tasks.
+This section illustrates the results obtained by testing each model on unseen data, as outlined in Section \ref{sec:evalMethods}. First, the results of discriminating between households with and without children are presented, followed by the results of the socio-economic classifiers. These are discussed to determine which classifier, and set of features, performs best on the classification tasks.
 
-The same training and test sets are used for each classifier to ensure the that the results are fair. While the training set is the same that had been used in cross-validation to optimize the classifiers, the test data was entirely unused until this point.
+The same training and test sets were used for each classifier to ensure that the results were fair. While the training set was the same as that used in cross-validation to optimize the classifiers, the test data was entirely unused up to this point.
 
 \subsection{Children vs No Children}
 
 \childConf
 \childAccuracy
 
-The results from Figure \ref{fig:childAccuracy} show the accuracy of each classifier built to discriminate between households with and without children. All classifiers perform better than the baseline accuracy (which is the accuracy obtained all households were classified as the class with highest prior probability). The logistic regression model built with features selected using SFS predicted the greatest percentage of households correctly. Furthermore Figure \ref{fig:childMat} gives the Matthews correlation coefficients (MCC) of each of the classifier. As discussed in Section \ref{sec:evalMethods}, the MCC is a more suitable performance measure than the accuracy as it `rewards' correctly classifying the underrepresented class and `punishes' that are strongly biased \cite{Beckel_3}. All classifiers take on positive values, meaning that the classifiers are less inclined to miss-classify a household regardless of which class has a higher prior probability. 
+The results in Figure \ref{fig:childAccuracy} show the accuracy of each classifier built to discriminate between households with and without children. All the classifiers performed better than the baseline accuracy (in this case, the accuracy obtained by classifying all households as being without children). The logistic regression model, built using features selected by SFS, predicted the greatest percentage of households correctly. 
 
-While the logistic regression classifier using the SFS features classifier gave both the highest accuracy and MCC, the performance is not significantly better than the random forest and Knn methods (also using SFS). What is noticeable, is that all classifiers performed better when trained with features found by SFS compared with manually feature selection, with the accuracy of all three classifiers that used SFS having being of above 80\% and all those with manually selected features being below 80\%. The distinction is even more pronounced in the MCCs of each of the classifiers, where all classifiers using SFS features have an MCC of over 0.5, while none of the ones using manually selected features do. In the case of logistic regression, there is the greatest difference in performance with the SFS classifier having an MCC of 0.64 and the MAN classifier only having an MCC of 0.42. 
+Figure \ref{fig:childMat} illustrates the Matthews correlation coefficients (MCC) of each of the classifiers.  As discussed in Section \ref{sec:evalMethods}, the MCC is a more suitable performance measure than accuracy because it `rewards' correctly identifying samples from the under-represented class and `punishes' predictors that are strongly biased \cite{Beckel_3}.  \hl{This was relevant to the results we obtained because the class of interest was a relatively small proportion of our total population.}  Indeed, all the classifiers took on positive values, meaning that the classifiers were less inclined to misclassify a household regardless of which class had a higher prior probability. 
+
+While the logistic regression classifier using the SFS features gave both the highest accuracy and MCC, the performance was not significantly better than the random forest and Knn methods (also using SFS). What was distinctly noticeable was that all classifiers performed better when trained with features found by SFS as compared with manually selected features (MAN)  The accuracy of all three classifiers that used SFS came in above 80\%, whereas those trained on manually selected features were below 80\%. The distinction was even more pronounced in each of the classifier's MCC's.  All classifiers using SFS features had an MCC of at least 0.59, while the best of the manually selected features obtained an MCC of 0.5.  %The greatest difference was observed in logistic regression with the SFS model leading to an MCC of 0.64 ,verses the MAN model, whose MCC was only 0.42. 
 
 %Given that different feature selection methods have been used, it is worthwile to see which features contributed most to the classifiers such. With the logistic regression, we can compare the $\textbf{w}$ coefficients.
 %\begin{align*}
@@ -100,28 +104,39 @@ While the logistic regression classifier using the SFS features classifier gave 
 \childMat
 
 \childROC
-The ROC curves shown in figure \ref{fig:childROC} shows how the TPR changes when varying the FPR. Again, it can be seen that SFS features generate better results than MAN features. All three classifier trained on SFS features can identify 70\% of households without children whilst only misslabeling 11\% whereas the classifiers trained on MAN features would need to have an FPR of at least 17\% to achieve the same TPR. Again, the logistic regression classifier gives the best performance (based on the area under the curve). Particularly in the Knn classifier, the TPR quickly increases with little increase in FPR, however once the specifificity (1-FPR) decreases, the performance of the random forest and logistic regression classifier become more accurate than Knn.
+The ROC curves in Figure \ref{fig:childROC} show how the TPR changes when varying the FPR. Again, it can be seen that SFS features generated better results than MAN features. All three classifiers trained on SFS features could identify 70\% of households without children, whilst only mislabeling 11\% of those with children, whereas the classifiers trained on MAN features would have needed an FPR of at least 17\% to have achieved the same TPR. Again, the logistic regression classifier gave the best performance (based on the area under the curve). Looking at the Knn classifier, the TPR only has a steep gradient when the FPR is very low.  But as FPR limitations on the number of false positives that are allowed is relaxed, logistic regression and random forest start to outperform.
+
+
 \childResults
 
-Finally, the table above shows the TPR and TNR for each of the classifiers along with the other statistics discussed previously. While the logistic repression classifier did have the greatest accuracy and MCC, it does not have the highest TPR, meaning that it was not best at identifying positive instances (households without children) irrespective of the number of missed negatives, as opposed to the Knn classifier which was able to correctly identify 88.6\% of the households without children. Looking at the TNR of each of the classifiers, Knn performs worst with both SFS and MAN features. Since it had the highest TPR, it is obvious that the classifier relies more on the prior probability. This is intuitively obvious as, if there are two clusters that overlap in feature space (i.e are not separable), and one cluster is has more points, then any new point in the same space will see more neighbors of the class that occurs more frequently. From looking at the TNR, it can also be seen that the models built using MAN features rely much more on the imbalances in the sample sizes whereas models trained using SFS features are able to perform better than just a random guess. 
+Finally, the table above shows the TPR and TNR for each of the classifiers along with the other previously discussed statistics. The logistic regression classifier achieved the greatest accuracy, MCC and area under the ROC, although it did not have the highest TPR.  From this one can interpret that the logistic regression classifier was not overfit to the training data \footnote{because the positive class also had a larger sample size.}.  In contrast, the Knn classifier was able to correctly identify 88.6\% of the households without children. 
 
+Looking at the TNR of each of the classifiers, Knn performed worst when using both SFS and MAN features. Since it had the highest TPR, it is obvious that the classifier relied more on the prior probability than the others. This is intuitively obvious: if there are two clusters that overlap in feature space (i.e., are not separable) and one cluster is has more points, then any new point in the same space will see more neighbours of the class that occurs more frequently. 
+
+From looking at the TNR, it can also be seen that the models built using MAN features relied more on the imbalances in the sample sizes, whereas the models that trained using SFS features exploited differences in the values of the household attributes to make more informed decisions about a household class. 
+
+This outcome indicates that information can be inferred from smart meter data.
+
+ 
 \subsection{Socio-Economic Group}
 
 
-While the results from the precious section showed that it is possible to discriminate between households with and without children, the classifiers built to determine a household's socio-economic status are not as promising.  By looking at the confusion matrix generated by each classifier, as shown in Table \ref{tab:socioConf}, insight can be gained into how each of the classifiers predicts unseen data. The first thing that is noticed is that the ordinal logistic regression models are little better than a biased random guess. They predict almost all test instances as either class C1 or C2, which are the two classes with the highest prior probability based on the sample population ($p(C1)=0.38$, $p(C2)=0.25$). While the nominal logstic regression classifiers are not significantly more accurate, they are not as heavily biased towards the most probable classes. This indicates that the proportional odds assumption is not satisfied. This can be confirmed by looking at the weights learned in the nominal regression models shown in Appendix A. If the proportional odds assumption were upheld, then the weights across each row would be similar (other than the bias $w_0$)
+While the results from the previous section showed that it is indeed possible to discriminate between households with and without children, the classifiers built to determine a household's socio-economic status were not as promising.  The confusion matrix generated by each classifier, as shown in Table \ref{tab:socioConf}, gives some insight into how the individual classifiers predicted unseen data. The first thing to notice is that the ordinal logistic regression models were only slightly better at predicting a household's socio-economic status than biased random guesses. They predicted almost all test instances as either class C1 or C2, the two classes with the highest prior probability based on the sample population ($p(C1)=0.38$, $p(C2)=0.25$).  
+
+The nominal (multinomial) logistic regression classifiers were not much more accurate, although they were not as heavily biased as the ordinal regression model towards the most probable classes. The weights learned by the multinomial model can confirm that  the proportional odds assumption was not satisfied.   Appendix A shows the table with the weights learned.  If the proportional odds assumption had been upheld, then the weights across each row would have been similar (other than the bias $w_0$).
 \socioConf
 
-From the confusion matrices it can also be seen that all of the classifiers give a very low probability of a household being in class D. This is not uprising as the figures outlined in Chapter \ref{ch:Features} suggested that it is difficult to  distinguish between households of socio-ecomic classes D,C1 and C2, and since D has a much lower prior probability that the other two, a probabilistic classifier is likely to assign an unseen instance to either class C1 or C2.
+From the confusion matrices it can also be seen that all of the classifiers gave a very low probability of a household being in class D. This is not surprising as the figures outlined in Chapter \ref{ch:Features} suggested that it should have been difficult to distinguish between households of socio-economic classes D, C1 and C2. Since D has a much lower prior probability than the other two, a probabilistic classifier would likely have assigned an unseen instance to either class C1 or C2.
 
-Looking at Figure \ref{fig:socioAllAcc}, it can be seen that, although the accuracy of the classifiers starts to quickly increase as more of its neighbors are considered positive, the benchmark accuracy also increases rapidly. This is because the most probable classes are in the middle of the ordering and are therefore more likely to be a neighboring class.
+Looking at Figure \ref{fig:socioAllAcc}, it can be seen that, although the accuracy of the classifiers starts to quickly increase as more neighbouring classes are considered positive, the benchmark accuracy also increases rapidly. This is because the most probable classes are in the middle of the ordering and are therefore more likely to be within the $n$ nearest neighbours.
 
 
 \socioAllAcc
 
 \socioMat
 
-Figure \ref{fig:socioMat} shows the MMCs of each classifier. MAN features tend to do better than SFS. This could likely be because SFS is a greedy algorithm and, particularly for multi-class problems with limited amounts of data to perform validation on,  a backwards step such as that used in SFFS could render a more optimal set of features. Random forests are less effected by this as they, in a sense perform as they determine which feature is best at each stage of being built. The MCC treats the data as nominal and penalizes all miss-classification equally. A modification to the MCC that accounts for the ordering of the data would give a better evaluation of each of the models, however no such method was found in the literature.  
+Figure \ref{fig:socioMat} shows the MMC's of each classifier. MAN features tend to do better than SFS here. SFS is a greedy algorithm and, particularly for multi-class problems with limited amounts of data to perform validation on,  a backwards step such as that used in SFFS could render a more optimal set of features. Random forests are less affected by this as they determine which feature is best at each stage of being built. The MCC treats the data as nominal and penalizes all misclassifications equally. A modification to the MCC that accounts for the ordering of the data would give a better evaluation of each of the models, however no such method was found in the literature.  
 
-The final evaluation metrics computed are ROC curves generated by the classifiers, shown in Apendix A, and confirm that the classifiers' performance is only useful when trying to extract households of the classes C1 and C2.
+The final evaluation metrics computed were ROC curves, which we generated by grouping classes A and B, C1 and C2 ,and D and E together.  Each of these groups was then evaluated against the other two.  As shown in Appendix A, the classifier's performances were only useful when trying to extract C1 and C2 households.
 
-
+While this does not prove that socio-economic information can't be extracted from smart meter data, it does show that the problem is non-trivial.

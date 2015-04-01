@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  31 MAR 2015 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  1 APR 2015 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1420,8 +1420,17 @@ File: fig/Features/Corr_socio-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/Features/Corr_socio-eps-converted-to.pdf used on i
 nput line 102.
 (pdftex.def)             Requested size: 412.56497pt x 182.07425pt.
- [24 <./fig/Features/Corr_child-eps-converted-to.pdf>] [25 <./fig/Features/Corr
-_socio-eps-converted-to.pdf>] [26]) [27] (./tex/Models.tex [28]
+ [24 <./fig/Features/Corr_child-eps-converted-to.pdf>] (./fig/household369Conv.
+tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+Overfull \hbox (69.45792pt too wide) in paragraph at lines 116--116
+ []|  [] 
+ []
+
+[25 <./fig/Features/Corr_socio-eps-converted-to.pdf>] [26] [27])
+(./tex/Models.tex [28]
 Chapter 4.
 [29
 
@@ -1443,11 +1452,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 5.
 [33
 
-] [34] <fig/Results/childConfusion.png, id=287, 426.393pt x 162.3666pt>
+] [34] [35]
+<fig/Results/childConfusion.png, id=291, 426.393pt x 162.3666pt>
 File: fig/Results/childConfusion.png Graphic file (type png)
 
 <use fig/Results/childConfusion.png>
-Package pdftex.def Info: fig/Results/childConfusion.png used on input line 84.
+Package pdftex.def Info: fig/Results/childConfusion.png used on input line 86.
 (pdftex.def)             Requested size: 298.47305pt x 113.65584pt.
 Package epstopdf Info: Source file: <fig/Results/child_Acc.eps>
 (epstopdf)                    date: 2015-03-26 16:06:31
@@ -1458,18 +1468,18 @@ Package epstopdf Info: Source file: <fig/Results/child_Acc.eps>
 (epstopdf)                    size: 8083 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Results/child_Acc-eps-
 converted-to.pdf fig/Results/child_Acc.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/child_Acc-eps-converted-to.pdf, id=289, 670.505pt x 341.275pt>
+<fig/Results/child_Acc-eps-converted-to.pdf, id=293, 670.505pt x 341.275pt>
 File: fig/Results/child_Acc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_Acc-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/child_Acc-eps-converted-to.pdf used on inp
-ut line 85.
+ut line 87.
 (pdftex.def)             Requested size: 412.56497pt x 209.98442pt.
- [35] [36 <./fig/Results/childConfusion.png> <./fig/Results/child_Acc-eps-conve
-rted-to.pdf>]
+ [36 <./fig/Results/childConfusion.png> <./fig/Results/child_Acc-eps-converted-
+to.pdf>]
 Package epstopdf Info: Source file: <fig/Results/child_Matthews.eps>
 (epstopdf)                    date: 2015-03-26 16:06:10
 (epstopdf)                    size: 9364 bytes
@@ -1479,7 +1489,7 @@ o.pdf>
 (epstopdf)                    size: 7457 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Results/child_Matthews
 -eps-converted-to.pdf fig/Results/child_Matthews.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/Results/child_Matthews-eps-converted-to.pdf, id=303, 673.51625pt x 347.297
@@ -1487,7 +1497,7 @@ Package epstopdf Info: Output file is already uptodate.
 File: fig/Results/child_Matthews-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/child_Matthews-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/child_Matthews-eps-converted-to.pdf used o
-n input line 100.
+n input line 104.
 (pdftex.def)             Requested size: 412.56497pt x 212.74144pt.
 Package epstopdf Info: Source file: <fig/Results/child_ROC.eps>
 (epstopdf)                    date: 2015-03-26 16:03:26
@@ -1498,7 +1508,7 @@ Package epstopdf Info: Source file: <fig/Results/child_ROC.eps>
 (epstopdf)                    size: 8566 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Results/child_ROC-eps-
 converted-to.pdf fig/Results/child_ROC.eps>
-(epstopdf)             \includegraphics on input line 102.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
 <fig/Results/child_ROC-eps-converted-to.pdf, id=304, 593.21625pt x 240.9pt>
@@ -1506,23 +1516,22 @@ File: fig/Results/child_ROC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/Results/child_ROC-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/child_ROC-eps-converted-to.pdf used on inp
-ut line 102.
+ut line 106.
 (pdftex.def)             Requested size: 412.56497pt x 167.54446pt.
-
-Overfull \hbox (15.01596pt too wide) in paragraph at lines 104--104
+ [37 <./fig/Results/child_Matthews-eps-converted-to.pdf>]
+Overfull \hbox (15.01596pt too wide) in paragraph at lines 110--110
  [][] 
  []
 
-[37 <./fig/Results/child_Matthews-eps-converted-to.pdf> <./fig/Results/child_RO
-C-eps-converted-to.pdf>]
-<fig/Results/socialConfusion.png, id=318, 476.5002pt x 426.393pt>
+[38 <./fig/Results/child_ROC-eps-converted-to.pdf>]
+<fig/Results/socialConfusion.png, id=321, 476.5002pt x 426.393pt>
 File: fig/Results/socialConfusion.png Graphic file (type png)
 
 <use fig/Results/socialConfusion.png>
-Package pdftex.def Info: fig/Results/socialConfusion.png used on input line 112
+Package pdftex.def Info: fig/Results/socialConfusion.png used on input line 127
 .
 (pdftex.def)             Requested size: 333.54785pt x 298.47305pt.
- [38]
+ [39]
 Package epstopdf Info: Source file: <fig/Results/socialAccAll.eps>
 (epstopdf)                    date: 2015-03-27 17:46:09
 (epstopdf)                    size: 15797 bytes
@@ -1532,17 +1541,17 @@ pdf>
 (epstopdf)                    size: 9422 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Results/socialAccAll-e
 ps-converted-to.pdf fig/Results/socialAccAll.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/socialAccAll-eps-converted-to.pdf, id=322, 781.92125pt x 485.815pt
+<fig/Results/socialAccAll-eps-converted-to.pdf, id=325, 781.92125pt x 485.815pt
 >
 File: fig/Results/socialAccAll-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/socialAccAll-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/socialAccAll-eps-converted-to.pdf used on 
-input line 119.
+input line 134.
 (pdftex.def)             Requested size: 412.56497pt x 256.33171pt.
- [39 <./fig/Results/socialConfusion.png>]
+ [40 <./fig/Results/socialConfusion.png>]
 Package epstopdf Info: Source file: <fig/Results/social_Matthews.eps>
 (epstopdf)                    date: 2015-03-27 11:44:58
 (epstopdf)                    size: 9808 bytes
@@ -1552,37 +1561,34 @@ to.pdf>
 (epstopdf)                    size: 7503 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/Results/social_Matthew
 s-eps-converted-to.pdf fig/Results/social_Matthews.eps>
-(epstopdf)             \includegraphics on input line 121.
+(epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/social_Matthews-eps-converted-to.pdf, id=328, 704.6325pt x 271.012
+<fig/Results/social_Matthews-eps-converted-to.pdf, id=332, 704.6325pt x 271.012
 5pt>
 File: fig/Results/social_Matthews-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/social_Matthews-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/social_Matthews-eps-converted-to.pdf used 
-on input line 121.
+on input line 136.
 (pdftex.def)             Requested size: 412.56497pt x 158.67606pt.
- [40 <./fig/Results/socialAccAll-eps-converted-to.pdf> <./fig/Results/social_Ma
-tthews-eps-converted-to.pdf>]) (./tex/Discussion.tex [41]
+ [41 <./fig/Results/socialAccAll-eps-converted-to.pdf> <./fig/Results/social_Ma
+tthews-eps-converted-to.pdf>]) (./tex/Discussion.tex [42]
 Chapter 6.
-[42
+[43
 
-] [43]
-Overfull \hbox (2.30156pt too wide) in paragraph at lines 52--53
+] [44]
+Overfull \hbox (2.30156pt too wide) in paragraph at lines 56--57
 []\OT1/cmr/m/n/12 Despite be-ing the only model that takes the or-dered na-ture
  of socio-economic
  []
 
-[44]) (./tex/Conclusion.tex [45]
+[45]) (./tex/Conclusion.tex [46]
 Chapter 7.
+[47
 
-LaTeX Warning: Reference `ch:Data' on page 46 undefined on input line 7.
+]) (./Report.bbl [48] [49
 
-[46
-
-]) (./Report.bbl [47] [48
-
-] [49]) (./tex/Appendix.tex [50]
+] [50]) (./tex/Appendix.tex [51]
 Appendix A.
 Package epstopdf Info: Source file: <fig/Results/social_ROC.eps>
 (epstopdf)                    date: 2015-03-27 11:36:55
@@ -1596,33 +1602,33 @@ f>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Results/social_ROC-eps-converted-to.pdf, id=375, 779.91376pt x 587.19376pt
+<fig/Results/social_ROC-eps-converted-to.pdf, id=378, 779.91376pt x 587.19376pt
 >
 File: fig/Results/social_ROC-eps-converted-to.pdf Graphic file (type pdf)
  <use fig/Results/social_ROC-eps-converted-to.pdf>
 Package pdftex.def Info: fig/Results/social_ROC-eps-converted-to.pdf used on in
 put line 8.
 (pdftex.def)             Requested size: 412.56497pt x 310.61986pt.
- [51
+ [52
 
 ]
 Overfull \hbox (14.71637pt too wide) in paragraph at lines 12--28
 [][] 
  []
 
-) [52 <./fig/Results/social_ROC-eps-converted-to.pdf>] (./Report.aux)
+) [53 <./fig/Results/social_ROC-eps-converted-to.pdf>] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23628 strings out of 493117
- 572214 string characters out of 6135432
- 749042 words of memory out of 5000000
- 26511 multiletter control sequences out of 15000+600000
+ 24097 strings out of 493117
+ 838946 string characters out of 6135432
+ 3085146 words of memory out of 5000000
+ 26977 multiletter control sequences out of 15000+600000
  17563 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,83p,1440b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,20n,83p,147675b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -1641,10 +1647,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Report.pdf (54 pages, 769123 bytes).
+Output written on Report.pdf (55 pages, 839999 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 451 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
