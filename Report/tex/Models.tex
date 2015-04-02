@@ -53,15 +53,15 @@ Although (in contrast to building a single decision tree), it is not easy to vis
 
 \subsection{Implementation}
 
-MATLAB's builtin treeBagger class was used to build the random forest. Because bootstrap aggregation is used to randomly sample the training data, the out-of-bag (oob) estimates were used to optimise the model's parameters instead of using cross-validation. The parameters to optimise are the number of trees in the forest, and number of features $m$ to consider for splitting each node. It was found that the, for both classification tasks, optimum number of trees in the forest is 13, and that evaluating $\frac{M}{2}$ randomly selected at each node gives the best oob error.
+MATLAB's built-in treeBagger class was used to build the random forest. Because bootstrap aggregation is used to randomly sample the training data, the out-of-bag (oob) estimates were used to optimise the model's parameters instead of using cross-validation. The parameters to optimise are the number of trees in the forest, and number of features $m$ to consider for splitting each node. It was found that for both classification tasks, optimum number of trees in the forest is 13, and that evaluating $\frac{M}{2}$ randomly selected at each node gives the best oob error.
 
 \section{K-Nearest Neighbour}
 
-K-nearest neighbor is a fundamental method for classification as it is intuitive and requires little \textit{a priori} knowledge about the data. It is a non-parametric model that classifies an unlabeled input by finding the K-nearest training points in feature space, using the classes of the nearest points to predict the class of the unlabeled point \cite{Peterson}. 
+K-nearest neighbour is a fundamental method for classification as it is intuitive and requires little \textit{a priori} knowledge about the data. It is a non-parametric model that classifies an unlabelled input by finding the K-nearest training points in feature space, using the classes of the nearest points to predict the class of the unlabelled point \cite{Peterson}. 
 
 \subsection{Implementation}
 
-MATLAB's fitknn tool was used to build a nearest neighbour classification model and the optimum parameters were found using 5-fold cross-validation. The parameters to find were the distance measure, search method and $k$ (the number of neighbours). Using the 5-nearest neighbors and euclidean distance gave the best results in cross-validation.
+MATLAB's fitknn tool was used to build a nearest neighbour classification model and the optimum parameters were found using 5-fold cross-validation. The parameters to find were the distance measure, search method and $k$ (the number of neighbours). Using the 5-nearest neighbours and euclidean distance gave the best results in cross-validation.
 
 %\begin{itemize}
 %\item number of instances is relatively small so parametric classifier won't be too expensive. 

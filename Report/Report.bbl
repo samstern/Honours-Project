@@ -26,6 +26,28 @@ SAS~United Kingdom.
   explosion}.
 \newblock From smart metering to smart marketing. 2010.
 
+\bibitem{SHIMMER}
+Energy~Saving Trust.
+\newblock {\em Smart Homes Integrating Meters Money Energy Research}.
+\newblock Energy Saving Trust, 2011.
+
+\bibitem{DECC_2}
+Department of~Energy and Climate Change.
+\newblock {\em Smart Metering Implementation Programme - Consultation on the
+  second version of the Smart Metering Equiptment Technical Specifications}.
+\newblock 2012.
+
+\bibitem{DECC_4}
+Department of~Energy and Climate Change.
+\newblock {\em The Smart Metering System}.
+\newblock 2012.
+
+\bibitem{Decc_3}
+Department of~Energy and Climate Change.
+\newblock {\em Smart Metering Implementation Programme - Communications Hub
+  Technical Specifications}.
+\newblock 2012.
+
 \bibitem{Beckel_3}
 Christian Beckel, Leyna Sadamori, Thorsten Staake, and Silvia Santini.
 \newblock Revealing household characteristics from smart meter data.
@@ -70,6 +92,14 @@ Intertek.
   product usage}.
 \newblock 2012.
 
+\bibitem{EST_1}
+Energy~Saving Trust.
+\newblock Powering the nation: Household electricity-using habits revealed.
+
+\bibitem{EST_2}
+Nicola~Terry Jason~Palmer.
+\newblock Powering the nation: Electricity used in homes and how to reduce it.
+
 \bibitem{early_findings}
 Jason Palmer, Nicola Terry, and Tom Kane.
 \newblock {\em Early Findings: Demand side management}.
@@ -77,6 +107,10 @@ Jason Palmer, Nicola Terry, and Tom Kane.
 
 \bibitem{CARG_1}
 Household electricity survey: Cleaning the data.
+
+\bibitem{ISSDA}
+Irish Social Science~Data Archive.
+\newblock Issda | commission for energy regulation (cer), 2015.
 
 \bibitem{Beckel_1}
 Christian Beckel, Leyna Sadamori, and Silvia Santini.
@@ -234,6 +268,10 @@ J.~Gorodkin.
 \newblock Comparing two k-category assignments by a k-category correlation
   coefficient.
 \newblock {\em Computational Biology and Chemistry}, 28(5-6):367--374, 2004.
+
+\bibitem{DCC}
+Smartdcc.co.uk.
+\newblock Data communications company, 2015.
 
 \bibitem{Frank}
 Eibe Frank and Mark Hal.

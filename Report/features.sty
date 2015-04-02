@@ -16,15 +16,15 @@
 
 \def\monthSum{
 \begin{figure}[H]
-        %\centering
-        \begin{subfigure}{0.5\textwidth}
-                \includegraphics[width=\textwidth]{fig/Features/Total_Electricity_child}
+        \centering
+        \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\textwidth, height=2in]{fig/Features/Total_Electricity_child}
                                           %\hspace*{-3cm}  
               % \input{fig/Total_Electricity_child.tex}
-                \caption[font=scriptsize]{Total electricity used by households in a 28 day period, grouped by whether the household has chidren or not}
+                \caption[font=scriptsize]{Total electricity used by households in a 28 day period, grouped by whether the household has chidren or not.}
         \end{subfigure}
-        \begin{subfigure}{0.55\textwidth}
-                \includegraphics[width=\textwidth]{fig/Features/Total_Electricity_socio}
+        \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\textwidth, height=2in]{fig/Features/Total_Electricity_socio}
                 %\input{fig/Total_Electricity_socio.tex}     
                  \caption[font=scriptsize]{Total electricity used by households in a 28 day period, grouped by the IPSOS social grade of the household}
         \end{subfigure}
@@ -112,7 +112,7 @@
 %                \caption{The ratio between how much energy is used on the weekends and how much is used on weekdays. Households are grouped on their IPSOS social grade}
         \end{subfigure}
         \caption{The ratio between the energy used on weekend days and the total used during the week, averaged over a four week period. This shows how the amount of energy used during the week compares to that used at the weekends.}
-%        \label{fig:POWrat}
+        \label{fig:POWrat}
 \end{figure}
 }
 
@@ -165,8 +165,9 @@
 \def\APODSocio{
 \begin{figure}[H]
 \centering
+\hspace*{-3cm}
 %\input{fig/APOD_socio.tex}
-\includegraphics[scale=0.7]{fig/Features/APOD_socio}
+\includegraphics[scale=0.75]{fig/Features/APOD_socio}
 \caption{}
 \label{fig:APODSocio}
 \end{figure}
@@ -293,7 +294,7 @@
 %\centerline{\includegraphics[scale=0.5]{fig/household369Conv}}
 \hspace*{-2.5cm}
 \input{fig/household369Conv.tex}
-\caption{The electricity use of household No.369 shows that households may have both a daily and weekly pattern. The clusters of peaks represent individual days while the regions without peaks are the indicative of night time. Additionaly, the large spikes are observed roughly every seven days, on either Saturdays, Sundays or both. After applying the Gaussian filter, the time series maintains its temporal structure however the sharp peaks are smoothed, which would not be handled well by the Fourier transform}
+\caption{The electricity use of Household \# 369 shows that households may have both a daily and weekly pattern. The clusters of peaks represent individual days while the regions without peaks are the indicative of night time. Additionaly, the large spikes are observed roughly every seven days, on either Saturdays, Sundays or both. After applying the Gaussian filter, the time series maintains its temporal structure however the sharp peaks are smoothed, which would not be handled well by the Fourier transform}
 \label{fig:household369Conv}
 \end{figure}
 }
@@ -304,7 +305,7 @@
 \includegraphics[width=\textwidth]{fig/household369}
 %\hspace*{-1in}
 %\input{fig/household369.tex}
-\caption{The electricity use of household No.369 over a four week period after being pre-processed}
+\caption{The electricity use of Household \# 369 over a four week period after being pre-processed}
 \label{fig:household369}
 \end{figure}
 }
@@ -315,7 +316,7 @@
 \includegraphics[scale=0.5]{fig/household369OneWeek}
 %\hspace*{-1in}
 %\input{fig/household369OneWeek.tex}
-\caption{The electricity use of household No.369 over a week after being pre-processed}
+\caption{The electricity use of household \# 369 over a week after being pre-processed}
 \label{fig:household369OneWeek}
 \end{figure}
 }
@@ -347,7 +348,7 @@
 \begin{figure}[H]
         \centering
                 \includegraphics[width=\textwidth]{fig/qqtransformed}
-        \caption{}
+        \caption{The Q-Q plot compares two probability distributions of the data to that of a normal distribution}
         \label{fig:qqPlot}
 \end{figure}
 }
@@ -361,7 +362,7 @@
 \textbf{Appliance}  & \textbf{Rating} & \textbf{} & \textbf{Appliance}   & \textbf{Rating} \\ \hline
 Immersion heater    & 3,000W          &           & Fridge               & 40-120W         \\ \hline
 Electric fire       & 2,000-3,000W    &           & Fridge-freezer       & 200-400W        \\ \hline
-Oil-filled radiator & 1,500-2,500W    &           & Freeze               & 150W            \\ \hline
+Oil-filled radiator & 1,500-2,500W    &           & Freezer               & 150W            \\ \hline
 Electric shower     & 7,000-10,500W   &           & Electric mower       & 500-1,500W      \\ \hline
 Dishwasher          & 1,050-1,500W    &           & Electric drill       & 900-1,000W      \\ \hline
 Washing machine     & 1,200-3,000W    &           & Hairdryer            & 1,000W          \\ \hline

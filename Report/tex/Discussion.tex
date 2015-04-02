@@ -1,6 +1,6 @@
 \chapter{Discussion}
 
-In this chapter, the important results of the models discussed and summarized and we try to draw conclusions about the household classification problem.
+In this chapter the important results of the models are discussed and summarized and we try to draw conclusions about the household classification problem.
 
 There are several major discussion points that could be outlined on the basis of the evaluation of the experimental design and so this chapter is split into 3 sections:
 
@@ -14,46 +14,46 @@ There are several major discussion points that could be outlined on the basis of
 
 \section{Features}
 
-A large portion of the time spent on this project was dedicated to gaining an understanding of the HES dataset and constructing a set of features that captured as much of the variance of the data in as low of a dimensionality as possible, whilst still being interpretable. Given that one of the two classification problems was accomplished with high accuracy and relatively low error, we can conclude that it is possible to build such a such a set of features. Below are some of the key observations and questions regarding feature extraction and selection that were encountered in this project.
+A large portion of the time spent on this project was dedicated to gaining an understanding of the HES dataset and constructing a set of features that captured as much of the variance of the data in as low of a dimensionality as possible, whilst still being interpretable. Given that one of the two classification problems was accomplished with high accuracy and relatively low error, we can conclude that it is possible to build such a set of features. Below are some of the key observations and questions regarding feature extraction and selection that were encountered in this project.
 
 \begin{enumerate}
 \item \textit{Time-frequency transformation does not capture differences in the periodic structure between household types}
 
-Despite numerous attempts to extract informative frequency amplitudes from time-series, we were unable to isolate features that could reliably distinguish between classes of households. Among the various time intervals considered were 4-week periods, weeks and individual days.   We also examined time-series where the weekend period had been removed to see if any patterns in weekdays that were being disrupted by weekends. Although taking the fft did identify periodic structures in the households' energy consumption, these could not be attributed to any one class relative to the others. 
+Despite numerous attempts to extract informative frequency amplitudes from time-series, we were unable to isolate features that could reliably distinguish between classes of households. Among the various time intervals considered were 4-week periods, weeks and individual days. Time-series where the weekend period had been removed were also examined to see if there were any patterns in weekdays that were being disrupted by weekends. Although taking the fft did identify periodic structures in the households' energy consumption, these could not be attributed to any one class relative to the others. 
 
 \item \textit{Sequential forward selection provides a better method of classification than relying solely on domain knowledge}
 
-As shown in the results, in the problem of discriminating between households with and without children, the classifiers that relied on features selected by SFS performed better than those using features selected by hand on almost all accounts. The performance metric with the largest gap was the \textit{true negative rate}. Classifiers using SFS features had, on average, 28\% better results. 
+As shown in the results, in the problem of discriminating between households with and without children, the classifiers that relied on features selected by SFS performed better than those using features selected by hand on almost all accounts. The performance metric with the largest gap was the true negative rates. Classifiers using SFS features had, on average, 28\% better results. 
 
-In the socio-economic classification problem, though, SFS performed considerably worse than choosing features based on human intuition.  Interestingly, however, the classification accuracy appeared relatively comparable.  The difference was seen in the MCC's, which were markedly lower for most of the classifiers built on SFS features, negating any merits found elsewhere. One possible explanation for the discrepancy was that the sample sizes of the classes were small, so more data would allow the models determine the best features with more confidence.  But the dataset used by Beckel et al. and McLaughlin et al. was 18 times larger than than the HES dataset (and recorded houses for longer periods of time), and even so,they were no more successful in determining socio-economic class from their sample data.
+In the socio-economic classification problem, though, SFS performed considerably worse than choosing features based on human intuition.  Interestingly, however, the classification accuracy appeared relatively comparable.  The difference was seen in the MCC's, which were markedly lower for most of the classifiers built on SFS features, negating any merits found elsewhere. One possible explanation for the discrepancy was that the sample sizes of the classes were small, so more data would allow the models to determine the best features with more confidence.  But the dataset used by Beckel et al. and McLaughlin et al. was 18 times larger than than the HES dataset (and recorded houses for longer periods of time), and even so, they were no more successful in determining socio-economic class from their sample data.
  
-Another explanation might have been that, because SFS is a greedy algorithm, it is subject to the `nesting effect' .  In other words,  once a feature had been added it couldn't be removed \cite{Guyon}. This would need to be further investigated in order to confirm or deny.
+Another explanation might be been that, because SFS is a greedy algorithm, it is subject to the `nesting effect'.  In other words, once a feature had been added it couldn't be removed \cite{Guyon}. This would need to be further investigated in order to confirm or deny.
 
 The features selected by SFS were dependent on the cost function applied to penalise the classifiers.  Numerous cost functions were assessed for each of the classifiers, including the misclassification rate, mean absolute error and the false positive rate. When testing the veracity of the features obtained from each cost function on the validation set, it was found that using a cost function that indicates some form of confidence or predicted future error gave better performance than ones that relied on the performance on a validation set.
 
 
-\item \textit{The optimum set of features is different for each classifier, even when tackling the the same classification problem}
+\item \textit{The optimum set of features is different for each classifier, even when tackling the same classification problem}
 
-During the parameter optimisation stages, SFS was implemented such that the training set was randomly split into five validation sets each time the algorithm was run. This resulted in, especially for inferring socio-economic group, the SFS method learning a new set of `best' parameters each time the SFS algorithm was run. While this could be attributed to the limited sample size and a larger set of data would give more stability in the results, it is more likely a result of an oversight in the implementation. The cross-validation method used in running SFS didn't check that all classes were represented proportionately in each validation set. Running the algorithm numerous times for each classifier and choosing the sets that occurred most frequently will have mitigated the affects, however this will have effected the results. 
+During the parameter optimisation stages, SFS was implemented such that the training set was randomly split into five validation sets each time the algorithm was run. This resulted in, especially for inferring socio-economic group, the SFS method learning a new set of `best' parameters each time the SFS algorithm was run. While this could be attributed to the limited sample size and a larger set of data would have given more stability in the results, it is more likely a result of an oversight in the implementation. The cross-validation method used in running SFS didn't check that all classes were represented proportionately in each validation set. Running the algorithm numerous times for each classifier and choosing the sets that occurred most frequently mitigated the effects, however this will have affected the results. 
 \end{enumerate}
 
 \section{Classifiers}
 
-While the majority of the time was spent understanding the data and extracting features, the classifiers play a crucial role in the outcome of the project.  The three classifiers, logistic regression, random forest and Knn are discussed and their implementation critically evaluated.
+While the majority of the time was spent understanding the data and extracting features, the classifiers played a crucial role in the outcome of the project.  The three classifiers, logistic regression, random forest and Knn are discussed here.
 
 \subsection{Logistic Regression}
 
 \begin{enumerate}
 \item \textit{Outperforms random forest and Knn in discriminating between households with and without children}
 
-With the greatest area under the ROC curve, along with highest accuracy and MCC, the logistic regression classifier is concluded to be the best-performing model for this specific binary classification model. While Knn was able to better identify the childless households, it fell short in identifying the households with children.  The logistic regression model did a better job at identifying households that have children present. 
+With the greatest area under the ROC curve, along with highest accuracy and MCC, the logistic regression classifier is concluded to be the best-performing model for this specific binary classification task. While Knn was able to better identify the childless households, it fell short in identifying the households with children.  The logistic regression model did a better job at identifying households that had children present. 
 
-It is possible that the underlying reason for the positive results is that households with children will tend to have more occupants, which is directly correlated to the amount of energy consumed by the household. However, after testing the correlation between the misclasified and the number of occupants of a household, no correlation was found.
+It is possible that the underlying reason for the positive results was that households with children will tended to have more occupants, which is correlated to the amount of energy consumed by the household\cite{early_findings}. However, after testing the correlation between the misclassified samples and the number of occupants of a household, no correlation was found.
 
 
-\item \textit{Both ordinal regression and multinomial logistic regression underperform relative to random forest and Knn in socio-economic classification problem}
+\item \textit{Both ordinal regression and multinomial logistic regression under-perform relative to random forest and Knn in socio-economic classification problem}
 
-Despite being the only model that takes the ordered nature of socio-economic classes into account, the proportional odds model ultimately performed no better than a biased random guess, assigning households to either C1 or C2. While previous studies have shown links between the amount of energy consumed and disposable income (which is itself linked to the socio-economic class), analysis of the HES data as well as other studies on domestic energy consumption found that not just lifestyle, but also dwelling-specific factors contributed to the electricity consumption of households. This is suggestive that, while it is possible to infer a households socio-economic status, more sophisticated methods need to be used to account for these factors, such as a neural network with deep hidden layers.
+Despite being the only model that takes the ordered nature of socio-economic classes into account, the proportional odds model ultimately performed no better than a biased random guess, assigning households to either C1 or C2. While previous studies have shown links between the amount of energy consumed and disposable income (which is itself associated with socio-economic class) \cite{McLoughlin}, analysis of the HES data as well as other studies on domestic energy consumption found that not just lifestyle, but also dwelling-specific factors contributed to the electricity consumption of households. This is suggestive that, while it is possible to infer a households' socio-economic status, more sophisticated methods need to be used to account for these factors, such as a neural network with deep hidden layers.
 \end{enumerate}
 
 \subsection{Random Forest}
@@ -62,7 +62,7 @@ Despite being the only model that takes the ordered nature of socio-economic cla
 
 \item \textit{Improved performance not guaranteed using SFS}
 
-Indicated by the results of the multi-class problem, employing statistical methods to reduce the dimensionality of the features used by the random forest classifier don't give better results on test data. 
+Indicated by the results of the multi-class problem, employing statistical methods to reduce the dimensionality of the features used by the random forest classifier do nott give better results on test data. 
 
 \end{enumerate}
 
@@ -72,16 +72,16 @@ Indicated by the results of the multi-class problem, employing statistical metho
 
 \item \textit{The larger K is, the more skewed the trade-off between TPR and FPR becomes}
 
-During the optimisation phase, the number of nearest neighbors was adjusted to find the optimum value. As K increased, the accuracy and TPR continued to increase whereas the TNR declined until performance was equivalent to a biased guess. This is due to the imbalances in class sizes and can be adjusted for by limiting the size of K. Conversely, using small values of K such as 1 or 2 also produced poor results because the classes are not separable. Using the 5 nearest neighbors to evaluate the class of a new point gave the best results in cross-validation.
+During the optimisation phase, the number of nearest neighbours was adjusted to find the optimum value. As K increased, the accuracy and TPR continued to increase whereas the TNR declined until performance was equivalent to a biased guess. This was due to the imbalances in class sizes and can be adjusted for by limiting the size of K. Conversely, using small values of K such as 1 or 2 also produced poor results because the classes were not separable. Using the 5 nearest neighbours to evaluate the class of a new point gave the best results in cross-validation.
 
 \item \textit{Euclidean distance gives the most reliable results}
 
-MATLAB's built-in Knn predictor allows numerous different distance measures to be specifies including euclidean, Hamming, Manhatten and Mahalonobis. Of these, euclidean distance was found to give the most best results based on TPR and TNR trade-off. Euclidean distance assumes that each dimension is equally weighted which is reasonable since feature selection methods were used to determine a subset of features that reduce noise.
+MATLAB's built-in Knn predictor allows numerous different distance measures to be specified including euclidean, Hamming, Manhatten and Mahalonobis. Of these, euclidean distance was found to give the best results based on TPR and TNR trade-off. Euclidean distance assumes that each dimension is equally weighted which is reasonable since feature selection methods were used to determine a subset of features that reduce noise.
 \end{enumerate}
 
 
 \section{Comparison to Previous work}
 
-Comparing the results obtained here to those found by Beckel et al. \cite{Beckel_1, Beckel_2, Beckel_3} who used smart meter data from Irish households to predict the socio-economic class and presence or absence of children, the classifiers produced here perform better. While Beckel et al. were able to construct an SVM classifier that had an accuracy of 71\% and MCC of 0.32 in discriminating between households with and without children, the results here showed that it is possible to obtain an accuracy of 83.7\% and MCC of 0.64 using logistic regression --- a notable improvement. While Beckel et al. achieved similar accuracy in their attempt to predict socio-economic class, the maximum MCC they obtained was 0.19, whereas the random forest constructed here had an MCC of 0.4. While this is not a strong correlation, it does indicate stronger predictive power than previous attempts.
+Comparing the results obtained here to those found by Beckel et al. \cite{Beckel_1, Beckel_2, Beckel_3} who used smart meter data from Irish households to predict the socio-economic class and presence or absence of children, our classifiers performed better. While Beckel et al. were able to construct an SVM classifier that had an accuracy of 71\% and MCC of 0.32 in discriminating between households with and without children, the results here showed that it is possible to obtain an accuracy of 83.7\% and MCC of 0.64 using logistic regression --- a notable improvement. While Beckel et al. achieved similar accuracy in their attempt to predict socio-economic class, the maximum MCC they obtained was 0.19, whereas the random forest we constructed had an MCC of 0.4. While this is not a strong correlation, it does indicate stronger predictive power than previous attempts.
 
 
