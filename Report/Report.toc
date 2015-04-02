@@ -37,7 +37,7 @@
 \contentsline {section}{\numberline {6.2}Classifiers}{45}
 \contentsline {subsection}{\numberline {6.2.1}Logistic Regression}{45}
 \contentsline {subsection}{\numberline {6.2.2}Random Forest}{45}
-\contentsline {subsection}{\numberline {6.2.3}Knn}{45}
+\contentsline {subsection}{\numberline {6.2.3}Knn}{46}
 \contentsline {section}{\numberline {6.3}Comparison to Previous work}{46}
 \contentsline {chapter}{\numberline {7}Conclusion and Further Work}{47}
 \contentsline {section}{\numberline {7.1}Conclusion}{47}

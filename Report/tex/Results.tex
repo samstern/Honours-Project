@@ -45,16 +45,16 @@ Let $X,Y$ each be an $S\times N$ matrix where $S$ is the number of households an
 
 where $\bar{X_n}$ and $\bar{Y_n}$ are the means of the $n^{th}$ columns of $X$ and $Y$, respectively.
 
-The MCC is then defined as,
+The MCC is then defined as
 
 \[MCC=\frac{cov(X,Y)}{\sqrt{cov(X,X)\cdot cov(Y,Y)}}\]
 
 
-For binary classification this can be interpreted as,
+For binary classification this can be interpreted as
 
 \[MCC=\frac{TP\times TN-FP\times FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}\]
 
-While the MCC is not commonly used when assessing binary classifiers, based on the definition of the MCC above, it can be extended to multi-class problems, as described by Gorodkin\cite{Gorodkin}. If $C$ is the confusion matrix of a classifier, then the MCC is given as,
+While the MCC is not commonly used when assessing binary classifiers, based on the definition of the MCC above, it can be extended to multi-class problems, as described by Gorodkin\cite{Gorodkin}. If $C$ is the confusion matrix of a classifier, then the MCC is given as
 
 \[MCC=\frac{\sum\limits^N_{k,l,m=1}C_{k,k}C_{m,l}-C_{l,m}C_{k,m}}{\sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{l,k}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{g,f}\bigg)\bigg]}\cdot \sqrt{\sum\limits^N_{k=1}\bigg[\bigg(\sum\limits^N_{l=1}C_{k,l}\bigg)\bigg(\sum\limits^N_{f\ne k,g=1}C_{f,g}\bigg)\bigg]}}\] 
 
@@ -72,7 +72,7 @@ While the MCC is not commonly used when assessing binary classifiers, based on t
 
 As explained in Section \ref{sec:dimensionalityReduction}, SFS was used to determine the features that are of greatest value for each classifier. However, after running SFS multiple times, we noticed that the features found to be `optimal' for each of the classifiers were not always the same (even after cross-validation). This was especially evident in random forest\footnote{because random forests rely on random feature subset selection.}.  As such, the feature selection algorithm was run multiple times and the set of features (for each classifier) that appeared most often was used. To evaluate the feature selection method, two additional sets of features were constructed (one for each classification problem) by choosing features based on how they appeared, by visualisation alone, to separate the classes in Section \ref{sec:creatingFeatures}. This was used as a baseline for comparison because it allowed us to exploit our domain knowledge, rather than have to rely on a random guess.  
 
-All classification models were evaluated using the features found by SFS as well as the features found manually (labeled as MAN). The lists of features used for each classifier are shown in Appendix A. 
+All classification models were evaluated using the features found by SFS as well as the features found manually (labelled as MAN). The lists of features used for each classifier are shown in Appendix A. 
 
 
 \section{Classification Results}

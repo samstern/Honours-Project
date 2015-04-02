@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  2 APR 2015 02:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.26)  2 APR 2015 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,18 +929,18 @@ Package geometry Warning: Over-specification in `v'-direction.
 (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1041,11 +1041,11 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.10}).
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1053,7 +1053,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <fig/UoE_Logo.pdf, id=4, 192.72pt x 154.5775pt>
 File: fig/UoE_Logo.pdf Graphic file (type pdf)
  <use fig/UoE_Logo.pdf>
-Package pdftex.def Info: fig/UoE_Logo.pdf used on input line 46.
+Package pdftex.def Info: fig/UoE_Logo.pdf used on input line 48.
 (pdftex.def)             Requested size: 192.71951pt x 154.5771pt.
  [1
 
@@ -1269,50 +1269,52 @@ ed on input line 36.
 res/Total_Electricity_socio-eps-converted-to.pdf>] [18 <./fig/Features/Day_Aver
 age_child-eps-converted-to.pdf> <./fig/Features/Day_Average_socio-eps-converted
 -to.pdf>]
-Package epstopdf Info: Source file: <fig/Features/APOD_child.eps>
-(epstopdf)                    date: 2015-03-29 19:25:35
-(epstopdf)                    size: 29026 bytes
-(epstopdf)             Output file: <fig/Features/APOD_child-eps-converted-to.p
-df>
-(epstopdf)                    date: 2015-03-29 19:33:22
-(epstopdf)                    size: 14204 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/Features/APOD_child-ep
-s-converted-to.pdf fig/Features/APOD_child.eps>
+Package epstopdf Info: Source file: <fig/Features/APOD_child1.eps>
+(epstopdf)                    date: 2015-04-02 11:21:54
+(epstopdf)                    size: 29000 bytes
+(epstopdf)             Output file: <fig/Features/APOD_child1-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-04-02 11:22:35
+(epstopdf)                    size: 13983 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/Features/APOD_child1-e
+ps-converted-to.pdf fig/Features/APOD_child1.eps>
 (epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/APOD_child-eps-converted-to.pdf, id=160, 568.1225pt x 379.4175pt>
-File: fig/Features/APOD_child-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/Features/APOD_child-eps-converted-to.pdf>
-Package pdftex.def Info: fig/Features/APOD_child-eps-converted-to.pdf used on i
-nput line 54.
-(pdftex.def)             Requested size: 412.56497pt x 275.54247pt.
+<fig/Features/APOD_child1-eps-converted-to.pdf, id=160, 528.97626pt x 335.2525p
+t>
+File: fig/Features/APOD_child1-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/Features/APOD_child1-eps-converted-to.pdf>
+Package pdftex.def Info: fig/Features/APOD_child1-eps-converted-to.pdf used on 
+input line 54.
+(pdftex.def)             Requested size: 412.56497pt x 261.47543pt.
  [19]
-Package epstopdf Info: Source file: <fig/Features/APOD_socio.eps>
-(epstopdf)                    date: 2015-03-29 19:30:19
-(epstopdf)                    size: 70708 bytes
-(epstopdf)             Output file: <fig/Features/APOD_socio-eps-converted-to.p
-df>
-(epstopdf)                    date: 2015-03-29 19:32:44
-(epstopdf)                    size: 26708 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/Features/APOD_socio-ep
-s-converted-to.pdf fig/Features/APOD_socio.eps>
+Package epstopdf Info: Source file: <fig/Features/APOD_socio1.eps>
+(epstopdf)                    date: 2015-04-02 07:22:01
+(epstopdf)                    size: 71951 bytes
+(epstopdf)             Output file: <fig/Features/APOD_socio1-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-04-02 07:22:57
+(epstopdf)                    size: 26631 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/Features/APOD_socio1-e
+ps-converted-to.pdf fig/Features/APOD_socio1.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig/Features/APOD_socio-eps-converted-to.pdf, id=164, 723.70375pt x 566.115pt>
-File: fig/Features/APOD_socio-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/Features/APOD_socio-eps-converted-to.pdf>
-Package pdftex.def Info: fig/Features/APOD_socio-eps-converted-to.pdf used on i
-nput line 59.
-(pdftex.def)             Requested size: 542.77647pt x 424.5852pt.
+<fig/Features/APOD_socio1-eps-converted-to.pdf, id=164, 669.50125pt x 479.7925p
+t>
+File: fig/Features/APOD_socio1-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/Features/APOD_socio1-eps-converted-to.pdf>
+Package pdftex.def Info: fig/Features/APOD_socio1-eps-converted-to.pdf used on 
+input line 59.
+(pdftex.def)             Requested size: 502.12471pt x 359.84348pt.
 
-Overfull \hbox (47.46432pt too wide) in paragraph at lines 59--59
+Overfull \hbox (35.26532pt too wide) in paragraph at lines 59--59
  []|  [] 
  []
 
-[20 <./fig/Features/APOD_child-eps-converted-to.pdf>] [21 <./fig/Features/APOD_
-socio-eps-converted-to.pdf>]
+[20 <./fig/Features/APOD_child1-eps-converted-to.pdf>] [21 <./fig/Features/APOD
+_socio1-eps-converted-to.pdf>]
 Overfull \hbox (44.57018pt too wide) in paragraph at lines 72--72
 [] 
  []
@@ -1626,10 +1628,10 @@ Overfull \hbox (14.71637pt too wide) in paragraph at lines 12--28
 
 ) [54 <./fig/Results/social_ROC-eps-converted-to.pdf>] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 24111 strings out of 493117
- 839206 string characters out of 6135432
- 3085493 words of memory out of 5000000
- 26990 multiletter control sequences out of 15000+600000
+ 24114 strings out of 493117
+ 839243 string characters out of 6135432
+ 3085541 words of memory out of 5000000
+ 26993 multiletter control sequences out of 15000+600000
  17563 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,20n,83p,147675b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1652,7 +1654,7 @@ ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on Report.pdf (56 pages, 862949 bytes).
+Output written on Report.pdf (56 pages, 863630 bytes).
 PDF statistics:
  461 PDF objects out of 1000 (max. 8388607)
  318 compressed objects within 4 object streams

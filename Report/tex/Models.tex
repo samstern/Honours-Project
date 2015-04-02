@@ -22,7 +22,7 @@ To extend the problem of logistic regression to the multi-class case, often time
 
 Although this is a valid method of classifying the data, it fails to acknowledge the ordinal property of the classes and assumes the data to be nominal. Ideally we would be able to build a model that exploits the fact that some classes are more similar than others. For example, if the true label of a household is B, then we would rather missclassify the instance as A or C1 than as D or E. Luckily, ordinal logistic regression (or ordered ligit) can be used to build a model that incorporated the ordering of the classes.
 
-McCullagh's proportional odds model \cite{McCullagh} is a variation of a generalised linear model (glm) where the dependant variable is thought of as being continuous, but is recorded ordinally. It can be thought of as asking asking a linear model to tell you what range a dependent variable is in (as opposed to an exact value). The regression model is then given by: 
+McCullagh's proportional odds model \cite{McCullagh} is a variation of a generalised linear model (glm) where the dependant variable is thought of as being continuous, but is recorded ordinally. It can be thought of as asking asking a linear model to tell you what range a dependent variable is in (as opposed to an exact value). The regression model is then given by 
 \begin{align*}
 logit(p_1) &=\log(\frac{p_1}{1-p_1}) = b_1 +\textbf{w}\cdot{\textbf{x}} \\
 logit(p_2) &=\log(\frac{p_1+p_2}{1-p_1-p_2}) = b_2 +\textbf{w}\cdot{\textbf{x}}\\

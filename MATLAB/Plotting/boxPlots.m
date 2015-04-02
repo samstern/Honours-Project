@@ -84,7 +84,7 @@ function boxPlots(varargin)
             sp=get(sh,'position');
             set(hLegend,'position',sp);
             delete(sh);
-            set(hChildren(1),'Color','r')
+            set(hChildren(4),'Color','r')
             set(hChildren(2),'Color','g')
             %ADV
         elseif strcmp(varargin{3},'ADV')
